@@ -1,7 +1,7 @@
 sink("diagnostics/lmer.txt")
 
-library("lme4")
-library("RPostgreSQL")
+library(lme4)
+library(RPostgreSQL)
 
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv,host="localhost",port="5432",dbname="rugby")

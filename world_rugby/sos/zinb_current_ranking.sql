@@ -55,6 +55,6 @@ dfs::numeric(4,2),
 sos::numeric(4,2)
 from r
 order by rk asc
-) to '/tmp/current_ranking.csv' csv header;
+) to '/tmp/zinb_current_ranking.csv' csv header;
 
 commit;

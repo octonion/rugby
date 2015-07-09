@@ -106,6 +106,6 @@ set
   schedule_defensive_all=rs.defensive_all
 from rs
 where
-  (_zinb__schedule_factors.team_id)=(rs.team_id);
+  (_zinb_schedule_factors.team_id)=(rs.team_id);
 
 commit;
