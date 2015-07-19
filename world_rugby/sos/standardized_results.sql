@@ -5,6 +5,7 @@ drop table if exists wr.results;
 create table wr.results (
 	game_id		      integer,
 	year		      integer,
+	game_date	      date,
 	team_name	      text,
 	team_id		      text,
 	opponent_name	      text,
@@ -19,6 +20,7 @@ create table wr.results (
 
 insert into wr.results
 (game_id,year,
+ game_date,
  team_name,team_id,
  opponent_name,opponent_id,
  field,
@@ -27,13 +29,15 @@ insert into wr.results
 select
 g.match_id,
 extract(year from g.time_label),
+g.time_label::date,
 t1.country_name,
 t1.country_id,
 t2.country_name,
 t2.country_id,
 (case when g.venue_country=t1.country_name then 'offense_home'
       when g.venue_country=t2.country_name then 'defense_home'
-      when g.venue_country is null then 'offense_home'
+      when g.venue_country is null then 'neutral'
+      --when g.venue_country is null then 'offense_home'
       else 'neutral' end) as field,
 g.team_score,
 g.opponent_score
@@ -60,6 +64,7 @@ and not(g.team_score,g.opponent_score)=(0,0)
 
 insert into wr.results
 (game_id,year,
+ game_date,
  team_name,team_id,
  opponent_name,opponent_id,
  field,
@@ -68,13 +73,15 @@ insert into wr.results
 select
 g.match_id,
 extract(year from g.time_label),
+g.time_label::date,
 t2.country_name,
 t2.country_id,
 t1.country_name,
 t1.country_id,
 (case when g.venue_country=t1.country_name then 'defense_home'
       when g.venue_country=t2.country_name then 'offense_home'
-      when g.venue_country is null then 'defense_home'
+      when g.venue_country is null then 'neutral'
+      --when g.venue_country is null then 'defense_home'      
       else 'neutral' end) as field,
       
 g.opponent_score,

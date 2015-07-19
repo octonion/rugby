@@ -1,6 +1,7 @@
 sink("diagnostics/zinb.txt")
 
 library(glmmADMB)
+#library(lme4)
 library(RPostgreSQL)
 
 drv <- dbDriver("PostgreSQL")
@@ -16,11 +17,11 @@ r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2007)^2 as w
+(year-2011)^2 as w
 from wr.results r
 
 where
-    r.year between 2008 and 2015
+    r.year between 2012 and 2015
 
 ;")
 
@@ -81,14 +82,15 @@ g <- cbind(fp,rp)
 g$gs <- gs
 g$w <- w
 
-detach(games)
+#detach(games)
 
 dim(g)
 
 model <- gs ~ field+(1|offense)+(1|defense)+(1|game_id)
 #fit <- glmer(model, data=g, verbose=TRUE, family=poisson(link=log), weights=w)
+#fit <- glmer.nb(model, data=g)
 
-fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE, extra.args="-ndi 120000 -rs")
+fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE) #, extra.args="-ndi 120000 -rs")
 
 fit
 summary(fit)
