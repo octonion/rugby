@@ -22,3 +22,6 @@ psql rugby -c "vacuum full verbose analyze wr._zinb_schedule_factors;"
 
 psql rugby -f sos/zinb_current_ranking.sql > sos/zinb_current_ranking.txt
 cp /tmp/zinb_current_ranking.csv sos/zinb_current_ranking.csv
+
+psql rugby -f sos/zinb_predict_monthly.sql > sos/zinb_predict_monthly.txt
+cp /tmp/zinb_predict_monthly.csv sos/zinb_predict_monthly.csv

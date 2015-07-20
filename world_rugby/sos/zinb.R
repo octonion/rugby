@@ -1,7 +1,6 @@
 sink("diagnostics/zinb.txt")
 
 library(glmmADMB)
-#library(lme4)
 library(RPostgreSQL)
 
 drv <- dbDriver("PostgreSQL")
@@ -16,13 +15,12 @@ r.field as field,
 r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
-team_score::float as gs,
-(year-2011)^2 as w
+team_score::float as gs
+--(year-2013)^2 as w
 from wr.results r
 
 where
     r.year between 2012 and 2015
-
 ;")
 
 games <- fetch(query,n=-1)
@@ -80,13 +78,13 @@ dbWriteTable(con,c("wr","_zinb_parameter_levels"),parameter_levels,row.names=TRU
 
 g <- cbind(fp,rp)
 g$gs <- gs
-g$w <- w
+#g$w <- w
 
 #detach(games)
 
 dim(g)
 
-model <- gs ~ field+(1|offense)+(1|defense)+(1|game_id)
+model <- gs ~ field + (1|offense) + (1|defense) + (1|game_id)
 #fit <- glmer(model, data=g, verbose=TRUE, family=poisson(link=log), weights=w)
 #fit <- glmer.nb(model, data=g)
 
@@ -94,6 +92,7 @@ fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE
 
 fit
 summary(fit)
+#str(fit)
 
 # List of data frames
 
@@ -134,6 +133,9 @@ for (n in rn) {
   results <- c(results,list(data.frame(factor,type,level,estimate)))
 
  }
+
+results <- c(results,list(data.frame(factor="pz",type="structural",level="pz",estimate=fit$pz)))
+results <- c(results,list(data.frame(factor="alpha",type="structural",level="alpha",estimate=fit$alpha)))
 
 combined <- as.data.frame(do.call("rbind",results))
 
