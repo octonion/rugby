@@ -3,7 +3,7 @@ begin;
 create temporary table r (
        rk	 serial,
        team 	 text,
-       team_id	 text,
+       team_id	 integer,
        str	 float,
        ofs	 float,
        dfs	 float,
@@ -14,15 +14,19 @@ insert into r
 (team,team_id,str,ofs,dfs,sos)
 (
 select
-coalesce(t.country_name,sf.team_id),
-sf.team_id::text,
+--coalesce(t.country_name,sf.team_id),
+t.team_name,
+sf.team_id,
 ln(sf.strength) as str,
 ln(sf.offensive) as ofs,
 ln(sf.defensive) as dfs,
 ln(sf.schedule_strength) as sos
 from wr._zinb_schedule_factors sf
-left join wr.countries t
-  on (t.country_id::text)=(sf.team_id)
+--left join wr.countries t
+--  on (t.country_id::text)=(sf.team_id)
+left join wr.teams t
+--  on (t.team_id,t.sport_id,t.type_id)=(sf.team_id,1,6)
+  on (t.team_id)=(sf.team_id)
 order by str desc);
 
 select

@@ -3,7 +3,7 @@ begin;
 drop table if exists wr._zinb_schedule_factors;
 
 create table wr._zinb_schedule_factors (
-	team_id			text,
+	team_id			integer,
         offensive               float,
         defensive		float,
         strength                float,
@@ -25,7 +25,7 @@ create table wr._zinb_schedule_factors (
 insert into wr._zinb_schedule_factors
 (team_id,offensive,defensive)
 (
-select o.level,o.exp_factor,d.exp_factor
+select o.level::integer,o.exp_factor,d.exp_factor
 from wr._zinb_factors o
 left outer join wr._zinb_factors d
   on (d.level,d.parameter)=(o.level,'defense')
@@ -38,8 +38,8 @@ set strength=offensive/defensive;
 ----
 
 create temporary table r (
-         team_id		text,
-         opponent_id		text,
+         team_id		integer,
+         opponent_id		integer,
 	 field_id		text,
          offensive              float,
          defensive		float,
@@ -55,7 +55,7 @@ r.team_id,
 r.opponent_id,
 r.field
 from wr.results r
-where r.year between 2008 and 2015
+where r.year between 2012 and 2015
 );
 
 update r
@@ -74,7 +74,7 @@ from wr._zinb_factors f
 where (f.parameter,f.level)=('field',r.field_id);
 
 create temporary table rs (
-         team_id		text,
+         team_id		integer,
          offensive              float,
          defensive              float,
          strength               float,

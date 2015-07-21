@@ -66,9 +66,9 @@ join wr.teams t2
   on (t2.team_id) = (g.opponent_id)
 
 join wr._zinb_schedule_factors sf1
-  on (sf1.team_id)=(t1.country_id::text)
+  on (sf1.team_id)=(t1.team_id)
 join wr._zinb_schedule_factors sf2
-  on (sf2.team_id)=(t2.country_id::text)
+  on (sf2.team_id)=(t2.team_id)
 
 join wr._factors o
   on (o.parameter,o.level)=('field','offense_home')
@@ -161,9 +161,9 @@ join wr.teams t2
   on (t2.team_id) = (g.opponent_id)
 
 join wr._zinb_schedule_factors sf1
-  on (sf1.team_id)=(t1.country_id::text)
+  on (sf1.team_id)=(t1.team_id)
 join wr._zinb_schedule_factors sf2
-  on (sf2.team_id)=(t2.country_id::text)
+  on (sf2.team_id)=(t2.team_id)
 
 join wr._factors o
   on (o.parameter,o.level)=('field','offense_home')

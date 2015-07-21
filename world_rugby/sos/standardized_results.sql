@@ -7,9 +7,9 @@ create table wr.results (
 	year		      integer,
 	game_date	      date,
 	team_name	      text,
-	team_id		      text,
+	team_id		      integer,
 	opponent_name	      text,
-	opponent_id	      text,
+	opponent_id	      integer,
 	location_name	      text,
 	field		      text,
 	team_score	      integer,
@@ -30,10 +30,17 @@ select
 g.match_id,
 extract(year from g.time_label),
 g.time_label::date,
-t1.country_name,
-t1.country_id,
-t2.country_name,
-t2.country_id,
+
+--t1.country_name,
+--t1.country_id,
+--t2.country_name,
+--t2.country_id,
+
+t1.team_name,
+t1.team_id,
+t2.team_name,
+t2.team_id,
+
 (case when g.venue_country=t1.country_name then 'offense_home'
       when g.venue_country=t2.country_name then 'defense_home'
       when g.venue_country is null then 'neutral'
@@ -48,10 +55,12 @@ join wr.teams t1
 join wr.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2008 and 2015
+    extract(year from g.time_label) between 2012 and 2015
     
-and (t1.sport_id,t1.type_id)=(1,6)
-and (t2.sport_id,t2.type_id)=(1,6)
+and t1.sport_id=1
+and t2.sport_id=1
+and t1.type_id in (6)
+and t2.type_id in (6)
 
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
@@ -76,10 +85,16 @@ select
 g.match_id,
 extract(year from g.time_label),
 g.time_label::date,
-t2.country_name,
-t2.country_id,
-t1.country_name,
-t1.country_id,
+
+t2.team_name,
+t2.team_id,
+t1.team_name,
+t1.team_id,
+
+--t2.country_name,
+--t2.country_id,
+--t1.country_name,
+--t1.country_id,
 (case when g.venue_country=t1.country_name then 'defense_home'
       when g.venue_country=t2.country_name then 'offense_home'
       when g.venue_country is null then 'neutral'
@@ -95,10 +110,15 @@ join wr.teams t1
 join wr.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2008 and 2015
+    extract(year from g.time_label) between 2012 and 2015
     
-and (t1.sport_id,t1.type_id)=(1,6)
-and (t2.sport_id,t2.type_id)=(1,6)
+--and (t1.sport_id,t1.type_id)=(1,6)
+--and (t2.sport_id,t2.type_id)=(1,6)
+
+and t1.sport_id=1
+and t2.sport_id=1
+and t1.type_id in (6)
+and t2.type_id in (6)
 
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
