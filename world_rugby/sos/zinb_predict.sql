@@ -7,11 +7,11 @@ select
 g.time_label::date as date,
 
 g.events_label as event,
-g.venue_city as city,
+coalesce(g.venue_city,t1.country_name||'?') as city,
 
 (case when g.venue_country=t1.country_name then 'home'
       when g.venue_country=t2.country_name then 'away'
-      when g.venue_country is null then 'neutral'
+      when g.venue_country is null then 'home'
       else 'neutral' end) as site,
 
 t1.country_name as team,
@@ -22,6 +22,8 @@ case when g.venue_country=t1.country_name then
        exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
      when g.venue_country=t2.country_name then
        exp(i.estimate)*sf1.offensive*d.exp_factor*sf2.defensive
+     when g.venue_country is null then
+       exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
      else
        exp(i.estimate)*sf1.offensive*sf2.defensive
 end
@@ -36,6 +38,8 @@ case when g.venue_country=t1.country_name then
        exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
      when g.venue_country=t2.country_name then
        exp(i.estimate)*sf2.offensive*o.exp_factor*sf1.defensive
+     when g.venue_country is null then
+       exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
      else
        exp(i.estimate)*sf2.offensive*sf1.defensive
 end
@@ -98,11 +102,11 @@ select
 g.time_label::date as date,
 
 g.events_label as event,
-g.venue_city as city,
+coalesce(g.venue_city,t1.country_name||'?') as city,
 
 (case when g.venue_country=t1.country_name then 'home'
       when g.venue_country=t2.country_name then 'away'
-      when g.venue_country is null then 'neutral'
+      when g.venue_country is null then 'homel'
       else 'neutral' end) as site,
 
 t1.country_name as team,
@@ -113,6 +117,8 @@ case when g.venue_country=t1.country_name then
        exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
      when g.venue_country=t2.country_name then
        exp(i.estimate)*sf1.offensive*d.exp_factor*sf2.defensive
+     when g.venue_country is null then
+       exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
      else
        exp(i.estimate)*sf1.offensive*sf2.defensive
 end
@@ -127,6 +133,8 @@ case when g.venue_country=t1.country_name then
        exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
      when g.venue_country=t2.country_name then
        exp(i.estimate)*sf2.offensive*o.exp_factor*sf1.defensive
+     when g.venue_country is null then
+       exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
      else
        exp(i.estimate)*sf2.offensive*sf1.defensive
 end

@@ -60,6 +60,8 @@ and g.team_score is not null
 and g.opponent_score is not null
 
 and not(g.team_score,g.opponent_score)=(0,0)
+
+and venue_country is not null
 );
 
 insert into wr.results
@@ -105,6 +107,8 @@ and g.team_score is not null
 and g.opponent_score is not null
 
 and not(g.team_score,g.opponent_score)=(0,0)
+
+and venue_country is not null
 );
 
 commit;
