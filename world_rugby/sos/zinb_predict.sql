@@ -6,6 +6,8 @@ select
 
 g.time_label::date as date,
 
+g.events_label as event,
+
 (case when g.venue_country=t1.country_name then 'home'
       when g.venue_country=t2.country_name then 'away'
       when g.venue_country is null then 'neutral'
@@ -86,7 +88,7 @@ and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and 
 
 and (g.team_score,g.opponent_score)=(0,0)
 
-order by date,team asc;
+order by date,event,team asc;
 
 copy
 (
@@ -94,6 +96,8 @@ select
 
 g.time_label::date as date,
 
+g.events_label as event,
+
 (case when g.venue_country=t1.country_name then 'home'
       when g.venue_country=t2.country_name then 'away'
       when g.venue_country is null then 'neutral'
@@ -174,7 +178,7 @@ and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and 
 
 and (g.team_score,g.opponent_score)=(0,0)
 
-order by date,team asc
+order by date,event,team asc
 ) to '/tmp/zinb_predict.csv' csv header;
 
 commit;
