@@ -6,10 +6,13 @@ create table wr.results (
 	game_id		      integer,
 	year		      integer,
 	game_date	      date,
+	country		      text,
 	team_name	      text,
 	team_id		      integer,
+	team_country	      text,
 	opponent_name	      text,
 	opponent_id	      integer,
+	opponent_country      text,
 	location_name	      text,
 	field		      text,
 	team_score	      integer,
@@ -21,8 +24,11 @@ create table wr.results (
 insert into wr.results
 (game_id,year,
  game_date,
+ country,
  team_name,team_id,
+ team_country,
  opponent_name,opponent_id,
+ opponent_country,
  field,
  team_score,opponent_score)
 (
@@ -31,6 +37,8 @@ g.match_id,
 extract(year from g.time_label),
 g.time_label::date,
 
+g.venue_country as country,
+
 --t1.country_name,
 --t1.country_id,
 --t2.country_name,
@@ -38,8 +46,11 @@ g.time_label::date,
 
 t1.team_name,
 t1.team_id,
+t1.country_name,
+
 t2.team_name,
 t2.team_id,
+t2.country_name,
 
 (case when g.venue_country=t1.country_name then 'offense_home'
       when g.venue_country=t2.country_name then 'defense_home'
@@ -76,8 +87,11 @@ and venue_country is not null
 insert into wr.results
 (game_id,year,
  game_date,
+ country,
  team_name,team_id,
+ team_country,
  opponent_name,opponent_id,
+ opponent_country,
  field,
  team_score,opponent_score)
 (
@@ -86,10 +100,15 @@ g.match_id,
 extract(year from g.time_label),
 g.time_label::date,
 
+g.venue_country as country,
+
 t2.team_name,
 t2.team_id,
+t2.country_name,
+
 t1.team_name,
 t1.team_id,
+t1.country_name,
 
 --t2.country_name,
 --t2.country_id,

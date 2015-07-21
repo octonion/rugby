@@ -3,7 +3,7 @@ begin;
 create temporary table r (
        rk	 serial,
        team 	 text,
-       team_id	 text,
+       team_id	 integer,
        str	 float,
        ofs	 float,
        dfs	 float,
@@ -14,15 +14,15 @@ insert into r
 (team,team_id,str,ofs,dfs,sos)
 (
 select
-coalesce(t.country_name,sf.team_id),
-sf.team_id::text,
+t.team_name,
+t.team_id,
 ln(sf.strength) as str,
 ln(sf.offensive) as ofs,
 ln(sf.defensive) as dfs,
 ln(sf.schedule_strength) as sos
 from wr._schedule_factors sf
-left join wr.countries t
-  on (t.country_id::text)=(sf.team_id)
+left join wr.teams t
+  on (t.team_id)=(sf.team_id)
 order by str desc);
 
 select

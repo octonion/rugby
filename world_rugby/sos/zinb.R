@@ -15,15 +15,19 @@ r.field as field,
 r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
-team_score::float as gs
---(year-2013)^2 as w
+team_score::float as gs,
+(year-2011) as w
 from wr.results r
 
 where
     r.year between 2012 and 2015
 ;")
 
-games <- fetch(query,n=-1)
+sg <- fetch(query,n=-1)
+
+dim(sg)
+
+games <- sg[rep(row.names(sg), sg$w), ]
 
 dim(games)
 
@@ -88,7 +92,7 @@ model <- gs ~ field + (1|offense) + (1|defense) + (1|game_id)
 #fit <- glmer(model, data=g, verbose=TRUE, family=poisson(link=log), weights=w)
 #fit <- glmer.nb(model, data=g)
 
-fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE) #, extra.args="-ndi 120000 -rs")
+fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE) #, extra.args="-ndi 120120 -rs")
 
 fit
 summary(fit)

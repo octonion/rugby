@@ -12,11 +12,39 @@ distinct
 r.game_id,
 r.year,
 r.field as field,
+
+--(case --when r.country in ('England','Wales','Scotland','Ireland')
+--      when r.country=r.team_country
+--      then r.country
+--      else 'Other'
+--end) as cf,
+
+--(case when r.country in ('England','Wales','Scotland','Ireland') and
+--           r.team_country in ('England','Wales','Scotland','Ireland')
+--           and not(r.country=r.team_country)
+--      then 'UK - mixed'
+--      else 'Other'
+--end) as offense_mixed,
+
+--(case when r.country in ('England','Wales','Scotland','Ireland') and
+--           r.opponent_country in ('England','Wales','Scotland','Ireland')
+--           and not(r.country=r.opponent_country)
+--      then 'UK - mixed'
+--      else 'Other'
+--end) as defense_mixed,
+
+--(case when r.country in ('England','Wales','Scotland','Ireland') and
+--           r.team_country in ('England','Wales','Scotland','Ireland')
+--      then r.country
+--      else 'Other'
+--end) as country_to,
+        
 r.team_id as team,
+r.team_name as team_name,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2011)^2 as w
+(year-2011) as w
 from wr.results r
 
 where
@@ -24,9 +52,16 @@ where
 
 ;")
 
-games <- fetch(query,n=-1)
+sg <- fetch(query,n=-1)
+
+dim(sg)
+
+games <- sg[rep(row.names(sg), sg$w), ]
 
 dim(games)
+
+#games <- as.data.frame(do.call("rbind",gw))
+#rm(sg)
 
 attach(games)
 

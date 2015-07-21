@@ -25,7 +25,7 @@ create table wr._schedule_factors (
 insert into wr._schedule_factors
 (team_id,offensive,defensive)
 (
-select o.level,o.exp_factor,d.exp_factor
+select o.level::integer,o.exp_factor,d.exp_factor
 from wr._factors o
 left outer join wr._factors d
   on (d.level,d.parameter)=(o.level,'defense')
@@ -38,8 +38,8 @@ set strength=offensive/defensive;
 ----
 
 create temporary table r (
-         team_id		text,
-         opponent_id		text,
+         team_id		integer,
+         opponent_id		integer,
 	 field_id		text,
          offensive              float,
          defensive		float,
@@ -74,7 +74,7 @@ from wr._factors f
 where (f.parameter,f.level)=('field',r.field_id);
 
 create temporary table rs (
-         team_id		text,
+         team_id		integer,
          offensive              float,
          defensive              float,
          strength               float,
