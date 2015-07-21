@@ -7,6 +7,7 @@ select
 g.time_label::date as date,
 
 g.events_label as event,
+g.venue_city as city,
 
 (case when g.venue_country=t1.country_name then 'home'
       when g.venue_country=t2.country_name then 'away'
@@ -97,6 +98,7 @@ select
 g.time_label::date as date,
 
 g.events_label as event,
+g.venue_city as city,
 
 (case when g.venue_country=t1.country_name then 'home'
       when g.venue_country=t2.country_name then 'away'
