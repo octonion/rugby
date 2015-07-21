@@ -106,7 +106,7 @@ coalesce(g.venue_city,t1.country_name||'?') as city,
 
 (case when g.venue_country=t1.country_name then 'home'
       when g.venue_country=t2.country_name then 'away'
-      when g.venue_country is null then 'homel'
+      when g.venue_country is null then 'home'
       else 'neutral' end) as site,
 
 t1.country_name as team,
