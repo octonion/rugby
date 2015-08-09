@@ -91,7 +91,7 @@ and (t2.sport_id,t2.type_id)=(1,6)
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
 
-and (g.team_score,g.opponent_score)=(0,0)
+--and (g.team_score,g.opponent_score)=(0,0)
 
 order by date,event,team asc;
 
@@ -186,7 +186,7 @@ and (t2.sport_id,t2.type_id)=(1,6)
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
 
-and (g.team_score,g.opponent_score)=(0,0)
+--and (g.team_score,g.opponent_score)=(0,0)
 
 order by date,event,team asc
 ) to '/tmp/zinb_predict.csv' csv header;
