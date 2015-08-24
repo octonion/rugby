@@ -16,11 +16,11 @@ r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2011) as w
+(year-2010) as w
 from wr.results r
 
 where
-    r.year between 2012 and 2015
+    r.year between 2011 and 2015
 ;")
 
 sg <- fetch(query,n=-1)
@@ -28,6 +28,8 @@ sg <- fetch(query,n=-1)
 dim(sg)
 
 games <- sg[rep(row.names(sg), sg$w), ]
+
+#games <- sg
 
 dim(games)
 
@@ -89,13 +91,18 @@ g$gs <- gs
 dim(g)
 
 model <- gs ~ field + (1|offense) + (1|defense) + (1|game_id)
-#fit <- glmer(model, data=g, verbose=TRUE, family=poisson(link=log), weights=w)
-#fit <- glmer.nb(model, data=g)
 
-fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE) #, extra.args="-ndi 120120 -rs")
+#fit0 <- glmmadmb(model, data=g, zeroInflation=FALSE, family="nbinom", verbose=TRUE)
+
+#fit0
+#summary(fit0)
+
+fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE)
 
 fit
 summary(fit)
+
+#anova(fit0,fit)
 #str(fit)
 
 # List of data frames
