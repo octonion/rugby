@@ -75,7 +75,7 @@ end
       match_id = match["matchId"].to_i rescue nil
       description = match["description"] rescue nil
     
-      venue_id = match["venue"]["id"] rescue nil
+      venue_id = match["venue"]["id"].to_i rescue nil
       venue_name = match["venue"]["name"] rescue nil
       venue_city = match["venue"]["city"] rescue nil
       venue_country = match["venue"]["country"] rescue nil
@@ -84,24 +84,24 @@ end
       time_gmtoffset = match["time"]["millis"] rescue nil
       time_label = match["time"]["label"] rescue nil
 
-      attendance = match["attendance"] rescue nil
+      attendance = match["attendance"].to_i rescue nil
 
-      team_id = match["teams"][0]["id"] rescue nil
+      team_id = match["teams"][0]["id"].to_i rescue nil
       team_name = match["teams"][0]["name"] rescue nil
       team_abbr = match["teams"][0]["abbreviation"] rescue nil
 
-      opponent_id = match["teams"][1]["id"] rescue nil
+      opponent_id = match["teams"][1]["id"].to_i rescue nil
       opponent_name = match["teams"][1]["name"] rescue nil
       opponent_abbr = match["teams"][1]["abbreviation"] rescue nil
 
-      team_score = match["scores"][0] rescue nil
-      opponent_score = match["scores"][1] rescue nil
+      team_score = match["scores"][0].to_i rescue nil
+      opponent_score = match["scores"][1].to_i rescue nil
 
       status = match["status"] rescue nil
 
       outcome = match["outcome"] rescue nil
     
-      events_id = match["events"][0]["id"] rescue nil
+      events_id = match["events"][0]["id"].to_i rescue nil
       events_label = match["events"][0]["label"] rescue nil
       events_sport = match["events"][0]["sport"] rescue nil
       events_start_millis = match["events"][0]["start"]["millis"] rescue nil
