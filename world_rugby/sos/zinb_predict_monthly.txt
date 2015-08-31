@@ -1,32 +1,36 @@
 BEGIN
 SET
-    date    |           event           |     city     |  site   |       team       | e_p  |    opponent     | e_p  
-------------+---------------------------+--------------+---------+------------------+------+-----------------+------
- 2015-08-26 | 2015 Oceania Rugby Cup    | Port Moresby | neutral | Tahiti           | 17.9 | Solomon Islands | 20.3
- 2015-08-29 | 2015 Men's Internationals | Dublin       | home    | Ireland          | 26.2 | Wales           | 16.3
- 2015-08-29 | 2015 Men's Internationals | Japan?       | home    | Japan            | 42.9 | Uruguay         | 11.7
- 2015-08-29 | 2015 Men's Internationals | Edinburgh    | home    | Scotland         | 28.1 | Italy           | 16.7
- 2015-08-30 | 2015 Oceania Rugby Cup    | Port Moresby | home    | Papua New Guinea | 39.4 | Solomon Islands | 26.7
- 2015-09-02 | 2015 Men's Internationals | Hersham      | neutral | Canada           | 20.4 | Georgia         | 19.5
- 2015-09-05 | 2015 Men's Internationals | London       | home    | England          | 23.5 | Ireland         | 19.1
- 2015-09-05 | 2015 Men's Internationals | St Denis     | home    | France           | 27.2 | Scotland        | 14.9
- 2015-09-05 | 2015 Men's Internationals | Gloucester   | neutral | Japan            | 26.1 | Georgia         | 18.9
- 2015-09-05 | 2015 Men's Internationals | Romania?     | home    | Romania          | 15.0 | Tonga           | 25.9
- 2015-09-05 | 2015 Men's Internationals | Chicago      | home    | United States    | 13.2 | Australia       | 41.3
- 2015-09-05 | 2015 Men's Internationals | Cardiff      | home    | Wales            | 37.4 | Italy           | 12.8
- 2015-09-06 | 2015 Men's Internationals | Twickenham   | neutral | Canada           | 17.8 | Fiji            | 32.3
- 2015-09-18 | Rugby World Cup 2015      | London       | home    | England          | 40.2 | Fiji            | 14.9
- 2015-09-19 | Rugby World Cup 2015      | London       | neutral | France           | 30.0 | Italy           | 16.1
- 2015-09-19 | Rugby World Cup 2015      | Cardiff      | neutral | Ireland          | 41.4 | Canada          | 10.4
- 2015-09-19 | Rugby World Cup 2015      | Brighton     | neutral | South Africa     | 42.9 | Japan           | 13.7
- 2015-09-19 | Rugby World Cup 2015      | Gloucester   | neutral | Tonga            | 29.1 | Georgia         | 16.6
- 2015-09-20 | Rugby World Cup 2015      | London       | neutral | New Zealand      | 45.6 | Argentina       | 17.0
- 2015-09-20 | Rugby World Cup 2015      | Brighton     | neutral | Samoa            | 32.0 | United States   | 15.9
- 2015-09-20 | Rugby World Cup 2015      | Cardiff      | home    | Wales            | 61.5 | Uruguay         |  7.0
- 2015-09-23 | Rugby World Cup 2015      | Cardiff      | neutral | Australia        | 37.6 | Fiji            | 19.2
- 2015-09-23 | Rugby World Cup 2015      | London       | neutral | France           | 34.3 | Romania         | 10.0
- 2015-09-23 | Rugby World Cup 2015      | Gloucester   | neutral | Scotland         | 27.3 | Japan           | 19.8
-(24 rows)
+    date    |           event           |    city    |  site   |     team      | e_p  |   opponent    | e_p  
+------------+---------------------------+------------+---------+---------------+------+---------------+------
+ 2015-09-02 | 2015 Men's Internationals | Hersham    | neutral | Canada        | 17.5 | Georgia       | 17.7
+ 2015-09-05 | 2015 Men's Internationals | London     | home    | England       | 20.4 | Ireland       | 16.0
+ 2015-09-05 | 2015 Men's Internationals | St Denis   | home    | France        | 22.9 | Scotland      | 13.2
+ 2015-09-05 | 2015 Men's Internationals | Gloucester | neutral | Japan         | 22.2 | Georgia       | 16.3
+ 2015-09-05 | 2015 Men's Internationals | Romania?   | home    | Romania       | 13.6 | Tonga         | 21.2
+ 2015-09-05 | 2015 Men's Internationals | Chicago    | home    | United States | 12.4 | Australia     | 34.9
+ 2015-09-05 | 2015 Men's Internationals | Cardiff    | home    | Wales         | 32.4 | Italy         | 10.4
+ 2015-09-06 | 2015 Men's Internationals | Twickenham | neutral | Canada        | 16.1 | Fiji          | 29.5
+ 2015-09-18 | Rugby World Cup 2015      | London     | home    | England       | 34.9 | Fiji          | 13.3
+ 2015-09-19 | Rugby World Cup 2015      | London     | neutral | France        | 26.5 | Italy         | 13.2
+ 2015-09-19 | Rugby World Cup 2015      | Cardiff    | neutral | Ireland       | 35.7 | Canada        |  9.4
+ 2015-09-19 | Rugby World Cup 2015      | Brighton   | neutral | South Africa  | 36.0 | Japan         | 11.8
+ 2015-09-19 | Rugby World Cup 2015      | Gloucester | neutral | Tonga         | 24.4 | Georgia       | 15.0
+ 2015-09-20 | Rugby World Cup 2015      | London     | neutral | New Zealand   | 39.3 | Argentina     | 14.6
+ 2015-09-20 | Rugby World Cup 2015      | Brighton   | neutral | Samoa         | 28.2 | United States | 15.6
+ 2015-09-20 | Rugby World Cup 2015      | Cardiff    | home    | Wales         | 51.4 | Uruguay       |  6.1
+ 2015-09-23 | Rugby World Cup 2015      | Cardiff    | neutral | Australia     | 32.7 | Fiji          | 17.2
+ 2015-09-23 | Rugby World Cup 2015      | London     | neutral | France        | 28.2 | Romania       |  8.7
+ 2015-09-23 | Rugby World Cup 2015      | Gloucester | neutral | Scotland      | 24.2 | Japan         | 16.9
+ 2015-09-24 | Rugby World Cup 2015      | London     | neutral | New Zealand   | 94.5 | Namibia       |  7.9
+ 2015-09-25 | Rugby World Cup 2015      | Gloucester | neutral | Argentina     | 28.0 | Georgia       | 13.9
+ 2015-09-26 | Rugby World Cup 2015      | London     | home    | England       | 22.1 | Wales         | 15.0
+ 2015-09-26 | Rugby World Cup 2015      | Leeds      | neutral | Italy         | 22.3 | Canada        | 16.7
+ 2015-09-26 | Rugby World Cup 2015      | Birmingham | neutral | South Africa  | 31.1 | Samoa         | 13.0
+ 2015-09-27 | Rugby World Cup 2015      | Birmingham | neutral | Australia     | 53.8 | Uruguay       |  7.7
+ 2015-09-27 | Rugby World Cup 2015      | London     | neutral | Ireland       | 34.1 | Romania       |  7.5
+ 2015-09-27 | Rugby World Cup 2015      | Leeds      | neutral | Scotland      | 28.5 | United States | 14.0
+ 2015-09-29 | Rugby World Cup 2015      | Exeter     | neutral | Tonga         | 49.2 | Namibia       | 13.7
+(28 rows)
 
-COPY 24
+COPY 28
 COMMIT
