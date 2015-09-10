@@ -66,7 +66,7 @@ join wr.teams t1
 join wr.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2012 and 2015
+    extract(year from g.time_label) between 2008 and 2015
     
 and t1.sport_id=1
 and t2.sport_id=1
@@ -129,7 +129,7 @@ join wr.teams t1
 join wr.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2012 and 2015
+    extract(year from g.time_label) between 2008 and 2015
     
 --and (t1.sport_id,t1.type_id)=(1,6)
 --and (t2.sport_id,t2.type_id)=(1,6)

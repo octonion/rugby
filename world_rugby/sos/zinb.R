@@ -16,11 +16,32 @@ r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2010) as w
+(year-2011) as w
 from wr.results r
 
 where
-    r.year between 2011 and 2015
+    r.year between 2012 and 2015
+
+and r.team_id in
+(
+select
+team_id
+from wr.results
+where year between 2012 and 2015
+group by team_id
+having count(*)>2
+)
+
+and r.opponent_id in
+(
+select
+team_id
+from wr.results
+where year between 2012 and 2015
+group by team_id
+having count(*)>2
+)
+
 ;")
 
 sg <- fetch(query,n=-1)
