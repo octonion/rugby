@@ -121,6 +121,7 @@ detach(games)
 dim(g)
 
 model <- gs ~ field+(1|offense)+(1|defense)+(1|game_id)
+#model <- gs ~ field+offense+defense+(1|game_id)
 fit <- glmer(model, data=g, verbose=TRUE, family=poisson(link=log), weights=w)
 
 fit
