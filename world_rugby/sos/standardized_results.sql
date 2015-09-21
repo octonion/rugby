@@ -55,7 +55,7 @@ t2.country_name,
 (case when g.venue_country=t1.country_name then 'offense_home'
       when g.venue_country=t2.country_name then 'defense_home'
       when g.venue_country is null then 'neutral'
-      --when g.venue_country is null then 'offense_home'
+      when g.venue_country is null then 'offense_home'
       else 'neutral' end) as field,
 g.team_score,
 g.opponent_score
@@ -81,7 +81,7 @@ and g.opponent_score is not null
 
 and not(g.team_score,g.opponent_score)=(0,0)
 
-and venue_country is not null
+--and venue_country is not null
 );
 
 insert into wr.results
@@ -117,7 +117,7 @@ t1.country_name,
 (case when g.venue_country=t1.country_name then 'defense_home'
       when g.venue_country=t2.country_name then 'offense_home'
       when g.venue_country is null then 'neutral'
-      --when g.venue_country is null then 'defense_home'      
+      when g.venue_country is null then 'defense_home'      
       else 'neutral' end) as field,
       
 g.opponent_score,
@@ -147,7 +147,7 @@ and g.opponent_score is not null
 
 and not(g.team_score,g.opponent_score)=(0,0)
 
-and venue_country is not null
+--and venue_country is not null
 );
 
 commit;
