@@ -1,37 +1,3 @@
 BEGIN
 SET
-    date    |                 event                  |        city         |  site   |      team      | e_p  |        opponent        | e_p  
-------------+----------------------------------------+---------------------+---------+----------------+------+------------------------+------
- 2015-10-02 | Rugby World Cup 2015                   | Cardiff             | neutral | New Zealand    | 42.1 | Georgia                |  8.1
- 2015-10-03 | 2016 European Nations Cup, Division 2D | Bulgaria?           | home    | Bulgaria       | 18.5 | Norway                 | 24.3
- 2015-10-03 | 2016 European Nations Cup, Division 2D | Finland?            | home    | Finland        | 16.4 | Bosnia and Herzegovina | 25.0
- 2015-10-03 | Rugby World Cup 2015                   | London              | home    | England        | 22.6 | Australia              | 17.7
- 2015-10-03 | Rugby World Cup 2015                   | Milton Keynes       | neutral | Samoa          | 22.2 | Japan                  | 19.4
- 2015-10-03 | Rugby World Cup 2015                   | Newcastle upon Tyne | neutral | South Africa   | 26.5 | Scotland               | 13.5
- 2015-10-04 | Rugby World Cup 2015                   | Leicester           | neutral | Argentina      | 26.2 | Tonga                  | 17.7
- 2015-10-04 | Rugby World Cup 2015                   | London              | neutral | Ireland        | 30.7 | Italy                  | 10.4
- 2015-10-06 | Rugby World Cup 2015                   | Leicester           | neutral | Canada         | 16.7 | Romania                | 15.7
- 2015-10-06 | Rugby World Cup 2015                   | Milton Keynes       | neutral | Fiji           | 38.8 | Uruguay                | 10.8
- 2015-10-07 | Rugby World Cup 2015                   | Exeter              | neutral | Namibia        | 16.2 | Georgia                | 28.0
- 2015-10-07 | Rugby World Cup 2015                   | London              | neutral | South Africa   | 42.4 | United States          |  9.5
- 2015-10-09 | Rugby World Cup 2015                   | Newcastle upon Tyne | neutral | New Zealand    | 41.1 | Tonga                  | 11.5
- 2015-10-10 | 2016 European Nations Cup, Division 1B | Ukraine?            | home    | Ukraine        | 16.2 | Belgium                | 23.6
- 2015-10-10 | 2016 European Nations Cup, Division 2C | Denmark?            | home    | Denmark        | 16.8 | Austria                | 13.8
- 2015-10-10 | Rugby World Cup 2015                   | London              | neutral | Australia      | 20.6 | Wales                  | 17.9
- 2015-10-10 | Rugby World Cup 2015                   | Manchester          | home    | England        | 56.0 | Uruguay                |  6.0
- 2015-10-10 | Rugby World Cup 2015                   | Newcastle upon Tyne | neutral | Samoa          | 16.6 | Scotland               | 22.2
- 2015-10-11 | Rugby World Cup 2015                   | Leicester           | neutral | Argentina      | 49.8 | Namibia                | 13.5
- 2015-10-11 | Rugby World Cup 2015                   | Cardiff             | neutral | France         | 14.1 | Ireland                | 20.5
- 2015-10-11 | Rugby World Cup 2015                   | Exeter              | neutral | Italy          | 20.0 | Romania                | 13.1
- 2015-10-11 | Rugby World Cup 2015                   | Gloucester          | neutral | United States  | 17.4 | Japan                  | 25.8
- 2015-10-17 | 2016 European Nations Cup, Division 1B | Ukraine?            | home    | Ukraine        | 21.5 | Poland                 | 16.0
- 2015-10-24 | 2016 European Nations Cup, Division 2A | Czech Republic?     | home    | Czech Republic | 22.0 | Switzerland            | 16.7
- 2015-10-24 | 2016 European Nations Cup, Division 2B | Hungary?            | home    | Hungary        | 15.4 | Lithuania              | 27.9
- 2015-10-24 | 2016 European Nations Cup, Division 2C | Austria?            | home    | Austria        | 12.9 | Luxembourg             | 13.3
- 2015-10-24 | 2016 European Nations Cup, Division 2D | Bulgaria?           | home    | Bulgaria       | 24.2 | Finland                | 24.5
- 2015-10-31 | 2016 European Nations Cup, Division 2B | Latvia?             | home    | Latvia         | 18.4 | Hungary                | 15.1
- 2015-10-31 | 2016 European Nations Cup, Division 2B | Lithuania?          | home    | Lithuania      | 32.1 | Andorra                |  9.9
-(29 rows)
-
-COPY 29
-COMMIT
+ROLLBACK
