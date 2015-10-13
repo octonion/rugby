@@ -29,7 +29,7 @@ team_id
 from wr.results
 where year between 2012 and 2015
 group by team_id
-having count(*)>13
+having count(*)>15
 )
 
 and r.opponent_id in
@@ -39,7 +39,7 @@ team_id
 from wr.results
 where year between 2012 and 2015
 group by team_id
-having count(*)>13
+having count(*)>15
 )
 
 ;")

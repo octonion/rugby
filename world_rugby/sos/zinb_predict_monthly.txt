@@ -1,25 +1,17 @@
 BEGIN
 SET
-    date    |                 event                  |      city       |  site   |      team      | e_p  |       opponent       | e_p  
-------------+----------------------------------------+-----------------+---------+----------------+------+----------------------+------
- 2015-10-11 | Rugby World Cup 2015                   | Leicester       | neutral | Argentina      | 46.7 | Namibia              | 12.7
- 2015-10-11 | Rugby World Cup 2015                   | Cardiff         | neutral | France         | 13.8 | Ireland              | 19.8
- 2015-10-11 | Rugby World Cup 2015                   | Exeter          | neutral | Italy          | 19.5 | Romania              | 12.7
- 2015-10-11 | Rugby World Cup 2015                   | Gloucester      | neutral | United States  | 16.5 | Japan                | 26.0
- 2015-10-17 | 2016 European Nations Cup, Division 1B | Ukraine?        | home    | Ukraine        | 21.1 | Poland               | 15.8
- 2015-10-17 | Rugby World Cup 2015                   | London          | neutral | South Africa   | 20.8 | Wales                | 15.7
- 2015-10-18 | Rugby World Cup 2015                   | London          | neutral | Australia      | 26.9 | Scotland             | 14.1
- 2015-10-24 | 2016 European Nations Cup, Division 2A | Czech Republic? | home    | Czech Republic | 21.8 | Switzerland          | 16.5
- 2015-10-24 | 2016 European Nations Cup, Division 2B | Hungary?        | home    | Hungary        | 15.3 | Lithuania            | 27.1
- 2015-10-24 | 2016 European Nations Cup, Division 2C | Austria?        | home    | Austria        | 13.8 | Luxembourg           | 13.4
- 2015-10-24 | 2016 European Nations Cup, Division 2D | Bulgaria?       | home    | Bulgaria       | 23.4 | Finland              | 21.7
- 2015-10-31 | 2016 European Nations Cup, Division 2B | Latvia?         | home    | Latvia         | 17.9 | Hungary              | 15.0
- 2015-10-31 | 2016 European Nations Cup, Division 2B | Lithuania?      | home    | Lithuania      | 31.6 | Andorra              |  9.7
- 2015-11-07 | 2016 European Nations Cup, Division 1B | Sweden?         | home    | Sweden         | 17.0 | Moldova, Republic of | 34.0
- 2015-11-07 | 2016 European Nations Cup, Division 2A | Israel?         | home    | Israel         | 20.0 | Croatia              | 21.0
- 2015-11-07 | 2016 European Nations Cup, Division 2B | Cyprus?         | home    | Cyprus         | 28.3 | Latvia               | 12.8
- 2015-11-07 | 2016 European Nations Cup, Division 2C | Serbia?         | home    | Serbia         | 21.4 | Slovenia             | 18.0
-(17 rows)
+    date    |                 event                  |   city    |  site   |     team     | e_p  |       opponent       | e_p  
+------------+----------------------------------------+-----------+---------+--------------+------+----------------------+------
+ 2015-10-17 | 2016 European Nations Cup, Division 1B | Ukraine?  | home    | Ukraine      | 21.4 | Poland               | 15.1
+ 2015-10-17 | Rugby World Cup 2015                   | Cardiff   | neutral | New Zealand  | 28.6 | France               | 14.0
+ 2015-10-17 | Rugby World Cup 2015                   | London    | neutral | South Africa | 21.4 | Wales                | 16.3
+ 2015-10-18 | Rugby World Cup 2015                   | London    | neutral | Australia    | 27.7 | Scotland             | 14.6
+ 2015-10-18 | Rugby World Cup 2015                   | Cardiff   | neutral | Ireland      | 25.6 | Argentina            | 14.7
+ 2015-10-24 | 2016 European Nations Cup, Division 2C | Austria?  | home    | Austria      | 13.2 | Luxembourg           | 13.2
+ 2015-10-24 | 2016 European Nations Cup, Division 2D | Bulgaria? | home    | Bulgaria     | 27.3 | Finland              | 21.9
+ 2015-11-07 | 2016 European Nations Cup, Division 1B | Sweden?   | home    | Sweden       | 17.3 | Moldova, Republic of | 42.7
+ 2015-11-07 | 2016 European Nations Cup, Division 2A | Israel?   | home    | Israel       | 25.4 | Croatia              | 27.3
+(9 rows)
 
-COPY 17
+COPY 9
 COMMIT
