@@ -8,6 +8,12 @@ con <- dbConnect(drv,host="localhost",port="5432",dbname="rugby")
 
 query <- dbSendQuery(con, "
 select
+
+*
+
+from
+(
+select
 distinct
 r.game_id,
 r.year,
@@ -16,33 +22,34 @@ r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2011) as w
+(year-2012) as w
 from wr.results r
 
 where
-    r.year between 2012 and 2015
+    r.year between 2013 and 2015
 
-and r.team_id in
-(
-select
-team_id
-from wr.results
-where year between 2012 and 2015
-group by team_id
-having count(*)>17
-)
+--and r.team_id in
+--(
+--select
+--team_id
+--from wr.results
+--where year between 2012 and 2015
+--group by team_id
+--having count(*)>9
+--)
 
-and r.opponent_id in
-(
-select
-team_id
-from wr.results
-where year between 2012 and 2015
-group by team_id
-having count(*)>17
+--and r.opponent_id in
+--(
+--select
+--team_id
+--from wr.results
+--where year between 2012 and 2015
+--group by team_id
+--having count(*)>9
+--)
+) as r
 
 order by random()
-)
 
 ;")
 
