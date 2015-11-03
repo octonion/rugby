@@ -1,64 +1,64 @@
-[1] 1516    7
-[1] 3004    7
+[1] 1524    7
+[1] 3028    7
 [1] TRUE
-[1] 3004    4
+[1] 3028    4
 
 GLMM's in R powered by AD Model Builder:
 
   Family: nbinom 
-  alpha = 9.7316 
+  alpha = 9.6633 
   link = log 
-  Zero inflation: p = 0.025121 
+  Zero inflation: p = 0.027458 
 
 Fixed effects:
-  Log-likelihood: -11717.3 
-  AIC: 23450.6 
+  Log-likelihood: -11625.4 
+  AIC: 23266.8 
   Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id) 
       (Intercept) fielddefense_home fieldoffense_home 
-       2.97031799       -0.05462439        0.06394668 
+       2.96530606       -0.04066344        0.06644095 
 
 Random effects:
 Structure: Diagonal matrix
 Group=offense
             Variance StdDev
-(Intercept)   0.3363 0.5799
+(Intercept)  0.07904 0.2811
 Group=defense
             Variance StdDev
-(Intercept)   0.3225 0.5679
+(Intercept)   0.1185 0.3443
 Group=game_id
             Variance StdDev
-(Intercept)    1.017  1.008
+(Intercept)    0.292 0.5404
 
-Number of observations: total=3004, offense=129, defense=129, game_id=758
+Number of observations: total=3028, offense=129, defense=129, game_id=762
 
 Call:
 glmmadmb(formula = model, data = g, family = "nbinom", zeroInflation = TRUE, 
     verbose = TRUE)
 
-AIC: 23450.6 
+AIC: 23266.8 
 
 Coefficients:
                   Estimate Std. Error z value Pr(>|z|)    
-(Intercept)         2.9703     0.1038   28.60   <2e-16 ***
-fielddefense_home  -0.0546     0.0936   -0.58     0.56    
-fieldoffense_home   0.0639     0.0934    0.68     0.49    
+(Intercept)         2.9653     0.0628   47.21   <2e-16 ***
+fielddefense_home  -0.0407     0.0538   -0.76     0.45    
+fieldoffense_home   0.0664     0.0533    1.25     0.21    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Number of observations: total=3004, offense=129, defense=129, game_id=758 
+Number of observations: total=3028, offense=129, defense=129, game_id=762 
 Random effect variance(s):
 Group=offense
             Variance StdDev
-(Intercept)   0.3363 0.5799
+(Intercept)  0.07904 0.2811
 Group=defense
             Variance StdDev
-(Intercept)   0.3225 0.5679
+(Intercept)   0.1185 0.3443
 Group=game_id
             Variance StdDev
-(Intercept)    1.017  1.008
+(Intercept)    0.292 0.5404
 
-Negative binomial dispersion parameter: 9.7316 (std. err.: 0.55523)
-Zero-inflation: 0.025121  (std. err.:  0.0032097 )
+Negative binomial dispersion parameter: 9.6633 (std. err.: 0.69462)
+Zero-inflation: 0.027458  (std. err.:  0.0032489 )
 
-Log-likelihood: -11717.3 
+Log-likelihood: -11625.4 
 [1] TRUE
