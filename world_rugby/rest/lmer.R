@@ -1,6 +1,6 @@
-sink("diagnostics/zinb.txt")
+sink("diagnostics/rest.txt")
 
-library(glmmADMB)
+library(lme4)
 library(RPostgreSQL)
 
 drv <- dbDriver("PostgreSQL")
@@ -8,34 +8,54 @@ con <- dbConnect(drv,host="localhost",port="5432",dbname="rugby")
 
 query <- dbSendQuery(con, "
 select
-
-*
-
-from
-(
-select
 distinct
 r.game_id,
 r.year,
 r.field as field,
+        
 r.team_id as team,
+r.team_name as team_name,
 r.opponent_id as opponent,
---r.game_length as game_length,
-team_score::float as gs,
-(year-2012) as w
+
+r.team_score as gs,
+
+(case when r.team_rest is null then 8
+      when r.team_rest>8 then 8
+      when r.team_rest<3 then 3
+      else r.team_rest
+end) as team_rest,
+
+(case when r.opponent_rest is null then 8
+      when r.opponent_rest>8 then 8
+      when r.opponent_rest<3 then 3
+      else r.opponent_rest
+end) as opponent_rest,
+
+--(year-2007) as w
+1 as w
+
 from wr.results r
 
-where
-    r.year between 2013 and 2016
+join wr.tiers t1
+  on (t1.team_id)=(r.team_id)
+join wr.tiers t2
+  on (t2.team_id)=(r.opponent_id)
 
+--where
+--    r.year between 2008 and 2011
+
+--and r.team_rest>3
+--and r.opponent_rest>3
+
+/*
 and r.team_id in
 (
 select
 team_id
 from wr.results
-where year between 2013 and 2016
+where year between 2008 and 2011
 group by team_id
-having count(*)>11
+having count(*)>9
 )
 
 and r.opponent_id in
@@ -43,13 +63,11 @@ and r.opponent_id in
 select
 team_id
 from wr.results
-where year between 2013 and 2016
+where year between 2008 and 2011
 group by team_id
-having count(*)>11
+having count(*)>9
 )
-) as r
-
-order by random()
+*/
 
 ;")
 
@@ -59,9 +77,10 @@ dim(sg)
 
 games <- sg[rep(row.names(sg), sg$w), ]
 
-#games <- sg
-
 dim(games)
+
+#games <- as.data.frame(do.call("rbind",gw))
+#rm(sg)
 
 attach(games)
 
@@ -72,21 +91,19 @@ pll <- list()
 field <- as.factor(field)
 field <- relevel(field, ref = "neutral")
 
-#game_length <- as.factor(game_length)
+team_rest <- as.factor(team_rest)
+opponent_rest <- as.factor(opponent_rest)
 
-fp <- data.frame(field) #,game_length)
+fp <- data.frame(field,team_rest,opponent_rest)
 fpn <- names(fp)
 
 # Random parameters
 
 game_id <- as.factor(game_id)
-#contrasts(game_id) <- 'contr.sum'
 
 offense <- as.factor(team)
-#contrasts(offense) <- 'contr.sum'
 
 defense <- as.factor(opponent)
-#contrasts(defense) <- 'contr.sum'
 
 rp <- data.frame(offense,defense)
 rpn <- names(rp)
@@ -110,30 +127,26 @@ for (n in rpn) {
 # Model parameters
 
 parameter_levels <- as.data.frame(do.call("rbind",pll))
-dbWriteTable(con,c("wr","_zinb_parameter_levels"),parameter_levels,row.names=TRUE)
+dbWriteTable(con,c("wr","_parameter_levels"),parameter_levels,row.names=TRUE)
 
 g <- cbind(fp,rp)
 g$gs <- gs
-#g$w <- w
+g$w <- w
 
-#detach(games)
+detach(games)
 
 dim(g)
 
-model <- gs ~ field + (1|offense) + (1|defense) + (1|game_id)
+model0 <- gs ~ field+(1|offense)+(1|defense)+(1|game_id)
+model <- gs ~ field+team_rest+opponent_rest+(1|offense)+(1|defense)+(1|game_id)
 
-#fit0 <- glmmadmb(model, data=g, zeroInflation=FALSE, family="nbinom", verbose=TRUE)
+fit0 <- glmer(model0, data=g, verbose=TRUE, family=poisson(link=log)) #, weights=w)
+fit <- glmer(model, data=g, verbose=TRUE, family=poisson(link=log)) #, weights=w)
 
-#fit0
-#summary(fit0)
-
-fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE)
+anova(fit0,fit)
 
 fit
 summary(fit)
-
-#anova(fit0,fit)
-#str(fit)
 
 # List of data frames
 
@@ -175,11 +188,8 @@ for (n in rn) {
 
  }
 
-results <- c(results,list(data.frame(factor="pz",type="structural",level="pz",estimate=fit$pz)))
-results <- c(results,list(data.frame(factor="alpha",type="structural",level="alpha",estimate=fit$alpha)))
-
 combined <- as.data.frame(do.call("rbind",results))
 
-dbWriteTable(con,c("wr","_zinb_basic_factors"),as.data.frame(combined),row.names=TRUE)
+dbWriteTable(con,c("wr","_basic_factors"),as.data.frame(combined),row.names=TRUE)
 
 quit("no")

@@ -48,7 +48,7 @@ team_score::float as gs,
 from wr.results r
 
 where
-    r.year between 2012 and 2015
+    r.year between 2012 and 2016
 
 ;")
 

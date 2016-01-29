@@ -16,8 +16,9 @@ create table wr.results (
 	location_name	      text,
 	field		      text,
 	team_score	      integer,
-	opponent_score	      integer
-	--game_length	      text
+	opponent_score	      integer,
+	team_rest	      integer,
+	opponent_rest	      integer
 
 );
 
@@ -66,7 +67,7 @@ join wr.teams t1
 join wr.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2003 and 2016
+    extract(year from g.time_label) between 1999 and 2015
     
 and t1.sport_id=1
 and t2.sport_id=1
@@ -129,7 +130,7 @@ join wr.teams t1
 join wr.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2003 and 2016
+    extract(year from g.time_label) between 1999 and 2015
     
 --and (t1.sport_id,t1.type_id)=(1,6)
 --and (t2.sport_id,t2.type_id)=(1,6)
@@ -148,6 +149,28 @@ and g.opponent_score is not null
 and not(g.team_score,g.opponent_score)=(0,0)
 
 --and venue_country is not null
+);
+
+update wr.results
+set team_rest=
+(
+select
+min(results.game_date-p.game_date)
+from wr.results p
+where results.team_id=p.team_id
+and results.game_date>p.game_date
+group by results.game_date,results.team_id
+);
+
+update wr.results
+set opponent_rest=
+(
+select
+min(results.game_date-p.game_date)
+from wr.results p
+where results.opponent_id=p.team_id
+and results.game_date>p.game_date
+group by results.game_date,results.opponent_id
 );
 
 commit;
