@@ -22,11 +22,11 @@ r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2012) as w
+(year-2011) as w
 from wr.results r
 
 where
-    r.year between 2013 and 2016
+    r.year between 2012 and 2016
 
 and r.team_id in
 (
@@ -35,7 +35,7 @@ team_id
 from wr.results
 where year between 2013 and 2016
 group by team_id
-having count(*)>11
+having count(*)>=6
 )
 
 and r.opponent_id in
@@ -45,7 +45,7 @@ team_id
 from wr.results
 where year between 2013 and 2016
 group by team_id
-having count(*)>11
+having count(*)>=6
 )
 ) as r
 
