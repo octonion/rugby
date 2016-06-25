@@ -1,36 +1,24 @@
 BEGIN
 SET
-    date    |                  event                  |          city          |  site   |       team        | e_p  |      opponent      | e_p  
-------------+-----------------------------------------+------------------------+---------+-------------------+------+--------------------+------
- 2016-06-18 | 2016 England Tour (AUS)                 | Melbourne              | home    | Australia         | 22.5 | England            | 18.7
- 2016-06-18 | 2016 Georgia Tour (Sam/Ton/Fiji)        | Suva                   | neutral | Georgia           | 18.0 | Tonga              | 18.1
- 2016-06-18 | 2016 Ireland Tour (RSA)                 | Johannesburg           | home    | South Africa      | 22.1 | Ireland            | 16.0
- 2016-06-18 | 2016 Men's Internationals               | Calgary                | home    | Canada            | 33.5 | Russian Federation | 15.5
- 2016-06-18 | 2016 Men's Internationals               | San Jose, California   | home    | United States     | 20.5 | Italy              | 21.9
- 2016-06-18 | 2016 Rugby Americas North Championship  | Grand Cayman           | home    | Cayman Islands    | 19.5 | Bermuda            |  8.6
- 2016-06-18 | 2016 Rugby Americas North Championship  | Jamaica?               | home    | Jamaica           | 22.6 | Barbados           |  9.3
- 2016-06-18 | 2016 Rugby Americas North Championship  | Port of Spain          | home    | Trinidad & Tobago | 21.0 | Guyana             | 10.1
- 2016-06-18 | 2016 Scotland Tour (JPN)                | Japan?                 | home    | Japan             | 18.6 | Scotland           | 21.2
- 2016-06-18 | World Rugby Nations Cup 2016            | Bucuresti              | neutral | Uruguay           | 19.5 | Spain              | 22.4
- 2016-06-19 | 2016 Africa Cup, Division 1B            | Antananarivo           | home    | Madagascar        | 17.5 | Senegal            | 26.2
- 2016-06-19 | 2016 Men's Internationals               | Tucumán                | home    | Argentina         | 21.4 | France             | 19.2
- 2016-06-24 | 2016 Georgia Tour (Sam/Ton/Fiji)        | Suva                   | home    | Fiji              | 23.5 | Georgia            | 15.3
- 2016-06-25 | 2016 England Tour (AUS)                 | Sydney                 | home    | Australia         | 22.5 | England            | 18.7
- 2016-06-25 | 2016 Ireland Tour (RSA)                 | Port Elizabeth         | home    | South Africa      | 22.1 | Ireland            | 16.0
- 2016-06-25 | 2016 Men's Internationals               | Tucumán                | home    | Argentina         | 21.4 | France             | 19.2
- 2016-06-25 | 2016 Scotland Tour (JPN)                | Japan?                 | home    | Japan             | 18.6 | Scotland           | 21.2
- 2016-06-25 | 2016 Wales Tour (NZL)                   | Dunedin                | home    | New Zealand       | 30.9 | Wales              | 14.0
- 2016-06-25 | World Rugby Pacific Nations Cup 2016    | Apia                   | home    | Samoa             | 23.2 | Tonga              | 18.6
- 2016-06-25 |                                         | Sacramento, California | home    | United States     | 35.0 | Russian Federation | 15.4
- 2016-06-26 | 2016 Men's Internationals               | Toronto                | home    | Canada            | 19.6 | Italy              | 22.1
- 2016-07-02 | 2016 Africa Cup, Division 1A            | Uganda?                | home    | Uganda            | 10.4 | Namibia            | 45.5
- 2016-07-02 | 2016 Rugby Americas North Championship  | Mexico?                | home    | Mexico            | 36.0 | Cayman Islands     | 10.4
- 2016-07-09 | 2016 Africa Cup, Division 1A            | Harare                 | home    | Zimbabwe          | 18.3 | Kenya              | 26.0
- 2016-07-10 | 2016 Africa Cup, Division 1C            | Casablanca             | away    | Mauritius         | 11.5 | Morocco            | 59.5
- 2016-07-13 | 2016 Africa Cup, Division 1C            | Casablanca             | neutral | Nigeria           | 22.1 | Mauritius          | 26.4
- 2016-07-16 | 2016 Africa Cup, Division 1A            | Namibia?               | home    | Namibia           | 34.6 | Kenya              | 16.5
- 2016-07-16 | 2016 Africa Cup, Division 1C            | Casablanca             | home    | Morocco           | 52.7 | Nigeria            |  8.5
-(28 rows)
+    date    |                  event                  |          city          |  site   |     team      | e_p  |      opponent      | e_p  
+------------+-----------------------------------------+------------------------+---------+---------------+------+--------------------+------
+ 2016-06-25 | 2016 England Tour (AUS)                 | Sydney                 | home    | Australia     | 22.5 | England            | 18.7
+ 2016-06-25 | 2016 Ireland Tour (RSA)                 | Port Elizabeth         | home    | South Africa  | 22.1 | Ireland            | 16.0
+ 2016-06-25 | 2016 Men's Internationals               | Tucumán                | home    | Argentina     | 21.4 | France             | 19.2
+ 2016-06-25 | 2016 Scotland Tour (JPN)                | Japan?                 | home    | Japan         | 18.6 | Scotland           | 21.2
+ 2016-06-25 | 2016 Wales Tour (NZL)                   | Dunedin                | home    | New Zealand   | 30.9 | Wales              | 14.0
+ 2016-06-25 | World Rugby Pacific Nations Cup 2016    | Apia                   | home    | Samoa         | 23.2 | Tonga              | 18.6
+ 2016-06-25 |                                         | Sacramento, California | home    | United States | 35.0 | Russian Federation | 15.4
+ 2016-06-26 | 2016 Men's Internationals               | Toronto                | home    | Canada        | 19.6 | Italy              | 22.1
+ 2016-07-02 | 2016 Africa Cup, Division 1A            | Uganda?                | home    | Uganda        | 10.4 | Namibia            | 45.5
+ 2016-07-02 | 2016 Rugby Americas North Championship  | Mexico?                | home    | Mexico        | 36.0 | Cayman Islands     | 10.4
+ 2016-07-09 | 2016 Africa Cup, Division 1A            | Harare                 | home    | Zimbabwe      | 18.3 | Kenya              | 26.0
+ 2016-07-10 | 2016 Africa Cup, Division 1C            | Casablanca             | away    | Mauritius     | 11.5 | Morocco            | 59.5
+ 2016-07-13 | 2016 Africa Cup, Division 1C            | Casablanca             | neutral | Nigeria       | 22.1 | Mauritius          | 26.4
+ 2016-07-16 | 2016 Africa Cup, Division 1A            | Namibia?               | home    | Namibia       | 34.6 | Kenya              | 16.5
+ 2016-07-16 | 2016 Africa Cup, Division 1C            | Casablanca             | home    | Morocco       | 52.7 | Nigeria            |  8.5
+ 2016-07-23 | 2016 Africa Cup, Division 1A            | Zimbabwe?              | home    | Zimbabwe      | 30.6 | Uganda             | 12.9
+(16 rows)
 
-COPY 28
+COPY 16
 COMMIT
