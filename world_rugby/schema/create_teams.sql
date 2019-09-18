@@ -46,9 +46,9 @@ where json_typeof(country_json)='array'
 );
 
 update t
-set team_id = (team_json->>'id')::integer,
-    sport_id = (team_json->>'sport')::integer,
-    type_id = (team_json->>'type')::integer,
+set team_id = round((team_json->>'id')::real),
+    sport_id = round((team_json->>'sport')::real),
+    type_id = round((team_json->>'type')::real),
     names_json = (team_json->>'naming')::json;
 
 insert into wr.teams
