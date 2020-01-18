@@ -4,7 +4,7 @@ library(lme4)
 library(RPostgreSQL)
 
 drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv,host="localhost",port="5432",dbname="rugby")
+con <- dbConnect(drv, dbname="rugby")
 
 query <- dbSendQuery(con, "
 select
@@ -48,7 +48,7 @@ team_score::float as gs,
 from wr.results r
 
 where
-    r.year between 2016 and 2019
+    r.year between 2016 and 2020
 
 ;")
 

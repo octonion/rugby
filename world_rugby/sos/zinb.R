@@ -26,14 +26,14 @@ team_score::float as gs,
 from wr.results r
 
 where
-    r.year between 2016 and 2019
+    r.year between 2016 and 2020
 
 --and r.team_id in
 --(
 --select
 --team_id
 --from wr.results
---where year between 2013 and 2019
+--where year between 2013 and 2020
 --group by team_id
 --having count(*)>=6
 --)
@@ -43,7 +43,7 @@ where
 --select
 --team_id
 --from wr.results
---where year between 2013 and 2019
+--where year between 2013 and 2020
 --group by team_id
 --having count(*)>=6
 --)
