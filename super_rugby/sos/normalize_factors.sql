@@ -111,9 +111,9 @@ set exp_factor=exp(raw_factor);
 
 -- 'neutral' park confounded with 'none' field; set factor = 1.0 for field 'none'
 
-insert into sr._factors
-(parameter,level,type,method,raw_factor,exp_factor)
-values
-('field','neutral','fixed','ln_regression',0.0,1.0);
+--insert into sr._factors
+--(parameter,level,type,method,raw_factor,exp_factor)
+--values
+--('field','neutral','fixed','ln_regression',0.0,1.0);
 
 commit;
