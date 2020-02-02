@@ -38,19 +38,30 @@ case when g.venue_country=t1.country_name then
      else
        exp(i.estimate)*sf2.offensive*sf1.defensive
 end
-)::numeric(4,1) as e_p
+)::numeric(4,1) as e_p,
 
---skellam(exp(i.estimate)*h.offensive*o.exp_factor*v.defensive,
---        exp(i.estimate)*v.offensive*h.defensive*d.exp_factor,
---	'win')::numeric(4,3) as win,
+(
+case when g.venue_country=t1.country_name then
+       exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
+     when g.venue_country=t2.country_name then
+       exp(i.estimate)*sf1.offensive*d.exp_factor*sf2.defensive
+     when g.venue_country is null then
+       exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
+     else
+       exp(i.estimate)*sf1.offensive*sf2.defensive
+end
+-
+case when g.venue_country=t1.country_name then
+       exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
+     when g.venue_country=t2.country_name then
+       exp(i.estimate)*sf2.offensive*o.exp_factor*sf1.defensive
+     when g.venue_country is null then
+       exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
+     else
+       exp(i.estimate)*sf2.offensive*sf1.defensive
+end
+)::numeric(4,1) as e_d
 
---skellam(exp(i.estimate)*h.offensive*o.exp_factor*v.defensive,
---        exp(i.estimate)*v.offensive*h.defensive*d.exp_factor,
---	'lose')::numeric(4,3) as lose,
-
---skellam(exp(i.estimate)*h.offensive*o.exp_factor*v.defensive,
---        exp(i.estimate)*v.offensive*h.defensive*d.exp_factor,
---	'tie')::numeric(4,3) as draw
 
 from wr.games g
 
@@ -123,19 +134,29 @@ case when g.venue_country=t1.country_name then
      else
        exp(i.estimate)*sf2.offensive*sf1.defensive
 end
-)::numeric(4,1) as e_p
+)::numeric(4,1) as e_p,
 
---skellam(exp(i.estimate)*h.offensive*o.exp_factor*v.defensive,
---        exp(i.estimate)*v.offensive*h.defensive*d.exp_factor,
---	'win')::numeric(4,3) as win,
-
---skellam(exp(i.estimate)*h.offensive*o.exp_factor*v.defensive,
---        exp(i.estimate)*v.offensive*h.defensive*d.exp_factor,
---	'lose')::numeric(4,3) as lose,
-
---skellam(exp(i.estimate)*h.offensive*o.exp_factor*v.defensive,
---        exp(i.estimate)*v.offensive*h.defensive*d.exp_factor,
---	'tie')::numeric(4,3) as draw
+(
+case when g.venue_country=t1.country_name then
+       exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
+     when g.venue_country=t2.country_name then
+       exp(i.estimate)*sf1.offensive*d.exp_factor*sf2.defensive
+     when g.venue_country is null then
+       exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
+     else
+       exp(i.estimate)*sf1.offensive*sf2.defensive
+end
+-
+case when g.venue_country=t1.country_name then
+       exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
+     when g.venue_country=t2.country_name then
+       exp(i.estimate)*sf2.offensive*o.exp_factor*sf1.defensive
+     when g.venue_country is null then
+       exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
+     else
+       exp(i.estimate)*sf2.offensive*sf1.defensive
+end
+)::numeric(4,1) as e_d
 
 from wr.games g
 
