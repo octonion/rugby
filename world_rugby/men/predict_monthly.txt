@@ -1,22 +1,23 @@
 BEGIN
 SET
-    date    |             event              |        city         | site |        team        | e_p  |      opponent      | e_p  
-------------+--------------------------------+---------------------+------+--------------------+------+--------------------+------
- 2020-02-08 | 2020 Rugby Europe Championship | Brussels            | home | Belgium            | 14.7 | Russian Federation | 30.4
- 2020-02-08 | 2020 Rugby Europe Championship | Lisbon              | home | Portugal           | 14.9 | Romania            | 24.8
- 2020-02-08 | 2020 Six Nations               | Dublin              | home | Ireland            | 19.6 | Wales              | 15.3
- 2020-02-08 | 2020 Six Nations               | Edinburgh           | home | Scotland           | 18.1 | England            | 24.6
- 2020-02-09 | 2020 Rugby Europe Championship | Madrid              | home | Spain              | 13.2 | Georgia            | 17.7
- 2020-02-09 | 2020 Six Nations               | France?             | home | France             | 36.8 | Italy              | 12.3
- 2020-02-22 | 2020 Rugby Europe Championship | Georgia?            | home | Georgia            | 52.1 | Belgium            |  6.1
- 2020-02-22 | 2020 Rugby Europe Championship | Romania?            | home | Romania            | 18.3 | Spain              | 16.1
- 2020-02-22 | 2020 Rugby Europe Championship | Russian Federation? | home | Russian Federation | 30.6 | Portugal           | 13.4
- 2020-02-22 | 2020 Six Nations               | Roma                | home | Italy              | 18.0 | Scotland           | 30.3
- 2020-02-22 | 2020 Six Nations               | Cardiff             | home | Wales              | 23.0 | France             | 13.3
- 2020-02-23 | 2020 Six Nations               | London              | home | England            | 24.7 | Ireland            | 14.8
- 2020-02-29 | 2019/20 Rugby Europe Trophy    | Germany?            | home | Germany            | 43.6 | Switzerland        | 14.1
- 2020-02-29 | 2019/20 Rugby Europe Trophy    | Netherlands?        | home | Netherlands        | 32.6 | Poland             | 10.5
-(14 rows)
+    date    |             event              |        city         | site |        team        | e_p  |  opponent   | e_p  
+------------+--------------------------------+---------------------+------+--------------------+------+-------------+------
+ 2020-02-22 | 2020 Rugby Europe Championship | Georgia?            | home | Georgia            | 49.1 | Belgium     |  7.0
+ 2020-02-22 | 2020 Rugby Europe Championship | Romania?            | home | Romania            | 18.4 | Spain       | 16.2
+ 2020-02-22 | 2020 Rugby Europe Championship | Russian Federation? | home | Russian Federation | 26.3 | Portugal    | 15.3
+ 2020-02-22 | 2020 Six Nations               | Roma                | home | Italy              | 18.4 | Scotland    | 29.3
+ 2020-02-22 | 2020 Six Nations               | Cardiff             | home | Wales              | 23.7 | France      | 13.2
+ 2020-02-23 | 2020 Six Nations               | London              | home | England            | 24.3 | Ireland     | 14.5
+ 2020-02-29 | 2019/20 Rugby Europe Trophy    | Germany?            | home | Germany            | 42.3 | Switzerland | 14.9
+ 2020-02-29 | 2019/20 Rugby Europe Trophy    | Netherlands?        | home | Netherlands        | 32.6 | Poland      | 10.5
+ 2020-03-07 | 2019/20 Rugby Europe Trophy    | Netherlands?        | home | Netherlands        | 57.0 | Lithuania   |  7.9
+ 2020-03-07 | 2020 Rugby Europe Championship | Belgium?            | home | Belgium            | 13.2 | Spain       | 29.2
+ 2020-03-07 | 2020 Rugby Europe Championship | Portugal?           | home | Portugal           | 10.2 | Georgia     | 28.4
+ 2020-03-07 | 2020 Rugby Europe Championship | Russian Federation? | home | Russian Federation | 19.3 | Romania     | 19.3
+ 2020-03-07 | 2020 Six Nations               | Cardiff             | away | England            | 17.7 | Wales       | 17.9
+ 2020-03-07 | 2020 Six Nations               | Dublin              | home | Ireland            | 42.0 | Italy       | 10.9
+ 2020-03-08 | 2020 Six Nations               | Edinburgh           | home | Scotland           | 22.9 | France      | 17.7
+(15 rows)
 
-COPY 14
+COPY 15
 COMMIT

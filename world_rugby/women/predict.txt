@@ -1,26 +1,21 @@
 BEGIN
 SET
-    date    |                event                 |    city     | site |    team    | e_p  |  opponent  | e_p  |  e_d  
-------------+--------------------------------------+-------------+------+------------+------+------------+------+-------
- 2020-02-02 | 2020 Women's Six Nations             | Pau         | home | France     | 15.2 | England    | 19.8 |  -4.6
- 2020-02-02 | 2020 Women's Six Nations             | Dublin      | home | Ireland    | 21.7 | Scotland   | 10.8 |  10.9
- 2020-02-02 | 2020 Women's Six Nations             | Cardiff     | home | Wales      | 13.2 | Italy      | 15.3 |  -2.1
- 2020-02-08 | 2020 Women's Six Nations             | Limoges     | home | France     | 32.5 | Italy      |  7.2 |  25.3
- 2020-02-09 | 2020 Women's Six Nations             | Dublin      | home | Ireland    | 17.3 | Wales      | 10.3 |   7.1
- 2020-02-09 | 2020 Women's Six Nations             | Glasgow     | home | Scotland   |  6.5 | England    | 53.0 | -46.4
- 2020-02-23 | 2020 Women's Six Nations             | Doncaster   | home | England    | 45.3 | Ireland    |  6.1 |  39.1
- 2020-02-23 | 2020 Women's Six Nations             | Legnano     | home | Italy      | 23.5 | Scotland   | 11.4 |  12.1
- 2020-02-23 | 2020 Women's Six Nations             | Cardiff     | home | Wales      |  6.7 | France     | 28.8 | -22.1
- 2020-03-07 | 2020 Women's Six Nations             | Twickenham  | home | England    | 51.7 | Wales      |  5.1 |  46.6
- 2020-03-07 | 2020 Women's Six Nations             | Glasgow     | home | Scotland   |  7.1 | France     | 36.1 | -29.0
- 2020-03-08 | 2020 Women's Six Nations             | Dublin      | home | Ireland    | 16.0 | Italy      | 13.4 |   2.6
- 2020-03-14 | Asia Rugby Women’s Championship 2020 | Hong Kong?  | home | Hong Kong  |  4.7 | Kazakhstan | 19.3 | -14.6
- 2020-03-15 | 2020 Women's Six Nations             | Lille       | home | France     | 30.8 | Ireland    |  6.6 |  24.2
- 2020-03-15 | 2020 Women's Six Nations             | Padova      | home | Italy      |  8.1 | England    | 39.0 | -30.9
- 2020-03-15 | 2020 Women's Six Nations             | Cardiff     | home | Wales      | 18.0 | Scotland   | 12.4 |   5.6
- 2020-03-18 | Asia Rugby Women’s Championship 2020 | Kazakhstan? | home | Kazakhstan |  8.9 | Japan      | 12.0 |  -3.1
- 2020-03-22 | Asia Rugby Women’s Championship 2020 | Hong Kong?  | home | Hong Kong  |  6.3 | Japan      | 42.7 | -36.4
-(18 rows)
+    date    |                event                 |    city     | site |    team    | e_p  |  opponent   | e_p  |  e_d  
+------------+--------------------------------------+-------------+------+------------+------+-------------+------+-------
+ 2020-02-23 | 2020 Women's Six Nations             | Doncaster   | home | England    | 45.4 | Ireland     |  6.1 |  39.3
+ 2020-02-23 | 2020 Women's Six Nations             | Legnano     | home | Italy      | 23.8 | Scotland    | 10.9 |  12.9
+ 2020-02-23 | 2020 Women's Six Nations             | Cardiff     | home | Wales      |  6.5 | France      | 30.2 | -23.7
+ 2020-03-07 | 2020 Women's Six Nations             | Twickenham  | home | England    | 53.3 | Wales       |  4.8 |  48.6
+ 2020-03-07 | 2020 Women's Six Nations             | Glasgow     | home | Scotland   |  6.6 | France      | 37.3 | -30.7
+ 2020-03-08 | 2020 Women's Six Nations             | Dublin      | home | Ireland    | 16.6 | Italy       | 13.5 |   3.1
+ 2020-03-14 | Asia Rugby Women’s Championship 2020 | Hong Kong?  | home | Hong Kong  |  4.6 | Kazakhstan  | 19.2 | -14.6
+ 2020-03-15 | 2020 Women's Six Nations             | Lille       | home | France     | 31.1 | Ireland     |  6.9 |  24.3
+ 2020-03-15 | 2020 Women's Six Nations             | Padova      | home | Italy      |  7.7 | England     | 39.9 | -32.1
+ 2020-03-15 | 2020 Women's Six Nations             | Cardiff     | home | Wales      | 17.8 | Scotland    | 12.0 |   5.7
+ 2020-03-18 | Asia Rugby Women’s Championship 2020 | Kazakhstan? | home | Kazakhstan |  8.7 | Japan       | 12.1 |  -3.4
+ 2020-03-22 | Asia Rugby Women’s Championship 2020 | Hong Kong?  | home | Hong Kong  |  6.1 | Japan       | 43.0 | -36.9
+ 2020-05-09 | Rugby Europe Women’s Trophy 2019-20  | Sweden?     | home | Sweden     | 10.4 | Switzerland | 20.4 | -10.0
+(13 rows)
 
-COPY 18
+COPY 13
 COMMIT
