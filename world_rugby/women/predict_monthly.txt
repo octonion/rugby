@@ -1,14 +1,15 @@
 BEGIN
 SET
-    date    |          event           |    city    | site |   team   | e_p  | opponent | e_p  
-------------+--------------------------+------------+------+----------+------+----------+------
- 2020-02-23 | 2020 Women's Six Nations | Doncaster  | home | England  | 45.4 | Ireland  |  6.1
- 2020-02-23 | 2020 Women's Six Nations | Legnano    | home | Italy    | 23.8 | Scotland | 10.9
- 2020-02-23 | 2020 Women's Six Nations | Cardiff    | home | Wales    |  6.5 | France   | 30.2
- 2020-03-07 | 2020 Women's Six Nations | Twickenham | home | England  | 53.3 | Wales    |  4.8
- 2020-03-07 | 2020 Women's Six Nations | Glasgow    | home | Scotland |  6.6 | France   | 37.3
- 2020-03-08 | 2020 Women's Six Nations | Dublin     | home | Ireland  | 16.6 | Italy    | 13.5
-(6 rows)
+    date    |              event              |     city     | site |       team       | e_p  | opponent | e_p  
+------------+---------------------------------+--------------+------+------------------+------+----------+------
+ 2020-02-29 | Rugby World Cup 2021 Qualifying | Port Moresby | home | Papua New Guinea | 32.9 | Tonga    | 36.9
+ 2020-03-07 | 2020 Women's Six Nations        | Twickenham   | home | England          | 55.8 | Wales    |  4.3
+ 2020-03-07 | 2020 Women's Six Nations        | Glasgow      | home | Scotland         |  6.2 | France   | 39.4
+ 2020-03-08 | 2020 Women's Six Nations        | Dublin       | home | Ireland          | 15.6 | Italy    | 13.5
+ 2020-03-15 | 2020 Women's Six Nations        | Lille        | home | France           | 32.0 | Ireland  |  6.2
+ 2020-03-15 | 2020 Women's Six Nations        | Padova       | home | Italy            |  7.3 | England  | 40.1
+ 2020-03-15 | 2020 Women's Six Nations        | Cardiff      | home | Wales            | 17.0 | Scotland | 12.6
+(7 rows)
 
-COPY 6
+COPY 7
 COMMIT
