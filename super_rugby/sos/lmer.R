@@ -16,7 +16,7 @@ r.field as field,
 r.team_name as team,
 r.opponent_name as opponent,
 team_score::float as gs,
-(year-2019) as w
+(year-2018) as w
 from sr.results r
 
 where

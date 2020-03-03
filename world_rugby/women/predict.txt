@@ -1,19 +1,20 @@
 BEGIN
 SET
-    date    |                event                 |     city     | site |       team       | e_p  |  opponent   | e_p  |  e_d  
-------------+--------------------------------------+--------------+------+------------------+------+-------------+------+-------
- 2020-02-29 | Rugby World Cup 2021 Qualifying      | Port Moresby | home | Papua New Guinea | 32.9 | Tonga       | 36.9 |  -4.0
- 2020-03-07 | 2020 Women's Six Nations             | Twickenham   | home | England          | 55.8 | Wales       |  4.3 |  51.5
- 2020-03-07 | 2020 Women's Six Nations             | Glasgow      | home | Scotland         |  6.2 | France      | 39.4 | -33.1
- 2020-03-08 | 2020 Women's Six Nations             | Dublin       | home | Ireland          | 15.6 | Italy       | 13.5 |   2.2
- 2020-03-15 | 2020 Women's Six Nations             | Lille        | home | France           | 32.0 | Ireland     |  6.2 |  25.8
- 2020-03-15 | 2020 Women's Six Nations             | Padova       | home | Italy            |  7.3 | England     | 40.1 | -32.9
- 2020-03-15 | 2020 Women's Six Nations             | Cardiff      | home | Wales            | 17.0 | Scotland    | 12.6 |   4.4
- 2020-05-08 | Asia Rugby Women’s Championship 2020 | Hong Kong?   | home | Hong Kong        |  4.6 | Kazakhstan  | 19.3 | -14.7
- 2020-05-09 | Rugby Europe Women’s Trophy 2019-20  | Sweden?      | home | Sweden           | 10.3 | Switzerland | 20.5 | -10.2
- 2020-05-12 | Asia Rugby Women’s Championship 2020 | Kazakhstan?  | home | Kazakhstan       |  8.5 | Japan       | 12.3 |  -3.8
- 2020-05-16 | Asia Rugby Women’s Championship 2020 | Hong Kong?   | home | Hong Kong        |  6.0 | Japan       | 43.4 | -37.5
-(11 rows)
+    date    |                event                 |    city     | site |    team    | e_p  |  opponent   | e_p  |  e_d  
+------------+--------------------------------------+-------------+------+------------+------+-------------+------+-------
+ 2020-03-07 | 2020 Women's Six Nations             | Twickenham  | home | England    | 55.6 | Wales       |  4.3 |  51.3
+ 2020-03-07 | 2020 Women's Six Nations             | Glasgow     | home | Scotland   |  6.2 | France      | 39.5 | -33.3
+ 2020-03-07 | Rugby World Cup 2021 Qualifying      | Medellin    | home | Colombia   | 28.0 | Brazil      |  7.0 |  21.0
+ 2020-03-08 | 2020 Women's Six Nations             | Dublin      | home | Ireland    | 15.6 | Italy       | 13.5 |   2.1
+ 2020-03-15 | 2020 Women's Six Nations             | Lille       | home | France     | 31.9 | Ireland     |  6.3 |  25.6
+ 2020-03-15 | 2020 Women's Six Nations             | Padova      | home | Italy      |  7.3 | England     | 40.3 | -33.0
+ 2020-03-15 | 2020 Women's Six Nations             | Cardiff     | home | Wales      | 16.9 | Scotland    | 12.6 |   4.3
+ 2020-04-18 | Rugby World Cup 2021 Qualifying      | Apia        | home | Samoa      | 53.8 | Tonga       | 15.7 |  38.1
+ 2020-05-08 | Asia Rugby Women’s Championship 2020 | Hong Kong?  | home | Hong Kong  |  4.6 | Kazakhstan  | 19.3 | -14.7
+ 2020-05-09 | Rugby Europe Women’s Trophy 2019-20  | Sweden?     | home | Sweden     | 10.3 | Switzerland | 20.6 | -10.3
+ 2020-05-12 | Asia Rugby Women’s Championship 2020 | Kazakhstan? | home | Kazakhstan |  8.5 | Japan       | 12.4 |  -3.9
+ 2020-05-16 | Asia Rugby Women’s Championship 2020 | Hong Kong?  | home | Hong Kong  |  6.0 | Japan       | 43.4 | -37.5
+(12 rows)
 
-COPY 11
+COPY 12
 COMMIT
