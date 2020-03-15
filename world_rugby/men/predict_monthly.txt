@@ -1,26 +1,22 @@
 BEGIN
 SET
-    date    |                  event                  |     city     |  site   |        team        | e_p  |      opponent      | e_p  
-------------+-----------------------------------------+--------------+---------+--------------------+------+--------------------+------
- 2020-03-07 | 2019/20 Rugby Europe Trophy             | Amsterdam    | home    | Netherlands        | 52.4 | Lithuania          |  8.2
- 2020-03-07 | 2020 Rugby Europe Championship          | Brussels     | home    | Belgium            | 13.5 | Spain              | 29.5
- 2020-03-07 | 2020 Rugby Europe Championship          | Paris        | neutral | Portugal           |  9.7 | Georgia            | 31.2
- 2020-03-07 | 2020 Rugby Europe Championship          | Krasnodar    | home    | Russian Federation | 18.0 | Romania            | 20.0
- 2020-03-07 | 2020 Six Nations                        | Cardiff      | away    | England            | 18.5 | Wales              | 17.6
- 2020-03-07 | 2020 Six Nations                        | Dublin       | home    | Ireland            | 41.2 | Italy              | 10.6
- 2020-03-08 | 2020 Six Nations                        | Edinburgh    | home    | Scotland           | 22.4 | France             | 17.7
- 2020-03-14 | 2019/20 Rugby Europe Trophy             | Switzerland? | home    | Switzerland        | 16.9 | Netherlands        | 24.2
- 2020-03-14 | 2020 Rugby Europe Championship          | Georgia?     | home    | Georgia            | 33.6 | Russian Federation |  8.8
- 2020-03-14 | 2020 Rugby Europe Championship          | Romania?     | home    | Romania            | 39.8 | Belgium            | 11.0
- 2020-03-14 | 2020 Six Nations                        | France?      | home    | France             | 18.8 | Ireland            | 19.0
- 2020-03-14 | 2020 Six Nations                        | Italy?       | home    | Italy              | 12.2 | England            | 37.0
- 2020-03-14 | 2020 Six Nations                        | Cardiff      | home    | Wales              | 24.1 | Scotland           | 14.5
- 2020-03-15 | 2020 Rugby Europe Championship          | Spain?       | home    | Spain              | 26.4 | Portugal           | 12.7
- 2020-03-21 | 2019/20 Rugby Europe Conference 1 South | Malta?       | home    | Malta              | 34.7 | Israel             | 15.6
- 2020-03-21 | 2019/20 Rugby Europe Trophy             | Germany?     | home    | Germany            | 53.9 | Lithuania          | 12.0
- 2020-03-28 | 2019/20 Rugby Europe Conference 1 South | Croatia?     | home    | Croatia            | 31.3 | Slovenia           | 12.6
- 2020-03-28 | 2019/20 Rugby Europe Conference 1 South | Israel?      | home    | Israel             | 30.1 | Cyprus             | 15.8
-(18 rows)
+    date    |                  event                  |          city           | site |          team          | e_p  |      opponent      | e_p  
+------------+-----------------------------------------+-------------------------+------+------------------------+------+--------------------+------
+ 2020-03-14 | 2019/20 Rugby Europe Trophy             | Switzerland?            | home | Switzerland            | 18.4 | Netherlands        | 23.3
+ 2020-03-14 | 2020 Rugby Europe Championship          | Tbilisi                 | home | Georgia                | 32.9 | Russian Federation |  9.4
+ 2020-03-14 | 2020 Rugby Europe Championship          | Botosani                | home | Romania                | 39.1 | Belgium            | 11.8
+ 2020-03-14 | 2020 Six Nations                        | St Denis                | home | France                 | 18.6 | Ireland            | 19.1
+ 2020-03-14 | 2020 Six Nations                        | Italy?                  | home | Italy                  | 12.6 | England            | 36.8
+ 2020-03-14 | 2020 Six Nations                        | Cardiff                 | home | Wales                  | 24.4 | Scotland           | 14.4
+ 2020-03-15 | 2020 Rugby Europe Championship          | Madrid                  | home | Spain                  | 24.9 | Portugal           | 13.9
+ 2020-03-21 | 2019/20 Rugby Europe Conference 1 South | Paola                   | home | Malta                  | 34.8 | Israel             | 15.5
+ 2020-03-21 | 2019/20 Rugby Europe Trophy             | Heidelberg              | home | Germany                | 48.2 | Lithuania          | 13.4
+ 2020-03-28 | 2019/20 Rugby Europe Conference 1 South | Croatia?                | home | Croatia                | 31.4 | Slovenia           | 12.6
+ 2020-03-28 | 2019/20 Rugby Europe Conference 1 South | Israel?                 | home | Israel                 | 30.1 | Cyprus             | 15.8
+ 2020-04-04 | 2019/20 Rugby Europe Conference 1 South | Croatia?                | home | Croatia                | 20.0 | Malta              | 20.7
+ 2020-04-11 | 2019/20 Rugby Europe Conference 2 North | Moldova, Republic of?   | home | Moldova, Republic of   | 36.4 | Norway             |  6.2
+ 2020-04-11 | 2019/20 Rugby Europe Conference 2 South | Bosnia and Herzegovina? | home | Bosnia and Herzegovina | 18.5 | Serbia             | 22.5
+(14 rows)
 
-COPY 18
+COPY 14
 COMMIT
