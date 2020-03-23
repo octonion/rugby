@@ -22,7 +22,7 @@ join rr._basic_factors i
 where
     (sf1.team_id,sf2.team_id) in
 (
-('Fijian Latui','Fijian Latui'),
-('Fijian Latui','South China Tigers'),
-('Western Force','Fijian Latui')
+('Fijian Latui','Western Force'),
+('Malaysia Valke','Manuma Samoa'),
+('China Lions','South China Tigers')
 );

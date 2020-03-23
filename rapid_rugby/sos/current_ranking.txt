@@ -1,31 +1,35 @@
 BEGIN
 CREATE TABLE
-INSERT 0 9
+INSERT 0 11
  rk |         team         |  str  |  ofs  |  dfs  |  sos  
 ----+----------------------+-------+-------+-------+-------
-  1 | Western Force        |  0.79 |  0.24 | -0.55 | -0.09
-  2 | Japan A Wolfpack     |  0.73 |  0.63 | -0.10 |  0.79
-  3 | World XV             |  0.44 |  0.15 | -0.28 |  0.79
-  4 | Fijian Latui         |  0.05 |  0.06 |  0.00 |  0.28
-  5 | South China Tigers   | -0.07 |  0.12 |  0.19 |  0.35
-  6 | Asia Pacific Dragons | -0.10 | -0.34 | -0.24 |  0.36
-  7 | Kagifa Samoa         | -0.24 |  0.02 |  0.26 |  0.42
-  8 | Malaysia Valke       | -0.74 | -0.31 |  0.43 |  0.79
-  9 | Sanix-Coca-Cola XV   | -0.86 | -0.53 |  0.33 |  0.79
-(9 rows)
+  1 | Western Force        |  0.78 |  0.22 | -0.56 | -0.09
+  2 | Japan A Wolfpack     |  0.73 |  0.63 | -0.11 |  0.78
+  3 | China Lions          |  0.48 |  0.17 | -0.30 |  0.00
+  4 | World XV             |  0.40 |  0.11 | -0.29 |  0.78
+  5 | Fijian Latui         |  0.00 |  0.00 |  0.00 |  0.30
+  6 | South China Tigers   | -0.01 |  0.16 |  0.17 |  0.12
+  7 | Asia Pacific Dragons | -0.05 | -0.33 | -0.28 |  0.39
+  8 | Kagifa Samoa         | -0.27 |  0.01 |  0.28 |  0.39
+  9 | Malaysia Valke       | -0.41 | -0.09 |  0.31 |  0.78
+ 10 | Sanix-Coca-Cola XV   | -0.81 | -0.48 |  0.33 |  0.78
+ 11 | Manuma Samoa         | -0.85 | -0.37 |  0.48 | -0.01
+(11 rows)
 
  rk |         team         |  str  |  ofs  |  dfs  |  sos  
 ----+----------------------+-------+-------+-------+-------
-  1 | Western Force        |  0.79 |  0.24 | -0.55 | -0.09
-  2 | Japan A Wolfpack     |  0.73 |  0.63 | -0.10 |  0.79
-  3 | World XV             |  0.44 |  0.15 | -0.28 |  0.79
-  4 | Fijian Latui         |  0.05 |  0.06 |  0.00 |  0.28
-  5 | South China Tigers   | -0.07 |  0.12 |  0.19 |  0.35
-  6 | Asia Pacific Dragons | -0.10 | -0.34 | -0.24 |  0.36
-  7 | Kagifa Samoa         | -0.24 |  0.02 |  0.26 |  0.42
-  8 | Malaysia Valke       | -0.74 | -0.31 |  0.43 |  0.79
-  9 | Sanix-Coca-Cola XV   | -0.86 | -0.53 |  0.33 |  0.79
-(9 rows)
+  1 | Western Force        |  0.78 |  0.22 | -0.56 | -0.09
+  2 | Japan A Wolfpack     |  0.73 |  0.63 | -0.11 |  0.78
+  3 | China Lions          |  0.48 |  0.17 | -0.30 |  0.00
+  4 | World XV             |  0.40 |  0.11 | -0.29 |  0.78
+  5 | Fijian Latui         |  0.00 |  0.00 |  0.00 |  0.30
+  6 | South China Tigers   | -0.01 |  0.16 |  0.17 |  0.12
+  7 | Asia Pacific Dragons | -0.05 | -0.33 | -0.28 |  0.39
+  8 | Kagifa Samoa         | -0.27 |  0.01 |  0.28 |  0.39
+  9 | Malaysia Valke       | -0.41 | -0.09 |  0.31 |  0.78
+ 10 | Sanix-Coca-Cola XV   | -0.81 | -0.48 |  0.33 |  0.78
+ 11 | Manuma Samoa         | -0.85 | -0.37 |  0.48 | -0.01
+(11 rows)
 
-COPY 9
+COPY 11
 COMMIT
