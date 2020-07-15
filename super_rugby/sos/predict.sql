@@ -22,8 +22,8 @@ join sr._basic_factors i
 where
     (sf1.team_id,sf2.team_id) in
 (
-('Reds','Waratahs'),
-('Highlanders','Crusaders'),
-('Brumbies','Rebels'),
-('Chiefs','Hurricanes')
+('Rebels','Reds'),
+('Crusaders','Blues'),
+('Waratahs','Western Force'),
+('Hurricanes','Highlanders')
 );
