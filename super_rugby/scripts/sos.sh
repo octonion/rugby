@@ -22,3 +22,6 @@ psql rugby -c "vacuum full verbose analyze sr._schedule_factors;"
 
 psql rugby -f sos/current_ranking.sql > sos/current_ranking.txt
 cp /tmp/current_ranking.csv sos/current_ranking.csv
+
+psql rugby -f sos/predictions.sql > sos/predictions.txt
+cp /tmp/predictions.csv sos/predictions.csv
