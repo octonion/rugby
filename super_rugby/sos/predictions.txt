@@ -1,11 +1,9 @@
 BEGIN
-    date    |   home   |   away   | e_home | e_away | e_d  
-------------+----------+----------+--------+--------+------
- 2020-08-28 | Brumbies | Force    |   31.5 |   13.2 | 18.3
- 2020-08-29 | Rebels   | Waratahs |   29.5 |   20.3 |  9.1
- 2020-09-04 | Rebels   | Force    |   30.2 |   15.7 | 14.6
- 2020-09-05 | Reds     | Brumbies |   23.4 |   25.8 | -2.3
-(4 rows)
+    date    |  home  |   away   | e_home | e_away | e_d  
+------------+--------+----------+--------+--------+------
+ 2020-09-04 | Rebels | Force    |   30.2 |   15.7 | 14.6
+ 2020-09-05 | Reds   | Brumbies |   23.4 |   25.8 | -2.3
+(2 rows)
 
-COPY 4
+COPY 2
 COMMIT
