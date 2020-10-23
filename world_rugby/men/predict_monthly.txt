@@ -1,22 +1,33 @@
 BEGIN
 SET
-    date    |                  event                  |          city           | site |          team          | e_p  |      opponent      | e_p  
-------------+-----------------------------------------+-------------------------+------+------------------------+------+--------------------+------
- 2020-03-14 | 2019/20 Rugby Europe Trophy             | Switzerland?            | home | Switzerland            | 18.4 | Netherlands        | 23.3
- 2020-03-14 | 2020 Rugby Europe Championship          | Tbilisi                 | home | Georgia                | 32.9 | Russian Federation |  9.4
- 2020-03-14 | 2020 Rugby Europe Championship          | Botosani                | home | Romania                | 39.1 | Belgium            | 11.8
- 2020-03-14 | 2020 Six Nations                        | St Denis                | home | France                 | 18.6 | Ireland            | 19.1
- 2020-03-14 | 2020 Six Nations                        | Italy?                  | home | Italy                  | 12.6 | England            | 36.8
- 2020-03-14 | 2020 Six Nations                        | Cardiff                 | home | Wales                  | 24.4 | Scotland           | 14.4
- 2020-03-15 | 2020 Rugby Europe Championship          | Madrid                  | home | Spain                  | 24.9 | Portugal           | 13.9
- 2020-03-21 | 2019/20 Rugby Europe Conference 1 South | Paola                   | home | Malta                  | 34.8 | Israel             | 15.5
- 2020-03-21 | 2019/20 Rugby Europe Trophy             | Heidelberg              | home | Germany                | 48.2 | Lithuania          | 13.4
- 2020-03-28 | 2019/20 Rugby Europe Conference 1 South | Croatia?                | home | Croatia                | 31.4 | Slovenia           | 12.6
- 2020-03-28 | 2019/20 Rugby Europe Conference 1 South | Israel?                 | home | Israel                 | 30.1 | Cyprus             | 15.8
- 2020-04-04 | 2019/20 Rugby Europe Conference 1 South | Croatia?                | home | Croatia                | 20.0 | Malta              | 20.7
- 2020-04-11 | 2019/20 Rugby Europe Conference 2 North | Moldova, Republic of?   | home | Moldova, Republic of   | 36.4 | Norway             |  6.2
- 2020-04-11 | 2019/20 Rugby Europe Conference 2 South | Bosnia and Herzegovina? | home | Bosnia and Herzegovina | 18.5 | Serbia             | 22.5
-(14 rows)
+    date    |             event              |    city    |  site   |    team     | e_p  |      opponent      | e_p  
+------------+--------------------------------+------------+---------+-------------+------+--------------------+------
+ 2020-10-24 | 2020/21 Rugby Europe Trophy    | Siauliai   | home    | Lithuania   | 27.5 | Ukraine            | 17.8
+ 2020-10-24 | 2020 Men's Internationals      | St Denis   | home    | France      | 18.2 | Wales              | 18.3
+ 2020-10-24 | 2020 Six Nations               | Dublin     | home    | Ireland     | 41.1 | Italy              | 10.5
+ 2020-10-31 | 2020/21 Rugby Europe Trophy    | Ukraine?   | home    | Ukraine     | 13.8 | Poland             | 24.2
+ 2020-10-31 | 2020 Six Nations               | St Denis   | home    | France      | 18.7 | Ireland            | 19.1
+ 2020-10-31 | 2020 Six Nations               | Roma       | home    | Italy       | 12.6 | England            | 36.9
+ 2020-10-31 | 2020 Six Nations               | Llanelli   | home    | Wales       | 24.2 | Scotland           | 14.7
+ 2020-10-31 | 2020 Tri Nations               | Sydney     | home    | Australia   | 20.2 | New Zealand        | 30.0
+ 2020-11-01 | 2020 Men's Internationals      | Montevideo | home    | Uruguay     | 23.2 | Spain              | 18.7
+ 2020-11-01 | 2020 Rugby Europe Championship | Tbilisi    | home    | Georgia     | 32.7 | Russian Federation |  9.6
+ 2020-11-01 | 2020 Rugby Europe Championship | Romania?   | home    | Romania     | 39.1 | Belgium            | 11.8
+ 2020-11-06 | 2020 Men's Internationals      | Fiji?      | home    | Fiji        | 47.9 | Portugal           |  9.6
+ 2020-11-06 | 2020 Men's Internationals      | Montevideo | home    | Uruguay     | 23.2 | Spain              | 18.7
+ 2020-11-07 | 2020 Tri Nations               | Brisbane   | home    | Australia   | 20.2 | New Zealand        | 30.0
+ 2020-11-13 | 2020 Autumn Nations Cup        | Dublin     | home    | Ireland     | 20.5 | Wales              | 15.5
+ 2020-11-14 | 2020 Autumn Nations Cup        | London     | home    | England     | 41.3 | Georgia            |  7.4
+ 2020-11-14 | 2020 Autumn Nations Cup        | Italy?     | home    | Italy       | 16.4 | Scotland           | 29.4
+ 2020-11-14 | 2020 Tri Nations               | Parramatta | neutral | New Zealand | 41.3 | Argentina          | 15.8
+ 2020-11-15 | 2020 Autumn Nations Cup        | France?    | home    | France      | 31.4 | Fiji               | 13.5
+ 2020-11-15 | 2020 Rugby Europe Championship | Madrid     | home    | Spain       | 24.9 | Portugal           | 13.9
+ 2020-11-21 | 2020 Autumn Nations Cup        | London     | home    | England     | 24.5 | Ireland            | 14.9
+ 2020-11-21 | 2020 Autumn Nations Cup        | Italy?     | home    | Italy       | 22.9 | Fiji               | 22.4
+ 2020-11-21 | 2020 Autumn Nations Cup        | Llanelli   | home    | Wales       | 34.0 | Georgia            |  7.8
+ 2020-11-21 | 2020 Tri Nations               | Newcastle  | away    | Argentina   | 18.2 | Australia          | 32.0
+ 2020-11-22 | 2020 Autumn Nations Cup        | Edinburgh  | home    | Scotland    | 23.1 | France             | 17.3
+(25 rows)
 
-COPY 14
+COPY 25
 COMMIT
