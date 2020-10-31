@@ -1,13 +1,15 @@
 BEGIN
 SET
-    date    |                 event                  |  city   | site |  team  | e_p  |      opponent      | e_p  
-------------+----------------------------------------+---------+------+--------+------+--------------------+------
- 2020-03-15 | 2020 Women's Six Nations               | Lille   | home | France | 31.7 | Ireland            |  6.3
- 2020-03-15 | 2020 Women's Six Nations               | Padova  | home | Italy  |  7.4 | England            | 40.5
- 2020-03-15 | 2020 Women's Six Nations               | Cardiff | home | Wales  | 17.2 | Scotland           | 12.6
- 2020-04-04 | Rugby Europe Women’s Championship 2020 | Madrid  | home | Spain  | 50.8 | Russian Federation |  3.0
- 2020-04-11 | Rugby Europe Women’s Championship 2020 | Spain?  | home | Spain  | 63.4 | Netherlands        |  2.6
-(5 rows)
+    date    |                 event                  |   city   |  site   |  team   | e_p  |  opponent   | e_p  
+------------+----------------------------------------+----------+---------+---------+------+-------------+------
+ 2020-10-31 | Rugby Europe Women’s Championship 2020 | Elche    | home    | Spain   | 63.4 | Netherlands |  2.6
+ 2020-11-01 | 2020 Women's Six Nations               | Lille    | home    | France  | 31.7 | Ireland     |  6.3
+ 2020-11-01 | 2020 Women's Six Nations               | Parma    | home    | Italy   |  7.4 | England     | 40.5
+ 2020-11-01 | 2020 Women's Six Nations               | Cardiff  | home    | Wales   | 17.2 | Scotland    | 12.6
+ 2020-11-14 | 2020 Women's Internationals            | France?  | home    | France  | 14.6 | England     | 19.4
+ 2020-11-14 | 2020 Women's Internationals            | Auckland | neutral | Samoa   | 53.0 | Tonga       | 18.4
+ 2020-11-21 | 2020 Women's Internationals            | London   | home    | England | 23.1 | France      | 12.3
+(7 rows)
 
-COPY 5
+COPY 7
 COMMIT
