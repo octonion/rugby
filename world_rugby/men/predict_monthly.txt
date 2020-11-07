@@ -1,35 +1,26 @@
 BEGIN
 SET
-    date    |             event              |    city    |  site   |    team     | e_p  |      opponent      | e_p  
-------------+--------------------------------+------------+---------+-------------+------+--------------------+------
- 2020-10-31 | 2020/21 Rugby Europe Trophy    | Ukraine?   | home    | Ukraine     | 13.8 | Poland             | 24.2
- 2020-10-31 | 2020 Six Nations               | St Denis   | home    | France      | 18.7 | Ireland            | 19.1
- 2020-10-31 | 2020 Six Nations               | Roma       | home    | Italy       | 12.6 | England            | 36.9
- 2020-10-31 | 2020 Six Nations               | Llanelli   | home    | Wales       | 24.2 | Scotland           | 14.7
- 2020-10-31 | 2020 Tri Nations               | Sydney     | home    | Australia   | 20.2 | New Zealand        | 30.0
- 2020-11-01 | 2020 Men's Internationals      | Montevideo | home    | Uruguay     | 23.2 | Spain              | 18.7
- 2020-11-01 | 2020 Rugby Europe Championship | Tbilisi    | home    | Georgia     | 32.7 | Russian Federation |  9.6
- 2020-11-01 | 2020 Rugby Europe Championship | Romania?   | home    | Romania     | 39.1 | Belgium            | 11.8
- 2020-11-06 | 2020 Men's Internationals      | Fiji?      | home    | Fiji        | 47.9 | Portugal           |  9.6
- 2020-11-06 | 2020 Men's Internationals      | Montevideo | home    | Uruguay     | 23.2 | Spain              | 18.7
- 2020-11-07 | 2020 Tri Nations               | Brisbane   | home    | Australia   | 20.2 | New Zealand        | 30.0
- 2020-11-13 | 2020 Autumn Nations Cup        | Dublin     | home    | Ireland     | 20.5 | Wales              | 15.5
- 2020-11-14 | 2020 Autumn Nations Cup        | London     | home    | England     | 41.3 | Georgia            |  7.4
- 2020-11-14 | 2020 Autumn Nations Cup        | Italy?     | home    | Italy       | 16.4 | Scotland           | 29.4
- 2020-11-14 | 2020 Tri Nations               | Parramatta | neutral | New Zealand | 41.3 | Argentina          | 15.8
- 2020-11-15 | 2020 Autumn Nations Cup        | France?    | home    | France      | 31.4 | Fiji               | 13.5
- 2020-11-15 | 2020 Rugby Europe Championship | Madrid     | home    | Spain       | 24.9 | Portugal           | 13.9
- 2020-11-21 | 2020 Autumn Nations Cup        | London     | home    | England     | 24.5 | Ireland            | 14.9
- 2020-11-21 | 2020 Autumn Nations Cup        | Italy?     | home    | Italy       | 22.9 | Fiji               | 22.4
- 2020-11-21 | 2020 Autumn Nations Cup        | Llanelli   | home    | Wales       | 34.0 | Georgia            |  7.8
- 2020-11-21 | 2020 Tri Nations               | Newcastle  | away    | Argentina   | 18.2 | Australia          | 32.0
- 2020-11-22 | 2020 Autumn Nations Cup        | Edinburgh  | home    | Scotland    | 23.1 | France             | 17.3
- 2020-11-28 | 2020 Autumn Nations Cup        | France?    | home    | France      | 36.5 | Italy              | 12.4
- 2020-11-28 | 2020 Autumn Nations Cup        | Edinburgh  | home    | Scotland    | 32.8 | Fiji               | 13.8
- 2020-11-28 | 2020 Autumn Nations Cup        | Wales?     | home    | Wales       | 18.5 | England            | 18.4
- 2020-11-28 | 2020 Tri Nations               | Newcastle  | neutral | Argentina   | 15.8 | New Zealand        | 41.3
- 2020-11-29 | 2020 Autumn Nations Cup        | Dublin     | home    | Ireland     | 35.5 | Georgia            |  8.0
-(27 rows)
+    date    |             event              |    city    |  site   |    team     | e_p  |  opponent   | e_p  
+------------+--------------------------------+------------+---------+-------------+------+-------------+------
+ 2020-11-07 | 2020 Tri Nations               | Brisbane   | home    | Australia   | 20.2 | New Zealand | 30.0
+ 2020-11-13 | 2020 Autumn Nations Cup        | Dublin     | home    | Ireland     | 20.5 | Wales       | 15.5
+ 2020-11-14 | 2020 Autumn Nations Cup        | London     | home    | England     | 41.3 | Georgia     |  7.4
+ 2020-11-14 | 2020 Autumn Nations Cup        | Italy?     | home    | Italy       | 16.4 | Scotland    | 29.4
+ 2020-11-14 | 2020 Tri Nations               | Parramatta | neutral | New Zealand | 41.3 | Argentina   | 15.8
+ 2020-11-15 | 2020 Autumn Nations Cup        | France?    | home    | France      | 31.4 | Fiji        | 13.5
+ 2020-11-15 | 2020 Rugby Europe Championship | Madrid     | home    | Spain       | 24.9 | Portugal    | 13.9
+ 2020-11-21 | 2020 Autumn Nations Cup        | London     | home    | England     | 24.5 | Ireland     | 14.9
+ 2020-11-21 | 2020 Autumn Nations Cup        | Italy?     | home    | Italy       | 22.9 | Fiji        | 22.4
+ 2020-11-21 | 2020 Autumn Nations Cup        | Llanelli   | home    | Wales       | 34.0 | Georgia     |  7.8
+ 2020-11-21 | 2020 Tri Nations               | Newcastle  | away    | Argentina   | 18.2 | Australia   | 32.0
+ 2020-11-22 | 2020 Autumn Nations Cup        | Edinburgh  | home    | Scotland    | 23.1 | France      | 17.3
+ 2020-11-28 | 2020 Autumn Nations Cup        | France?    | home    | France      | 36.5 | Italy       | 12.4
+ 2020-11-28 | 2020 Autumn Nations Cup        | Edinburgh  | home    | Scotland    | 32.8 | Fiji        | 13.8
+ 2020-11-28 | 2020 Autumn Nations Cup        | Wales?     | home    | Wales       | 18.5 | England     | 18.4
+ 2020-11-28 | 2020 Tri Nations               | Newcastle  | neutral | Argentina   | 15.8 | New Zealand | 41.3
+ 2020-11-29 | 2020 Autumn Nations Cup        | Dublin     | home    | Ireland     | 35.5 | Georgia     |  8.0
+ 2020-12-05 | 2020 Tri Nations               | Parramatta | home    | Australia   | 32.0 | Argentina   | 18.2
+(18 rows)
 
-COPY 27
+COPY 18
 COMMIT
