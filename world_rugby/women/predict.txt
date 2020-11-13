@@ -1,16 +1,12 @@
 BEGIN
 SET
-    date    |                 event                  |   city   |  site   |  team   | e_p  |  opponent   | e_p  |  e_d  
-------------+----------------------------------------+----------+---------+---------+------+-------------+------+-------
- 2020-10-31 | Rugby Europe Women’s Championship 2020 | Elche    | home    | Spain   | 63.4 | Netherlands |  2.6 |  60.9
- 2020-11-01 | 2020 Women's Six Nations               | Lille    | home    | France  | 31.7 | Ireland     |  6.3 |  25.4
- 2020-11-01 | 2020 Women's Six Nations               | Parma    | home    | Italy   |  7.4 | England     | 40.5 | -33.1
- 2020-11-01 | 2020 Women's Six Nations               | Cardiff  | home    | Wales   | 17.2 | Scotland    | 12.6 |   4.5
- 2020-11-14 | 2020 Women's Internationals            | France?  | home    | France  | 14.6 | England     | 19.4 |  -4.9
- 2020-11-14 | 2020 Women's Internationals            | Auckland | neutral | Samoa   | 53.0 | Tonga       | 18.4 |  34.6
- 2020-11-21 | 2020 Women's Internationals            | London   | home    | England | 23.1 | France      | 12.3 |  10.8
- 2020-12-06 | 2020 Women's Six Nations               | Parma    | home    | Italy   | 23.7 | Scotland    | 10.9 |  12.8
-(8 rows)
+    date    |            event            |   city   |  site   |  team   | e_p  | opponent | e_p  | e_d  
+------------+-----------------------------+----------+---------+---------+------+----------+------+------
+ 2020-11-14 | 2020 Women's Internationals | Grenoble | home    | France  | 13.7 | England  | 20.2 | -6.4
+ 2020-11-14 | 2020 Women's Internationals | Auckland | neutral | Samoa   | 53.0 | Tonga    | 18.5 | 34.5
+ 2020-11-21 | 2020 Women's Internationals | London   | home    | England | 24.2 | France   | 11.4 | 12.8
+ 2020-12-06 | 2020 Women's Six Nations    | Parma    | home    | Italy   | 21.2 | Scotland | 12.1 |  9.0
+(4 rows)
 
-COPY 8
+COPY 4
 COMMIT
