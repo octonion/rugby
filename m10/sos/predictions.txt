@@ -1,14 +1,11 @@
 BEGIN
-    date    |       home       |     away      | e_home | e_away |  e_d  
-------------+------------------+---------------+--------+--------+-------
- 2020-11-13 | Counties Manukau | Southland     |   14.1 |   17.8 |  -3.8
- 2020-11-14 | Northland        | Waikato       |   19.8 |   30.8 | -11.0
- 2020-11-14 | Otago            | Tasman        |   22.6 |   30.5 |  -7.9
- 2020-11-14 | Wellington       | Manawatu      |   57.0 |   19.7 |  37.3
- 2020-11-15 | Bay of Plenty    | North Harbour |   22.6 |   29.9 |  -7.2
- 2020-11-15 | Canterbury       | Auckland      |   21.1 |   19.7 |   1.4
- 2020-11-15 | Taranaki         | Hawke’s Bay   |   25.3 |   22.4 |   2.9
-(7 rows)
+    date    |    home     |     away      | e_home | e_away | e_d  
+------------+-------------+---------------+--------+--------+------
+ 2020-11-20 | Otago       | Northland     |   27.9 |   19.8 |  8.1
+ 2020-11-21 | Auckland    | Waikato       |   29.2 |   18.1 | 11.1
+ 2020-11-21 | Hawke’s Bay | Taranaki      |   30.0 |   19.8 | 10.2
+ 2020-11-21 | Tasman      | Bay of Plenty |   30.9 |   19.7 | 11.2
+(4 rows)
 
-COPY 7
+COPY 4
 COMMIT
