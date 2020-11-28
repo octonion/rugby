@@ -1,3 +1,15 @@
 BEGIN
 SET
-ROLLBACK
+    date    |           event           |    city    |  site   |   team    | e_p  |  opponent   | e_p  
+------------+---------------------------+------------+---------+-----------+------+-------------+------
+ 2020-11-28 | 2020 Autumn Nations Cup   | St Denis   | home    | France    | 36.7 | Italy       | 13.2
+ 2020-11-28 | 2020 Autumn Nations Cup   | Edinburgh  | home    | Scotland  | 30.1 | Fiji        | 14.7
+ 2020-11-28 | 2020 Autumn Nations Cup   | Llanelli   | home    | Wales     | 16.9 | England     | 18.7
+ 2020-11-28 | 2020 Men's Internationals | Lisbon     | home    | Portugal  | 25.6 | Brazil      | 15.4
+ 2020-11-28 | 2020 Tri Nations          | Newcastle  | neutral | Argentina | 16.7 | New Zealand | 37.6
+ 2020-11-29 | 2020 Autumn Nations Cup   | Dublin     | home    | Ireland   | 32.7 | Georgia     |  8.3
+ 2020-12-05 | 2020 Tri Nations          | Parramatta | home    | Australia | 29.4 | Argentina   | 18.7
+(7 rows)
+
+COPY 7
+COMMIT

@@ -4,7 +4,7 @@ library(glmmADMB)
 library(RPostgreSQL)
 
 drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv,host="localhost",port="5432",dbname="rugby")
+con <- dbConnect(drv,dbname="rugby")
 
 query <- dbSendQuery(con, "
 select
@@ -110,7 +110,7 @@ for (n in rpn) {
 # Model parameters
 
 parameter_levels <- as.data.frame(do.call("rbind",pll))
-dbWriteTable(con,c("wr","_zinb_parameter_levels"),parameter_levels,row.names=TRUE)
+dbWriteTable(con,c("wr","_men_zinb_parameter_levels"),parameter_levels,row.names=TRUE)
 
 g <- cbind(fp,rp)
 g$gs <- gs
@@ -180,6 +180,6 @@ results <- c(results,list(data.frame(factor="alpha",type="structural",level="alp
 
 combined <- as.data.frame(do.call("rbind",results))
 
-dbWriteTable(con,c("wr","_zinb_basic_factors"),as.data.frame(combined),row.names=TRUE)
+dbWriteTable(con,c("wr","_men_zinb_basic_factors"),as.data.frame(combined),row.names=TRUE)
 
 quit("no")
