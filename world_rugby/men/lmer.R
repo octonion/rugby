@@ -48,7 +48,7 @@ team_score::float as gs,
 from wr.men_results r
 
 where
-    r.year between 2016 and 2020
+    r.year between 2016 and 2021
 
 ;")
 
