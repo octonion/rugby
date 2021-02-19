@@ -11,14 +11,6 @@ fi
 
 psql rugby -f schema/create_schema.sql
 
-mkdir /tmp/data
-cp csv/super-rugby-*.csv /tmp/data
-
-dos2unix /tmp/data/*
-tail -q -n+2 /tmp/data/*.csv >> /tmp/games.csv
-sed -e 's/$/,,/' -i /tmp/games.csv
-psql rugby -f loaders/load_games_new.sql
-
-rm /tmp/data/*.csv
-rmdir /tmp/data
+tail +2 csv/super_rugby.csv >> /tmp/games.csv
+psql rugby -f loaders/load_games.sql
 rm /tmp/games.csv
