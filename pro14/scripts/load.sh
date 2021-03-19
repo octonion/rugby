@@ -20,6 +20,6 @@ cat /tmp/data/*.csv >> /tmp/games.csv
 #sed -e 's/$/,,/' -i /tmp/games.csv
 psql rugby -f loaders/load_games.sql
 
-#rm /tmp/data/*.csv
-#rmdir /tmp/data
-#rm /tmp/games.csv
+rm /tmp/data/*.csv
+rmdir /tmp/data
+rm /tmp/games.csv
