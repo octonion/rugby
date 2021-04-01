@@ -1,0 +1,63 @@
+[1] 208   7
+[1] 220   7
+[1] TRUE
+[1] 220   5
+start par. =  1 1 1 fn =  2563.927 
+At return
+eval: 115 fn:      2371.9091 par: 0.238416 0.289520 0.124198
+(NM) 20: f = 2371.91 at 0.238416  0.28952 0.124198   2.9113 0.165946
+(NM) 40: f = 2371.9 at 0.238551  0.28748 0.123096  2.90078 0.166121
+(NM) 60: f = 2371.9 at 0.238542 0.289666 0.123972  2.90336 0.166321
+(NM) 80: f = 2371.9 at 0.238531 0.289328 0.124046  2.90152 0.166207
+(NM) 100: f = 2371.9 at 0.238376 0.289365  0.12415  2.90204 0.166234
+(NM) 120: f = 2371.9 at 0.238441 0.289432  0.12418  2.90194 0.166169
+(NM) 140: f = 2371.9 at 0.238427 0.289434 0.124177   2.9019 0.166193
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
+   Data: g
+Weights: w
+      AIC       BIC    logLik  deviance  df.resid 
+ 2381.900  2398.868 -1185.950  2371.900       215 
+Random effects:
+ Groups  Name        Std.Dev.
+ game_id (Intercept) 0.2384  
+ defense (Intercept) 0.2894  
+ offense (Intercept) 0.1242  
+Number of obs: 220, groups:  game_id, 104; defense, 12; offense, 12
+Fixed Effects:
+      (Intercept)  fieldoffense_home  
+           2.9019             0.1662  
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
+   Data: g
+Weights: w
+
+     AIC      BIC   logLik deviance df.resid 
+  2381.9   2398.9  -1185.9   2371.9      215 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.9074 -1.4339 -0.0557  1.2834  4.7956 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ game_id (Intercept) 0.05685  0.2384  
+ defense (Intercept) 0.08377  0.2894  
+ offense (Intercept) 0.01542  0.1242  
+Number of obs: 220, groups:  game_id, 104; defense, 12; offense, 12
+
+Fixed effects:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        2.90191    0.09803  29.602  < 2e-16 ***
+fieldoffense_home  0.16619    0.02939   5.654 1.56e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr)
+fildffns_hm -0.151
+[1] TRUE
