@@ -1,12 +1,15 @@
 BEGIN
 SET
-    date    |            event            |   city   |  site   |  team   | e_p  | opponent | e_p  | e_d  
-------------+-----------------------------+----------+---------+---------+------+----------+------+------
- 2020-11-14 | 2020 Women's Internationals | Grenoble | home    | France  | 13.7 | England  | 20.2 | -6.4
- 2020-11-14 | 2020 Women's Internationals | Auckland | neutral | Samoa   | 53.0 | Tonga    | 18.5 | 34.5
- 2020-11-21 | 2020 Women's Internationals | London   | home    | England | 24.2 | France   | 11.4 | 12.8
- 2020-12-06 | 2020 Women's Six Nations    | Parma    | home    | Italy   | 21.2 | Scotland | 12.1 |  9.0
-(4 rows)
+    date    |            event            |   city    | site |   team   | e_p  | opponent | e_p  |  e_d  
+------------+-----------------------------+-----------+------+----------+------+----------+------+-------
+ 2021-04-03 | 2021 Women's Six Nations    | Doncaster | home | England  | 63.1 | Scotland |  4.9 |  58.2
+ 2021-04-03 | 2021 Women's Six Nations    | Vannes    | home | France   | 38.0 | Wales    |  5.4 |  32.6
+ 2021-04-10 | 2021 Women's Six Nations    | Parma     | home | Italy    |  6.7 | England  | 44.3 | -37.6
+ 2021-04-10 | 2021 Women's Six Nations    | Cardiff   | home | Wales    | 11.3 | Ireland  | 15.9 |  -4.6
+ 2021-04-17 | 2021 Women's Six Nations    | Dublin    | home | Ireland  |  8.1 | France   | 25.6 | -17.6
+ 2021-04-17 | 2021 Women's Six Nations    | Glasgow   | home | Scotland | 14.3 | Italy    | 17.8 |  -3.5
+ 2021-04-30 | 2021 Women's Internationals | France?   | home | France   | 13.9 | England  | 21.1 |  -7.2
+(7 rows)
 
-COPY 4
+COPY 7
 COMMIT

@@ -1,20 +1,15 @@
 BEGIN
 SET
-    date    |             event              |     city     | site |        team        | e_p  | opponent  | e_p  |  e_d  
-------------+--------------------------------+--------------+------+--------------------+------+-----------+------+-------
- 2021-03-20 | 2021 Rugby Europe Championship | Bucuresti    | home | Romania            | 19.5 | Spain     | 15.4 |   4.1
- 2021-03-20 | 2021 Rugby Europe Championship | Kaliningrad  | home | Russian Federation | 12.7 | Georgia   | 23.5 | -10.9
- 2021-03-20 | 2021 Six Nations               | Saint-Denis  | home | France             | 20.7 | Wales     | 16.5 |   4.2
- 2021-03-20 | 2021 Six Nations               | Dublin       | home | Ireland            | 20.1 | England   | 18.3 |   1.8
- 2021-03-20 | 2021 Six Nations               | Edinburgh    | home | Scotland           | 38.1 | Italy     | 11.9 |  26.2
- 2021-03-26 | 2021 Six Nations               | Saint-Denis  | home | France             | 24.1 | Scotland  | 15.7 |   8.4
- 2021-03-27 | 2021 Rugby Europe Championship | Portugal?    | home | Portugal           | 18.3 | Spain     | 19.7 |  -1.4
- 2021-03-28 | 2021 Rugby Europe Championship | Georgia?     | home | Georgia            | 25.0 | Romania   | 10.9 |  14.1
- 2021-05-22 | Asia Rugby Men’s Championship  | Incheon      | home | Korea              | 47.7 | Malaysia  | 14.2 |  33.4
- 2021-05-29 | Asia Rugby Men’s Championship  | Kuala Lumpur | home | Malaysia           |  8.1 | Hong Kong | 50.5 | -42.3
- 2021-06-05 | Asia Rugby Men’s Championship  | Incheon      | home | Korea              | 13.7 | Hong Kong | 32.5 | -18.8
- 2021-06-12 | Asia Rugby Men’s Championship  | Kuala Lumpur | home | Malaysia           | 18.3 | Korea     | 37.1 | -18.8
-(12 rows)
+    date    |                  event                  |     city     | site |   team    | e_p  |  opponent   | e_p  |  e_d  
+------------+-----------------------------------------+--------------+------+-----------+------+-------------+------+-------
+ 2021-05-22 | Asia Rugby Men’s Championship           | Incheon      | home | Korea     | 47.6 | Malaysia    | 14.2 |  33.4
+ 2021-05-29 | 2020 Rugby Europe Championship Play-Off | Belgium?     | home | Belgium   | 23.2 | Netherlands | 20.6 |   2.6
+ 2021-05-29 | Asia Rugby Men’s Championship           | Kuala Lumpur | home | Malaysia  |  8.1 | Hong Kong   | 50.5 | -42.3
+ 2021-06-05 | Asia Rugby Men’s Championship           | Incheon      | home | Korea     | 13.7 | Hong Kong   | 32.5 | -18.8
+ 2021-06-12 | Asia Rugby Men’s Championship           | Kuala Lumpur | home | Malaysia  | 18.3 | Korea       | 37.1 | -18.8
+ 2021-06-19 | Asia Rugby Men’s Championship           | Hong Kong    | home | Hong Kong | 64.9 | Malaysia    |  6.3 |  58.5
+ 2021-06-26 | Asia Rugby Men’s Championship           | Hong Kong    | home | Hong Kong | 41.8 | Korea       | 10.6 |  31.1
+(7 rows)
 
-COPY 12
+COPY 7
 COMMIT
