@@ -1,0 +1,39 @@
+BEGIN
+CREATE TABLE
+INSERT 0 13
+ rk |        team        |  str  |  ofs  |  dfs  |  sos  
+----+--------------------+-------+-------+-------+-------
+  1 | Exeter Chiefs      |  0.33 |  0.13 | -0.20 | -0.02
+  2 | Saracens           |  0.31 |  0.18 | -0.12 | -0.02
+  3 | Bristol Bears      |  0.19 |  0.08 | -0.11 | -0.01
+  4 | Sale Sharks        |  0.17 |  0.04 | -0.13 | -0.01
+  5 | Wasps              |  0.08 |  0.11 |  0.03 |  0.00
+  6 | Harlequins         | -0.01 |  0.07 |  0.08 |  0.01
+  7 | Bath Rugby         | -0.03 | -0.04 | -0.01 |  0.01
+  8 | Northampton Saints | -0.04 |  0.02 |  0.05 |  0.02
+  9 | Gloucester Rugby   | -0.06 |  0.02 |  0.08 |  0.01
+ 10 | Newcastle Falcons  | -0.09 | -0.12 | -0.03 |  0.02
+ 11 | Leicester Tigers   | -0.26 | -0.15 |  0.11 |  0.03
+ 12 | London Irish       | -0.29 | -0.17 |  0.12 |  0.02
+ 13 | Worcester Warriors | -0.30 | -0.18 |  0.11 |  0.03
+(13 rows)
+
+ rk |        team        |  str  |  ofs  |  dfs  |  sos  
+----+--------------------+-------+-------+-------+-------
+  1 | Exeter Chiefs      |  0.33 |  0.13 | -0.20 | -0.02
+  2 | Saracens           |  0.31 |  0.18 | -0.12 | -0.02
+  3 | Bristol Bears      |  0.19 |  0.08 | -0.11 | -0.01
+  4 | Sale Sharks        |  0.17 |  0.04 | -0.13 | -0.01
+  5 | Wasps              |  0.08 |  0.11 |  0.03 |  0.00
+  6 | Harlequins         | -0.01 |  0.07 |  0.08 |  0.01
+  7 | Bath Rugby         | -0.03 | -0.04 | -0.01 |  0.01
+  8 | Northampton Saints | -0.04 |  0.02 |  0.05 |  0.02
+  9 | Gloucester Rugby   | -0.06 |  0.02 |  0.08 |  0.01
+ 10 | Newcastle Falcons  | -0.09 | -0.12 | -0.03 |  0.02
+ 11 | Leicester Tigers   | -0.26 | -0.15 |  0.11 |  0.03
+ 12 | London Irish       | -0.29 | -0.17 |  0.12 |  0.02
+ 13 | Worcester Warriors | -0.30 | -0.18 |  0.11 |  0.03
+(13 rows)
+
+COPY 13
+COMMIT
