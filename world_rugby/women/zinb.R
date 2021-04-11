@@ -22,11 +22,11 @@ r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2015) as w
+year-2016 as w
 from wr.women_results r
 
 where
-    r.year between 2016 and 2021
+    r.year between 2017 and 2021
 
 --and r.team_id in
 --(
@@ -127,7 +127,7 @@ model <- gs ~ field + (1|offense) + (1|defense) + (1|game_id)
 #fit0
 #summary(fit0)
 
-fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE)
+fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUEweight=w)
 
 fit
 summary(fit)
