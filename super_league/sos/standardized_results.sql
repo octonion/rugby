@@ -26,7 +26,7 @@ insert into sl.results
 (
 select
 game_id,
-year,
+season,
 --date,
 home_team,
 away_team,
@@ -37,7 +37,7 @@ away_score
 from sl.games
 
 where
-    year between 2003 and 2021
+    season between 2003 and 2021
 
 and home_score is not null
 and away_score is not null
@@ -57,7 +57,7 @@ insert into sl.results
 (
 select
 game_id,
-year,
+season,
 --date,
 away_team,
 home_team,
@@ -68,7 +68,7 @@ home_score
 from sl.games
 
 where
-    year between 2003 and 2021
+    season between 2003 and 2021
 
 and home_score is not null
 and away_score is not null

@@ -1,2 +1,13 @@
 BEGIN
-ROLLBACK
+    date    |       home       |     away     | e_home | e_away | e_d  
+------------+------------------+--------------+--------+--------+------
+ 2021-04-15 | Leeds            | Wigan        |   15.8 |   23.2 | -7.4
+ 2021-04-16 | Castleford       | Leigh        |   31.6 |   16.8 | 14.8
+ 2021-04-16 | Hull KR          | Huddersfield |   19.5 |   21.1 | -1.5
+ 2021-04-16 | St Helens        | Wakefield    |   34.2 |    6.6 | 27.6
+ 2021-04-17 | Catalans Dragons | Salford      |   32.9 |   17.6 | 15.3
+ 2021-04-18 | Hull FC          | Warrington   |   18.4 |   19.4 | -1.0
+(6 rows)
+
+COPY 6
+COMMIT

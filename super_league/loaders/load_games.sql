@@ -2,18 +2,22 @@ begin;
 
 drop table if exists sl.games;
 
+set datestyle to 'SQL, DMY';
+
 create table sl.games (
-	year			integer,
-	season			text,
-	dow			text,
-	day			text,
-	time			text,
+	season			integer,
+	date			timestamp,
 	home_team		text,
-	home_score		integer,
 	away_team		text,
+	home_score		integer,
 	away_score		integer,
-	referee			text,
-	venue			text
+	home_1h			integer,
+	away_1h			integer,
+	home_2h			integer,
+	away_2h			integer,
+	home_aet		integer,
+	away_aet		integer,
+	aet			text
 );
 
 copy sl.games from '/tmp/games.csv' with delimiter as ',' csv;
