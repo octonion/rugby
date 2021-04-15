@@ -16,11 +16,11 @@ r.field as field,
 r.team_name as team,
 r.opponent_name as opponent,
 team_score::float as gs,
-(year-2018) as w
+power(year-2019,1.5) as w
 from sr.results r
 
 where
-    r.year between 2019 and 2021
+    r.year between 2020 and 2021
 
 ;")
 
