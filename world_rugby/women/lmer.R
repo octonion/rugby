@@ -44,11 +44,11 @@ r.team_name as team_name,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2016)*(year-2016) as w
+power(year-2017,1.5) as w
 from wr.women_results r
 
 where
-    r.year between 2017 and 2021
+    r.year between 2018 and 2021
 
 ;")
 
