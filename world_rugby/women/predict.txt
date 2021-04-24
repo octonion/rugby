@@ -1,11 +1,12 @@
 BEGIN
 SET
-    date    |            event            |  city   | site |   team   | e_p  | opponent | e_p  |  e_d  
-------------+-----------------------------+---------+------+----------+------+----------+------+-------
- 2021-04-17 | 2021 Women's Six Nations    | Dublin  | home | Ireland  |  9.0 | France   | 31.5 | -22.5
- 2021-04-17 | 2021 Women's Six Nations    | Glasgow | home | Scotland | 18.9 | Italy    | 14.1 |   4.7
- 2021-04-30 | 2021 Women's Internationals | France? | home | France   | 12.3 | England  | 25.3 | -13.0
-(3 rows)
+    date    |            event            |    city    | site |   team   | e_p  | opponent | e_p  |  e_d  
+------------+-----------------------------+------------+------+----------+------+----------+------+-------
+ 2021-04-24 | 2021 Women's Six Nations    | Twickenham | home | England  | 21.0 | France   | 15.0 |   6.0
+ 2021-04-24 | 2021 Women's Six Nations    | Dublin     | home | Ireland  | 20.9 | Italy    | 13.7 |   7.2
+ 2021-04-24 | 2021 Women's Six Nations    | Glasgow    | home | Scotland | 17.6 | Wales    |  9.2 |   8.5
+ 2021-04-30 | 2021 Women's Internationals | France?    | home | France   | 12.0 | England  | 26.2 | -14.2
+(4 rows)
 
-COPY 3
+COPY 4
 COMMIT
