@@ -1,17 +1,12 @@
 BEGIN
-    date    |      home       |      away       | e_home | e_away |  e_d  
-------------+-----------------+-----------------+--------+--------+-------
- 2021-06-04 | Crusaders       | Force           |   36.1 |   11.3 |  24.7
- 2021-06-04 | Queensland Reds | Blues           |   22.0 |   30.6 |  -8.6
- 2021-06-05 | Brumbies        | Hurricanes      |   25.3 |   25.1 |   0.2
- 2021-06-05 | Chiefs          | Rebels          |   31.3 |   15.9 |  15.4
- 2021-06-05 | Highlanders     | Waratahs        |   44.9 |   17.3 |  27.5
- 2021-06-11 | Brumbies        | Highlanders     |   24.7 |   25.1 |  -0.4
- 2021-06-11 | Hurricanes      | Queensland Reds |   32.9 |   25.6 |   7.3
- 2021-06-12 | Blues           | Force           |   32.6 |   11.5 |  21.0
- 2021-06-12 | Rebels          | Crusaders       |   14.7 |   34.6 | -19.9
- 2021-06-12 | Waratahs        | Chiefs          |   17.9 |   38.1 | -20.2
-(10 rows)
+    date    |    home    |      away       | e_home | e_away |  e_d  
+------------+------------+-----------------+--------+--------+-------
+ 2021-06-11 | Brumbies   | Highlanders     |   24.5 |   24.7 |  -0.2
+ 2021-06-11 | Hurricanes | Queensland Reds |   32.6 |   24.8 |   7.8
+ 2021-06-12 | Blues      | Force           |   33.3 |   11.3 |  22.0
+ 2021-06-12 | Rebels     | Crusaders       |   16.6 |   33.3 | -16.8
+ 2021-06-12 | Waratahs   | Chiefs          |   19.9 |   37.9 | -18.0
+(5 rows)
 
-COPY 10
+COPY 5
 COMMIT
