@@ -1,15 +1,57 @@
 BEGIN
 SET
-    date    |                  event                  |     city     | site |   team    | e_p  |  opponent   | e_p  |  e_d  
-------------+-----------------------------------------+--------------+------+-----------+------+-------------+------+-------
- 2021-05-22 | Asia Rugby Men’s Championship           | Incheon      | home | Korea     | 47.6 | Malaysia    | 14.2 |  33.4
- 2021-05-29 | 2020 Rugby Europe Championship Play-Off | Belgium?     | home | Belgium   | 23.2 | Netherlands | 20.6 |   2.6
- 2021-05-29 | Asia Rugby Men’s Championship           | Kuala Lumpur | home | Malaysia  |  8.1 | Hong Kong   | 50.5 | -42.3
- 2021-06-05 | Asia Rugby Men’s Championship           | Incheon      | home | Korea     | 13.7 | Hong Kong   | 32.5 | -18.8
- 2021-06-12 | Asia Rugby Men’s Championship           | Kuala Lumpur | home | Malaysia  | 18.3 | Korea       | 37.1 | -18.8
- 2021-06-19 | Asia Rugby Men’s Championship           | Hong Kong    | home | Hong Kong | 64.9 | Malaysia    |  6.3 |  58.5
- 2021-06-26 | Asia Rugby Men’s Championship           | Hong Kong    | home | Hong Kong | 41.8 | Korea       | 10.6 |  31.1
-(7 rows)
+    date    |              event              |        city        |  site   |        team        | e_p  |      opponent      | e_p  |  e_d  
+------------+---------------------------------+--------------------+---------+--------------------+------+--------------------+------+-------
+ 2021-07-02 | 2021 Men's Internationals       | Pretoria           | home    | South Africa       | 45.8 | Georgia            |  7.1 |  38.7
+ 2021-07-03 | 2021 Men's Internationals       | Valparaiso         | home    | Chile              | 44.6 | Colombia           |  8.9 |  35.6
+ 2021-07-03 | 2021 Men's Internationals       | Dublin             | home    | Ireland            | 37.8 | Japan              | 11.3 |  26.6
+ 2021-07-03 | 2021 Men's Internationals       | Auckland           | home    | New Zealand        | 66.3 | Tonga              |  7.8 |  58.5
+ 2021-07-03 | 2021 Men's Internationals       | Bucuresti          | home    | Romania            | 11.2 | Argentina          | 38.5 | -27.2
+ 2021-07-03 | 2021 Men's Internationals       | Cardiff            | home    | Wales              | 67.6 | Canada             |  6.7 |  61.0
+ 2021-07-03 | 2021 Rugby Europe Championship  | Villajoyosa        | home    | Spain              | 23.9 | Russian Federation | 14.1 |   9.8
+ 2021-07-03 | Rugby Africa Cup 2021           | Nairobi            | home    | Kenya              | 39.6 | Senegal            | 15.1 |  24.5
+ 2021-07-03 | Rugby Africa Cup 2021           | Abidjan            | away    | Namibia            | 43.7 | Cote D'Ivoire      |  8.2 |  35.6
+ 2021-07-04 | 2021 Men's Internationals       | London             | home    | England            | 58.8 | United States      |  8.9 |  49.9
+ 2021-07-07 | 2021 France Tour (AUS)          | Brisbane           | home    | Australia          | 21.8 | France             | 20.6 |   1.2
+ 2021-07-07 | Rugby Africa Cup 2021           | Abidjan            | neutral | Namibia            | 68.9 | Madagascar         | 15.3 |  53.6
+ 2021-07-07 | Rugby Africa Cup 2021           | Nairobi            | neutral | Senegal            | 25.8 | Zambia             | 18.2 |   7.6
+ 2021-07-09 | 2021 Men's Internationals       | Johannesburg       | home    | South Africa       | 45.8 | Georgia            |  7.1 |  38.7
+ 2021-07-09 | Rugby Africa Cup 2021           | Monastir           | away    | Burkina Faso       | 10.8 | Tunisia            | 28.0 | -17.1
+ 2021-07-10 | 2021 Men's Internationals       | London             | home    | England            | 77.2 | Canada             |  6.4 |  70.7
+ 2021-07-10 | 2021 Men's Internationals       | Dublin             | home    | Ireland            | 54.7 | United States      |  9.2 |  45.5
+ 2021-07-10 | 2021 Men's Internationals       | Dunedin            | home    | New Zealand        | 58.0 | Fiji               |  8.8 |  49.2
+ 2021-07-10 | 2021 Men's Internationals       | Bucuresti          | home    | Romania            |  8.9 | Scotland           | 39.6 | -30.6
+ 2021-07-10 | 2021 Men's Internationals       | Cardiff            | home    | Wales              | 28.5 | Argentina          | 14.8 |  13.8
+ 2021-07-10 | 2021 Rugby Europe Championship  | Netherlands?       | home    | Netherlands        | 18.8 | Portugal           | 24.4 |  -5.5
+ 2021-07-10 | Rugby Africa Cup 2021           | Kampala            | home    | Uganda             | 47.3 | Ghana              |  9.5 |  37.8
+ 2021-07-10 | Rugby World Cup 2023 Qualifying | Auckland           | neutral | Samoa              | 19.2 | Tonga              | 21.1 |  -1.9
+ 2021-07-11 | Rugby Africa Cup 2021           | Abidjan            | home    | Cote D'Ivoire      | 20.1 | Madagascar         | 24.0 |  -3.8
+ 2021-07-11 | Rugby Africa Cup 2021           | Nairobi            | away    | Zambia             | 13.0 | Kenya              | 48.4 | -35.4
+ 2021-07-13 | 2021 France Tour (AUS)          | Melbourne          | home    | Australia          | 21.8 | France             | 20.6 |   1.2
+ 2021-07-13 | Rugby Africa Cup 2021           | Monastir           | neutral | Burkina Faso       |  7.7 | Zimbabwe           | 43.4 | -35.7
+ 2021-07-14 | Rugby Africa Cup 2021           | Kampala            | neutral | Ghana              |  7.2 | Algeria            | 34.6 | -27.4
+ 2021-07-17 | 2021 France Tour (AUS)          | Brisbane           | home    | Australia          | 21.8 | France             | 20.6 |   1.2
+ 2021-07-17 | 2021 Men's Internationals       | Georgia?           | home    | Georgia            | 10.7 | Scotland           | 27.6 | -16.9
+ 2021-07-17 | 2021 Men's Internationals       | Hamilton           | home    | New Zealand        | 58.0 | Fiji               |  8.8 |  49.2
+ 2021-07-17 | 2021 Men's Internationals       | Cardiff            | home    | Wales              | 28.5 | Argentina          | 14.8 |  13.8
+ 2021-07-17 | 2021 Rugby Europe Championship  | Netherlands?       | home    | Netherlands        | 15.1 | Spain              | 23.5 |  -8.4
+ 2021-07-17 | 2021 Rugby Europe Championship  | Nizhny Novgorod    | home    | Russian Federation | 22.6 | Portugal           | 19.4 |   3.3
+ 2021-07-17 | Rugby Africa Cup 2021           | Monastir           | home    | Tunisia            | 17.0 | Zimbabwe           | 37.1 | -20.1
+ 2021-07-17 | Rugby World Cup 2023 Qualifying | Hamilton           | neutral | Tonga              | 21.1 | Samoa              | 19.2 |   1.9
+ 2021-07-18 | Rugby Africa Cup 2021           | Kampala            | home    | Uganda             | 20.0 | Algeria            | 19.3 |   0.6
+ 2021-08-07 | 2021 Bledisloe Cup              | Auckland           | home    | New Zealand        | 39.5 | Australia          | 14.4 |  25.1
+ 2021-08-14 | 2021 Rugby Championship         | South Africa?      | home    | South Africa       | 35.8 | Argentina          | 14.3 |  21.5
+ 2021-08-21 | 2021 Rugby Championship         | Argentina?         | home    | Argentina          | 18.4 | South Africa       | 27.9 |  -9.5
+ 2021-08-21 | 2021 Rugby Championship         | Perth              | home    | Australia          | 18.5 | New Zealand        | 30.8 | -12.3
+ 2021-08-28 | 2021 Rugby Championship         | Wellington         | home    | New Zealand        | 39.5 | Australia          | 14.4 |  25.1
+ 2021-09-11 | 2021 Rugby Championship         | Auckland           | home    | New Zealand        | 43.8 | Argentina          | 13.7 |  30.0
+ 2021-09-11 | 2021 Rugby Championship         | South Africa?      | home    | South Africa       | 32.2 | Australia          | 15.0 |  17.3
+ 2021-09-11 | Rugby World Cup 2023 Qualifying | Glendale, Colorado | home    | United States      | 39.7 | Canada             | 17.1 |  22.6
+ 2021-09-18 | 2021 Rugby Championship         | Wellington         | away    | Argentina          | 13.7 | New Zealand        | 43.8 | -30.0
+ 2021-09-18 | 2021 Rugby Championship         | Brisbane           | home    | Australia          | 19.2 | South Africa       | 25.1 |  -5.9
+ 2021-09-25 | 2021 Rugby Championship         | Australia?         | home    | Australia          | 28.2 | Argentina          | 18.9 |   9.3
+ 2021-09-25 | 2021 Rugby Championship         | Dunedin            | home    | New Zealand        | 29.9 | South Africa       | 18.3 |  11.6
+(49 rows)
 
-COPY 7
+COPY 49
 COMMIT
