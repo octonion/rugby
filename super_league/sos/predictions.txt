@@ -1,12 +1,13 @@
 BEGIN
-    date    |       home       |    away    | e_home | e_away | e_d  
-------------+------------------+------------+--------+--------+------
- 2021-07-04 | St Helens        | Wigan      |   20.5 |    6.8 | 13.8
- 2021-07-05 | Warrington       | Leeds      |   24.3 |   15.1 |  9.3
- 2021-07-06 | Catalans Dragons | Hull KR    |   28.7 |   15.6 | 13.1
- 2021-07-06 | Huddersfield     | Castleford |   20.7 |   16.3 |  4.4
- 2021-07-06 | Hull FC          | Salford    |   33.5 |   10.2 | 23.4
-(5 rows)
+    date    |    home    |       away       | e_home | e_away |  e_d  
+------------+------------+------------------+--------+--------+-------
+ 2021-07-09 | Leeds      | Catalans Dragons |   15.3 |   22.6 |  -7.3
+ 2021-07-09 | Wakefield  | St Helens        |    8.9 |   22.2 | -13.3
+ 2021-07-11 | Castleford | Salford          |   26.8 |   14.5 |  12.3
+ 2021-07-11 | Hull FC    | Leigh            |   42.4 |   13.3 |  29.1
+ 2021-07-11 | Hull KR    | Warrington       |   19.3 |   24.5 |  -5.2
+ 2021-07-11 | Wigan      | Huddersfield     |   15.6 |   15.9 |  -0.3
+(6 rows)
 
-COPY 5
+COPY 6
 COMMIT
