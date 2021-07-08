@@ -1,83 +1,75 @@
 BEGIN
     date    |     home     |     away     | e_home | e_away |  e_d  
 ------------+--------------+--------------+--------+--------+-------
- 2021-07-01 | Roosters     | Storm        |   17.2 |   26.0 |  -8.8
- 2021-07-02 | Panthers     | Eels         |   22.9 |   11.4 |  11.6
- 2021-07-02 | Warriors     | Dragons      |   21.8 |   19.5 |   2.3
- 2021-07-03 | Bulldogs     | Sea Eagles   |   13.8 |   29.5 | -15.6
- 2021-07-03 | Knights      | Cowboys      |   23.0 |   20.1 |   2.8
- 2021-07-03 | Raiders      | Titans       |   26.2 |   21.8 |   4.4
- 2021-07-04 | Broncos      | Sharks       |   17.5 |   24.3 |  -6.8
- 2021-07-04 | Wests Tigers | Rabbitohs    |   18.4 |   32.8 | -14.4
- 2021-07-08 | Sea Eagles   | Raiders      |   29.3 |   17.0 |  12.3
- 2021-07-09 | Rabbitohs    | Cowboys      |   41.7 |   14.9 |  26.8
- 2021-07-10 | Bulldogs     | Roosters     |   12.4 |   31.1 | -18.7
- 2021-07-11 | Sharks       | Warriors     |   22.8 |   18.2 |   4.6
- 2021-07-16 | Sea Eagles   | Dragons      |   27.8 |   17.4 |  10.4
- 2021-07-16 | Titans       | Eels         |   17.2 |   31.7 | -14.5
- 2021-07-17 | Cowboys      | Roosters     |   16.9 |   35.1 | -18.2
- 2021-07-17 | Raiders      | Sharks       |   20.2 |   20.9 |  -0.7
- 2021-07-17 | Storm        | Knights      |   39.7 |    8.8 |  30.9
- 2021-07-18 | Broncos      | Wests Tigers |   22.2 |   24.4 |  -2.3
- 2021-07-18 | Rabbitohs    | Bulldogs     |   37.0 |   11.0 |  26.0
- 2021-07-18 | Warriors     | Panthers     |    9.6 |   28.1 | -18.5
- 2021-07-22 | Eels         | Raiders      |   30.7 |   13.8 |  16.9
- 2021-07-23 | Cowboys      | Storm        |   12.1 |   43.0 | -30.9
- 2021-07-23 | Roosters     | Knights      |   32.4 |   12.3 |  20.1
- 2021-07-24 | Panthers     | Broncos      |   38.3 |    7.2 |  31.1
- 2021-07-24 | Rabbitohs    | Warriors     |   31.4 |   15.7 |  15.7
- 2021-07-24 | Sea Eagles   | Wests Tigers |   33.4 |   18.1 |  15.3
- 2021-07-25 | Bulldogs     | Sharks       |   14.5 |   23.7 |  -9.3
- 2021-07-25 | Dragons      | Titans       |   26.7 |   20.7 |   6.0
- 2021-07-29 | Roosters     | Eels         |   21.6 |   21.0 |   0.5
- 2021-07-30 | Broncos      | Cowboys      |   24.9 |   22.4 |   2.5
- 2021-07-30 | Wests Tigers | Warriors     |   23.0 |   23.1 |  -0.1
- 2021-07-31 | Dragons      | Rabbitohs    |   17.7 |   27.3 |  -9.6
- 2021-07-31 | Knights      | Raiders      |   17.9 |   20.7 |  -2.8
- 2021-07-31 | Storm        | Panthers     |   15.9 |   16.2 |  -0.3
- 2021-08-01 | Bulldogs     | Titans       |   18.8 |   24.8 |  -6.0
- 2021-08-01 | Sharks       | Sea Eagles   |   20.3 |   23.3 |  -3.0
- 2021-08-05 | Knights      | Broncos      |   20.9 |   18.0 |   2.9
- 2021-08-06 | Eels         | Rabbitohs    |   23.8 |   20.0 |   3.8
- 2021-08-06 | Raiders      | Dragons      |   21.3 |   20.2 |   1.1
- 2021-08-07 | Roosters     | Panthers     |   13.0 |   22.5 |  -9.6
- 2021-08-07 | Sea Eagles   | Storm        |   16.3 |   28.9 | -12.6
- 2021-08-07 | Warriors     | Sharks       |   20.6 |   20.2 |   0.5
- 2021-08-08 | Bulldogs     | Wests Tigers |   18.3 |   23.9 |  -5.6
- 2021-08-08 | Titans       | Cowboys      |   31.6 |   22.5 |   9.1
- 2021-08-12 | Storm        | Raiders      |   38.0 |   11.0 |  27.0
- 2021-08-13 | Broncos      | Roosters     |   15.1 |   31.9 | -16.8
- 2021-08-13 | Dragons      | Panthers     |    9.6 |   27.6 | -18.1
- 2021-08-14 | Cowboys      | Wests Tigers |   24.8 |   26.9 |  -2.1
- 2021-08-14 | Rabbitohs    | Titans       |   38.0 |   16.9 |  21.1
- 2021-08-14 | Sea Eagles   | Eels         |   20.4 |   23.4 |  -3.0
- 2021-08-15 | Sharks       | Knights      |   24.7 |   14.2 |  10.5
- 2021-08-15 | Warriors     | Bulldogs     |   26.1 |   13.7 |  12.4
- 2021-08-19 | Titans       | Storm        |   13.7 |   39.2 | -25.5
- 2021-08-20 | Panthers     | Rabbitohs    |   25.5 |   12.0 |  13.5
- 2021-08-20 | Raiders      | Sea Eagles   |   19.3 |   25.9 |  -6.6
- 2021-08-21 | Bulldogs     | Knights      |   16.8 |   18.0 |  -1.2
- 2021-08-21 | Eels         | Cowboys      |   39.4 |   13.4 |  26.0
- 2021-08-21 | Wests Tigers | Sharks       |   21.4 |   23.8 |  -2.4
- 2021-08-22 | Broncos      | Warriors     |   18.8 |   23.6 |  -4.8
- 2021-08-22 | Dragons      | Roosters     |   17.7 |   26.0 |  -8.3
- 2021-08-26 | Knights      | Titans       |   20.9 |   22.8 |  -1.9
- 2021-08-27 | Roosters     | Rabbitohs    |   24.0 |   22.3 |   1.7
- 2021-08-27 | Warriors     | Raiders      |   22.9 |   19.1 |   3.8
- 2021-08-28 | Dragons      | Cowboys      |   29.3 |   18.3 |  11.0
- 2021-08-28 | Sharks       | Broncos      |   27.5 |   15.5 |  12.0
- 2021-08-28 | Storm        | Eels         |   26.4 |   15.1 |  11.3
- 2021-08-29 | Panthers     | Wests Tigers |   37.5 |    8.8 |  28.7
- 2021-08-29 | Sea Eagles   | Bulldogs     |   33.3 |   12.2 |  21.1
- 2021-09-02 | Raiders      | Roosters     |   17.3 |   27.4 | -10.0
- 2021-09-03 | Eels         | Panthers     |   12.9 |   20.3 |  -7.4
- 2021-09-03 | Sharks       | Storm        |   13.1 |   30.2 | -17.1
- 2021-09-04 | Broncos      | Knights      |   20.3 |   18.4 |   1.9
- 2021-09-04 | Cowboys      | Sea Eagles   |   18.7 |   33.2 | -14.5
- 2021-09-04 | Rabbitohs    | Dragons      |   30.9 |   15.6 |  15.3
- 2021-09-05 | Titans       | Warriors     |   23.8 |   23.7 |   0.2
- 2021-09-05 | Wests Tigers | Bulldogs     |   27.0 |   16.2 |  10.8
-(76 rows)
+ 2021-07-08 | Sea Eagles   | Raiders      |   33.3 |   15.7 |  17.6
+ 2021-07-09 | Rabbitohs    | Cowboys      |   43.2 |   14.3 |  28.9
+ 2021-07-10 | Bulldogs     | Roosters     |   12.1 |   33.0 | -20.9
+ 2021-07-11 | Sharks       | Warriors     |   21.7 |   19.1 |   2.6
+ 2021-07-16 | Sea Eagles   | Dragons      |   29.6 |   16.8 |  12.8
+ 2021-07-16 | Titans       | Eels         |   17.3 |   30.3 | -13.0
+ 2021-07-17 | Cowboys      | Roosters     |   16.5 |   35.8 | -19.3
+ 2021-07-17 | Raiders      | Sharks       |   19.4 |   21.9 |  -2.5
+ 2021-07-17 | Storm        | Knights      |   38.6 |    8.7 |  30.0
+ 2021-07-18 | Broncos      | Wests Tigers |   22.6 |   25.1 |  -2.5
+ 2021-07-18 | Rabbitohs    | Bulldogs     |   39.8 |   10.4 |  29.4
+ 2021-07-18 | Warriors     | Panthers     |    9.3 |   27.5 | -18.1
+ 2021-07-22 | Eels         | Raiders      |   31.8 |   12.7 |  19.1
+ 2021-07-23 | Cowboys      | Storm        |   10.4 |   46.8 | -36.3
+ 2021-07-23 | Roosters     | Knights      |   29.5 |   13.7 |  15.9
+ 2021-07-24 | Panthers     | Broncos      |   36.2 |    7.4 |  28.7
+ 2021-07-24 | Rabbitohs    | Warriors     |   31.1 |   15.9 |  15.3
+ 2021-07-24 | Sea Eagles   | Wests Tigers |   35.9 |   18.2 |  17.7
+ 2021-07-25 | Bulldogs     | Sharks       |   13.8 |   25.3 | -11.5
+ 2021-07-25 | Dragons      | Titans       |   24.7 |   22.0 |   2.7
+ 2021-07-29 | Roosters     | Eels         |   19.9 |   22.3 |  -2.4
+ 2021-07-30 | Broncos      | Cowboys      |   26.2 |   21.1 |   5.1
+ 2021-07-30 | Wests Tigers | Warriors     |   23.0 |   23.4 |  -0.4
+ 2021-07-31 | Dragons      | Rabbitohs    |   17.3 |   27.9 | -10.7
+ 2021-07-31 | Knights      | Raiders      |   19.5 |   18.8 |   0.7
+ 2021-07-31 | Storm        | Panthers     |   16.0 |   14.8 |   1.2
+ 2021-08-01 | Bulldogs     | Titans       |   16.4 |   28.6 | -12.1
+ 2021-08-01 | Sharks       | Sea Eagles   |   18.9 |   26.7 |  -7.8
+ 2021-08-05 | Knights      | Broncos      |   21.1 |   17.9 |   3.2
+ 2021-08-06 | Eels         | Rabbitohs    |   23.3 |   19.9 |   3.4
+ 2021-08-06 | Raiders      | Dragons      |   19.6 |   21.5 |  -1.9
+ 2021-08-07 | Roosters     | Panthers     |   12.3 |   23.5 | -11.2
+ 2021-08-07 | Sea Eagles   | Storm        |   16.2 |   29.3 | -13.1
+ 2021-08-07 | Warriors     | Sharks       |   21.0 |   19.8 |   1.3
+ 2021-08-08 | Bulldogs     | Wests Tigers |   16.9 |   26.8 |  -9.9
+ 2021-08-08 | Titans       | Cowboys      |   34.1 |   20.4 |  13.6
+ 2021-08-12 | Storm        | Raiders      |   41.1 |    9.8 |  31.4
+ 2021-08-13 | Broncos      | Roosters     |   16.2 |   30.9 | -14.8
+ 2021-08-13 | Dragons      | Panthers     |    9.2 |   27.1 | -17.9
+ 2021-08-14 | Cowboys      | Wests Tigers |   23.1 |   29.0 |  -6.0
+ 2021-08-14 | Rabbitohs    | Titans       |   36.2 |   18.1 |  18.1
+ 2021-08-14 | Sea Eagles   | Eels         |   21.1 |   22.7 |  -1.5
+ 2021-08-15 | Sharks       | Knights      |   22.6 |   15.6 |   7.0
+ 2021-08-15 | Warriors     | Bulldogs     |   27.5 |   12.9 |  14.7
+ 2021-08-19 | Titans       | Storm        |   13.3 |   39.2 | -25.9
+ 2021-08-20 | Panthers     | Rabbitohs    |   24.5 |   12.2 |  12.2
+ 2021-08-20 | Raiders      | Sea Eagles   |   17.3 |   30.3 | -13.0
+ 2021-08-21 | Bulldogs     | Knights      |   14.7 |   20.5 |  -5.7
+ 2021-08-21 | Eels         | Cowboys      |   39.8 |   12.4 |  27.4
+ 2021-08-21 | Wests Tigers | Sharks       |   22.5 |   23.6 |  -1.1
+ 2021-08-22 | Broncos      | Warriors     |   18.9 |   23.5 |  -4.6
+ 2021-08-22 | Dragons      | Roosters     |   18.2 |   25.4 |  -7.2
+ 2021-08-26 | Knights      | Titans       |   20.4 |   23.3 |  -2.8
+ 2021-08-27 | Roosters     | Rabbitohs    |   23.0 |   24.2 |  -1.2
+ 2021-08-27 | Warriors     | Raiders      |   23.9 |   18.1 |   5.8
+ 2021-08-28 | Dragons      | Cowboys      |   29.5 |   17.3 |  12.2
+ 2021-08-28 | Sharks       | Broncos      |   26.0 |   16.8 |   9.3
+ 2021-08-28 | Storm        | Eels         |   26.1 |   14.1 |  12.0
+ 2021-08-29 | Panthers     | Wests Tigers |   36.1 |    9.1 |  27.0
+ 2021-08-29 | Sea Eagles   | Bulldogs     |   38.4 |   11.2 |  27.3
+ 2021-09-02 | Raiders      | Roosters     |   17.0 |   28.6 | -11.6
+ 2021-09-03 | Eels         | Panthers     |   12.4 |   19.3 |  -6.9
+ 2021-09-03 | Sharks       | Storm        |   11.7 |   32.9 | -21.2
+ 2021-09-04 | Broncos      | Knights      |   19.7 |   19.2 |   0.5
+ 2021-09-04 | Cowboys      | Sea Eagles   |   16.8 |   37.9 | -21.1
+ 2021-09-04 | Rabbitohs    | Dragons      |   30.7 |   15.7 |  15.0
+ 2021-09-05 | Titans       | Warriors     |   24.6 |   22.8 |   1.8
+ 2021-09-05 | Wests Tigers | Bulldogs     |   29.4 |   15.3 |  14.1
+(68 rows)
 
-COPY 76
+COPY 68
 COMMIT
