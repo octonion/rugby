@@ -16,11 +16,12 @@ r.field as field,
 r.team_name as team,
 r.opponent_name as opponent,
 r.team_score::float as gs,
-power(year-2019,1.5) as w
+--power(year-2019,1.5) as w
+1 as w
 from major_league.results r
 
 where
-    r.year between 2020 and 2021
+    r.year between 2021 and 2021
 
 ;")
 
