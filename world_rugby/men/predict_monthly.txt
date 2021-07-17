@@ -1,33 +1,19 @@
 BEGIN
 SET
-    date    |              event              |      city       |  site   |        team        | e_p  |   opponent    | e_p  
-------------+---------------------------------+-----------------+---------+--------------------+------+---------------+------
- 2021-07-09 | 2021 Men's Internationals       | Johannesburg    | home    | South Africa       | 43.2 | Georgia       |  7.7
- 2021-07-09 | Rugby Africa Cup 2021           | Monastir        | away    | Burkina Faso       | 13.3 | Tunisia       | 22.7
- 2021-07-10 | 2021 Men's Internationals       | London          | home    | England            | 68.6 | Canada        |  7.6
- 2021-07-10 | 2021 Men's Internationals       | Dublin          | home    | Ireland            | 47.0 | United States | 11.1
- 2021-07-10 | 2021 Men's Internationals       | Dunedin         | home    | New Zealand        | 57.7 | Fiji          |  8.8
- 2021-07-10 | 2021 Men's Internationals       | Cardiff         | home    | Wales              | 28.4 | Argentina     | 14.8
- 2021-07-10 | 2021 Rugby Europe Championship  | Amsterdam       | home    | Netherlands        | 19.1 | Portugal      | 24.4
- 2021-07-10 | Rugby Africa Cup 2021           | Kampala         | home    | Uganda             | 33.7 | Ghana         | 12.4
- 2021-07-10 | Rugby World Cup 2023 Qualifying | Auckland        | neutral | Samoa              | 20.9 | Tonga         | 19.6
- 2021-07-11 | Rugby Africa Cup 2021           | Abidjan         | home    | Cote D'Ivoire      | 30.0 | Madagascar    | 15.3
- 2021-07-11 | Rugby Africa Cup 2021           | Nairobi         | away    | Zambia             | 13.1 | Kenya         | 46.0
- 2021-07-11 | Rugby World Cup 2023 Qualifying | Montevideo      | neutral | Brazil             | 22.6 | Chile         | 13.5
- 2021-07-13 | 2021 France Tour (AUS)          | Melbourne       | home    | Australia          | 22.3 | France        | 20.3
- 2021-07-13 | Rugby Africa Cup 2021           | Monastir        | neutral | Burkina Faso       |  9.8 | Zimbabwe      | 34.7
- 2021-07-14 | Rugby Africa Cup 2021           | Kampala         | neutral | Ghana              |  7.5 | Algeria       | 28.8
- 2021-07-17 | 2021 France Tour (AUS)          | Brisbane        | home    | Australia          | 22.3 | France        | 20.3
- 2021-07-17 | 2021 Men's Internationals       | Georgia?        | home    | Georgia            | 11.6 | Scotland      | 26.3
- 2021-07-17 | 2021 Men's Internationals       | Hamilton        | home    | New Zealand        | 57.7 | Fiji          |  8.8
- 2021-07-17 | 2021 Men's Internationals       | Cardiff         | home    | Wales              | 28.4 | Argentina     | 14.8
- 2021-07-17 | 2021 Rugby Europe Championship  | Netherlands?    | home    | Netherlands        | 15.3 | Spain         | 23.2
- 2021-07-17 | 2021 Rugby Europe Championship  | Nizhny Novgorod | home    | Russian Federation | 22.3 | Portugal      | 19.8
- 2021-07-17 | Rugby Africa Cup 2021           | Monastir        | home    | Tunisia            | 17.6 | Zimbabwe      | 36.4
- 2021-07-17 | Rugby World Cup 2023 Qualifying | Hamilton        | neutral | Tonga              | 19.6 | Samoa         | 20.9
- 2021-07-18 | Rugby Africa Cup 2021           | Kampala         | home    | Uganda             | 16.3 | Algeria       | 22.9
- 2021-08-07 | 2021 Bledisloe Cup              | Auckland        | home    | New Zealand        | 40.1 | Australia     | 14.0
-(25 rows)
+    date    |              event              |      city       |  site   |        team        | e_p  | opponent  | e_p  
+------------+---------------------------------+-----------------+---------+--------------------+------+-----------+------
+ 2021-07-17 | 2021 France Tour (AUS)          | Brisbane        | home    | Australia          | 22.3 | France    | 20.3
+ 2021-07-17 | 2021 Men's Internationals       | Georgia?        | home    | Georgia            | 11.6 | Scotland  | 26.3
+ 2021-07-17 | 2021 Men's Internationals       | Hamilton        | home    | New Zealand        | 57.7 | Fiji      |  8.8
+ 2021-07-17 | 2021 Men's Internationals       | Cardiff         | home    | Wales              | 28.4 | Argentina | 14.8
+ 2021-07-17 | 2021 Rugby Europe Championship  | Netherlands?    | home    | Netherlands        | 15.3 | Spain     | 23.2
+ 2021-07-17 | 2021 Rugby Europe Championship  | Nizhny Novgorod | home    | Russian Federation | 22.3 | Portugal  | 19.8
+ 2021-07-17 | Rugby Africa Cup 2021           | Monastir        | home    | Tunisia            | 17.6 | Zimbabwe  | 36.4
+ 2021-07-17 | Rugby World Cup 2023 Qualifying | Hamilton        | neutral | Tonga              | 19.6 | Samoa     | 20.9
+ 2021-07-18 | Rugby Africa Cup 2021           | Kampala         | home    | Uganda             | 16.3 | Algeria   | 22.9
+ 2021-08-07 | 2021 Bledisloe Cup              | Auckland        | home    | New Zealand        | 40.1 | Australia | 14.0
+ 2021-08-14 | 2021 Rugby Championship         | South Africa?   | home    | South Africa       | 36.0 | Argentina | 14.0
+(11 rows)
 
-COPY 25
+COPY 11
 COMMIT
