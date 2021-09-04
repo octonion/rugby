@@ -1,37 +1,44 @@
 BEGIN
 SET
-    date    |              event              |        city        | site |     team      | e_p  |      opponent      | e_p  |  e_d  
-------------+---------------------------------+--------------------+------+---------------+------+--------------------+------+-------
- 2021-08-21 | 2021 Rugby Championship         | Port Elizabeth     | away | Argentina     | 15.0 | South Africa       | 33.4 | -18.4
- 2021-08-28 | 2021 Rugby Championship         | Perth              | home | Australia     | 19.9 | New Zealand        | 31.3 | -11.4
- 2021-09-04 | Rugby World Cup 2023 Qualifying | St. John's         | home | Canada        | 22.1 | United States      | 32.9 | -10.7
- 2021-09-11 | 2021 Rugby Championship         | New Zealand?       | home | New Zealand   | 41.2 | Argentina          | 15.2 |  26.0
- 2021-09-11 | Rugby World Cup 2023 Qualifying | Glendale, Colorado | home | United States | 40.9 | Canada             | 17.8 |  23.2
- 2021-09-12 | 2021 Rugby Championship         | Sydney             | away | South Africa  | 25.3 | Australia          | 19.6 |   5.8
- 2021-09-18 | 2021 Rugby Championship         | Argentina?         | home | Argentina     | 18.9 | New Zealand        | 33.1 | -14.1
- 2021-09-18 | 2021 Rugby Championship         | Brisbane           | home | Australia     | 19.6 | South Africa       | 25.3 |  -5.8
- 2021-09-25 | 2021 Rugby Championship         | Newcastle          | home | Australia     | 27.6 | Argentina          | 20.0 |   7.7
- 2021-09-25 | 2021 Rugby Championship         | Dunedin            | home | New Zealand   | 29.2 | South Africa       | 19.3 |   9.9
- 2021-10-02 | 2021 Rugby Championship         | Canberra           | away | Argentina     | 20.0 | Australia          | 27.6 |  -7.7
- 2021-10-02 | 2021 Rugby Championship         | Auckland           | away | South Africa  | 19.3 | New Zealand        | 29.2 |  -9.9
- 2021-10-23 | 2021 Men's Internationals       | Washington D.C.    | home | United States | 13.1 | New Zealand        | 55.9 | -42.8
- 2021-10-30 | 2021 Men's Internationals       | Las Vegas          | home | United States | 14.1 | Ireland            | 38.3 | -24.2
- 2021-10-30 |                                 | Edinburgh          | home | Scotland      | 46.7 | Tonga              |  8.2 |  38.5
- 2021-10-30 |                                 | Cardiff            | home | Wales         | 18.3 | New Zealand        | 26.2 |  -8.0
- 2021-11-06 | 2021 Men's Internationals       | London             | home | England       | 52.3 | Tonga              |  7.5 |  44.8
- 2021-11-06 | 2021 Men's Internationals       | Saint-Denis        | home | France        | 27.4 | Argentina          | 17.6 |   9.8
- 2021-11-06 | 2021 Men's Internationals       | Dublin             | home | Ireland       | 33.6 | Japan              | 13.7 |  19.9
- 2021-11-06 | 2021 Rugby Europe Championship  | Netherlands?       | home | Netherlands   | 19.1 | Russian Federation | 23.0 |  -3.9
- 2021-11-06 |                                 | Edinburgh          | home | Scotland      | 24.6 | Australia          | 18.6 |   6.0
- 2021-11-06 |                                 | Cardiff            | home | Wales         | 17.9 | South Africa       | 21.2 |  -3.3
- 2021-11-13 | 2021 Men's Internationals       | London             | home | England       | 27.6 | Australia          | 17.1 |  10.5
- 2021-11-13 | 2021 Men's Internationals       | Dublin             | home | Ireland       | 20.3 | New Zealand        | 25.6 |  -5.3
- 2021-11-13 | 2021 Rugby Europe Championship  | Romania?           | home | Romania       | 34.3 | Netherlands        | 11.5 |  22.8
- 2021-11-13 |                                 | Edinburgh          | home | Scotland      | 18.5 | South Africa       | 22.5 |  -4.0
- 2021-11-14 | 2021 Men's Internationals       | Bordeaux           | home | France        | 34.3 | Georgia            |  9.3 |  25.0
- 2021-11-14 | 2021 Rugby Europe Championship  | Spain?             | home | Spain         | 24.9 | Russian Federation | 13.8 |  11.1
- 2021-11-14 |                                 | Cardiff            | home | Wales         | 32.6 | Fiji               | 11.5 |  21.0
-(29 rows)
+    date    |              event              |        city        |  site   |     team      | e_p  |      opponent      | e_p  |  e_d  
+------------+---------------------------------+--------------------+---------+---------------+------+--------------------+------+-------
+ 2021-09-04 | Rugby World Cup 2023 Qualifying | St. John's         | home    | Canada        | 22.1 | United States      | 32.9 | -10.7
+ 2021-09-05 | 2021 Rugby Championship         | Perth              | home    | Australia     | 19.9 | New Zealand        | 31.3 | -11.4
+ 2021-09-11 | Rugby World Cup 2023 Qualifying | Glendale, Colorado | home    | United States | 40.9 | Canada             | 17.8 |  23.1
+ 2021-09-12 | 2021 Rugby Championship         | Gold Coast         | neutral | New Zealand   | 37.1 | Argentina          | 16.9 |  20.2
+ 2021-09-12 | 2021 Rugby Championship         | Gold Coast         | away    | South Africa  | 25.4 | Australia          | 19.3 |   6.0
+ 2021-09-18 | 2021 Rugby Championship         | Brisbane           | neutral | Argentina     | 16.9 | New Zealand        | 37.1 | -20.2
+ 2021-09-18 | 2021 Rugby Championship         | Brisbane           | home    | Australia     | 19.3 | South Africa       | 25.4 |  -6.0
+ 2021-09-25 | 2021 Rugby Championship         | Townsville         | home    | Australia     | 27.6 | Argentina          | 19.8 |   7.9
+ 2021-09-25 | 2021 Rugby Championship         | Townsville         | neutral | New Zealand   | 25.9 | South Africa       | 21.6 |   4.3
+ 2021-10-02 | 2021 Rugby Championship         | Gold Coast         | away    | Argentina     | 19.8 | Australia          | 27.6 |  -7.9
+ 2021-10-02 | 2021 Rugby Championship         | Gold Coast         | neutral | South Africa  | 21.6 | New Zealand        | 25.9 |  -4.3
+ 2021-10-23 | 2021 Men's Internationals       | Washington D.C.    | home    | United States | 13.1 | New Zealand        | 56.0 | -42.8
+ 2021-10-30 | 2021 Men's Internationals       | Las Vegas          | home    | United States | 14.1 | Ireland            | 38.3 | -24.2
+ 2021-10-30 | Autumn Nations Series 2021      | Edinburgh          | home    | Scotland      | 46.7 | Tonga              |  8.2 |  38.6
+ 2021-10-30 | Autumn Nations Series 2021      | Cardiff            | home    | Wales         | 18.3 | New Zealand        | 26.2 |  -8.0
+ 2021-11-06 | 2021 Rugby Europe Championship  | Netherlands?       | home    | Netherlands   | 19.1 | Russian Federation | 23.0 |  -3.9
+ 2021-11-06 | Autumn Nations Series 2021      | London             | home    | England       | 52.4 | Tonga              |  7.5 |  44.9
+ 2021-11-06 | Autumn Nations Series 2021      | Saint-Denis        | home    | France        | 27.4 | Argentina          | 17.4 |  10.0
+ 2021-11-06 | Autumn Nations Series 2021      | Dublin             | home    | Ireland       | 33.6 | Japan              | 13.7 |  19.9
+ 2021-11-06 | Autumn Nations Series 2021      | Italy?             | home    | Italy         | 12.4 | New Zealand        | 49.7 | -37.4
+ 2021-11-06 | Autumn Nations Series 2021      | Cardiff            | home    | Wales         | 17.7 | South Africa       | 21.3 |  -3.5
+ 2021-11-07 | Autumn Nations Series 2021      | Edinburgh          | home    | Scotland      | 24.7 | Australia          | 18.6 |   6.0
+ 2021-11-13 | 2021 Rugby Europe Championship  | Romania?           | home    | Romania       | 34.3 | Netherlands        | 11.5 |  22.8
+ 2021-11-13 | Autumn Nations Series 2021      | London             | home    | England       | 27.7 | Australia          | 17.1 |  10.6
+ 2021-11-13 | Autumn Nations Series 2021      | Dublin             | home    | Ireland       | 20.4 | New Zealand        | 25.6 |  -5.3
+ 2021-11-13 | Autumn Nations Series 2021      | Italy?             | home    | Italy         | 17.1 | Argentina          | 31.4 | -14.3
+ 2021-11-13 | Autumn Nations Series 2021      | Edinburgh          | home    | Scotland      | 18.2 | South Africa       | 22.5 |  -4.3
+ 2021-11-14 | 2021 Rugby Europe Championship  | Spain?             | home    | Spain         | 24.9 | Russian Federation | 13.8 |  11.1
+ 2021-11-14 | Autumn Nations Series 2021      | Bordeaux           | home    | France        | 34.3 | Georgia            |  9.3 |  25.0
+ 2021-11-14 | Autumn Nations Series 2021      | Cardiff            | home    | Wales         | 32.6 | Fiji               | 11.5 |  21.0
+ 2021-11-20 | Autumn Nations Series 2021      | London             | home    | England       | 20.5 | South Africa       | 20.6 |  -0.2
+ 2021-11-20 | Autumn Nations Series 2021      | Saint-Denis        | home    | France        | 19.8 | New Zealand        | 27.6 |  -7.9
+ 2021-11-20 | Autumn Nations Series 2021      | Italy?             | home    | Italy         | 38.6 | Uruguay            | 15.5 |  23.1
+ 2021-11-20 | Autumn Nations Series 2021      | Edinburgh          | home    | Scotland      | 31.0 | Japan              | 14.9 |  16.1
+ 2021-11-20 | Autumn Nations Series 2021      | Cardiff            | home    | Wales         | 24.0 | Australia          | 17.6 |   6.4
+ 2021-11-21 | Autumn Nations Series 2021      | Dublin             | home    | Ireland       | 28.2 | Argentina          | 16.2 |  12.0
+(36 rows)
 
-COPY 29
+COPY 36
 COMMIT
