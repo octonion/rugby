@@ -1,9 +1,14 @@
 BEGIN
-    date    |       home       |    away     | e_home | e_away | e_d  
-------------+------------------+-------------+--------+--------+------
- 2021-06-25 | Stade Toulousain | La Rochelle |   22.0 |   19.9 |  2.1
- 2021-06-26 | Exeter Chiefs    | Harlequins  |   35.2 |   19.4 | 15.8
-(2 rows)
+    date    |         home         |       away       | e_home | e_away | e_d  
+------------+----------------------+------------------+--------+--------+------
+ 2021-09-04 | Biarritz Olympique   | Bordeaux Begles  |   21.3 |   20.9 |  0.4
+ 2021-09-04 | CA Brive             | USA Perpignan    |   18.4 |   26.7 | -8.3
+ 2021-09-04 | Castres Olympique    | Section Paloise  |   28.2 |   23.8 |  4.4
+ 2021-09-04 | RC Toulonnais        | Montpellier      |   26.0 |   17.9 |  8.2
+ 2021-09-04 | Stade Francais Paris | Racing 92        |   24.2 |   24.9 | -0.7
+ 2021-09-05 | La Rochelle          | Stade Toulousain |   23.6 |   17.9 |  5.7
+ 2021-09-05 | Lyon                 | Clermont         |   28.0 |   23.9 |  4.1
+(7 rows)
 
-COPY 2
+COPY 7
 COMMIT
