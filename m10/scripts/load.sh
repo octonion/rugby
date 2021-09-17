@@ -12,7 +12,7 @@ fi
 psql rugby -f schema/create_schema.sql
 
 mkdir /tmp/data
-cp csv/m*.csv /tmp/data
+cp csv/nz*.csv /tmp/data
 
 dos2unix /tmp/data/*
 tail -q -n+2 /tmp/data/*.csv >> /tmp/games.csv
