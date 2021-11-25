@@ -1,13 +1,13 @@
 begin;
 
-drop table if exists wr.types;
+drop table if exists world_rugby.types;
 
-create table wr.types (
+create table world_rugby.types (
 	type_id	      integer,
 	type_name     text,
 	primary key (type_id)
 );
 
-copy wr.types from '/tmp/types.csv' with delimiter as ',' csv quote as '"';
+copy world_rugby.types from '/tmp/types.csv' with delimiter as ',' csv quote as '"';
 
 commit;

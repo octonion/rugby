@@ -1,0 +1,70 @@
+[1] 4828    8
+[1] 13950     8
+[1] TRUE
+[1] 13950     5
+start par. =  1 1 1 fn =  397354.6 
+At return
+eval: 231 fn:      393881.97 par: 0.291753 0.590186 0.934443
+(NM) 20: f = 393882 at  0.291753  0.590186  0.934443   2.63653 -0.080348 0.0411284
+(NM) 40: f = 393882 at  0.291753  0.590186  0.934443   2.63653 -0.080348 0.0411284
+(NM) 60: f = 393882 at   0.291834   0.589651   0.934761      2.632 -0.0797765  0.0417434
+(NM) 80: f = 393882 at   0.291765   0.590363   0.934901    2.63112 -0.0799368  0.0414834
+(NM) 100: f = 393882 at   0.291742   0.590242   0.934593    2.63054 -0.0800447  0.0414376
+(NM) 120: f = 393882 at   0.291739   0.590295   0.934467    2.63009 -0.0801762  0.0413228
+(NM) 140: f = 393882 at   0.29175  0.590203  0.934492   2.62962 -0.080167 0.0413295
+(NM) 160: f = 393882 at    0.29175   0.590163   0.934467    2.62967 -0.0801805  0.0413127
+(NM) 180: f = 393882 at   0.291752   0.590175   0.934459    2.62975 -0.0801851  0.0413056
+(NM) 200: f = 393882 at   0.291753   0.590172   0.934452    2.62968 -0.0801864  0.0413005
+(NM) 220: f = 393882 at   0.291753   0.590174   0.934435    2.62971 -0.0801842  0.0413032
+(NM) 240: f = 393882 at   0.291752   0.590175   0.934412    2.62972 -0.0801819  0.0413061
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
+   Data: g
+Weights: w
+      AIC       BIC    logLik  deviance  df.resid 
+ 393893.9  393939.2 -196941.0  393881.9     13944 
+Random effects:
+ Groups  Name        Std.Dev.
+ game_id (Intercept) 0.2918  
+ defense (Intercept) 0.5902  
+ offense (Intercept) 0.9344  
+Number of obs: 13950, groups:  game_id, 2414; defense, 45; offense, 45
+Fixed Effects:
+      (Intercept)  fielddefense_home  fieldoffense_home  
+          2.62971           -0.08018            0.04131  
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
+   Data: g
+Weights: w
+
+      AIC       BIC    logLik  deviance  df.resid 
+ 393893.9  393939.2 -196941.0  393881.9     13944 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-9.4225 -1.9497 -0.0119  1.9029 21.3190 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ game_id (Intercept) 0.08512  0.2918  
+ defense (Intercept) 0.34831  0.5902  
+ offense (Intercept) 0.87311  0.9344  
+Number of obs: 13950, groups:  game_id, 2414; defense, 45; offense, 45
+
+Fixed effects:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        2.62971    0.16752  15.698  < 2e-16 ***
+fielddefense_home -0.08018    0.02194  -3.654 0.000258 ***
+fieldoffense_home  0.04131    0.02176   1.898 0.057703 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) flddf_
+filddfns_hm -0.008       
+fildffns_hm -0.008  0.948
+[1] TRUE

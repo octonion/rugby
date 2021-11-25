@@ -1,8 +1,8 @@
 begin;
 
-drop table if exists wr.teams;
+drop table if exists world_rugby.teams;
 
-create table wr.teams (
+create table world_rugby.teams (
 	country_id	      integer,
 	country_name	      text,
 	team_id		      integer,
@@ -40,7 +40,7 @@ insert into t
 country_id,
 country_name,
 json_array_elements(country_json) as team_json
-from wr.countries
+from world_rugby.countries
 where json_typeof(country_json)='array'
 --, json_array_elements_text(c.country_json) t
 );
@@ -51,7 +51,7 @@ set team_id = round((team_json->>'id')::real),
     type_id = round((team_json->>'type')::real),
     names_json = (team_json->>'naming')::json;
 
-insert into wr.teams
+insert into world_rugby.teams
 (country_id, country_name,
  team_id, sport_id, type_id, naming_json)
 (
@@ -65,16 +65,16 @@ json_array_elements(names_json) as naming_json
 from t
 );
 
-update wr.teams
+update world_rugby.teams
 set team_name = coalesce(naming_json->>'name', country_name),
     team_abbr = (naming_json->>'abbr');
 
-update wr.teams
+update world_rugby.teams
 set from_millis = ((naming_json->>'from')::json)->>'millis',
     from_label = (((naming_json->>'from')::json)->>'label')::date
 where (naming_json->>'from') is not null;
 
-update wr.teams
+update world_rugby.teams
 set until_millis = ((naming_json->>'until')::json)->>'millis',
     until_label = (((naming_json->>'until')::json)->>'label')::date
 where (naming_json->>'until') is not null;

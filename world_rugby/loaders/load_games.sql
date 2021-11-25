@@ -1,8 +1,8 @@
 begin;
 
-drop table if exists wr.games;
+drop table if exists world_rugby.games;
 
-create table wr.games (
+create table world_rugby.games (
 	match_id	      integer,
 	description	      text,
         venue_id	      integer,
@@ -34,8 +34,8 @@ create table wr.games (
 	primary key (match_id)
 );
 
-copy wr.games from '/tmp/games.csv' with delimiter as ',' csv quote as '"';
+copy world_rugby.games from '/tmp/games.csv' with delimiter as ',' csv quote as '"';
 
---alter table wr.games add column game_id serial;
+--alter table world_rugby.games add column game_id serial;
 
 commit;
