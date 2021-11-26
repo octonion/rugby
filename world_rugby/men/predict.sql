@@ -86,8 +86,8 @@ join men._basic_factors i
 where
    g.time_label::date between current_date and current_date+90
 
-and (t1.sport_id,t1.type_id)=(3,6)
-and (t2.sport_id,t2.type_id)=(3,6)
+and (t1.sport_id,t1.type_id)=(1,6)
+and (t2.sport_id,t2.type_id)=(1,6)
 
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
@@ -181,8 +181,8 @@ join men._basic_factors i
 where
    g.time_label::date between current_date and current_date+90
 
-and (t1.sport_id,t1.type_id)=(3,6)
-and (t2.sport_id,t2.type_id)=(3,6)
+and (t1.sport_id,t1.type_id)=(1,6)
+and (t2.sport_id,t2.type_id)=(1,6)
 
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)

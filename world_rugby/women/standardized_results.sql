@@ -68,8 +68,8 @@ join world_rugby.teams t2
 where
     extract(year from g.time_label) between 2003 and 2021
     
-and t1.sport_id=3
-and t2.sport_id=3
+and t1.sport_id=2
+and t2.sport_id=2
 and t1.type_id in (6)
 and t2.type_id in (6)
 
@@ -131,11 +131,11 @@ join world_rugby.teams t2
 where
     extract(year from g.time_label) between 2003 and 2021
     
---and (t1.sport_id,t1.type_id)=(3,6)
---and (t2.sport_id,t2.type_id)=(3,6)
+--and (t1.sport_id,t1.type_id)=(2,6)
+--and (t2.sport_id,t2.type_id)=(2,6)
 
-and t1.sport_id=3
-and t2.sport_id=3
+and t1.sport_id=2
+and t2.sport_id=2
 and t1.type_id in (6)
 and t2.type_id in (6)
 
