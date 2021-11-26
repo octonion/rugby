@@ -1,8 +1,8 @@
 begin;
 
-drop table if exists wr._men_factors;
+drop table if exists men._factors;
 
-create table wr._men_factors (
+create table men._factors (
        parameter		text,
        level			text,
        type			text,
@@ -13,7 +13,7 @@ create table wr._men_factors (
 --       primary key (team_name,type,method)
 );
 
--- this can/should be rewritten agnostically
+-- this can/should be remenitten agnostically
 -- do random/fixed separately
 -- test for the prescence of '/' using like
 
@@ -21,7 +21,7 @@ create table wr._men_factors (
 
 -- defense,offense
 
-insert into wr._men_factors
+insert into men._factors
 (parameter,level,type,method,raw_factor,exp_factor)
 (
 select
@@ -32,8 +32,8 @@ npl.type as type,
 estimate as raw_factor,
 null as exp_factor
 --exp(estimate) as exp_factor
-from wr._men_parameter_levels npl
-left outer join wr._men_basic_factors nbf
+from men._parameter_levels npl
+left outer join men._basic_factors nbf
   on (nbf.factor,nbf.level,nbf.type)=(npl.parameter,npl.level,npl.type)
 where
     npl.type='random'
@@ -42,7 +42,7 @@ and npl.parameter in ('defense','offense')
 
 -- other random
 
-insert into wr._men_factors
+insert into men._factors
 (parameter,level,type,method,raw_factor,exp_factor)
 (
 select
@@ -53,8 +53,8 @@ npl.type as type,
 estimate as raw_factor,
 null as exp_factor
 --exp(estimate) as exp_factor
-from wr._men_parameter_levels npl
-left outer join wr._men_basic_factors nbf
+from men._parameter_levels npl
+left outer join men._basic_factors nbf
   on (nbf.factor,nbf.level,nbf.type)=(npl.parameter,npl.level,npl.type)
 where
     npl.type='random'
@@ -65,7 +65,7 @@ and npl.parameter not in ('defense','offense')
 
 -- field
 
-insert into wr._men_factors
+insert into men._factors
 (parameter,level,type,method,raw_factor,exp_factor)
 (
 select
@@ -76,8 +76,8 @@ npl.type as type,
 coalesce(estimate,0.0) as raw_factor,
 null as exp_factor
 --coalesce(exp(estimate),1.0) as exp_factor
-from wr._men_parameter_levels npl
-left outer join wr._men_basic_factors nbf
+from men._parameter_levels npl
+left outer join men._basic_factors nbf
   on (nbf.factor,nbf.type)=(npl.parameter||npl.level,npl.type)
 where
     npl.type='fixed'
@@ -87,7 +87,7 @@ and npl.level not in ('neutral')
 
 -- other fixed
 
-insert into wr._men_factors
+insert into men._factors
 (parameter,level,type,method,raw_factor,exp_factor)
 (
 select
@@ -98,20 +98,20 @@ npl.type as type,
 coalesce(estimate,0.0) as raw_factor,
 null as exp_factor
 --coalesce(exp(estimate),1.0) as exp_factor
-from wr._men_parameter_levels npl
-left outer join wr._men_basic_factors nbf
+from men._parameter_levels npl
+left outer join men._basic_factors nbf
   on (nbf.factor,nbf.type)=(npl.parameter||npl.level,npl.type)
 where
     npl.type='fixed'
 and npl.parameter not in ('field')
 );
 
-update wr._men_factors
+update men._factors
 set exp_factor=exp(raw_factor);
 
 -- 'neutral' park confounded with 'none' field; set factor = 1.0 for field 'none'
 
-insert into wr._men_factors
+insert into men._factors
 (parameter,level,type,method,raw_factor,exp_factor)
 values
 ('field','neutral','fixed','ln_regression',0.0,1.0);

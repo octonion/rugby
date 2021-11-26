@@ -23,7 +23,7 @@ r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
 (year-2015) as w
-from wr.men_results r
+from men.men_results r
 
 where
     r.year between 2016 and 2021
@@ -32,7 +32,7 @@ where
 --(
 --select
 --team_id
---from wr.men_results
+--from men.men_results
 --where year between 2013 and 2021
 --group by team_id
 --having count(*)>=6
@@ -42,7 +42,7 @@ where
 --(
 --select
 --team_id
---from wr.men_results
+--from men.men_results
 --where year between 2013 and 2021
 --group by team_id
 --having count(*)>=6
@@ -110,7 +110,7 @@ for (n in rpn) {
 # Model parameters
 
 parameter_levels <- as.data.frame(do.call("rbind",pll))
-dbWriteTable(con,c("wr","_men_zinb_parameter_levels"),parameter_levels,row.names=TRUE)
+dbWriteTable(con,c("men","_zinb_parameter_levels"),parameter_levels,row.names=TRUE)
 
 g <- cbind(fp,rp)
 g$gs <- gs
@@ -180,6 +180,6 @@ results <- c(results,list(data.frame(factor="alpha",type="structural",level="alp
 
 combined <- as.data.frame(do.call("rbind",results))
 
-dbWriteTable(con,c("wr","_men_zinb_basic_factors"),as.data.frame(combined),row.names=TRUE)
+dbWriteTable(con,c("men","_zinb_basic_factors"),as.data.frame(combined),row.names=TRUE)
 
 quit("no")

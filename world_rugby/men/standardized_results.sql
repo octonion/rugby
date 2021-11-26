@@ -1,8 +1,8 @@
 begin;
 
-drop table if exists wr.men_results;
+drop table if exists men._results;
 
-create table wr.men_results (
+create table men._results (
 	game_id		      integer,
 	year		      integer,
 	game_date	      date,
@@ -21,7 +21,7 @@ create table wr.men_results (
 
 );
 
-insert into wr.men_results
+insert into men._results
 (game_id,year,
  game_date,
  country,
@@ -60,16 +60,16 @@ t2.country_name,
 g.team_score,
 g.opponent_score
 
-from wr.games g
-join wr.teams t1
+from world_rugby.games g
+join world_rugby.teams t1
   on t1.team_id = g.team_id
-join wr.teams t2
+join world_rugby.teams t2
   on t2.team_id = g.opponent_id
 where
     extract(year from g.time_label) between 2003 and 2021
     
-and t1.sport_id=1
-and t2.sport_id=1
+and t1.sport_id=3
+and t2.sport_id=3
 and t1.type_id in (6)
 and t2.type_id in (6)
 
@@ -84,7 +84,7 @@ and not(g.team_score,g.opponent_score)=(0,0)
 --and venue_country is not null
 );
 
-insert into wr.men_results
+insert into men._results
 (game_id,year,
  game_date,
  country,
@@ -123,19 +123,19 @@ t1.country_name,
 g.opponent_score,
 g.team_score
 
-from wr.games g
-join wr.teams t1
+from world_rugby.games g
+join world_rugby.teams t1
   on t1.team_id = g.team_id
-join wr.teams t2
+join world_rugby.teams t2
   on t2.team_id = g.opponent_id
 where
     extract(year from g.time_label) between 2003 and 2021
     
---and (t1.sport_id,t1.type_id)=(1,6)
---and (t2.sport_id,t2.type_id)=(1,6)
+--and (t1.sport_id,t1.type_id)=(3,6)
+--and (t2.sport_id,t2.type_id)=(3,6)
 
-and t1.sport_id=1
-and t2.sport_id=1
+and t1.sport_id=3
+and t2.sport_id=3
 and t1.type_id in (6)
 and t2.type_id in (6)
 

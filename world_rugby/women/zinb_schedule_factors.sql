@@ -1,8 +1,8 @@
 begin;
 
-drop table if exists wr._women_zinb_schedule_factors;
+drop table if exists women._zinb_schedule_factors;
 
-create table wr._women_zinb_schedule_factors (
+create table women._zinb_schedule_factors (
 	team_id			integer,
         offensive               float,
         defensive		float,
@@ -22,17 +22,17 @@ create table wr._women_zinb_schedule_factors (
 -- schedule_defensive
 -- schedule_strength 
 
-insert into wr._women_zinb_schedule_factors
+insert into women._zinb_schedule_factors
 (team_id,offensive,defensive)
 (
 select o.level::integer,o.exp_factor,d.exp_factor
-from wr._women_zinb_factors o
-left outer join wr._women_zinb_factors d
+from women._zinb_factors o
+left outer join women._zinb_factors d
   on (d.level,d.parameter)=(o.level,'defense')
 where o.parameter='offense'
 );
 
-update wr._women_zinb_schedule_factors
+update women._zinb_schedule_factors
 set strength=offensive/defensive;
 
 ----
@@ -54,7 +54,7 @@ select
 r.team_id,
 r.opponent_id,
 r.field
-from wr.women_results r
+from women._results r
 where r.year between 2012 and 2021
 );
 
@@ -63,14 +63,14 @@ set
 offensive=o.offensive,
 defensive=o.defensive,
 strength=o.strength
-from wr._women_zinb_schedule_factors o
+from women._zinb_schedule_factors o
 where (r.opponent_id)=(o.team_id);
 
 -- field
 
 update r
 set field=f.exp_factor
-from wr._women_zinb_factors f
+from women._zinb_factors f
 where (f.parameter,f.level)=('field',r.field_id);
 
 create temporary table rs (
@@ -97,7 +97,7 @@ from r
 group by team_id
 );
 
-update wr._women_zinb_schedule_factors
+update women._zinb_schedule_factors
 set
   schedule_offensive=rs.offensive,
   schedule_defensive=rs.defensive,
@@ -106,6 +106,6 @@ set
   schedule_defensive_all=rs.defensive_all
 from rs
 where
-  (wr._women_zinb_schedule_factors.team_id)=(rs.team_id);
+  (_zinb_schedule_factors.team_id)=(rs.team_id);
 
 commit;

@@ -45,7 +45,7 @@ r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
 (year-2015) as w
-from wr.men_results r
+from men._results r
 
 where
     r.year between 2016 and 2021
@@ -110,7 +110,7 @@ for (n in rpn) {
 # Model parameters
 
 parameter_levels <- as.data.frame(do.call("rbind",pll))
-dbWriteTable(con,c("wr","_men_parameter_levels"),parameter_levels,row.names=TRUE)
+dbWriteTable(con,c("men","_parameter_levels"),parameter_levels,row.names=TRUE)
 
 g <- cbind(fp,rp)
 g$gs <- gs
@@ -169,6 +169,6 @@ for (n in rn) {
 
 combined <- as.data.frame(do.call("rbind",results))
 
-dbWriteTable(con,c("wr","_men_basic_factors"),as.data.frame(combined),row.names=TRUE)
+dbWriteTable(con,c("men","_basic_factors"),as.data.frame(combined),row.names=TRUE)
 
 quit("no")

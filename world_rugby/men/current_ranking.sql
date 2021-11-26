@@ -20,8 +20,8 @@ ln(sf.strength) as str,
 ln(sf.offensive) as ofs,
 ln(sf.defensive) as dfs,
 ln(sf.schedule_strength) as sos
-from wr._men_schedule_factors sf
-left join wr.teams t
+from men._schedule_factors sf
+left join world_rugby.teams t
   on (t.team_id)=(sf.team_id)
 order by str desc);
 

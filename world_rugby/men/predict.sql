@@ -63,31 +63,31 @@ end
 )::numeric(4,1) as e_d
 
 
-from wr.games g
+from world_rugby.games g
 
-join wr.teams t1
+join world_rugby.teams t1
   on (t1.team_id) = (g.team_id)
-join wr.teams t2
+join world_rugby.teams t2
   on (t2.team_id) = (g.opponent_id)
 
-join wr._men_schedule_factors sf1
+join men._schedule_factors sf1
   on (sf1.team_id)=(t1.team_id)
-join wr._men_schedule_factors sf2
+join men._schedule_factors sf2
   on (sf2.team_id)=(t2.team_id)
 
-join wr._men_factors o
+join men._factors o
   on (o.parameter,o.level)=('field','offense_home')
-join wr._men_factors d
+join men._factors d
   on (d.parameter,d.level)=('field','defense_home')
 
-join wr._men_basic_factors i
+join men._basic_factors i
   on (i.factor)=('(Intercept)')
 
 where
    g.time_label::date between current_date and current_date+90
 
-and (t1.sport_id,t1.type_id)=(1,6)
-and (t2.sport_id,t2.type_id)=(1,6)
+and (t1.sport_id,t1.type_id)=(3,6)
+and (t2.sport_id,t2.type_id)=(3,6)
 
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
@@ -158,31 +158,31 @@ case when g.venue_country=t1.country_name then
 end
 )::numeric(4,1) as e_d
 
-from wr.games g
+from world_rugby.games g
 
-join wr.teams t1
+join world_rugby.teams t1
   on (t1.team_id) = (g.team_id)
-join wr.teams t2
+join world_rugby.teams t2
   on (t2.team_id) = (g.opponent_id)
 
-join wr._men_schedule_factors sf1
+join men._schedule_factors sf1
   on (sf1.team_id)=(t1.team_id)
-join wr._men_schedule_factors sf2
+join men._schedule_factors sf2
   on (sf2.team_id)=(t2.team_id)
 
-join wr._men_factors o
+join men._factors o
   on (o.parameter,o.level)=('field','offense_home')
-join wr._men_factors d
+join men._factors d
   on (d.parameter,d.level)=('field','defense_home')
 
-join wr._men_basic_factors i
+join men._basic_factors i
   on (i.factor)=('(Intercept)')
 
 where
    g.time_label::date between current_date and current_date+90
 
-and (t1.sport_id,t1.type_id)=(1,6)
-and (t2.sport_id,t2.type_id)=(1,6)
+and (t1.sport_id,t1.type_id)=(3,6)
+and (t2.sport_id,t2.type_id)=(3,6)
 
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
