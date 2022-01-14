@@ -1,0 +1,64 @@
+[1] 76  7
+[1] 152   7
+[1] TRUE
+[1] 152   5
+start par. =  1 1 1 fn =  2331.52 
+At return
+eval: 131 fn:      2233.9237 par: 0.229874 0.143244 0.105389
+(NM) 20: f = 2233.92 at  0.229874  0.143244  0.105389   3.39849 0.0145095
+(NM) 40: f = 2233.92 at  0.229874  0.143244  0.105389   3.39849 0.0145095
+(NM) 60: f = 2233.92 at  0.230331  0.143815  0.105695   3.39586 0.0143046
+(NM) 80: f = 2233.92 at  0.229842  0.143144  0.105321   3.39641 0.0144151
+(NM) 100: f = 2233.92 at 0.229897 0.143224 0.105349  3.39634 0.014556
+(NM) 120: f = 2233.92 at  0.229865  0.143268  0.105361   3.39623 0.0145205
+(NM) 140: f = 2233.92 at 0.229869 0.143238 0.105375  3.39622 0.014516
+(NM) 160: f = 2233.92 at  0.229874  0.143233  0.105384    3.3962 0.0145176
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
+   Data: g
+Weights: w
+      AIC       BIC    logLik  deviance  df.resid 
+ 2243.923  2259.042 -1116.961  2233.923       147 
+Random effects:
+ Groups  Name        Std.Dev.
+ game_id (Intercept) 0.2299  
+ defense (Intercept) 0.1432  
+ offense (Intercept) 0.1054  
+Number of obs: 152, groups:  game_id, 38; defense, 7; offense, 7
+Fixed Effects:
+      (Intercept)  fieldoffense_home  
+          3.39621            0.01452  
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
+   Data: g
+Weights: w
+
+     AIC      BIC   logLik deviance df.resid 
+  2243.9   2259.0  -1117.0   2233.9      147 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.1694 -1.0225 -0.0035  1.2963  4.4940 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ game_id (Intercept) 0.05284  0.2299  
+ defense (Intercept) 0.02052  0.1432  
+ offense (Intercept) 0.01111  0.1054  
+Number of obs: 152, groups:  game_id, 38; defense, 7; offense, 7
+
+Fixed effects:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        3.39621    0.07847  43.280   <2e-16 ***
+fieldoffense_home  0.01452    0.02119   0.685    0.493    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr)
+fildffns_hm -0.135
+[1] TRUE

@@ -1,0 +1,63 @@
+[1] 732   7
+[1] 2544    7
+[1] TRUE
+[1] 2544    4
+
+GLMM's in R powered by AD Model Builder:
+
+  Family: nbinom 
+  alpha = 20.694 
+  link = log 
+  Zero inflation: p = 0.0042621 
+
+Fixed effects:
+  Log-likelihood: -9007.62 
+  AIC: 18029.24 
+  Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id) 
+      (Intercept) fieldoffense_home 
+        3.0017881         0.1762961 
+
+Random effects:
+Structure: Diagonal matrix
+Group=offense
+            Variance StdDev
+(Intercept)  0.03628 0.1905
+Group=defense
+            Variance StdDev
+(Intercept)  0.03372 0.1836
+Group=game_id
+            Variance StdDev
+(Intercept)  0.09435 0.3072
+
+Number of observations: total=2544, offense=38, defense=38, game_id=366
+
+Call:
+glmmadmb(formula = model, data = g, family = "nbinom", zeroInflation = TRUE, 
+    verbose = TRUE)
+
+AIC: 18029.2 
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)         3.0018     0.0468    64.2   <2e-16 ***
+fieldoffense_home   0.1763     0.0126    14.1   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Number of observations: total=2544, offense=38, defense=38, game_id=366 
+Random effect variance(s):
+Group=offense
+            Variance StdDev
+(Intercept)  0.03628 0.1905
+Group=defense
+            Variance StdDev
+(Intercept)  0.03372 0.1836
+Group=game_id
+            Variance StdDev
+(Intercept)  0.09435 0.3072
+
+Negative binomial dispersion parameter: 20.694 (std. err.: 1.298)
+Zero-inflation: 0.0042621  (std. err.:  0.0013468 )
+
+Log-likelihood: -9007.62 
+[1] TRUE
