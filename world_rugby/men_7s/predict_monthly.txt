@@ -1,18 +1,14 @@
 BEGIN
 SET
-    date    |                    event                     |  city  |  site   |     team     | e_p  |   opponent    | e_p  
-------------+----------------------------------------------+--------+---------+--------------+------+---------------+------
- 2022-01-22 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Fiji         | 32.0 | Scotland      | 13.2
- 2022-01-22 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Wales        |  9.1 | Fiji          | 38.6
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Canada       | 13.6 | United States | 24.7
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | England      | 18.5 | Argentina     | 18.3
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | France       | 18.7 | Ireland       | 15.1
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Germany      | 18.0 | Wales         | 10.6
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Jamaica      |  3.1 | Fiji          | 78.1
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Kenya        | 25.3 | Japan         | 10.2
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | away    | Scotland     | 21.0 | Spain         | 18.3
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | South Africa | 22.1 | Australia     | 11.6
-(10 rows)
+    date    |                    event                     |  city  |  site   |     team      | e_p  |   opponent   | e_p  
+------------+----------------------------------------------+--------+---------+---------------+------+--------------+------
+ 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Argentina     | 10.2 | South Africa | 23.6
+ 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Australia     | 20.8 | England      | 17.3
+ 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Jamaica       |  3.1 | Fiji         | 78.1
+ 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Jamaica       |  6.0 | Japan        | 30.4
+ 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | home    | Spain         | 22.0 | Wales        | 14.5
+ 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | United States | 17.9 | France       | 15.6
+(6 rows)
 
-COPY 10
+COPY 6
 COMMIT
