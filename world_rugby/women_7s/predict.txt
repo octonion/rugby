@@ -1,18 +1,23 @@
 BEGIN
 SET
-    date    |                    event                     |  city  |  site   |        team        | e_p  |   opponent    | e_p  |  e_d  
-------------+----------------------------------------------+--------+---------+--------------------+------+---------------+------+-------
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | away    | Belgium            | 10.4 | Spain         | 21.4 | -11.0
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Brazil             |  9.7 | Fiji          | 32.7 | -23.0
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | England            | 41.4 | Poland        |  6.0 |  35.4
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | England            | 23.3 | Ireland       | 12.9 |  10.5
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | France             | 13.3 | Australia     | 16.9 |  -3.6
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Ireland            | 11.8 | Canada        | 22.0 | -10.2
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Poland             |  5.5 | Canada        | 39.0 | -33.5
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Russian Federation |  8.3 | Australia     | 28.8 | -20.5
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | Russian Federation | 13.5 | United States | 19.6 |  -6.1
- 2022-01-23 | HSBC World Rugby Sevens Series 2022 - Malaga | Malaga | neutral | United States      | 11.5 | France        | 21.6 | -10.1
-(10 rows)
+    date    |                     event                     |  city   |  site   |        team        | e_p  | opponent | e_p  |  e_d  
+------------+-----------------------------------------------+---------+---------+--------------------+------+----------+------+-------
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | away    | Australia          | 43.7 | Spain    |  4.3 |  39.4
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Australia          | 75.9 | Belgium  |  3.7 |  72.2
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Canada             | 18.0 | England  | 17.4 |   0.5
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | France             | 65.9 | Belgium  |  4.0 |  61.8
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | away    | France             | 37.9 | Spain    |  4.8 |  33.2
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Ireland            | 19.7 | Brazil   | 13.5 |   6.1
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Ireland            | 28.0 | Poland   |  7.4 |  20.6
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Russian Federation | 32.8 | Poland   |  6.2 |  26.6
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Russian Federation | 23.1 | Brazil   | 11.4 |  11.7
+ 2022-01-28 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | United States      | 19.0 | England  | 17.0 |   2.0
+ 2022-01-29 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Australia          | 16.9 | France   | 13.3 |   3.6
+ 2022-01-29 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Poland             |  9.2 | Brazil   | 24.0 | -14.8
+ 2022-01-29 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Russian Federation | 18.5 | Ireland  | 13.3 |   5.2
+ 2022-01-29 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | home    | Spain              | 21.4 | Belgium  | 10.4 |  11.0
+ 2022-01-29 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | United States      | 17.4 | Canada   | 16.0 |   1.4
+(15 rows)
 
-COPY 10
+COPY 15
 COMMIT
