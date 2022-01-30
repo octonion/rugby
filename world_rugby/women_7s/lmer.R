@@ -44,11 +44,11 @@ r.team_name as team_name,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2018) as w
+(year-2020) as w
 from women_7s._results r
 
 where
-    r.year between 2019 and 2022
+    r.year between 2021 and 2022
 
 ;")
 
