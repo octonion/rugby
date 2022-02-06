@@ -5,10 +5,10 @@ select
 g.date::date as date,
 sf1.team_id as home,
 sf2.team_id as away,
-(exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive)::numeric(4,1) as e_home,
-(exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive)::numeric(4,1) as e_away,
+(exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive)::numeric(5,2) as e_home,
+(exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive)::numeric(5,2) as e_away,
 ((exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive)-
-(exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive))::numeric(4,1) as e_d
+(exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive))::numeric(5,2) as e_d
 
 from major_league.games g
 join major_league._schedule_factors sf1
@@ -35,10 +35,10 @@ select
 g.date::date as date,
 sf1.team_id as home,
 sf2.team_id as away,
-(exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive)::numeric(4,1) as e_home,
-(exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive)::numeric(4,1) as e_away,
+(exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive)::numeric(5,2) as e_home,
+(exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive)::numeric(5,2) as e_away,
 ((exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive)-
-(exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive))::numeric(4,1) as e_d
+(exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive))::numeric(5,2) as e_d
 
 from major_league.games g
 join major_league._schedule_factors sf1
