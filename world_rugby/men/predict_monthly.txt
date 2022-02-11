@@ -1,28 +1,29 @@
 BEGIN
 SET
-    date    |              event              |    city     | site |        team        | e_p  |      opponent      | e_p  
-------------+---------------------------------+-------------+------+--------------------+------+--------------------+------
- 2022-02-05 | 2022 Rugby Europe Championship  | Bucharest   | home | Romania            | 30.8 | Russian Federation | 13.9
- 2022-02-05 | 2022 Rugby Europe Championship  | Madrid      | home | Spain              | 48.3 | Netherlands        | 13.6
- 2022-02-05 | 2022 Six Nations                | Dublin      | home | Ireland            | 32.0 | Wales              | 16.9
- 2022-02-05 | 2022 Six Nations                | Edinburgh   | home | Scotland           | 18.5 | England            | 15.4
- 2022-02-06 | 2022 Rugby Europe Championship  | Tbilisi     | home | Georgia            | 30.0 | Portugal           | 15.7
- 2022-02-06 | 2022 Six Nations                | Saint-Denis | home | France             | 48.8 | Italy              | 10.1
- 2022-02-12 | 2021-22 Rugby Europe Trophy     | Belgium?    | home | Belgium            | 26.0 | Ukraine            | 26.1
- 2022-02-12 | 2022 Rugby Europe Championship  | Amsterdam   | home | Netherlands        | 10.6 | Georgia            | 43.6
- 2022-02-12 | 2022 Rugby Europe Championship  | Bucharest   | home | Romania            | 27.0 | Portugal           | 20.3
- 2022-02-12 | 2022 Rugby Europe Championship  | Sochi       | home | Russian Federation | 19.0 | Spain              | 27.6
- 2022-02-12 | 2022 Six Nations                | Saint-Denis | home | France             | 22.8 | Ireland            | 24.1
- 2022-02-12 | 2022 Six Nations                | Cardiff     | home | Wales              | 20.2 | Scotland           | 18.8
- 2022-02-13 | 2022 Six Nations                | Roma        | home | Italy              | 11.2 | England            | 32.2
- 2022-02-19 | 2021-22 Rugby Europe Trophy     | Germany?    | home | Germany            | 27.7 | Belgium            | 13.2
- 2022-02-26 | 2022 Rugby Europe Championship  | Lisbon      | home | Portugal           | 51.1 | Netherlands        | 14.7
- 2022-02-26 | 2022 Six Nations                | London      | home | England            | 25.1 | Wales              | 20.1
- 2022-02-26 | 2022 Six Nations                | Edinburgh   | home | Scotland           | 19.4 | France             | 19.9
- 2022-02-27 | 2022 Rugby Europe Championship  | Madrid      | home | Spain              | 22.5 | Romania            | 21.4
- 2022-02-27 | 2022 Six Nations                | Dublin      | home | Ireland            | 48.2 | Italy              |  8.0
- 2022-02-27 | Rugby World Cup 2023 Qualifying | Tbilisi     | home | Georgia            | 34.2 | Russian Federation | 10.7
-(20 rows)
+    date    |                  event                  |     city     | site |        team        | e_p  |      opponent      | e_p  
+------------+-----------------------------------------+--------------+------+--------------------+------+--------------------+------
+ 2022-02-12 | 2021-22 Rugby Europe Trophy             | Brussels     | home | Belgium            | 26.5 | Ukraine            | 23.2
+ 2022-02-12 | 2022 Rugby Europe Championship          | Amsterdam    | home | Netherlands        |  8.8 | Georgia            | 42.9
+ 2022-02-12 | 2022 Rugby Europe Championship          | Bucharest    | home | Romania            | 25.2 | Portugal           | 23.3
+ 2022-02-12 | 2022 Rugby Europe Championship          | Sochi        | home | Russian Federation | 17.9 | Spain              | 28.6
+ 2022-02-12 | 2022 Six Nations                        | Saint-Denis  | home | France             | 20.6 | Ireland            | 24.7
+ 2022-02-12 | 2022 Six Nations                        | Cardiff      | home | Wales              | 19.5 | Scotland           | 19.4
+ 2022-02-13 | 2022 Six Nations                        | Roma         | home | Italy              | 11.5 | England            | 32.2
+ 2022-02-19 | 2021-22 Rugby Europe Trophy             | Germany?     | home | Germany            | 24.7 | Belgium            | 13.9
+ 2022-02-26 | 2022 Rugby Europe Championship          | Lisbon       | home | Portugal           | 54.9 | Netherlands        | 11.1
+ 2022-02-26 | 2022 Six Nations                        | London       | home | England            | 25.6 | Wales              | 19.7
+ 2022-02-26 | 2022 Six Nations                        | Edinburgh    | home | Scotland           | 19.7 | France             | 19.7
+ 2022-02-27 | 2022 Rugby Europe Championship          | Madrid       | home | Spain              | 25.3 | Romania            | 18.3
+ 2022-02-27 | 2022 Six Nations                        | Dublin       | home | Ireland            | 47.5 | Italy              |  7.6
+ 2022-02-27 | Rugby World Cup 2023 Qualifying         | Tbilisi      | home | Georgia            | 32.1 | Russian Federation | 12.6
+ 2022-03-11 | 2022 Six Nations                        | Cardiff      | home | Wales              | 23.9 | France             | 27.6
+ 2022-03-12 | 2021-22 Rugby Europe Conference 1 North | Luxembourg?  | home | Luxembourg         | 12.3 | Hungary            | 19.7
+ 2022-03-12 | 2021-22 Rugby Europe Trophy             | Switzerland? | home | Switzerland        | 20.6 | Belgium            | 20.2
+ 2022-03-12 | 2022 Rugby Europe Championship          | Bucharest    | home | Romania            | 17.3 | Georgia            | 21.1
+ 2022-03-12 | 2022 Rugby Europe Championship          | Saransk      | home | Russian Federation | 38.8 | Netherlands        | 13.1
+ 2022-03-12 | 2022 Six Nations                        | London       | home | England            | 16.5 | Ireland            | 23.5
+ 2022-03-12 | 2022 Six Nations                        | Roma         | home | Italy              |  9.8 | Scotland           | 28.2
+(21 rows)
 
-COPY 20
+COPY 21
 COMMIT
