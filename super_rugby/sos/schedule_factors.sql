@@ -55,7 +55,7 @@ r.team_name,
 r.opponent_name,
 r.field
 from sr.results r
-where r.year between 2012 and 2021
+where r.year between 2012 and 2022
 );
 
 update r
