@@ -1,13 +1,11 @@
 BEGIN
-    date    |        home        |       away       | e_home | e_away |  e_d  
-------------+--------------------+------------------+--------+--------+-------
- 2022-02-24 | Leeds              | Catalans Dragons |   17.9 |   24.5 |  -6.6
- 2022-02-24 | Wigan              | Huddersfield     |   16.1 |   12.1 |   4.0
- 2022-02-25 | Hull KR            | Castleford       |   27.0 |   18.9 |   8.0
- 2022-02-25 | St Helens          | Wakefield        |   28.0 |    9.1 |  18.9
- 2022-02-26 | Hull FC            | Salford          |   22.8 |   19.4 |   3.4
- 2022-02-26 | Toulouse Olympique | Warrington       |   12.5 |   54.5 | -41.9
-(6 rows)
+    date    |        home        |    away    | e_home | e_away |  e_d  
+------------+--------------------+------------+--------+--------+-------
+ 2022-02-25 | Hull KR            | Castleford |   27.2 |   19.1 |   8.2
+ 2022-02-25 | St Helens          | Wakefield  |   28.2 |    9.1 |  19.1
+ 2022-02-26 | Hull FC            | Salford    |   23.0 |   19.5 |   3.5
+ 2022-02-26 | Toulouse Olympique | Warrington |   12.7 |   55.7 | -43.0
+(4 rows)
 
-COPY 6
+COPY 4
 COMMIT
