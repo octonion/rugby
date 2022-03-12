@@ -1,20 +1,19 @@
-[1] 404   7
-[1] 406   7
+[1] 408   7
+[1] 414   7
 [1] TRUE
-[1] 406   5
-start par. =  1 1 1 fn =  4305.239 
+[1] 414   5
+start par. =  1 1 1 fn =  4435.354 
 At return
-eval: 158 fn:      3953.7843 par: 0.235291 0.300225 0.229693
-(NM) 20: f = 3953.78 at  0.235291  0.300225  0.229693   3.02167 0.0695185
-(NM) 40: f = 3953.78 at   0.23588  0.300761  0.229015   3.00939 0.0706743
-(NM) 60: f = 3953.77 at  0.235666   0.29884  0.229164   3.01144 0.0696028
-(NM) 80: f = 3953.77 at  0.235388  0.300012  0.229112   3.01274 0.0698584
-(NM) 100: f = 3953.77 at  0.235301  0.299817  0.230026   3.01258 0.0695735
-(NM) 120: f = 3953.77 at 0.235254 0.300096 0.229725  3.01255  0.06959
-(NM) 140: f = 3953.77 at  0.235283  0.300163  0.229651   3.01266 0.0695569
-(NM) 160: f = 3953.77 at  0.235288  0.300199  0.229641    3.0126 0.0695769
-(NM) 180: f = 3953.77 at  0.235293  0.300177  0.229664   3.01259 0.0695892
-(NM) 200: f = 3953.77 at  0.235291  0.300169  0.229662   3.01257 0.0695833
+eval: 124 fn:      4094.4211 par: 0.252721 0.295034 0.221479
+(NM) 20: f = 4094.42 at  0.252721  0.295034  0.221479   3.00865 0.0853557
+(NM) 40: f = 4094.41 at   0.25331  0.295571  0.220801   2.99663 0.0865016
+(NM) 60: f = 4094.41 at  0.253115  0.293603  0.220913   2.99812 0.0854529
+(NM) 80: f = 4094.41 at  0.252903  0.294963  0.221799   3.00041 0.0857034
+(NM) 100: f = 4094.41 at  0.252915  0.294893   0.22157   2.99999 0.0855116
+(NM) 120: f = 4094.41 at  0.252786  0.295023  0.221583   2.99946 0.0854666
+(NM) 140: f = 4094.41 at  0.252733  0.294983  0.221454   2.99919 0.0854605
+(NM) 160: f = 4094.41 at  0.252728  0.294983  0.221454   2.99927 0.0854468
+(NM) 180: f = 4094.41 at  0.252719   0.29498  0.221445   2.99929 0.0854357
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -22,16 +21,16 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
       AIC       BIC    logLik  deviance  df.resid 
- 3963.773  3983.804 -1976.886  3953.773       401 
+ 4104.409  4124.538 -2047.205  4094.409       409 
 Random effects:
  Groups  Name        Std.Dev.
- game_id (Intercept) 0.2353  
- defense (Intercept) 0.3002  
- offense (Intercept) 0.2297  
-Number of obs: 406, groups:  game_id, 202; defense, 16; offense, 16
+ game_id (Intercept) 0.2527  
+ defense (Intercept) 0.2950  
+ offense (Intercept) 0.2215  
+Number of obs: 414, groups:  game_id, 204; defense, 16; offense, 16
 Fixed Effects:
       (Intercept)  fieldoffense_home  
-          3.01256            0.06958  
+          2.99928            0.08544  
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -40,27 +39,27 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
 Weights: w
 
      AIC      BIC   logLik deviance df.resid 
-  3963.8   3983.8  -1976.9   3953.8      401 
+  4104.4   4124.5  -2047.2   4094.4      409 
 
 Scaled residuals: 
-    Min      1Q  Median      3Q     Max 
--4.8874 -1.1557 -0.0588  1.1146  6.3492 
+   Min     1Q Median     3Q    Max 
+-4.897 -1.114 -0.001  1.060  6.289 
 
 Random effects:
  Groups  Name        Variance Std.Dev.
- game_id (Intercept) 0.05536  0.2353  
- defense (Intercept) 0.09010  0.3002  
- offense (Intercept) 0.05275  0.2297  
-Number of obs: 406, groups:  game_id, 202; defense, 16; offense, 16
+ game_id (Intercept) 0.06387  0.2527  
+ defense (Intercept) 0.08701  0.2950  
+ offense (Intercept) 0.04904  0.2215  
+Number of obs: 414, groups:  game_id, 204; defense, 16; offense, 16
 
 Fixed effects:
                   Estimate Std. Error z value Pr(>|z|)    
-(Intercept)        3.01256    0.09724  30.980  < 2e-16 ***
-fieldoffense_home  0.06958    0.02142   3.248  0.00116 ** 
+(Intercept)        2.99928    0.09522  31.498  < 2e-16 ***
+fieldoffense_home  0.08544    0.02123   4.023 5.73e-05 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr)
-fildffns_hm -0.115
+fildffns_hm -0.117
 [1] TRUE
