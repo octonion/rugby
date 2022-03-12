@@ -1,12 +1,24 @@
 BEGIN
-    date    |       home       |          away          | e_home | e_away |  e_d   
-------------+------------------+------------------------+--------+--------+--------
- 2022-03-05 | Austin Gilgronis | LA Giltinis            |  22.56 |  16.29 |  6.265
- 2022-03-05 | Rugby ATL        | Houston SaberCats      |  30.13 |  15.85 | 14.286
- 2022-03-05 | Utah Warriors    | Dallas Jackals         |  53.08 |  20.30 | 32.785
- 2022-03-06 | New York         | New England Free Jacks |  22.80 |  19.77 |  3.025
- 2022-03-06 | San Diego Legion | Old Glory DC           |  37.78 |  25.28 | 12.501
-(5 rows)
+    date    |          home          |          away          | e_home | e_away |   e_d   
+------------+------------------------+------------------------+--------+--------+---------
+ 2022-03-12 | Dallas Jackals         | NOLA Gold              |  20.38 |  37.87 | -17.488
+ 2022-03-12 | Houston SaberCats      | Seattle Seawolves      |  20.86 |  25.78 |  -4.911
+ 2022-03-12 | New England Free Jacks | Toronto Arrows         |  26.03 |  18.57 |   7.466
+ 2022-03-12 | Rugby ATL              | Austin Gilgronis       |  16.47 |  21.79 |  -5.315
+ 2022-03-13 | LA Giltinis            | Utah Warriors          |  30.19 |  20.47 |   9.713
+ 2022-03-13 | New York               | San Diego Legion       |  30.88 |  21.34 |   9.540
+ 2022-03-19 | Austin Gilgronis       | New England Free Jacks |  23.53 |  15.52 |   8.003
+ 2022-03-19 | Dallas Jackals         | Seattle Seawolves      |  21.02 |  40.13 | -19.108
+ 2022-03-19 | NOLA Gold              | New York               |  20.98 |  23.63 |  -2.645
+ 2022-03-19 | Utah Warriors          | Toronto Arrows         |  28.19 |  24.07 |   4.114
+ 2022-03-20 | LA Giltinis            | San Diego Legion       |  32.11 |  18.51 |  13.604
+ 2022-03-20 | Old Glory DC           | Rugby ATL              |  19.84 |  31.93 | -12.088
+ 2022-03-26 | Old Glory DC           | NOLA Gold              |  22.61 |  28.96 |  -6.349
+ 2022-03-26 | Rugby ATL              | New England Free Jacks |  20.92 |  20.35 |   0.576
+ 2022-03-26 | Seattle Seawolves      | LA Giltinis            |  19.29 |  25.34 |  -6.058
+ 2022-03-26 | Utah Warriors          | Houston SaberCats      |  33.98 |  20.02 |  13.963
+ 2022-03-27 | New York               | Toronto Arrows         |  26.53 |  20.53 |   5.999
+(17 rows)
 
-COPY 5
+COPY 17
 COMMIT
