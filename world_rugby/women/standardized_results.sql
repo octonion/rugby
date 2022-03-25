@@ -66,7 +66,7 @@ join world_rugby.teams t1
 join world_rugby.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2003 and 2021
+    extract(year from g.time_label) between 2003 and 2022
     
 and t1.sport_id=2
 and t2.sport_id=2
@@ -129,7 +129,7 @@ join world_rugby.teams t1
 join world_rugby.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2003 and 2021
+    extract(year from g.time_label) between 2003 and 2022
     
 --and (t1.sport_id,t1.type_id)=(2,6)
 --and (t2.sport_id,t2.type_id)=(2,6)

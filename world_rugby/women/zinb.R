@@ -26,14 +26,14 @@ team_score::float as gs,
 from women.women_results r
 
 where
-    r.year between 2016 and 2021
+    r.year between 2016 and 2022
 
 --and r.team_id in
 --(
 --select
 --team_id
 --from women.women_results
---where year between 2013 and 2021
+--where year between 2013 and 2022
 --group by team_id
 --having count(*)>=6
 --)
@@ -43,7 +43,7 @@ where
 --select
 --team_id
 --from women.women_results
---where year between 2013 and 2021
+--where year between 2013 and 2022
 --group by team_id
 --having count(*)>=6
 --)
