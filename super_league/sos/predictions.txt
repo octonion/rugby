@@ -1,10 +1,13 @@
 BEGIN
-    date    |        home        |     away     | e_home | e_away |  e_d   
-------------+--------------------+--------------+--------+--------+--------
- 2022-03-19 | Toulouse Olympique | St Helens    |   8.64 |  35.38 | -26.74
- 2022-03-19 | Warrington         | Wakefield    |  23.41 |  18.04 |   5.37
- 2022-03-20 | Hull FC            | Huddersfield |  20.51 |  19.90 |   0.61
-(3 rows)
+    date    |     home     |        away        | e_home | e_away |  e_d   
+------------+--------------+--------------------+--------+--------+--------
+ 2022-03-31 | Wigan        | Hull FC            |  16.27 |  14.87 |   1.40
+ 2022-04-01 | Castleford   | Toulouse Olympique |  29.15 |  22.25 |   6.90
+ 2022-04-01 | Huddersfield | Catalans Dragons   |  16.24 |  21.99 |  -5.75
+ 2022-04-01 | Hull KR      | Warrington         |  20.61 |  21.73 |  -1.12
+ 2022-04-01 | Leeds        | St Helens          |   8.70 |  23.85 | -15.15
+ 2022-04-03 | Wakefield    | Salford            |  27.30 |  17.00 |  10.30
+(6 rows)
 
-COPY 3
+COPY 6
 COMMIT
