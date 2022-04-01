@@ -1,12 +1,33 @@
 BEGIN
-    date    |       home        |          away          | e_home | e_away |  e_d   
-------------+-------------------+------------------------+--------+--------+--------
- 2022-03-26 | Old Glory DC      | NOLA Gold              |  22.48 |  29.15 | -6.668
- 2022-03-26 | Rugby ATL         | New England Free Jacks |  20.50 |  21.25 | -0.759
- 2022-03-26 | Seattle Seawolves | LA Giltinis            |  18.13 |  25.93 | -7.808
- 2022-03-26 | Utah Warriors     | Houston SaberCats      |  29.77 |  21.90 |  7.873
- 2022-03-27 | New York          | Toronto Arrows         |  26.00 |  20.58 |  5.416
-(5 rows)
+    date    |          home          |          away          | e_home | e_away |   e_d   
+------------+------------------------+------------------------+--------+--------+---------
+ 2022-04-01 | Utah Warriors          | San Diego Legion       |  30.57 |  26.10 |   4.474
+ 2022-04-02 | New England Free Jacks | NOLA Gold              |  27.44 |  16.66 |  10.786
+ 2022-04-02 | Toronto Arrows         | Rugby ATL              |  20.14 |  22.57 |  -2.433
+ 2022-04-03 | Austin Gilgronis       | Houston SaberCats      |  29.08 |  14.91 |  14.170
+ 2022-04-03 | LA Giltinis            | Dallas Jackals         |  48.74 |  15.15 |  33.586
+ 2022-04-03 | New York               | Old Glory DC           |  36.60 |  18.80 |  17.796
+ 2022-04-09 | Houston SaberCats      | Dallas Jackals         |  38.46 |  20.95 |  17.505
+ 2022-04-09 | New England Free Jacks | Seattle Seawolves      |  27.62 |  17.19 |  10.432
+ 2022-04-09 | NOLA Gold              | Rugby ATL              |  18.58 |  24.50 |  -5.918
+ 2022-04-09 | Toronto Arrows         | Old Glory DC           |  33.90 |  19.62 |  14.277
+ 2022-04-10 | LA Giltinis            | New York               |  24.25 |  19.30 |   4.946
+ 2022-04-10 | San Diego Legion       | Austin Gilgronis       |  18.85 |  28.03 |  -9.178
+ 2022-04-15 | Old Glory DC           | Utah Warriors          |  24.39 |  36.16 | -11.774
+ 2022-04-16 | Dallas Jackals         | Austin Gilgronis       |  15.11 |  44.99 | -29.877
+ 2022-04-16 | LA Giltinis            | Houston SaberCats      |  29.62 |  15.89 |  13.729
+ 2022-04-16 | Seattle Seawolves      | San Diego Legion       |  25.67 |  24.40 |   1.273
+ 2022-04-16 | Toronto Arrows         | NOLA Gold              |  24.38 |  19.49 |   4.890
+ 2022-04-23 | Houston SaberCats      | Toronto Arrows         |  19.97 |  24.73 |  -4.758
+ 2022-04-23 | NOLA Gold              | Austin Gilgronis       |  16.46 |  25.36 |  -8.900
+ 2022-04-23 | Old Glory DC           | Dallas Jackals         |  40.18 |  27.01 |  13.171
+ 2022-04-23 | Utah Warriors          | Seattle Seawolves      |  27.84 |  23.52 |   4.325
+ 2022-04-24 | New York               | New England Free Jacks |  20.72 |  22.78 |  -2.059
+ 2022-04-24 | San Diego Legion       | Rugby ATL              |  21.29 |  27.09 |  -5.796
+ 2022-04-30 | Dallas Jackals         | San Diego Legion       |  22.84 |  43.01 | -20.167
+ 2022-04-30 | New England Free Jacks | Utah Warriors          |  29.55 |  20.47 |   9.075
+ 2022-04-30 | Rugby ATL              | LA Giltinis            |  20.32 |  21.34 |  -1.020
+(26 rows)
 
-COPY 5
+COPY 26
 COMMIT
