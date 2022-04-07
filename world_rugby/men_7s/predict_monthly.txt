@@ -1,15 +1,32 @@
 BEGIN
 SET
-    date    |                     event                     |  city   |  site   |   team    | e_p  |   opponent    | e_p  
-------------+-----------------------------------------------+---------+---------+-----------+------+---------------+------
- 2022-01-30 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Australia | 10.6 | South Africa  | 19.9
- 2022-01-30 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Canada    | 19.2 | Wales         | 12.9
- 2022-01-30 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | England   | 16.5 | United States | 19.3
- 2022-01-30 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Ireland   | 11.6 | Argentina     | 19.9
- 2022-01-30 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Kenya     | 22.4 | Samoa         | 13.9
- 2022-01-30 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | home    | Spain     | 21.3 | Kenya         | 15.8
- 2022-01-30 | HSBC World Rugby Sevens Series 2022 - Seville | Seville | neutral | Wales     | 14.5 | Samoa         | 21.1
-(7 rows)
+    date    |                      event                      |   city    |  site   |     team      | e_p  |   opponent    | e_p  
+------------+-------------------------------------------------+-----------+---------+---------------+------+---------------+------
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Argentina     | 20.2 | Scotland      | 11.9
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Argentina     | 16.4 | New Zealand   | 18.1
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Argentina     | 37.9 | Wales         |  7.4
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Australia     | 27.8 | Spain         | 11.7
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Australia     | 21.7 | England       | 13.5
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Australia     | 34.8 | Samoa         |  9.4
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | England       | 28.5 | Samoa         | 12.3
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | England       | 22.7 | Spain         | 15.5
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | France        | 39.2 | Japan         |  7.5
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | France        | 15.8 | Fiji          | 20.9
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Ireland       | 27.8 | Japan         |  6.9
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Ireland       | 11.2 | Fiji          | 19.3
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Ireland       | 13.1 | France        | 17.1
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Japan         |  6.4 | Fiji          | 44.3
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Kenya         | 20.7 | Canada        | 12.2
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Scotland      | 11.1 | New Zealand   | 20.8
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Scotland      | 25.6 | Wales         |  8.5
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | South Africa  | 40.3 | Canada        |  5.1
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | South Africa  | 31.3 | Kenya         |  6.7
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | South Africa  | 26.4 | United States |  9.1
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Spain         | 24.8 | Samoa         | 15.8
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | United States | 21.8 | Kenya         | 13.5
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | United States | 28.1 | Canada        | 10.3
+ 2022-04-09 | HSBC World Rugby Sevens Series 2022 - Singapore | Singapore | neutral | Wales         |  6.9 | New Zealand   | 38.9
+(24 rows)
 
-COPY 7
+COPY 24
 COMMIT

@@ -25,7 +25,7 @@ case when g.venue_country=t1.country_name then
      else
        exp(i.estimate)*sf1.offensive*sf2.defensive
 end
-)::numeric(4,1) as e_p,
+)::numeric(5,2) as e_p,
 
 t2.country_name as opponent,
 (
@@ -38,7 +38,7 @@ case when g.venue_country=t1.country_name then
      else
        exp(i.estimate)*sf2.offensive*sf1.defensive
 end
-)::numeric(4,1) as e_p,
+)::numeric(5,2) as e_p,
 
 (
 case when g.venue_country=t1.country_name then
@@ -60,7 +60,7 @@ case when g.venue_country=t1.country_name then
      else
        exp(i.estimate)*sf2.offensive*sf1.defensive
 end
-)::numeric(4,1) as e_d
+)::numeric(5,2) as e_d
 
 
 from world_rugby.games g
@@ -121,7 +121,7 @@ case when g.venue_country=t1.country_name then
      else
        exp(i.estimate)*sf1.offensive*sf2.defensive
 end
-)::numeric(4,1) as e_p,
+)::numeric(5,2) as e_p,
 
 t2.country_name as opponent,
 (
@@ -134,7 +134,7 @@ case when g.venue_country=t1.country_name then
      else
        exp(i.estimate)*sf2.offensive*sf1.defensive
 end
-)::numeric(4,1) as e_p,
+)::numeric(5,2) as e_p,
 
 (
 case when g.venue_country=t1.country_name then
@@ -156,7 +156,7 @@ case when g.venue_country=t1.country_name then
      else
        exp(i.estimate)*sf2.offensive*sf1.defensive
 end
-)::numeric(4,1) as e_d
+)::numeric(5,2) as e_d
 
 from world_rugby.games g
 
