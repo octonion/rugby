@@ -1,17 +1,16 @@
 BEGIN
 SET
-    date    |          event           |    city    |  site   |   team   | e_p  | opponent | e_p  
-------------+--------------------------+------------+---------+----------+------+----------+------
- 2022-04-09 | 2022 Women's Six Nations | Gloucester | home    | England  | 69.9 | Wales    |  4.7
- 2022-04-10 | 2022 Women's Six Nations | Cork       | home    | Ireland  | 17.4 | Italy    | 14.9
- 2022-04-10 | 2022 Women's Six Nations | Glasgow    | home    | Scotland |  5.1 | France   | 56.4
- 2022-04-22 | 2022 Women's Six Nations | Cardiff    | home    | Wales    |  4.9 | France   | 56.1
- 2022-04-23 | 2022 Women's Six Nations | Parma      | home    | Italy    | 22.7 | Scotland | 20.2
- 2022-04-24 | 2022 Women's Six Nations | Leicester  | home    | England  | 42.6 | Ireland  |  4.5
- 2022-04-30 | 2022 Women's Six Nations | Bayonne    | home    | France   | 10.6 | England  | 17.6
- 2022-04-30 | 2022 Women's Six Nations | Belfast    | neutral | Ireland  | 21.6 | Scotland | 14.1
- 2022-04-30 | 2022 Women's Six Nations | Cardiff    | home    | Wales    | 18.0 | Italy    | 24.4
-(9 rows)
+    date    |          event           |   city    |  site   |   team   | e_p  | opponent | e_p  
+------------+--------------------------+-----------+---------+----------+------+----------+------
+ 2022-04-10 | 2022 Women's Six Nations | Cork      | home    | Ireland  | 17.5 | Italy    | 14.9
+ 2022-04-10 | 2022 Women's Six Nations | Glasgow   | home    | Scotland |  5.1 | France   | 56.9
+ 2022-04-22 | 2022 Women's Six Nations | Cardiff   | home    | Wales    |  4.9 | France   | 55.3
+ 2022-04-23 | 2022 Women's Six Nations | Parma     | home    | Italy    | 22.6 | Scotland | 20.5
+ 2022-04-24 | 2022 Women's Six Nations | Leicester | home    | England  | 41.6 | Ireland  |  4.6
+ 2022-04-30 | 2022 Women's Six Nations | Bayonne   | home    | France   | 10.8 | England  | 17.5
+ 2022-04-30 | 2022 Women's Six Nations | Belfast   | neutral | Ireland  | 21.7 | Scotland | 14.1
+ 2022-04-30 | 2022 Women's Six Nations | Cardiff   | home    | Wales    | 18.0 | Italy    | 24.0
+(8 rows)
 
-COPY 9
+COPY 8
 COMMIT
