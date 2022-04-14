@@ -1,18 +1,19 @@
-[1] 112   7
-[1] 260   7
+[1] 124   7
+[1] 296   7
 [1] TRUE
-[1] 260   5
-start par. =  1 1 1 fn =  4667.837 
+[1] 296   5
+start par. =  1 1 1 fn =  5458.168 
 At return
-eval: 128 fn:      4536.4441 par: 0.216481 0.198095 0.153514
-(NM) 20: f = 4536.44 at    0.216481    0.198095    0.153514     3.37264 -0.00217466
-(NM) 40: f = 4536.44 at    0.216481    0.198095    0.153514     3.37264 -0.00217466
-(NM) 60: f = 4536.44 at    0.216481    0.198095    0.153514     3.37264 -0.00217466
-(NM) 80: f = 4536.44 at    0.216574    0.198351    0.153593     3.37042 -0.00209833
-(NM) 100: f = 4536.44 at    0.216532    0.198265    0.153471     3.37072 -0.00217282
-(NM) 120: f = 4536.44 at     0.21648    0.198061    0.153506     3.37092 -0.00219737
-(NM) 140: f = 4536.44 at    0.216478    0.198071     0.15352     3.37083 -0.00217608
-(NM) 160: f = 4536.44 at    0.216483    0.198091    0.153511     3.37084 -0.00217806
+eval: 118 fn:      5331.3157 par: 0.253150 0.219839 0.155841
+(NM) 20: f = 5331.32 at    0.25315   0.219839   0.155841    3.35777 -0.0393603
+(NM) 40: f = 5331.32 at    0.25315   0.219839   0.155841    3.35777 -0.0393603
+(NM) 60: f = 5331.32 at    0.25315   0.219839   0.155841    3.35777 -0.0393603
+(NM) 80: f = 5331.32 at   0.253111   0.220085   0.155787    3.35689 -0.0393475
+(NM) 100: f = 5331.32 at   0.253185   0.219846   0.155762    3.35647 -0.0393699
+(NM) 120: f = 5331.32 at  0.253161  0.219909    0.1558   3.35601 -0.039362
+(NM) 140: f = 5331.32 at   0.253162   0.219854   0.155818    3.35599 -0.0393651
+(NM) 160: f = 5331.32 at   0.253158   0.219829   0.155828    3.35598 -0.0393676
+(NM) 180: f = 5331.32 at   0.253152   0.219834   0.155827      3.356 -0.0393726
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -20,16 +21,16 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
       AIC       BIC    logLik  deviance  df.resid 
- 4546.444  4564.247 -2268.222  4536.444       255 
+ 5341.315  5359.767 -2665.658  5331.315       291 
 Random effects:
  Groups  Name        Std.Dev.
- game_id (Intercept) 0.2165  
- defense (Intercept) 0.1981  
- offense (Intercept) 0.1535  
-Number of obs: 260, groups:  game_id, 56; defense, 7; offense, 7
+ game_id (Intercept) 0.2532  
+ defense (Intercept) 0.2198  
+ offense (Intercept) 0.1558  
+Number of obs: 296, groups:  game_id, 62; defense, 7; offense, 7
 Fixed Effects:
       (Intercept)  fieldoffense_home  
-         3.370852          -0.002178  
+          3.35601           -0.03937  
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -38,27 +39,27 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
 Weights: w
 
      AIC      BIC   logLik deviance df.resid 
-  4546.4   4564.2  -2268.2   4536.4      255 
+  5341.3   5359.8  -2665.7   5331.3      291 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--4.7476 -1.4520 -0.0255  1.3341  5.3371 
+-4.2319 -1.6209 -0.0662  1.4425  5.3964 
 
 Random effects:
  Groups  Name        Variance Std.Dev.
- game_id (Intercept) 0.04686  0.2165  
- defense (Intercept) 0.03924  0.1981  
- offense (Intercept) 0.02357  0.1535  
-Number of obs: 260, groups:  game_id, 56; defense, 7; offense, 7
+ game_id (Intercept) 0.06409  0.2532  
+ defense (Intercept) 0.04833  0.2198  
+ offense (Intercept) 0.02429  0.1558  
+Number of obs: 296, groups:  game_id, 62; defense, 7; offense, 7
 
 Fixed effects:
-                   Estimate Std. Error z value Pr(>|z|)    
-(Intercept)        3.370852   0.099704  33.809   <2e-16 ***
-fieldoffense_home -0.002178   0.014931  -0.146    0.884    
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        3.35601    0.10734  31.265  < 2e-16 ***
+fieldoffense_home -0.03937    0.01407  -2.797  0.00515 ** 
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr)
-fildffns_hm -0.074
+fildffns_hm -0.064
 [1] TRUE
