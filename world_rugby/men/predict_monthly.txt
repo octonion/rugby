@@ -1,27 +1,16 @@
 BEGIN
 SET
-    date    |                  event                  |       city       |  site   |     team      | e_p  |      opponent      | e_p  
-------------+-----------------------------------------+------------------+---------+---------------+------+--------------------+------
- 2022-03-19 | 2021-22 Rugby Europe Trophy             | Brussels         | home    | Belgium       | 17.6 | Poland             |  9.7
- 2022-03-19 | 2021-22 Rugby Europe Trophy             | Heusenstamm      | home    | Germany       | 36.6 | Switzerland        | 26.6
- 2022-03-19 | 2022 Rugby Europe Championship          | Amsterdam        | home    | Netherlands   | 10.1 | Romania            | 43.3
- 2022-03-19 | 2022 Rugby Europe Championship          | Lisbon           | home    | Portugal      | 36.1 | Russian Federation | 18.9
- 2022-03-19 | 2022 Six Nations                        | Saint-Denis      | home    | France        | 27.4 | England            | 17.2
- 2022-03-19 | 2022 Six Nations                        | Dublin           | home    | Ireland       | 28.2 | Scotland           | 11.7
- 2022-03-19 | 2022 Six Nations                        | Cardiff          | home    | Wales         | 39.8 | Italy              | 10.6
- 2022-03-19 |                                         | Toulouse         | neutral | Cote D'Ivoire | 18.5 | Algeria            | 10.9
- 2022-03-20 | 2022 Rugby Europe Championship          | Tbilisi          | home    | Georgia       | 26.2 | Spain              | 17.3
- 2022-03-26 | 2021-22 Rugby Europe Conference 1 South | Paphos           | home    | Cyprus        | 27.1 | Slovenia           |  8.2
- 2022-03-26 | 2021-22 Rugby Europe Trophy             | Siauliai         | home    | Lithuania     | 12.0 | Belgium            | 28.6
- 2022-04-02 | 2021-22 Rugby Europe Conference 1 South | Croatia?         | home    | Croatia       | 38.2 | Malta              |  6.5
- 2022-04-02 | 2021-22 Rugby Europe Conference 1 South | Ljubljana        | home    | Slovenia      |  8.6 | Israel             | 18.2
- 2022-04-09 | 2021-22 Rugby Europe Conference 1 South | Yizre'el         | home    | Israel        |  6.5 | Croatia            | 25.7
- 2022-04-09 | 2021-22 Rugby Europe Trophy             | Gdynia           | home    | Poland        | 29.3 | Lithuania          | 12.9
- 2022-04-16 | 2021-22 Rugby Europe Conference 1 South | Paola            | home    | Malta         | 17.9 | Cyprus             | 17.0
- 2022-04-16 | 2021-22 Rugby Europe Conference 2 South | Andorra La Vella | home    | Andorra       |  9.2 | Bulgaria           | 19.2
- 2022-04-16 | 2021-22 Rugby Europe Conference 2 South | Starcevo         | home    | Serbia        | 14.0 | Andorra            |  7.2
- 2022-04-16 | 2021-22 Rugby Europe Trophy             | Germany?         | home    | Germany       | 49.0 | Ukraine            | 18.2
-(19 rows)
+    date    |                  event                  |          city           | site |          team          | e_p  |       opponent       | e_p  
+------------+-----------------------------------------+-------------------------+------+------------------------+------+----------------------+------
+ 2022-04-23 | 2021-22 Rugby Europe Conference 1 North | Baldone                 | home | Latvia                 |  8.7 | Sweden               | 19.0
+ 2022-04-30 | 2021-22 Rugby Europe Conference 1 South | Israel?                 | home | Israel                 | 29.0 | Cyprus               | 10.9
+ 2022-05-07 | 2021-22 Rugby Europe Conference 1 North | Hungary?                | home | Hungary                |  6.9 | Sweden               | 40.4
+ 2022-05-07 | 2021-22 Rugby Europe Conference 2 North | Denmark?                | home | Denmark                | 15.0 | Moldova, Republic of | 12.1
+ 2022-05-07 | 2021-22 Rugby Europe Conference 2 North | Norway?                 | home | Norway                 |  0.7 | Finland              | 51.6
+ 2022-05-07 | 2021-22 Rugby Europe Conference 2 South | Bosnia and Herzegovina? | home | Bosnia and Herzegovina | 26.6 | Serbia               | 27.7
+ 2022-05-07 | 2021-22 Rugby Europe Conference 2 South | Bulgaria?               | home | Bulgaria               | 43.0 | Turkey               | 10.3
+ 2022-05-14 | 2021-22 Rugby Europe Conference 1 North | Sweden?                 | home | Sweden                 | 28.0 | Czech Republic       |  8.6
+(8 rows)
 
-COPY 19
+COPY 8
 COMMIT
