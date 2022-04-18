@@ -1,16 +1,29 @@
 BEGIN
 SET
-    date    |                      event                      |   city    |  site   |     team      |  e_p  | opponent  |  e_p  |  e_d   
-------------+-------------------------------------------------+-----------+---------+---------------+-------+-----------+-------+--------
- 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Argentina     | 25.04 | England   | 11.86 |  13.18
- 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | home    | Canada        | 25.67 | Japan     | 11.81 |  13.86
- 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Fiji          | 24.30 | France    | 14.27 |  10.03
- 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Ireland       | 17.15 | Kenya     | 11.26 |   5.89
- 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | New Zealand   | 16.13 | Australia | 18.60 |  -2.47
- 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | South Africa  | 25.68 | Samoa     | 11.14 |  14.54
- 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | United States | 22.05 | Scotland  | 12.68 |   9.37
- 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Wales         | 14.15 | Spain     | 24.79 | -10.64
-(8 rows)
+    date    |                      event                      |   city    |  site   |     team      |  e_p  |   opponent   |  e_p  |  e_d   
+------------+-------------------------------------------------+-----------+---------+---------------+-------+--------------+-------+--------
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Argentina     | 26.58 | England      | 11.42 |  15.16
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Argentina     | 15.69 | Fiji         | 19.91 |  -4.22
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Australia     | 17.15 | Argentina    | 16.49 |   0.66
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | home    | Canada        | 26.20 | Japan        | 11.53 |  14.68
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | home    | Canada        | 11.76 | Ireland      | 19.02 |  -7.26
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Fiji          | 24.58 | France       | 14.31 |  10.27
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Fiji          | 26.65 | Samoa        | 14.31 |  12.35
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | France        | 12.31 | South Africa | 23.59 | -11.28
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Ireland       | 17.32 | Kenya        | 10.98 |   6.34
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Ireland       | 23.51 | Wales        |  9.25 |  14.27
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Kenya         | 17.24 | Spain        | 17.23 |   0.02
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | New Zealand   | 27.29 | England      | 11.44 |  15.85
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | New Zealand   | 16.93 | Australia    | 17.18 |  -0.25
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Samoa         | 15.03 | Australia    | 22.96 |  -7.92
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | away    | Scotland      | 16.97 | Canada       | 16.25 |   0.72
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | South Africa  | 19.14 | New Zealand  | 13.86 |   5.28
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | South Africa  | 25.58 | Samoa        | 12.31 |  13.27
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | United States | 21.50 | Scotland     | 13.96 |   7.55
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | United States | 34.67 | Japan        |  9.48 |  25.19
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | United States | 24.42 | Spain        | 15.55 |   8.87
+ 2022-04-17 | HSBC World Rugby Sevens Series 2022 - Vancouver | Vancouver | neutral | Wales         | 14.52 | Spain        | 23.38 |  -8.86
+(21 rows)
 
-COPY 8
+COPY 21
 COMMIT
