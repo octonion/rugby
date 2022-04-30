@@ -1,8 +1,26 @@
 BEGIN
 SET
- date | event | city | site | team | e_p | opponent | e_p 
-------+-------+------+------+------+-----+----------+-----
-(0 rows)
+    date    |                     event                      |   city   |  site   |     team      | e_p  |   opponent    | e_p  
+------------+------------------------------------------------+----------+---------+---------------+------+---------------+------
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | Australia     | 38.4 | Spain         |  3.6
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | Australia     | 77.4 | Mexico        |  1.3
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | away    | Australia     | 29.2 | Canada        |  7.3
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | Brazil        | 20.1 | Japan         |  8.8
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | home    | Canada        | 19.7 | Spain         |  7.4
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | home    | Canada        | 39.7 | Mexico        |  2.7
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | England       |  8.8 | New Zealand   | 35.4
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | England       | 13.4 | Fiji          | 26.6
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | England       | 13.5 | United States | 21.4
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | Fiji          | 12.4 | New Zealand   | 24.8
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | France        | 35.9 | Brazil        |  6.0
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | France        | 46.4 | Japan         |  3.4
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | Ireland       | 29.0 | Brazil        |  8.8
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | Ireland       | 37.5 | Japan         |  5.0
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | Ireland       | 11.1 | France        | 20.2
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | Spain         | 19.6 | Mexico        |  3.5
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | United States |  9.9 | New Zealand   | 25.0
+ 2022-04-30 | HSBC World Rugby Sevens Series 2022 - Langford | Langford | neutral | United States | 15.0 | Fiji          | 18.8
+(18 rows)
 
-COPY 0
+COPY 18
 COMMIT

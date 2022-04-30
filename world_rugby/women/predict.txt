@@ -1,14 +1,15 @@
 BEGIN
 SET
-    date    |            event            |   city    |  site   |  team   | e_p  |  opponent   | e_p  | e_d  
-------------+-----------------------------+-----------+---------+---------+------+-------------+------+------
- 2022-04-23 | 2022 Women's Six Nations    | Parma     | home    | Italy   | 21.6 | Scotland    | 19.9 |  1.7
- 2022-04-24 | 2022 Women's Six Nations    | Leicester | home    | England | 43.6 | Ireland     |  4.9 | 38.7
- 2022-04-30 | 2022 Women's Six Nations    | Bayonne   | home    | France  | 10.7 | England     | 17.8 | -7.0
- 2022-04-30 | 2022 Women's Six Nations    | Belfast   | neutral | Ireland | 22.1 | Scotland    | 13.7 |  8.4
- 2022-04-30 | 2022 Women's Six Nations    | Cardiff   | home    | Wales   | 20.2 | Italy       | 20.2 |  0.0
- 2022-05-28 | 2022 Women's Internationals | Finland?  | home    | Finland | 23.6 | Switzerland |  0.3 | 23.3
-(6 rows)
+    date    |                event                 |   city    |  site   |    team     | e_p  |   opponent    | e_p  | e_d  
+------------+--------------------------------------+-----------+---------+-------------+------+---------------+------+------
+ 2022-04-30 | 2022 Women's Six Nations             | Bayonne   | home    | France      |  9.8 | England       | 17.9 | -8.1
+ 2022-04-30 | 2022 Women's Six Nations             | Belfast   | neutral | Ireland     | 21.2 | Scotland      | 15.0 |  6.3
+ 2022-04-30 | 2022 Women's Six Nations             | Cardiff   | home    | Wales       | 20.2 | Italy         | 19.2 |  1.0
+ 2022-05-28 | 2022 Women's Internationals          | Finland?  | home    | Finland     | 25.4 | Switzerland   |  0.3 | 25.0
+ 2022-06-06 | World Rugby Pacific Four Series 2022 | Canada?   | home    | Canada      | 27.6 | United States |  8.3 | 19.3
+ 2022-06-12 | World Rugby Pacific Four Series 2022 | Waitakere | away    | Canada      | 18.1 | New Zealand   | 27.5 | -9.4
+ 2022-06-18 | World Rugby Pacific Four Series 2022 | Whangarei | home    | New Zealand | 49.0 | United States | 10.7 | 38.3
+(7 rows)
 
-COPY 6
+COPY 7
 COMMIT

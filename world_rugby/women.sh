@@ -9,7 +9,7 @@ psql rugby -c "vacuum full verbose analyze women.results;"
 psql rugby -c "drop table if exists women._basic_factors;"
 psql rugby -c "drop table if exists women._parameter_levels;"
 
-R --vanilla -f women/lmer.R
+R -f women/lmer.R
 
 psql rugby -c "vacuum full verbose analyze women._parameter_levels;"
 psql rugby -c "vacuum full verbose analyze women._basic_factors;"
