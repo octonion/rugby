@@ -20,7 +20,7 @@ year-2020 as w
 from major_league.results r
 
 where
-    r.year between 2021 and 2022
+    r.year between 2022 and 2022
 ;")
 
 sg <- fetch(query,n=-1)
