@@ -1,8 +1,32 @@
 BEGIN
 SET
- date | event | city | site | team | e_p | opponent | e_p 
-------+-------+------+------+------+-----+----------+-----
-(0 rows)
+    date    |                     event                      |   city   |  site   |     team     | e_p  |   opponent    | e_p  
+------------+------------------------------------------------+----------+---------+--------------+------+---------------+------
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Argentina    | 33.1 | Canada        |  8.5
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Argentina    | 43.0 | Japan         |  7.1
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Australia    | 26.0 | Scotland      | 10.0
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Australia    | 22.9 | United States | 13.5
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | England      | 28.0 | Japan         | 10.9
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | England      | 21.6 | Canada        | 13.0
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Fiji         | 29.9 | Kenya         |  9.5
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Fiji         | 40.6 | Wales         |  8.0
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | home    | France       | 29.4 | Kenya         | 10.6
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | home    | France       | 39.9 | Wales         |  8.9
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | New Zealand  | 23.5 | United States | 14.1
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | New Zealand  | 26.7 | Scotland      | 10.4
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Samoa        | 27.0 | Spain         | 15.5
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Samoa        | 17.2 | Ireland       | 15.6
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | South Africa | 21.0 | Ireland       |  9.2
+ 2022-05-20 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | South Africa | 33.0 | Spain         |  9.1
+ 2022-05-21 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Argentina    | 27.1 | England       | 11.5
+ 2022-05-21 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Australia    | 17.1 | New Zealand   | 16.8
+ 2022-05-21 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Canada       | 20.7 | Japan         | 13.4
+ 2022-05-21 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | away    | Fiji         | 21.4 | France        | 18.9
+ 2022-05-21 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Ireland      | 20.1 | Spain         | 12.7
+ 2022-05-21 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Samoa        | 12.3 | South Africa  | 25.6
+ 2022-05-21 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Scotland     | 13.9 | United States | 21.5
+ 2022-05-21 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Wales        | 12.5 | Kenya         | 20.1
+(24 rows)
 
-COPY 0
+COPY 24
 COMMIT
