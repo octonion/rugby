@@ -1,11 +1,32 @@
 BEGIN
 SET
-    date    |                     event                      |   city   |  site   |   team    | e_p  | opponent | e_p  
-------------+------------------------------------------------+----------+---------+-----------+------+----------+------
- 2022-05-22 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Argentina | 24.6 | England  | 11.8
- 2022-05-22 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | neutral | Fiji      | 20.7 | Ireland  | 10.7
- 2022-05-22 | HSBC World Rugby Sevens Series 2022 - Toulouse | Toulouse | home    | France    | 25.9 | Samoa    | 19.3
-(3 rows)
+    date    |                    event                     |  city  |  site   |     team      | e_p  |   opponent    | e_p  
+------------+----------------------------------------------+--------+---------+---------------+------+---------------+------
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Argentina     | 26.1 | Kenya         |  9.4
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Argentina     | 14.0 | South Africa  | 18.0
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Australia     | 32.3 | Canada        |  8.4
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Australia     | 16.0 | New Zealand   | 17.5
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | home    | England       | 36.0 | Japan         |  9.6
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | home    | England       | 22.9 | Scotland      | 13.5
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Fiji          | 26.7 | United States | 12.9
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Fiji          | 35.8 | Spain         | 10.4
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Fiji          | 39.7 | Wales         |  7.1
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | France        | 14.6 | New Zealand   | 22.6
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | France        | 29.5 | Canada        | 10.9
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | France        | 15.5 | Australia     | 21.9
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Ireland       | 19.2 | Kenya         | 10.0
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Ireland       | 12.1 | Argentina     | 17.5
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Ireland       | 10.3 | South Africa  | 19.2
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | New Zealand   | 33.4 | Canada        |  8.0
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | away    | Samoa         | 21.0 | England       | 18.6
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Samoa         | 39.6 | Japan         |  9.4
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Samoa         | 25.2 | Scotland      | 13.2
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Scotland      | 25.5 | Japan         | 11.5
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | South Africa  | 28.6 | Kenya         |  8.0
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | Spain         | 22.8 | Wales         | 14.0
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | United States | 28.3 | Wales         | 10.4
+ 2022-05-28 | HSBC World Rugby Sevens Series 2022 - London | London | neutral | United States | 25.6 | Spain         | 15.3
+(24 rows)
 
-COPY 3
+COPY 24
 COMMIT
