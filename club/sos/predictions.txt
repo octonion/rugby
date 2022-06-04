@@ -1,11 +1,17 @@
 BEGIN
-    date    |   home   |       away       | e_home | e_away |  e_d  
-------------+----------+------------------+--------+--------+-------
- 2022-06-03 | Ulster   | Munster          |   20.5 |   19.0 |  1.49
- 2022-06-04 | Bulls    | Sharks           |   26.8 |   22.9 |  3.92
- 2022-06-04 | Leinster | Glasgow Warriors |   34.9 |   13.5 | 21.34
- 2022-06-04 | Stormers | Edinburgh        |   24.1 |   15.6 |  8.53
-(4 rows)
+    date    |        home        |       away        | e_home | e_away |  e_d  
+------------+--------------------+-------------------+--------+--------+-------
+ 2022-06-03 | Ulster             | Munster           |   21.3 |   18.8 |  2.45
+ 2022-06-04 | Bulls              | Sharks            |   26.8 |   22.9 |  3.94
+ 2022-06-04 | Exeter Chiefs      | Harlequins        |   28.3 |   20.1 |  8.18
+ 2022-06-04 | Gloucester         | Saracens          |   24.5 |   26.4 | -1.90
+ 2022-06-04 | Leicester Tigers   | Wasps             |   31.9 |   17.6 | 14.30
+ 2022-06-04 | Leinster           | Glasgow Warriors  |   34.8 |   13.5 | 21.32
+ 2022-06-04 | Northampton Saints | Newcastle Falcons |   32.8 |   16.7 | 16.08
+ 2022-06-04 | Sale Sharks        | Bristol           |   26.5 |   17.2 |  9.27
+ 2022-06-04 | Stormers           | Edinburgh         |   24.1 |   15.6 |  8.54
+ 2022-06-04 | Worcester Warriors | Bath              |   26.3 |   23.7 |  2.62
+(10 rows)
 
-COPY 4
+COPY 10
 COMMIT
