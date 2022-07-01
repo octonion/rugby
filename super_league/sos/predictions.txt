@@ -1,10 +1,13 @@
 BEGIN
-    date    |    home    |       away       | e_home | e_away |  e_d  
-------------+------------+------------------+--------+--------+-------
- 2022-06-26 | Castleford | Catalans Dragons |  16.47 |  24.26 | -7.79
- 2022-06-26 | Hull KR    | Huddersfield     |  19.84 |  18.71 |  1.13
- 2022-06-26 | Salford    | Wakefield        |  25.38 |  19.54 |  5.83
-(3 rows)
+    date    |        home        |     away     | e_home | e_away |  e_d  
+------------+--------------------+--------------+--------+--------+-------
+ 2022-07-01 | Castleford         | Huddersfield |  19.64 |  20.90 | -1.26
+ 2022-07-02 | Catalans Dragons   | St Helens    |  14.22 |  15.34 | -1.13
+ 2022-07-02 | Hull FC            | Leeds        |  20.80 |  14.54 |  6.27
+ 2022-07-02 | Toulouse Olympique | Hull KR      |  19.23 |  24.44 | -5.21
+ 2022-07-03 | Wakefield          | Wigan        |  14.46 |  21.39 | -6.93
+ 2022-07-03 | Warrington         | Salford      |  25.96 |  18.60 |  7.36
+(6 rows)
 
-COPY 3
+COPY 6
 COMMIT
