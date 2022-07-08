@@ -1,15 +1,26 @@
 BEGIN
 SET
-    date    |                event                 |   city    |  site   |    team     | e_p  |   opponent    | e_p  | e_d  
-------------+--------------------------------------+-----------+---------+-------------+------+---------------+------+------
- 2022-04-30 | 2022 Women's Six Nations             | Bayonne   | home    | France      |  9.8 | England       | 17.9 | -8.1
- 2022-04-30 | 2022 Women's Six Nations             | Belfast   | neutral | Ireland     | 21.2 | Scotland      | 15.0 |  6.3
- 2022-04-30 | 2022 Women's Six Nations             | Cardiff   | home    | Wales       | 20.2 | Italy         | 19.2 |  1.0
- 2022-05-28 | 2022 Women's Internationals          | Finland?  | home    | Finland     | 25.4 | Switzerland   |  0.3 | 25.0
- 2022-06-06 | World Rugby Pacific Four Series 2022 | Canada?   | home    | Canada      | 27.6 | United States |  8.3 | 19.3
- 2022-06-12 | World Rugby Pacific Four Series 2022 | Waitakere | away    | Canada      | 18.1 | New Zealand   | 27.5 | -9.4
- 2022-06-18 | World Rugby Pacific Four Series 2022 | Whangarei | home    | New Zealand | 49.0 | United States | 10.7 | 38.3
-(7 rows)
+    date    |                event                 |               city                |  site   |    team     |  e_p  |     opponent     | e_p  |  e_d  
+------------+--------------------------------------+-----------------------------------+---------+-------------+-------+------------------+------+-------
+ 2022-07-09 | 2022 Women's Internationals          | Papakura                          | neutral | Fiji        | 127.7 | Papua New Guinea | 21.5 | 106.3
+ 2022-07-09 | 2022 Women's Internationals          | Papakura                          | neutral | Samoa       |  44.1 | Tonga            |  1.3 |  42.8
+ 2022-07-13 | 2022 Women's Internationals          | Pukekohe                          | neutral | Fiji        |  46.6 | Tonga            | 12.5 |  34.0
+ 2022-07-13 | 2022 Women's Internationals          | Pukekohe                          | neutral | Samoa       | 121.0 | Papua New Guinea |  2.2 | 118.8
+ 2022-07-17 | 2022 Women's Internationals          | Papakura                          | neutral | Fiji        |   4.3 | Samoa            | 40.2 | -35.8
+ 2022-07-17 | 2022 Women's Internationals          | Papakura                          | neutral | Tonga       |  37.8 | Papua New Guinea | 23.5 |  14.2
+ 2022-07-24 | 2022 Women's Internationals          | Langford                          | home    | Canada      |  19.8 | Italy            | 11.7 |   8.1
+ 2022-07-24 | 2022 Women's Internationals          | Iwate Prefecture, Kamaishi City   | home    | Japan       |  14.5 | South Africa     | 11.2 |   3.2
+ 2022-07-30 | 2022 Women's Internationals          | Saitama Prefecture, Kumagaya City | home    | Japan       |  14.5 | South Africa     | 11.2 |   3.2
+ 2022-08-20 | 2022 Laurie O’Reilly Memorial Trophy | Christchurch                      | home    | New Zealand |  39.9 | Australia        |  6.2 |  33.7
+ 2022-08-20 | 2022 Women's Internationals          | Shizuoka Prefecture               | home    | Japan       |   9.1 | Ireland          | 17.9 |  -8.8
+ 2022-08-27 | 2022 Laurie O’Reilly Memorial Trophy | Adelaide                          | home    | Australia   |   6.8 | New Zealand      | 36.3 | -29.5
+ 2022-08-27 | 2022 Women's Internationals          | Halifax                           | home    | Canada      |  21.5 | Wales            | 11.5 |  10.0
+ 2022-08-27 | 2022 Women's Internationals          | Tokyo                             | home    | Japan       |   9.1 | Ireland          | 17.9 |  -8.8
+ 2022-08-27 | 2022 Women's Internationals          | Edinburgh                         | home    | Scotland    |  25.7 | United States    | 11.9 |  13.8
+ 2022-09-03 |                                      | Exeter                            | home    | England     |  85.0 | United States    |  2.5 |  82.5
+ 2022-09-11 | 2022 Women's Internationals          | Edinburgh                         | home    | Scotland    |  18.7 | Spain            | 10.1 |   8.5
+ 2022-09-14 |                                      | Bristol                           | home    | England     |  72.8 | Wales            |  3.9 |  68.9
+(18 rows)
 
-COPY 7
+COPY 18
 COMMIT
