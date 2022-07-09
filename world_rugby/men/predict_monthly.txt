@@ -1,36 +1,31 @@
 BEGIN
 SET
-    date    |                event                 |             city              |  site   |     team      |  e_p  |   opponent    | e_p  
-------------+--------------------------------------+-------------------------------+---------+---------------+-------+---------------+------
- 2022-07-01 | Rugby Africa Cup 2022                | Marseille                     | neutral | Namibia       | 113.2 | Burkina Faso  |  3.0
- 2022-07-01 | Rugby Africa Cup 2022                | Marseille                     | neutral | Zimbabwe      |  10.1 | Cote D'Ivoire | 16.3
- 2022-07-02 | 2022 Men's International             | Jujuy                         | home    | Argentina     |  20.5 | Scotland      | 17.2
- 2022-07-02 | 2022 Men's International             | Perth                         | home    | Australia     |  28.4 | England       | 18.9
- 2022-07-02 | 2022 Men's International             | Halifax                       | home    | Canada        |  44.7 | Belgium       |  5.9
- 2022-07-02 | 2022 Men's International             | Aichi Prefecture, Toyota City | home    | Japan         |  21.3 | France        | 34.2
- 2022-07-02 | 2022 Men's International             | Auckland                      | home    | New Zealand   |  31.9 | Ireland       | 23.8
- 2022-07-02 | 2022 Men's International             | Pretoria                      | home    | South Africa  |  35.5 | Wales         | 14.9
- 2022-07-02 | Rugby Africa Cup 2022                | Aix-en-Provence               | neutral | Senegal       |  13.1 | Algeria       |  9.3
- 2022-07-02 | Rugby Africa Cup 2022                | Aix-en-Provence               | neutral | Uganda        |  23.6 | Kenya         | 23.3
- 2022-07-09 | 2022 Men's International             | Salta                         | home    | Argentina     |  20.5 | Scotland      | 17.2
- 2022-07-09 | 2022 Men's International             | Brisbane                      | home    | Australia     |  28.4 | England       | 18.9
- 2022-07-09 | 2022 Men's International             | Tokyo                         | home    | Japan         |  21.3 | France        | 34.2
- 2022-07-09 | 2022 Men's International             | Dunedin                       | home    | New Zealand   |  31.9 | Ireland       | 23.8
- 2022-07-09 | 2022 Men's International             | Bloemfontein                  | home    | South Africa  |  35.5 | Wales         | 14.9
- 2022-07-09 | Rugby World Cup 2023 Qualifying      | Santiago                      | home    | Chile         |  31.8 | United States | 28.7
- 2022-07-09 | World Rugby Pacific Nations Cup 2022 | Lautoka                       | neutral | Samoa         |  36.9 | Tonga         | 13.0
- 2022-07-10 | 2022 Men's International             | Ottawa                        | home    | Canada        |  28.3 | Spain         | 21.3
- 2022-07-10 | 2022 Men's International             | Batumi                        | home    | Georgia       |  21.9 | Italy         | 19.5
- 2022-07-10 | 2022 Men's International             | Montevideo                    | home    | Uruguay       |  24.8 | Romania       | 13.2
- 2022-07-16 | 2022 Men's International             | Santiago del Estero           | home    | Argentina     |  20.5 | Scotland      | 17.2
- 2022-07-16 | 2022 Men's International             | Sydney                        | home    | Australia     |  28.4 | England       | 18.9
- 2022-07-16 | 2022 Men's International             | Kutaisi                       | home    | Georgia       |  31.3 | Portugal      | 17.8
- 2022-07-16 | 2022 Men's International             | Wellington                    | home    | New Zealand   |  31.9 | Ireland       | 23.8
- 2022-07-16 | 2022 Men's International             | Cape Town                     | home    | South Africa  |  35.5 | Wales         | 14.9
- 2022-07-16 | Rugby World Cup 2023 Qualifying      | Glendale, Colorado            | home    | United States |  36.7 | Chile         | 24.8
- 2022-07-16 | World Rugby Pacific Nations Cup 2022 | Lautoka                       | home    | Fiji          |  53.5 | Samoa         | 20.1
- 2022-07-17 | 2022 Men's International             | Montevideo                    | home    | Uruguay       |  24.8 | Romania       | 13.2
-(28 rows)
+    date    |                event                 |        city         |  site   |     team      | e_p  |   opponent    | e_p  
+------------+--------------------------------------+---------------------+---------+---------------+------+---------------+------
+ 2022-07-09 | 2022 Men's International             | Salta               | home    | Argentina     | 21.2 | Scotland      | 16.7
+ 2022-07-09 | 2022 Men's International             | Brisbane            | home    | Australia     | 27.5 | England       | 20.4
+ 2022-07-09 | 2022 Men's International             | Tokyo               | home    | Japan         | 21.2 | France        | 36.3
+ 2022-07-09 | 2022 Men's International             | Dunedin             | home    | New Zealand   | 32.8 | Ireland       | 21.0
+ 2022-07-09 | 2022 Men's International             | Bloemfontein        | home    | South Africa  | 31.6 | Wales         | 18.0
+ 2022-07-09 | Rugby World Cup 2023 Qualifying      | Santiago            | home    | Chile         | 33.2 | United States | 30.3
+ 2022-07-10 | 2022 Men's International             | Ottawa              | home    | Canada        | 28.3 | Spain         | 18.4
+ 2022-07-10 | 2022 Men's International             | Batumi              | home    | Georgia       | 21.5 | Italy         | 19.4
+ 2022-07-10 | 2022 Men's International             | Montevideo          | home    | Uruguay       | 24.1 | Romania       | 12.8
+ 2022-07-10 | Rugby Africa Cup 2022                | Aix-en-Provence     | neutral | Burkina Faso  | 12.1 | Senegal       | 28.2
+ 2022-07-10 | Rugby Africa Cup 2022                | Aix-en-Provence     | neutral | Cote D'Ivoire | 21.6 | Uganda        | 17.1
+ 2022-07-10 | Rugby Africa Cup 2022                | Aix-en-Provence     | neutral | Namibia       | 41.0 | Kenya         | 18.9
+ 2022-07-10 | Rugby Africa Cup 2022                | Aix-en-Provence     | neutral | Zimbabwe      | 26.9 | Algeria       | 17.8
+ 2022-07-16 | 2022 Men's International             | Santiago del Estero | home    | Argentina     | 21.2 | Scotland      | 16.7
+ 2022-07-16 | 2022 Men's International             | Sydney              | home    | Australia     | 27.5 | England       | 20.4
+ 2022-07-16 | 2022 Men's International             | Kutaisi             | home    | Georgia       | 31.4 | Portugal      | 17.7
+ 2022-07-16 | 2022 Men's International             | Wellington          | home    | New Zealand   | 32.8 | Ireland       | 21.0
+ 2022-07-16 | 2022 Men's International             | Cape Town           | home    | South Africa  | 31.6 | Wales         | 18.0
+ 2022-07-16 | Rugby World Cup 2023 Qualifying      | Glendale, Colorado  | home    | United States | 39.1 | Chile         | 25.6
+ 2022-07-16 | World Rugby Pacific Nations Cup 2022 | Lautoka             | home    | Fiji          | 80.5 | Samoa         | 15.1
+ 2022-07-17 | 2022 Men's International             | Montevideo          | home    | Uruguay       | 24.1 | Romania       | 12.8
+ 2022-08-06 | 2022 Rugby Championship              | Mendoza             | home    | Argentina     | 21.1 | Australia     | 23.0
+ 2022-08-06 | 2022 Rugby Championship              | Mbombela            | home    | South Africa  | 23.3 | New Zealand   | 35.6
+(23 rows)
 
-COPY 28
+COPY 23
 COMMIT
