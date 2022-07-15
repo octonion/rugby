@@ -14,7 +14,7 @@ coalesce(g.venue_city,t1.country_name||'?') as city,
       when g.venue_country is null then 'home'
       else 'neutral' end) as site,
 
-t1.country_name as team,
+t1.team_name as team,
 (
 case when g.venue_country=t1.country_name then
        exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
@@ -27,7 +27,7 @@ case when g.venue_country=t1.country_name then
 end
 )::numeric(5,2) as e_p,
 
-t2.country_name as opponent,
+t2.team_name as opponent,
 (
 case when g.venue_country=t1.country_name then
        exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
@@ -86,8 +86,10 @@ join men._basic_factors i
 where
    g.time_label::date between current_date and current_date+90
 
-and (t1.sport_id,t1.type_id)=(1,6)
-and (t2.sport_id,t2.type_id)=(1,6)
+and t1.sport_id=1
+and t1.type_id in (5,6)
+and t2.sport_id=1
+and t2.type_id in (5,6)
 
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
@@ -110,7 +112,7 @@ coalesce(g.venue_city,t1.country_name||'?') as city,
       when g.venue_country is null then 'home'
       else 'neutral' end) as site,
 
-t1.country_name as team,
+t1.team_name as team,
 (
 case when g.venue_country=t1.country_name then
        exp(i.estimate)*sf1.offensive*o.exp_factor*sf2.defensive
@@ -123,7 +125,7 @@ case when g.venue_country=t1.country_name then
 end
 )::numeric(5,2) as e_p,
 
-t2.country_name as opponent,
+t2.team_name as opponent,
 (
 case when g.venue_country=t1.country_name then
        exp(i.estimate)*sf2.offensive*d.exp_factor*sf1.defensive
@@ -181,8 +183,10 @@ join men._basic_factors i
 where
    g.time_label::date between current_date and current_date+90
 
-and (t1.sport_id,t1.type_id)=(1,6)
-and (t2.sport_id,t2.type_id)=(1,6)
+and t1.sport_id=1
+and t1.type_id in (5,6)
+and t2.sport_id=1
+and t2.type_id in (5,6)
 
 and (g.time_label::date) between coalesce(t1.from_label,g.time_label::date) and coalesce(t1.until_label,g.time_label::date)
 and (g.time_label::date) between coalesce(t2.from_label,g.time_label::date) and coalesce(t2.until_label,g.time_label::date)
