@@ -1,20 +1,20 @@
-[1] 274   7
-[1] 548   7
+[1] 278   7
+[1] 556   7
 [1] TRUE
-[1] 548   5
-start par. =  1 1 1 fn =  9055.668 
+[1] 556   5
+start par. =  1 1 1 fn =  9199.67 
 At return
-eval:  94 fn:      8835.7788 par: 0.317840 0.217301 0.238003
-(NM) 20: f = 8835.78 at  0.31784 0.217301 0.238003  2.90179 0.115699
-(NM) 40: f = 8835.78 at  0.31784 0.217301 0.238003  2.90179 0.115699
-(NM) 60: f = 8835.78 at 0.317942 0.218071 0.237856  2.89836 0.115985
-(NM) 80: f = 8835.78 at 0.317853 0.217475 0.237651  2.89828 0.115773
-(NM) 100: f = 8835.78 at 0.317882 0.217408 0.237976  2.89826 0.115737
-(NM) 120: f = 8835.78 at  0.31784 0.217272  0.23794  2.89835 0.115756
-(NM) 140: f = 8835.78 at 0.317843 0.217313 0.238001  2.89835 0.115757
-(NM) 160: f = 8835.78 at 0.317844 0.217289 0.237999  2.89835 0.115768
-(NM) 180: f = 8835.78 at 0.317841 0.217293 0.237998  2.89834 0.115767
-(NM) 200: f = 8835.78 at 0.317839 0.217297 0.237992  2.89833 0.115768
+eval:  76 fn:      8978.2264 par: 0.319256 0.218270 0.239009
+(NM) 20: f = 8978.23 at 0.319256  0.21827 0.239009  2.89833 0.118726
+(NM) 40: f = 8978.23 at 0.319256  0.21827 0.239009  2.89833 0.118726
+(NM) 60: f = 8978.23 at 0.319358 0.219041 0.238863  2.89489  0.11901
+(NM) 80: f = 8978.22 at 0.319242 0.218414 0.239061  2.89443 0.118763
+(NM) 100: f = 8978.22 at 0.319226 0.218309 0.238897  2.89475 0.118816
+(NM) 120: f = 8978.22 at  0.31924 0.218268  0.23899   2.8948  0.11879
+(NM) 140: f = 8978.22 at 0.319245 0.218262 0.239016   2.8949 0.118791
+(NM) 160: f = 8978.22 at 0.319253 0.218257 0.239017  2.89487 0.118794
+(NM) 180: f = 8978.22 at 0.319252  0.21827 0.239004  2.89486 0.118795
+(NM) 200: f = 8978.22 at 0.319256 0.218268 0.239002  2.89487 0.118795
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -22,16 +22,16 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
       AIC       BIC    logLik  deviance  df.resid 
- 8845.777  8867.308 -4417.889  8835.777       543 
+ 8988.225  9009.828 -4489.112  8978.225       551 
 Random effects:
  Groups  Name        Std.Dev.
- game_id (Intercept) 0.3178  
- defense (Intercept) 0.2173  
- offense (Intercept) 0.2380  
-Number of obs: 548, groups:  game_id, 137; defense, 16; offense, 16
+ game_id (Intercept) 0.3193  
+ defense (Intercept) 0.2183  
+ offense (Intercept) 0.2390  
+Number of obs: 556, groups:  game_id, 139; defense, 16; offense, 16
 Fixed Effects:
       (Intercept)  fieldoffense_home  
-           2.8983             0.1158  
+           2.8949             0.1188  
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -40,27 +40,27 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
 Weights: w
 
      AIC      BIC   logLik deviance df.resid 
-  8845.8   8867.3  -4417.9   8835.8      543 
+  8988.2   9009.8  -4489.1   8978.2      551 
 
 Scaled residuals: 
-    Min      1Q  Median      3Q     Max 
--6.0170 -1.6090 -0.0131  1.4598  6.0066 
+   Min     1Q Median     3Q    Max 
+-5.943 -1.573 -0.018  1.437  5.897 
 
 Random effects:
  Groups  Name        Variance Std.Dev.
- game_id (Intercept) 0.10102  0.3178  
- defense (Intercept) 0.04722  0.2173  
- offense (Intercept) 0.05664  0.2380  
-Number of obs: 548, groups:  game_id, 137; defense, 16; offense, 16
+ game_id (Intercept) 0.10192  0.3193  
+ defense (Intercept) 0.04764  0.2183  
+ offense (Intercept) 0.05712  0.2390  
+Number of obs: 556, groups:  game_id, 139; defense, 16; offense, 16
 
 Fixed effects:
                   Estimate Std. Error z value Pr(>|z|)    
-(Intercept)        2.89832    0.08564  33.843   <2e-16 ***
-fieldoffense_home  0.11577    0.01379   8.396   <2e-16 ***
+(Intercept)        2.89487    0.08594  33.683   <2e-16 ***
+fieldoffense_home  0.11879    0.01369   8.677   <2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr)
-fildffns_hm -0.085
+fildffns_hm -0.084
 [1] TRUE
