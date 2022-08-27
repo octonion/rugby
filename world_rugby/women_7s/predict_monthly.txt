@@ -1,8 +1,16 @@
 BEGIN
 SET
- date | event | city | site | team | e_p | opponent | e_p 
-------+-------+------+------+------+-----+----------+-----
-(0 rows)
+    date    |            event            |   city    |  site   |     team      | e_p  |          opponent          | e_p  
+------------+-----------------------------+-----------+---------+---------------+------+----------------------------+------
+ 2022-09-09 | Rugby World Cup Sevens 2022 | Cape Town | neutral | Australia     | 73.0 | Madagascar                 |  1.4
+ 2022-09-09 | Rugby World Cup Sevens 2022 | Cape Town | neutral | Canada        | 18.8 | People's Republic of China | 13.3
+ 2022-09-09 | Rugby World Cup Sevens 2022 | Cape Town | neutral | England       | 19.9 | Spain                      | 10.5
+ 2022-09-09 | Rugby World Cup Sevens 2022 | Cape Town | neutral | Fiji          | 37.7 | Japan                      |  7.5
+ 2022-09-09 | Rugby World Cup Sevens 2022 | Cape Town | away    | France        | 57.8 | South Africa               |  2.3
+ 2022-09-09 | Rugby World Cup Sevens 2022 | Cape Town | neutral | Ireland       | 24.2 | Brazil                     | 11.9
+ 2022-09-09 | Rugby World Cup Sevens 2022 | Cape Town | neutral | New Zealand   | 90.7 | Colombia                   |  1.5
+ 2022-09-09 | Rugby World Cup Sevens 2022 | Cape Town | neutral | United States | 24.5 | Poland                     |  8.5
+(8 rows)
 
-COPY 0
+COPY 8
 COMMIT
