@@ -1,15 +1,17 @@
 BEGIN
 SET
-    date    |              event               |     city     |  site   |     team     | e_p  |   opponent   | e_p  
-------------+----------------------------------+--------------+---------+--------------+------+--------------+------
- 2022-08-13 | 2022 Rugby Championship          | San Juan     | home    | Argentina    | 18.9 | Australia    | 24.6
- 2022-08-13 | 2022 Rugby Championship          | Johannesburg | home    | South Africa | 24.0 | New Zealand  | 25.2
- 2022-08-24 | Sudamerica Rugby 3 Naciones 2022 | Barranquilla | neutral | Paraguay     |  0.9 | Brazil       | 29.3
- 2022-08-27 | 2022 Rugby Championship          | Adelaide     | home    | Australia    | 21.2 | South Africa | 23.3
- 2022-08-27 | 2022 Rugby Championship          | Christchurch | home    | New Zealand  | 42.1 | Argentina    | 13.5
- 2022-09-03 | 2022 Rugby Championship          | Sydney       | home    | Australia    | 21.2 | South Africa | 23.3
- 2022-09-03 | 2022 Rugby Championship          | Hamilton     | home    | New Zealand  | 42.1 | Argentina    | 13.5
-(7 rows)
+    date    |              event               |     city     | site |     team     | e_p  |   opponent   | e_p  
+------------+----------------------------------+--------------+------+--------------+------+--------------+------
+ 2022-08-27 | 2022 Rugby Championship          | Adelaide     | home | Australia    | 21.3 | South Africa | 24.2
+ 2022-08-27 | 2022 Rugby Championship          | Christchurch | home | New Zealand  | 41.2 | Argentina    | 14.5
+ 2022-08-28 | Sudamerica Rugby 3 Naciones 2022 | Barranquilla | home | Colombia     | 11.2 | Brazil       | 26.7
+ 2022-09-03 | 2022 Rugby Championship          | Sydney       | home | Australia    | 21.3 | South Africa | 24.2
+ 2022-09-03 | 2022 Rugby Championship          | Hamilton     | home | New Zealand  | 41.2 | Argentina    | 14.5
+ 2022-09-15 | 2022 Rugby Championship          | Melbourne    | home | Australia    | 21.1 | New Zealand  | 32.6
+ 2022-09-17 | 2022 Rugby Championship          | Buenos Aires | home | Argentina    | 17.8 | South Africa | 25.1
+ 2022-09-24 | 2022 Rugby Championship          | Auckland     | home | New Zealand  | 39.7 | Australia    | 17.3
+ 2022-09-24 | 2022 Rugby Championship          | Durban       | home | South Africa | 30.6 | Argentina    | 14.6
+(9 rows)
 
-COPY 7
+COPY 9
 COMMIT
