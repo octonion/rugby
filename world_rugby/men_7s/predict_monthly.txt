@@ -1,23 +1,19 @@
 BEGIN
 SET
-    date    |                       event                       |        city        |  site   |     team     | e_p  |   opponent    | e_p  
-------------+---------------------------------------------------+--------------------+---------+--------------+------+---------------+------
- 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | Australia    | 26.4 | Kenya         |  8.6
- 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | away    | Fiji         | 25.0 | United States | 16.7
- 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | France       | 27.7 | Canada        | 12.0
- 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | Japan        | 12.9 | England       | 25.0
- 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | New Zealand  | 19.4 | Ireland       | 10.5
- 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | Samoa        | 15.5 | Argentina     | 19.7
- 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | Scotland     | 19.2 | Spain         | 17.5
- 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | South Africa | 36.4 | Wales         |  7.1
- 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Canada       | 27.4 | Zimbabwe      | 11.1
- 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Germany      | 20.7 | Chile         | 13.0
- 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Hong Kong    | 15.4 | Uruguay       | 13.8
- 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Kenya        | 23.9 | Tonga         | 10.4
- 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Samoa        | 27.0 | Uganda        | 11.4
- 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Scotland     | 37.3 | Jamaica       |  5.3
- 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Wales        | 31.0 | Korea         |  5.7
-(15 rows)
+    date    |                       event                       |        city        |  site   |   team    | e_p  |  opponent   | e_p  
+------------+---------------------------------------------------+--------------------+---------+-----------+------+-------------+------
+ 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | Australia | 20.1 | Samoa       | 15.3
+ 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | Fiji      | 17.0 | New Zealand | 18.9
+ 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | France    | 23.0 | Scotland    | 13.3
+ 2022-08-28 | HSBC World Rugby Sevens Series 2022 - Los Angeles | Carson, California | neutral | Kenya     |  9.7 | Argentina   | 25.9
+ 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Canada    | 26.9 | Zimbabwe    | 11.4
+ 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Germany   | 20.6 | Chile       | 13.1
+ 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Hong Kong | 15.4 | Uruguay     | 13.9
+ 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Kenya     | 24.5 | Tonga       | 10.4
+ 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Samoa     | 27.8 | Uganda      | 11.4
+ 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Scotland  | 37.8 | Jamaica     |  5.2
+ 2022-09-09 | Rugby World Cup Sevens 2022                       | Cape Town          | neutral | Wales     | 30.4 | Korea       |  5.4
+(11 rows)
 
-COPY 15
+COPY 11
 COMMIT
