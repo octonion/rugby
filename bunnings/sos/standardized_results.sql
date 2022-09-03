@@ -26,7 +26,8 @@ insert into bunnings.results
 (
 select
 game_id,
-extract(year from date),
+--extract(year from date),
+season as year,
 date,
 home_team,
 away_team,
@@ -37,7 +38,7 @@ away_score
 from bunnings.games
 
 where
-    extract(year from date) between 2003 and 2021
+    extract(year from date) between 2003 and 2022
 
 and home_score is not null
 and away_score is not null
@@ -57,7 +58,8 @@ insert into bunnings.results
 (
 select
 game_id,
-extract(year from date),
+season as year,
+--extract(year from date),
 date,
 away_team,
 home_team,
@@ -68,7 +70,7 @@ home_score
 from bunnings.games
 
 where
-    extract(year from date) between 2003 and 2021
+    extract(year from date) between 2003 and 2022
 
 and home_score is not null
 and away_score is not null
