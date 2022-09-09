@@ -48,7 +48,7 @@ team_score::float as gs,
 from women_7s._results r
 
 where
-    r.year between 2019 and 2022
+    r.year between 2019 and 2023
 
 ;")
 
