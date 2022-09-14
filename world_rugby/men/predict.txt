@@ -1,43 +1,40 @@
 BEGIN
 SET
-    date    |                        event                        |     city     |  site   |     team      |  e_p  |   opponent   |  e_p  |  e_d   
-------------+-----------------------------------------------------+--------------+---------+---------------+-------+--------------+-------+--------
- 2022-09-03 | 2022 Rugby Championship                             | Sydney       | home    | Australia     | 22.35 | South Africa | 23.13 |  -0.78
- 2022-09-03 | 2022 Rugby Championship                             | Hamilton     | home    | New Zealand   | 37.41 | Argentina    | 16.06 |  21.35
- 2022-09-03 | Fiji Rugby Union Invitational Series                | Suva         | home    | Fiji Warriors | 45.97 | Samoa A      |  6.82 |  39.15
- 2022-09-15 | 2022 Rugby Championship                             | Melbourne    | home    | Australia     | 22.61 | New Zealand  | 30.79 |  -8.18
- 2022-09-17 | 2022 Rugby Championship                             | Buenos Aires | home    | Argentina     | 19.21 | South Africa | 23.20 |  -3.99
- 2022-09-24 | 2022 Rugby Championship                             | Auckland     | home    | New Zealand   | 37.28 | Australia    | 18.67 |  18.61
- 2022-09-24 | 2022 Rugby Championship                             | Durban       | home    | South Africa  | 28.09 | Argentina    | 15.87 |  12.23
- 2022-10-29 | 2022 Men's International                            | Tokyo        | home    | Japan         | 21.51 | New Zealand  | 40.13 | -18.62
- 2022-10-29 | Autumn Nations Series 2022                          | Edinburgh    | home    | Scotland      | 22.31 | Australia    | 18.57 |   3.75
- 2022-11-05 | Autumn Nations Series 2022                          | Saint-Denis  | home    | France        | 31.47 | Australia    | 17.63 |  13.84
- 2022-11-05 | Autumn Nations Series 2022                          | Dublin       | home    | Ireland       | 28.26 | South Africa | 15.28 |  12.98
- 2022-11-05 | Autumn Nations Series 2022                          | Padova       | home    | Italy         | 19.41 | Samoa        | 24.55 |  -5.14
- 2022-11-05 | Autumn Nations Series 2022                          | Edinburgh    | home    | Scotland      | 27.17 | Fiji         | 12.39 |  14.78
- 2022-11-05 | Autumn Nations Series 2022                          | Cardiff      | home    | Wales         | 20.52 | New Zealand  | 30.26 |  -9.74
- 2022-11-06 | Autumn Nations Series 2022                          | London       | home    | England       | 25.55 | Argentina    | 15.66 |   9.89
- 2022-11-06 | Rugby World Cup 2023 Final Qualification Tournament | Dubai        | neutral | Portugal      | 45.51 | Hong Kong    | 16.45 |  29.07
- 2022-11-06 | Rugby World Cup 2023 Final Qualification Tournament | Dubai        | neutral | USA           | 43.25 | Kenya        | 20.19 |  23.06
- 2022-11-12 | Autumn Nations Series 2022                          | London       | home    | England       | 33.19 | Japan        | 17.33 |  15.86
- 2022-11-12 | Autumn Nations Series 2022                          | Marseille    | home    | France        | 26.40 | South Africa | 18.54 |   7.86
- 2022-11-12 | Autumn Nations Series 2022                          | Dublin       | home    | Ireland       | 41.02 | Fiji         |  9.70 |  31.32
- 2022-11-12 | Autumn Nations Series 2022                          | Florence     | home    | Italy         | 16.25 | Australia    | 32.80 | -16.55
- 2022-11-12 | Autumn Nations Series 2022                          | Cardiff      | home    | Wales         | 24.25 | Argentina    | 18.59 |   5.67
- 2022-11-12 | Rugby World Cup 2023 Final Qualification Tournament | Dubai        | neutral | Portugal      | 40.49 | Kenya        | 18.49 |  22.00
- 2022-11-12 | Rugby World Cup 2023 Final Qualification Tournament | Dubai        | neutral | USA           | 48.62 | Hong Kong    | 17.96 |  30.66
- 2022-11-13 | Autumn Nations Series 2022                          | Edinburgh    | home    | Scotland      | 18.94 | New Zealand  | 25.99 |  -7.05
- 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai        | neutral | Hong Kong     | 25.83 | Kenya        | 32.64 |  -6.81
- 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai        | neutral | USA           | 27.54 | Portugal     | 28.15 |  -0.62
- 2022-11-19 | 2022 South Africa Tour (IRE/ITA/ENG)                | Genova       | home    | Italy         | 13.63 | South Africa | 34.48 | -20.85
- 2022-11-19 | Autumn Nations Series 2022                          | London       | home    | England       | 21.61 | New Zealand  | 25.49 |  -3.88
- 2022-11-19 | Autumn Nations Series 2022                          | Dublin       | home    | Ireland       | 33.68 | Australia    | 14.54 |  19.15
- 2022-11-19 | Autumn Nations Series 2022                          | Edinburgh    | home    | Scotland      | 22.38 | Argentina    | 15.96 |   6.42
- 2022-11-19 | Autumn Nations Series 2022                          | Cardiff      | home    | Wales         | 33.26 | Georgia      | 11.97 |  21.29
- 2022-11-20 | 2022 Japan Tour (ENG/FRA)                           | Toulouse     | home    | France        | 41.01 | Japan        | 16.77 |  24.24
- 2022-11-26 | Autumn Nations Series 2022                          | London       | home    | England       | 21.36 | South Africa | 19.14 |   2.22
- 2022-11-26 | Autumn Nations Series 2022                          | Cardiff      | home    | Wales         | 24.18 | Australia    | 21.62 |   2.56
-(35 rows)
+    date    |                        event                        |           city           |  site   |     team     |  e_p  |   opponent   |  e_p  |  e_d   
+------------+-----------------------------------------------------+--------------------------+---------+--------------+-------+--------------+-------+--------
+ 2022-09-15 | 2022 Rugby Championship                             | Melbourne                | home    | Australia    | 20.85 | New Zealand  | 32.13 | -11.28
+ 2022-09-17 | 2022 Rugby Championship                             | Avellaneda, Buenos Aires | home    | Argentina    | 17.30 | South Africa | 24.46 |  -7.16
+ 2022-09-24 | 2022 Rugby Championship                             | Auckland                 | home    | New Zealand  | 39.04 | Australia    | 17.15 |  21.89
+ 2022-09-24 | 2022 Rugby Championship                             | Durban                   | home    | South Africa | 29.72 | Argentina    | 14.24 |  15.48
+ 2022-10-29 | 2022 Men's International                            | Tokyo                    | home    | Japan        | 20.62 | New Zealand  | 41.64 | -21.02
+ 2022-10-29 | Autumn Nations Series 2022                          | Edinburgh                | home    | Scotland     | 22.39 | Australia    | 18.02 |   4.36
+ 2022-11-05 | Autumn Nations Series 2022                          | Saint-Denis              | home    | France       | 31.77 | Australia    | 16.98 |  14.80
+ 2022-11-05 | Autumn Nations Series 2022                          | Dublin                   | home    | Ireland      | 26.87 | South Africa | 15.22 |  11.65
+ 2022-11-05 | Autumn Nations Series 2022                          | Padova                   | home    | Italy        | 19.19 | Samoa        | 24.82 |  -5.63
+ 2022-11-05 | Autumn Nations Series 2022                          | Edinburgh                | home    | Scotland     | 26.57 | Fiji         | 12.68 |  13.89
+ 2022-11-05 | Autumn Nations Series 2022                          | Cardiff                  | home    | Wales        | 19.84 | New Zealand  | 31.15 | -11.31
+ 2022-11-06 | Autumn Nations Series 2022                          | London                   | home    | England      | 26.72 | Argentina    | 14.99 |  11.72
+ 2022-11-06 | Rugby World Cup 2023 Final Qualification Tournament | Dubai                    | neutral | Portugal     | 45.07 | Hong Kong    | 16.60 |  28.47
+ 2022-11-06 | Rugby World Cup 2023 Final Qualification Tournament | Dubai                    | neutral | USA          | 43.31 | Kenya        | 20.04 |  23.27
+ 2022-11-12 | Autumn Nations Series 2022                          | London                   | home    | England      | 33.39 | Japan        | 17.42 |  15.97
+ 2022-11-12 | Autumn Nations Series 2022                          | Marseille                | home    | France       | 24.94 | South Africa | 18.79 |   6.15
+ 2022-11-12 | Autumn Nations Series 2022                          | Dublin                   | home    | Ireland      | 40.63 | Fiji         |  9.67 |  30.96
+ 2022-11-12 | Autumn Nations Series 2022                          | Florence                 | home    | Italy        | 16.42 | Australia    | 31.42 | -15.00
+ 2022-11-12 | Autumn Nations Series 2022                          | Cardiff                  | home    | Wales        | 25.55 | Argentina    | 17.59 |   7.97
+ 2022-11-12 | Rugby World Cup 2023 Final Qualification Tournament | Dubai                    | neutral | Portugal     | 40.35 | Kenya        | 18.48 |  21.87
+ 2022-11-12 | Rugby World Cup 2023 Final Qualification Tournament | Dubai                    | neutral | USA          | 48.37 | Hong Kong    | 18.00 |  30.37
+ 2022-11-13 | Autumn Nations Series 2022                          | Edinburgh                | home    | Scotland     | 18.03 | New Zealand  | 27.18 |  -9.16
+ 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai                    | neutral | Hong Kong    | 26.04 | Kenya        | 32.38 |  -6.34
+ 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai                    | neutral | USA          | 27.61 | Portugal     | 27.90 |  -0.29
+ 2022-11-19 | 2022 South Africa Tour (IRE/ITA/ENG)                | Genova                   | home    | Italy        | 12.89 | South Africa | 34.79 | -21.90
+ 2022-11-19 | Autumn Nations Series 2022                          | London                   | home    | England      | 20.75 | New Zealand  | 26.56 |  -5.81
+ 2022-11-19 | Autumn Nations Series 2022                          | Dublin                   | home    | Ireland      | 34.23 | Australia    | 13.75 |  20.49
+ 2022-11-19 | Autumn Nations Series 2022                          | Edinburgh                | home    | Scotland     | 23.22 | Argentina    | 15.35 |   7.87
+ 2022-11-19 | Autumn Nations Series 2022                          | Cardiff                  | home    | Wales        | 33.47 | Georgia      | 11.93 |  21.54
+ 2022-11-20 | 2022 Japan Tour (ENG/FRA)                           | Toulouse                 | home    | France       | 41.18 | Japan        | 16.79 |  24.39
+ 2022-11-26 | Autumn Nations Series 2022                          | London                   | home    | England      | 20.23 | South Africa | 19.50 |   0.73
+ 2022-11-26 | Autumn Nations Series 2022                          | Cardiff                  | home    | Wales        | 24.64 | Australia    | 20.65 |   3.99
+(32 rows)
 
-COPY 35
+COPY 32
 COMMIT
