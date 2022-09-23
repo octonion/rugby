@@ -1,8 +1,15 @@
 BEGIN
-    date    |   home   |       away       | e_home | e_away | e_d  
-------------+----------+------------------+--------+--------+------
- 2022-09-21 | Taranaki | Counties Manukau |  24.87 |  22.04 | 2.83
-(1 row)
+    date    |     home      |       away       | e_home | e_away |  e_d   
+------------+---------------+------------------+--------+--------+--------
+ 2022-09-23 | Bay of Plenty | Hawke's Bay      |  30.88 |  21.51 |   9.38
+ 2022-09-23 | Canterbury    | Auckland         |  34.71 |  19.94 |  14.77
+ 2022-09-23 | Tasman        | Northland        |  23.16 |  20.43 |   2.74
+ 2022-09-24 | Manawatu      | Otago            |  20.25 |  38.80 | -18.55
+ 2022-09-24 | North Harbour | Taranaki         |  34.81 |  16.62 |  18.19
+ 2022-09-24 | Southland     | Counties Manukau |  28.34 |  31.99 |  -3.65
+ 2022-09-24 | Wellington    | Waikato          |  19.65 |  25.22 |  -5.57
+ 2022-09-27 | Bay of Plenty | Northland        |  31.23 |  15.01 |  16.22
+(8 rows)
 
-COPY 1
+COPY 8
 COMMIT
