@@ -1,21 +1,19 @@
-[1] 2824    7
-[1] 4274    7
+[1] 2856    7
+[1] 4370    7
 [1] TRUE
-[1] 4274    5
-start par. =  1 1 1 fn =  57904.67 
+[1] 4370    5
+start par. =  1 1 1 fn =  59687.55 
 At return
-eval: 174 fn:      55742.596 par: 0.282231 0.237770 0.261753
-(NM) 20: f = 55742.6 at 0.282231  0.23777 0.261753  2.97788 0.250616
-(NM) 40: f = 55742.6 at  0.28228 0.238318  0.26125  2.96935 0.250865
-(NM) 60: f = 55742.6 at  0.28228 0.238318  0.26125  2.96935 0.250865
-(NM) 80: f = 55742.6 at   0.2823 0.238026 0.261494  2.97142 0.250617
-(NM) 100: f = 55742.6 at 0.282252 0.237858 0.261786  2.97137 0.250695
-(NM) 120: f = 55742.6 at 0.282228 0.237833 0.261751   2.9715 0.250708
-(NM) 140: f = 55742.6 at  0.28223 0.237814 0.261717  2.97146 0.250694
-(NM) 160: f = 55742.6 at 0.282228 0.237776 0.261742  2.97147 0.250697
-(NM) 180: f = 55742.6 at  0.28223 0.237766 0.261739  2.97152 0.250691
-(NM) 200: f = 55742.6 at  0.28223 0.237741  0.26173  2.97151 0.250691
-(NM) 220: f = 55742.6 at 0.282228 0.237755 0.261732  2.97151 0.250693
+eval: 116 fn:      57501.645 par: 0.282532 0.236524 0.261302
+(NM) 20: f = 57501.6 at 0.282532 0.236524 0.261302  2.97716 0.252446
+(NM) 40: f = 57501.6 at 0.282581 0.237071 0.260799  2.96865  0.25269
+(NM) 60: f = 57501.6 at 0.282581 0.237071 0.260799  2.96865  0.25269
+(NM) 80: f = 57501.6 at 0.282582 0.236676  0.26097  2.97139 0.252515
+(NM) 100: f = 57501.6 at 0.282514  0.23636 0.261271  2.97112 0.252555
+(NM) 120: f = 57501.6 at 0.282536 0.236479 0.261312  2.97091 0.252503
+(NM) 140: f = 57501.6 at 0.282523 0.236472 0.261272  2.97084 0.252522
+(NM) 160: f = 57501.6 at 0.282526   0.2365 0.261271  2.97082 0.252521
+(NM) 180: f = 57501.6 at 0.282528 0.236507 0.261278  2.97083 0.252519
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -23,16 +21,16 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
       AIC       BIC    logLik  deviance  df.resid 
- 55752.56  55784.36 -27871.28  55742.56      4269 
+ 57511.61  57543.52 -28750.81  57501.61      4365 
 Random effects:
  Groups  Name        Std.Dev.
- game_id (Intercept) 0.2822  
- defense (Intercept) 0.2377  
- offense (Intercept) 0.2617  
-Number of obs: 4274, groups:  game_id, 1412; defense, 60; offense, 60
+ game_id (Intercept) 0.2825  
+ defense (Intercept) 0.2365  
+ offense (Intercept) 0.2613  
+Number of obs: 4370, groups:  game_id, 1428; defense, 60; offense, 60
 Fixed Effects:
       (Intercept)  fieldoffense_home  
-           2.9715             0.2507  
+           2.9708             0.2525  
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -41,27 +39,27 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
 Weights: w
 
      AIC      BIC   logLik deviance df.resid 
- 55752.6  55784.4 -27871.3  55742.6     4269 
+ 57511.6  57543.5 -28750.8  57501.6     4365 
 
 Scaled residuals: 
-    Min      1Q  Median      3Q     Max 
--6.2064 -1.1271 -0.0303  1.0486  6.4823 
+   Min     1Q Median     3Q    Max 
+-6.263 -1.123 -0.026  1.044  6.585 
 
 Random effects:
  Groups  Name        Variance Std.Dev.
- game_id (Intercept) 0.07965  0.2822  
- defense (Intercept) 0.05652  0.2377  
- offense (Intercept) 0.06850  0.2617  
-Number of obs: 4274, groups:  game_id, 1412; defense, 60; offense, 60
+ game_id (Intercept) 0.07982  0.2825  
+ defense (Intercept) 0.05593  0.2365  
+ offense (Intercept) 0.06827  0.2613  
+Number of obs: 4370, groups:  game_id, 1428; defense, 60; offense, 60
 
 Fixed effects:
                   Estimate Std. Error z value Pr(>|z|)    
-(Intercept)       2.971512   0.046603   63.76   <2e-16 ***
-fieldoffense_home 0.250692   0.004863   51.55   <2e-16 ***
+(Intercept)        2.97083    0.04645   63.96   <2e-16 ***
+fieldoffense_home  0.25252    0.00477   52.93   <2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr)
-fildffns_hm -0.059
+fildffns_hm -0.058
 [1] TRUE
