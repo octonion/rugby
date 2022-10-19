@@ -1,25 +1,19 @@
 BEGIN
 SET
-    date    |                event                |   city    |  site   |     team      | e_p  |    opponent    | e_p  |  e_d  
-------------+-------------------------------------+-----------+---------+---------------+------+----------------+------+-------
- 2022-10-15 | Rugby World Cup 2021                | Whangarei | neutral | France        | 12.8 | England        | 25.0 | -12.1
- 2022-10-15 | Rugby World Cup 2021                | Whangarei | neutral | Scotland      | 14.0 | Australia      | 20.2 |  -6.2
- 2022-10-15 | Rugby World Cup 2021                | Whangarei | neutral | United States | 20.4 | Japan          | 15.5 |   4.9
- 2022-10-16 | Rugby World Cup 2021                | Auckland  | neutral | Fiji          | 19.1 | South Africa   | 20.9 |  -1.7
- 2022-10-16 | Rugby World Cup 2021                | Auckland  | neutral | Italy         | 11.5 | Canada         | 24.8 | -13.3
- 2022-10-16 | Rugby World Cup 2021                | Auckland  | away    | Wales         |  8.9 | New Zealand    | 53.7 | -44.8
- 2022-10-22 | 2022-23 Rugby Europe Women’s Trophy | Finland?  | home    | Finland       | 47.3 | Germany        |  0.9 |  46.5
- 2022-10-22 | Rugby World Cup 2021                | Whangarei | neutral | Australia     | 17.7 | Wales          | 12.6 |   5.2
- 2022-10-22 | Rugby World Cup 2021                | Whangarei | neutral | France        | 42.5 | Fiji           |  7.4 |  35.1
- 2022-10-22 | Rugby World Cup 2021                | Whangarei | home    | New Zealand   | 61.1 | Scotland       |  9.9 |  51.2
- 2022-10-23 | Rugby World Cup 2021                | Auckland  | neutral | Canada        | 26.4 | United States  |  9.8 |  16.6
- 2022-10-23 | Rugby World Cup 2021                | Auckland  | neutral | England       | 64.5 | South Africa   |  6.3 |  58.2
- 2022-10-23 | Rugby World Cup 2021                | Auckland  | neutral | Japan         | 14.6 | Italy          | 24.0 |  -9.4
- 2022-10-25 | Rugby Africa Women’s Cup 2022       | Kampala   | home    | Uganda        | 44.8 | Zambia         |  3.3 |  41.5
- 2022-10-29 | Rugby Africa Women’s Cup 2022       | Kampala   | neutral | Kenya         | 48.5 | Zambia         | 18.2 |  30.4
- 2022-11-02 | Rugby Africa Women’s Cup 2022       | Kampala   | home    | Uganda        | 16.9 | Kenya          |  3.3 |  13.6
- 2022-11-05 | 2022-23 Rugby Europe Women’s Trophy | Germany?  | home    | Germany       |  0.6 | Czech Republic | 32.6 | -32.0
-(17 rows)
+    date    |                event                |   city    |  site   |    team     | e_p  |    opponent    | e_p  |  e_d  
+------------+-------------------------------------+-----------+---------+-------------+------+----------------+------+-------
+ 2022-10-22 | 2022-23 Rugby Europe Women’s Trophy | Helsinki  | home    | Finland     | 47.6 | Germany        |  0.9 |  46.8
+ 2022-10-22 | Rugby World Cup 2021                | Whangarei | neutral | Australia   | 16.1 | Wales          | 12.2 |   3.9
+ 2022-10-22 | Rugby World Cup 2021                | Whangarei | neutral | France      | 40.0 | Fiji           |  7.1 |  32.9
+ 2022-10-22 | Rugby World Cup 2021                | Whangarei | home    | New Zealand | 60.2 | Scotland       | 10.5 |  49.7
+ 2022-10-23 | Rugby World Cup 2021                | Auckland  | neutral | Canada      | 25.7 | United States  | 10.1 |  15.6
+ 2022-10-23 | Rugby World Cup 2021                | Auckland  | neutral | England     | 61.2 | South Africa   |  5.4 |  55.8
+ 2022-10-23 | Rugby World Cup 2021                | Auckland  | neutral | Japan       | 13.8 | Italy          | 24.4 | -10.5
+ 2022-10-25 | Rugby Africa Women’s Cup 2022       | Kampala   | home    | Uganda      | 43.4 | Zambia         |  3.2 |  40.2
+ 2022-10-29 | Rugby Africa Women’s Cup 2022       | Kampala   | neutral | Kenya       | 46.7 | Zambia         | 17.2 |  29.5
+ 2022-11-02 | Rugby Africa Women’s Cup 2022       | Kampala   | home    | Uganda      | 16.4 | Kenya          |  3.3 |  13.2
+ 2022-11-05 | 2022-23 Rugby Europe Women’s Trophy | Germany?  | home    | Germany     |  0.6 | Czech Republic | 33.4 | -32.8
+(11 rows)
 
-COPY 17
+COPY 11
 COMMIT
