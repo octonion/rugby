@@ -1,22 +1,57 @@
 BEGIN
 SET
-    date    |                  event                  |          city           | site |          team          |  e_p  |    opponent    | e_p  
-------------+-----------------------------------------+-------------------------+------+------------------------+-------+----------------+------
- 2022-09-24 | 2022 Rugby Championship                 | Auckland                | home | New Zealand            |  38.7 | Australia      | 18.1
- 2022-09-24 | 2022 Rugby Championship                 | Durban                  | home | South Africa           |  30.8 | Argentina      | 14.2
- 2022-10-01 | 2022-23 Rugby Europe Conference 1 South | Slovenia?               | home | Slovenia               |   3.6 | Cyprus         | 23.5
- 2022-10-01 | 2022-23 Rugby Europe Conference 2 North | Denmark?                | home | Denmark                |  35.5 | Andorra        | 13.9
- 2022-10-01 | 2022-23 Rugby Europe Conference 2 South | Bosnia and Herzegovina? | home | Bosnia and Herzegovina |  30.8 | Turkey         | 20.4
- 2022-10-08 | 2022-23 Rugby Europe Conference 1 North | Hungary?                | home | Hungary                |  17.0 | Czech Republic | 31.9
- 2022-10-08 | 2022-23 Rugby Europe Conference 2 South | Serbia?                 | home | Serbia                 |  12.3 | Montenegro     |  5.0
- 2022-10-15 | 2022-23 Rugby Europe Conference 1 South | Malta?                  | home | Malta                  |  14.6 | Bulgaria       | 15.4
- 2022-10-15 | 2022-23 Rugby Europe Conference 2 North | Finland?                | home | Finland                |  20.7 | Denmark        | 32.0
- 2022-10-15 | 2022-23 Rugby Europe Conference 2 South | Turkey?                 | home | Turkey                 |  14.5 | Serbia         | 29.7
- 2022-10-22 | 2022-23 Rugby Europe Conference 1 North | Latvia?                 | home | Latvia                 |  35.6 | Luxembourg     | 17.0
- 2022-10-22 | 2022-23 Rugby Europe Conference 1 South | Slovenia?               | home | Slovenia               |   2.2 | Malta          | 21.4
- 2022-10-22 | 2022-23 Rugby Europe Conference 2 North | Finland?                | home | Finland                |  29.3 | Norway         |  1.5
- 2022-10-22 | 2022-23 Rugby Europe Trophy             | Croatia?                | home | Croatia                | 118.1 | Ukraine        |  1.2
-(14 rows)
+    date    |                        event                        |      city       |  site   |         team         |  e_p  |        opponent        | e_p  
+------------+-----------------------------------------------------+-----------------+---------+----------------------+-------+------------------------+------
+ 2022-10-29 | 2022-23 Rugby Europe Conference 1 North             | Chisinau        | home    | Moldova, Republic of |  12.3 | Latvia                 | 32.3
+ 2022-10-29 | 2022-23 Rugby Europe Conference 2 South             | Zenica          | away    | Montenegro           |   1.2 | Bosnia and Herzegovina | 53.2
+ 2022-10-29 | 2022-23 Rugby Europe Trophy                         | Stockholm       | home    | Sweden               | 104.6 | Croatia                |  4.0
+ 2022-10-29 | 2022 Men's International                            | Tokyo           | home    | Japan                |  21.0 | New Zealand            | 41.8
+ 2022-10-29 | Autumn Nations Series 2022                          | Edinburgh       | home    | Scotland             |  22.2 | Australia              | 18.2
+ 2022-11-05 | 2022-23 Rugby Europe Conference 1 South             | Bulgaria?       | home    | Bulgaria             |  26.0 | Israel                 | 10.0
+ 2022-11-05 | 2022-23 Rugby Europe Trophy                         | Lithuania?      | home    | Lithuania            |  30.6 | Ukraine                | 14.6
+ 2022-11-05 | 2022-23 Rugby Europe Trophy                         | Sweden?         | home    | Sweden               |  55.4 | Switzerland            | 11.2
+ 2022-11-05 | 2022 Men's International                            | Bucharest       | home    | Romania              |  23.7 | Chile                  | 21.4
+ 2022-11-05 | 2022 Men's International                            | Malaga          | home    | Spain                |  34.7 | Tonga                  | 19.3
+ 2022-11-05 | Autumn Nations Series 2022                          | Saint-Denis     | home    | France               |  31.6 | Australia              | 17.2
+ 2022-11-05 | Autumn Nations Series 2022                          | Dublin          | home    | Ireland              |  27.4 | South Africa           | 15.7
+ 2022-11-05 | Autumn Nations Series 2022                          | Padova          | home    | Italy                |  19.4 | Samoa                  | 24.8
+ 2022-11-05 | Autumn Nations Series 2022                          | Edinburgh       | home    | Scotland             |  26.6 | Fiji                   | 12.6
+ 2022-11-05 | Autumn Nations Series 2022                          | Cardiff         | home    | Wales                |  20.1 | New Zealand            | 30.9
+ 2022-11-06 | Autumn Nations Series 2022                          | London          | home    | England              |  27.4 | Argentina              | 15.2
+ 2022-11-06 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | Portugal             |  48.2 | Hong Kong              | 17.4
+ 2022-11-06 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | United States        |  45.5 | Kenya                  | 19.4
+ 2022-11-06 |                                                     | Tbilisi         | home    | Georgia              |  23.4 | Uruguay                | 12.7
+ 2022-11-12 | 2022-23 Rugby Europe Conference 1 North             | Czech Republic? | home    | Czech Republic       |  48.1 | Moldova, Republic of   |  5.9
+ 2022-11-12 | 2022-23 Rugby Europe Conference 1 South             | Cyprus?         | home    | Cyprus               |  14.1 | Israel                 | 16.4
+ 2022-11-12 | 2022-23 Rugby Europe Trophy                         | Switzerland?    | home    | Switzerland          |  47.1 | Lithuania              | 15.9
+ 2022-11-12 | 2022 Men's International                            | Georgia?        | home    | Georgia              |  17.6 | Samoa                  | 22.9
+ 2022-11-12 | 2022 Men's International                            | Amsterdam       | home    | Netherlands          |  10.3 | Canada                 | 40.6
+ 2022-11-12 | 2022 Men's International                            | Spain?          | home    | Spain                |  24.0 | Namibia                | 24.7
+ 2022-11-12 | 2022 Men's International                            | Bucharest       | neutral | Tonga                |  18.8 | Chile                  | 25.7
+ 2022-11-12 | Autumn Nations Series 2022                          | London          | home    | England              |  33.6 | Japan                  | 17.4
+ 2022-11-12 | Autumn Nations Series 2022                          | Marseille       | home    | France               |  25.5 | South Africa           | 19.4
+ 2022-11-12 | Autumn Nations Series 2022                          | Dublin          | home    | Ireland              |  40.7 | Fiji                   |  9.6
+ 2022-11-12 | Autumn Nations Series 2022                          | Florence        | home    | Italy                |  16.3 | Australia              | 31.9
+ 2022-11-12 | Autumn Nations Series 2022                          | Cardiff         | home    | Wales                |  26.0 | Argentina              | 17.8
+ 2022-11-12 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | Portugal             |  42.0 | Kenya                  | 18.0
+ 2022-11-12 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | United States        |  52.2 | Hong Kong              | 18.7
+ 2022-11-13 | 2022 Men's International                            | Bucharest       | home    | Romania              |  20.9 | Uruguay                | 18.3
+ 2022-11-13 | Autumn Nations Series 2022                          | Edinburgh       | home    | Scotland             |  18.3 | New Zealand            | 27.0
+ 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | Hong Kong            |  28.5 | Kenya                  | 33.9
+ 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | United States        |  27.7 | Portugal               | 27.6
+ 2022-11-19 | 2022 Men's International                            | Amsterdam       | neutral | Canada               |  18.0 | Namibia                | 28.7
+ 2022-11-19 | 2022 Men's International                            | Bucharest       | home    | Romania              |  15.6 | Samoa                  | 33.1
+ 2022-11-19 | 2022 Men's International                            | Bucharest       | neutral | Tonga                |  16.6 | Uruguay                | 22.0
+ 2022-11-19 | 2022 South Africa Tour (IRE/ITA/ENG)                | Genova          | home    | Italy                |  13.2 | South Africa           | 35.9
+ 2022-11-19 | Autumn Nations Series 2022                          | London          | home    | England              |  21.2 | New Zealand            | 26.4
+ 2022-11-19 | Autumn Nations Series 2022                          | Dublin          | home    | Ireland              |  33.9 | Australia              | 13.9
+ 2022-11-19 | Autumn Nations Series 2022                          | Edinburgh       | home    | Scotland             |  23.6 | Argentina              | 15.5
+ 2022-11-19 | Autumn Nations Series 2022                          | Cardiff         | home    | Wales                |  33.5 | Georgia                | 11.8
+ 2022-11-20 | 2022 Japan Tour (ENG/FRA)                           | Toulouse        | home    | France               |  41.4 | Japan                  | 16.8
+ 2022-11-26 | 2022-23 Rugby Europe Conference 1 North             | Luxembourg?     | home    | Luxembourg           |  19.4 | Hungary                | 25.0
+ 2022-11-26 | Autumn Nations Series 2022                          | London          | home    | England              |  20.7 | South Africa           | 20.0
+ 2022-11-26 | Autumn Nations Series 2022                          | Cardiff         | home    | Wales                |  24.4 | Australia              | 20.8
+(49 rows)
 
-COPY 14
+COPY 49
 COMMIT
