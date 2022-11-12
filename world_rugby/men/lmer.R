@@ -44,11 +44,11 @@ r.team_name as team_name,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2019) as w
+(year-2017) as w
 from men._results r
 
 where
-    r.year between 2020 and 2023
+    r.year between 2018 and 2022
 
 ;")
 

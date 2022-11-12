@@ -1,11 +1,10 @@
 BEGIN
 SET
-    date    |                event                |      city       |  site   |      team      | e_p  | opponent | e_p  
-------------+-------------------------------------+-----------------+---------+----------------+------+----------+------
- 2022-11-12 | Rugby World Cup 2021                | Auckland        | neutral | Canada         |  9.8 | France   | 18.8
- 2022-11-12 | Rugby World Cup 2021                | Auckland        | home    | New Zealand    | 20.1 | England  | 31.0
- 2022-11-19 | 2022-23 Rugby Europe Women’s Trophy | Czech Republic? | home    | Czech Republic | 24.2 | Belgium  | 31.7
-(3 rows)
+    date    |                event                |      city       | site |      team      | e_p  | opponent | e_p  
+------------+-------------------------------------+-----------------+------+----------------+------+----------+------
+ 2022-11-12 | Rugby World Cup 2021                | Auckland        | home | New Zealand    | 20.5 | England  | 31.6
+ 2022-11-19 | 2022-23 Rugby Europe Women’s Trophy | Czech Republic? | home | Czech Republic | 23.9 | Belgium  | 31.7
+(2 rows)
 
-COPY 3
+COPY 2
 COMMIT
