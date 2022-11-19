@@ -1,45 +1,36 @@
 BEGIN
 SET
-    date    |                        event                        |      city       |  site   |    team     |  e_p  |   opponent   |  e_p  |  e_d   
-------------+-----------------------------------------------------+-----------------+---------+-------------+-------+--------------+-------+--------
- 2022-11-12 | 2022-23 Rugby Europe Conference 1 North             | Czech Republic? | home    | Czechia     | 33.83 | Moldova      |  9.87 |  23.96
- 2022-11-12 | 2022-23 Rugby Europe Conference 1 South             | Larnaca         | home    | Cyprus      | 19.86 | Israel       | 18.17 |   1.69
- 2022-11-12 | 2022-23 Rugby Europe Trophy                         | Lausanne        | home    | Switzerland | 42.76 | Lithuania    | 11.37 |  31.39
- 2022-11-12 | 2022 Men's International                            | Tbilisi         | home    | Georgia     | 18.19 | Samoa        | 19.23 |  -1.04
- 2022-11-12 | 2022 Men's International                            | Amsterdam       | home    | Netherlands | 12.97 | Canada       | 37.06 | -24.09
- 2022-11-12 | 2022 Men's International                            | Madrid          | home    | Spain       | 29.81 | Namibia      | 17.86 |  11.95
- 2022-11-12 | 2022 Men's International                            | Bucharest       | neutral | Tonga       | 29.61 | Chile        | 18.72 |  10.89
- 2022-11-12 | Autumn Nations Series 2022                          | London          | home    | England     | 34.28 | Japan        | 14.76 |  19.52
- 2022-11-12 | Autumn Nations Series 2022                          | Marseille       | home    | France      | 22.72 | South Africa | 20.45 |   2.27
- 2022-11-12 | Autumn Nations Series 2022                          | Dublin          | home    | Ireland     | 38.40 | Fiji         | 10.52 |  27.88
- 2022-11-12 | Autumn Nations Series 2022                          | Florence        | home    | Italy       | 17.53 | Australia    | 31.79 | -14.26
- 2022-11-12 | Autumn Nations Series 2022                          | Cardiff         | home    | Wales       | 24.56 | Argentina    | 16.98 |   7.58
- 2022-11-12 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | Portugal    | 52.72 | Kenya        | 10.98 |  41.73
- 2022-11-12 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | USA         | 41.70 | Hong Kong    | 13.82 |  27.87
- 2022-11-13 | 2022 Men's International                            | Bucharest       | home    | Romania     | 24.63 | Uruguay      | 20.42 |   4.20
- 2022-11-13 | Autumn Nations Series 2022                          | Edinburgh       | home    | Scotland    | 18.92 | New Zealand  | 27.19 |  -8.28
- 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | Hong Kong   | 31.48 | Kenya        | 19.08 |  12.40
- 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai           | neutral | USA         | 24.00 | Portugal     | 23.14 |   0.85
- 2022-11-19 | 2022 Men's International                            | Amsterdam       | neutral | Canada      | 24.36 | Namibia      | 22.41 |   1.94
- 2022-11-19 | 2022 Men's International                            | Bucharest       | home    | Romania     | 15.70 | Samoa        | 27.34 | -11.64
- 2022-11-19 | 2022 Men's International                            | Bucharest       | neutral | Tonga       | 24.19 | Uruguay      | 21.70 |   2.49
- 2022-11-19 | 2022 South Africa Tour (IRE/ITA/ENG)                | Genova          | home    | Italy       | 14.08 | South Africa | 37.30 | -23.22
- 2022-11-19 | Autumn Nations Series 2022                          | London          | home    | England     | 22.08 | New Zealand  | 25.95 |  -3.87
- 2022-11-19 | Autumn Nations Series 2022                          | Dublin          | home    | Ireland     | 29.45 | Australia    | 14.57 |  14.88
- 2022-11-19 | Autumn Nations Series 2022                          | Edinburgh       | home    | Scotland    | 24.38 | Argentina    | 16.05 |   8.33
- 2022-11-19 | Autumn Nations Series 2022                          | Cardiff         | home    | Wales       | 33.26 | Georgia      | 10.18 |  23.08
- 2022-11-20 | 2022 Japan Tour (ENG/FRA)                           | Toulouse        | home    | France      | 36.98 | Japan        | 14.95 |  22.03
- 2022-11-26 | 2022-23 Rugby Europe Conference 1 North             | Luxembourg?     | home    | Luxembourg  | 17.97 | Hungary      | 21.89 |  -3.93
- 2022-11-26 | Autumn Nations Series 2022                          | London          | home    | England     | 21.07 | South Africa | 20.19 |   0.88
- 2022-11-26 | Autumn Nations Series 2022                          | Cardiff         | home    | Wales       | 22.65 | Australia    | 19.09 |   3.56
- 2023-02-04 | 2023 Rugby Europe Championship                      | Georgia?        | home    | Georgia     | 63.45 | Germany      |  6.66 |  56.79
- 2023-02-04 | 2023 Rugby Europe Championship                      | Portugal?       | home    | Portugal    | 48.21 | Belgium      |  8.83 |  39.38
- 2023-02-04 | 2023 Rugby Europe Championship                      | Romania?        | home    | Romania     | 64.43 | Poland       |  8.01 |  56.42
- 2023-02-04 | 2023 Rugby Europe Championship                      | Spain?          | home    | Spain       | 47.84 | Netherlands  |  8.77 |  39.07
- 2023-02-04 | 2023 Six Nations                                    | London          | home    | England     | 23.40 | Scotland     | 15.40 |   8.00
- 2023-02-04 | 2023 Six Nations                                    | Cardiff         | home    | Wales       | 16.32 | Ireland      | 22.38 |  -6.06
- 2023-02-05 | 2023 Six Nations                                    | Roma            | home    | Italy       | 15.11 | France       | 35.82 | -20.71
-(37 rows)
+    date    |                        event                        |     city     |  site   |    team     |  e_p  |   opponent   |  e_p  |  e_d   
+------------+-----------------------------------------------------+--------------+---------+-------------+-------+--------------+-------+--------
+ 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai        | neutral | Hong Kong   | 29.33 | Kenya        | 19.54 |   9.79
+ 2022-11-18 | Rugby World Cup 2023 Final Qualification Tournament | Dubai        | neutral | USA         | 23.44 | Portugal     | 22.60 |   0.84
+ 2022-11-19 | 2022 Men's International                            | Amsterdam    | neutral | Canada      | 24.22 | Namibia      | 22.73 |   1.50
+ 2022-11-19 | 2022 Men's International                            | Bucharest    | home    | Romania     | 15.56 | Samoa        | 27.47 | -11.90
+ 2022-11-19 | 2022 Men's International                            | Bucharest    | neutral | Tonga       | 23.59 | Uruguay      | 21.93 |   1.66
+ 2022-11-19 | 2022 South Africa Tour (IRE/ITA/ENG)                | Genova       | home    | Italy       | 14.07 | South Africa | 37.32 | -23.25
+ 2022-11-19 | Autumn Nations Series 2022                          | London       | home    | England     | 22.20 | New Zealand  | 26.05 |  -3.85
+ 2022-11-19 | Autumn Nations Series 2022                          | Dublin       | home    | Ireland     | 29.41 | Australia    | 14.57 |  14.85
+ 2022-11-19 | Autumn Nations Series 2022                          | Edinburgh    | home    | Scotland    | 24.48 | Argentina    | 16.07 |   8.41
+ 2022-11-19 | Autumn Nations Series 2022                          | Cardiff      | home    | Wales       | 33.28 | Georgia      | 10.20 |  23.08
+ 2022-11-20 | 2022 Japan Tour (ENG/FRA)                           | Toulouse     | home    | France      | 36.92 | Japan        | 14.99 |  21.93
+ 2022-11-26 | 2022-23 Rugby Europe Conference 1 North             | Luxembourg?  | home    | Luxembourg  | 17.96 | Hungary      | 21.91 |  -3.95
+ 2022-11-26 | Autumn Nations Series 2022                          | London       | home    | England     | 21.07 | South Africa | 20.21 |   0.86
+ 2022-11-26 | Autumn Nations Series 2022                          | Cardiff      | home    | Wales       | 22.63 | Australia    | 19.09 |   3.54
+ 2023-02-04 | 2023 Rugby Europe Championship                      | Georgia?     | home    | Georgia     | 63.70 | Germany      |  6.68 |  57.02
+ 2023-02-04 | 2023 Rugby Europe Championship                      | Portugal?    | home    | Portugal    | 47.83 | Belgium      |  8.74 |  39.09
+ 2023-02-04 | 2023 Rugby Europe Championship                      | Romania?     | home    | Romania     | 63.76 | Poland       |  8.04 |  55.71
+ 2023-02-04 | 2023 Rugby Europe Championship                      | Spain?       | home    | Spain       | 47.91 | Netherlands  |  8.80 |  39.12
+ 2023-02-04 | 2023 Six Nations                                    | London       | home    | England     | 23.43 | Scotland     | 15.49 |   7.94
+ 2023-02-04 | 2023 Six Nations                                    | Cardiff      | home    | Wales       | 16.31 | Ireland      | 22.40 |  -6.08
+ 2023-02-05 | 2023 Six Nations                                    | Roma         | home    | Italy       | 15.09 | France       | 35.85 | -20.76
+ 2023-02-11 | 2023 Rugby Europe Championship                      | Belgium?     | home    | Belgium     | 11.47 | Romania      | 35.94 | -24.47
+ 2023-02-11 | 2023 Rugby Europe Championship                      | Germany?     | home    | Germany     | 11.52 | Spain        | 44.49 | -32.97
+ 2023-02-11 | 2023 Rugby Europe Championship                      | Netherlands? | home    | Netherlands |  7.85 | Georgia      | 44.59 | -36.74
+ 2023-02-11 | 2023 Rugby Europe Championship                      | Poland?      | home    | Poland      |  9.43 | Portugal     | 55.14 | -45.71
+ 2023-02-11 | 2023 Six Nations                                    | Dublin       | home    | Ireland     | 25.35 | France       | 16.43 |   8.92
+ 2023-02-11 | 2023 Six Nations                                    | Edinburgh    | home    | Scotland    | 21.31 | Wales        | 16.30 |   5.01
+ 2023-02-12 | 2023 Six Nations                                    | London       | home    | England     | 41.25 | Italy        | 12.02 |  29.23
+(28 rows)
 
-COPY 37
+COPY 28
 COMMIT
