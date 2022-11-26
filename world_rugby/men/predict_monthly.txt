@@ -1,12 +1,10 @@
 BEGIN
 SET
-    date    |                  event                  |    city     | site |    team    | e_p  |   opponent   | e_p  
-------------+-----------------------------------------+-------------+------+------------+------+--------------+------
- 2022-11-20 | 2022 Japan Tour (ENG/FRA)               | Toulouse    | home | France     | 36.9 | Japan        | 14.9
- 2022-11-26 | 2022-23 Rugby Europe Conference 1 North | Luxembourg? | home | Luxembourg | 18.0 | Hungary      | 21.9
- 2022-11-26 | Autumn Nations Series 2022              | London      | home | England    | 21.3 | South Africa | 20.4
- 2022-11-26 | Autumn Nations Series 2022              | Cardiff     | home | Wales      | 21.7 | Australia    | 18.9
-(4 rows)
+    date    |           event            |  city   | site |  team   | e_p  |   opponent   | e_p  
+------------+----------------------------+---------+------+---------+------+--------------+------
+ 2022-11-26 | Autumn Nations Series 2022 | London  | home | England | 21.3 | South Africa | 20.4
+ 2022-11-26 | Autumn Nations Series 2022 | Cardiff | home | Wales   | 21.7 | Australia    | 18.9
+(2 rows)
 
-COPY 4
+COPY 2
 COMMIT
