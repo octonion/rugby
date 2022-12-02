@@ -1,8 +1,26 @@
 BEGIN
 SET
- date | event | city | site | team | e_p | opponent | e_p 
-------+-------+------+------+------+-----+----------+-----
-(0 rows)
+    date    |                    event                    | city  |  site   |     team      | e_p  |          opponent          | e_p  
+------------+---------------------------------------------+-------+---------+---------------+------+----------------------------+------
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Australia     | 37.9 | People's Republic of China |  5.8
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Australia     | 24.2 | United States              |  9.3
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Australia     | 29.1 | Canada                     |  7.8
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Canada        | 20.6 | People's Republic of China | 11.7
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Fiji          | 33.9 | Spain                      |  5.9
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Fiji          | 24.2 | Ireland                    | 12.5
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Fiji          | 39.5 | Japan                      |  7.0
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | France        | 15.8 | Great Britain              | 12.6
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | France        |  9.3 | New Zealand                | 18.4
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | France        | 33.0 | Brazil                     |  7.6
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Great Britain | 27.5 | Brazil                     |  7.9
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Ireland       | 23.6 | Spain                      |  8.0
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Ireland       | 27.4 | Japan                      |  9.4
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | New Zealand   | 40.3 | Brazil                     |  4.7
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | New Zealand   | 19.3 | Great Britain              |  7.7
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | Spain         | 13.0 | Japan                      | 13.2
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | United States | 18.9 | Canada                     | 13.1
+ 2022-12-02 | HSBC World Rugby Sevens Series 2023 - Dubai | Dubai | neutral | United States | 24.5 | People's Republic of China |  9.7
+(18 rows)
 
-COPY 0
+COPY 18
 COMMIT
