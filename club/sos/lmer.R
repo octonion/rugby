@@ -16,11 +16,11 @@ r.field as field,
 r.team_name as team,
 r.opponent_name as opponent,
 r.team_score::float as gs,
-(year-2020) as w
+(year-2021) as w
 from club.results r
 
 where
-    r.year between 2021 and 2023
+    r.year between 2022 and 2023
 ;")
 
 sg <- fetch(query,n=-1)
