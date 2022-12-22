@@ -1,23 +1,62 @@
 BEGIN
-    date    |        home        |       away        | e_home | e_away |  e_d  
-------------+--------------------+-------------------+--------+--------+-------
- 2022-12-17 | Aviron Bayonnais   | Benetton          |   27.4 |   20.3 |  7.07
- 2022-12-17 | Cheetahs           | Scarlets          |   35.3 |   16.7 | 18.69
- 2022-12-17 | Dragons            | Section Paloise   |   26.1 |   21.3 |  4.75
- 2022-12-17 | Edinburgh          | Castres Olympique |   29.8 |   14.0 | 15.83
- 2022-12-17 | Exeter Chiefs      | Bulls             |   26.7 |   21.8 |  4.94
- 2022-12-17 | Leicester Tigers   | Clermont          |   30.4 |   16.6 | 13.77
- 2022-12-17 | Lyon               | Saracens          |   24.5 |   27.0 | -2.58
- 2022-12-17 | Montpellier        | Ospreys           |   29.7 |   18.1 | 11.62
- 2022-12-17 | Newcastle Falcons  | Cardiff Rugby     |   22.9 |   22.2 |  0.73
- 2022-12-17 | RC Toulonnais      | Bath              |   27.9 |   18.0 |  9.88
- 2022-12-17 | Stormers           | London Irish      |   32.8 |   19.3 | 13.47
- 2022-12-17 | Ulster             | La Rochelle       |   25.6 |   16.8 |  8.84
- 2022-12-18 | Bristol            | Zebre             |   35.9 |   16.4 | 19.47
- 2022-12-18 | Harlequins         | Racing 92         |   31.1 |   20.6 | 10.48
- 2022-12-18 | Northampton Saints | Munster           |   23.4 |   25.0 | -1.60
- 2022-12-18 | Stade Toulousain   | Sale Sharks       |   23.4 |   16.5 |  6.85
-(16 rows)
+    date    |         home         |         away         | e_home | e_away |  e_d   
+------------+----------------------+----------------------+--------+--------+--------
+ 2022-12-22 | RC Toulonnais        | Lyon                 |   24.8 |   19.1 |   5.75
+ 2022-12-23 | CA Brive             | Clermont             |   17.4 |   24.9 |  -7.42
+ 2022-12-23 | Connacht             | Ulster               |   22.0 |   22.5 |  -0.52
+ 2022-12-23 | Glasgow Warriors     | Edinburgh            |   22.2 |   21.7 |   0.49
+ 2022-12-23 | La Rochelle          | Bordeaux Begles      |   26.4 |   15.7 |  10.71
+ 2022-12-23 | London Irish         | Saracens             |   27.8 |   30.1 |  -2.27
+ 2022-12-23 | Montpellier          | USA Perpignan        |   31.2 |   14.1 |  17.07
+ 2022-12-23 | Newcastle Falcons    | Sale Sharks          |   16.9 |   24.9 |  -8.04
+ 2022-12-23 | Section Paloise      | Aviron Bayonnais     |   29.5 |   19.5 |  10.02
+ 2022-12-23 | Sharks               | Lions                |   30.5 |   19.7 |  10.82
+ 2022-12-23 | Stade Toulousain     | Castres Olympique    |   29.9 |   13.2 |  16.68
+ 2022-12-23 | Stormers             | Bulls                |   28.3 |   19.7 |   8.55
+ 2022-12-24 | Benetton             | Zebre                |   35.4 |   16.1 |  19.31
+ 2022-12-24 | Exeter Chiefs        | Bath                 |   34.0 |   16.0 |  18.03
+ 2022-12-24 | Leicester Tigers     | Gloucester           |   28.7 |   18.6 |  10.05
+ 2022-12-24 | Racing 92            | Stade Francais Paris |   26.9 |   19.2 |   7.70
+ 2022-12-26 | Dragons              | Cardiff Rugby        |   24.3 |   24.0 |   0.27
+ 2022-12-26 | Munster              | Leinster             |   16.8 |   21.7 |  -4.93
+ 2022-12-26 | Ospreys              | Scarlets             |   29.7 |   22.4 |   7.36
+ 2022-12-27 | Harlequins           | Bristol              |   33.2 |   18.4 |  14.75
+ 2022-12-30 | Bordeaux Begles      | Montpellier          |   23.6 |   19.2 |   4.41
+ 2022-12-30 | Edinburgh            | Glasgow Warriors     |   28.2 |   17.1 |  11.07
+ 2022-12-30 | Sale Sharks          | Leicester Tigers     |   23.8 |   18.4 |   5.41
+ 2022-12-31 | Aviron Bayonnais     | RC Toulonnais        |   21.2 |   21.5 |  -0.30
+ 2022-12-31 | Bath                 | Newcastle Falcons    |   27.7 |   18.5 |   9.18
+ 2022-12-31 | Castres Olympique    | Racing 92            |   22.7 |   21.7 |   0.97
+ 2022-12-31 | Gloucester           | London Irish         |   33.0 |   23.7 |   9.24
+ 2022-12-31 | Lyon                 | CA Brive             |   33.2 |   13.7 |  19.51
+ 2022-12-31 | Saracens             | Exeter Chiefs        |   29.1 |   19.9 |   9.18
+ 2022-12-31 | Sharks               | Bulls                |   29.5 |   23.3 |   6.13
+ 2022-12-31 | Stade Francais Paris | Section Paloise      |   27.5 |   18.7 |   8.80
+ 2022-12-31 | Stormers             | Lions                |   29.2 |   16.6 |  12.64
+ 2022-12-31 | USA Perpignan        | La Rochelle          |   15.8 |   25.4 |  -9.66
+ 2022-12-31 | Zebre                | Benetton             |   20.9 |   27.3 |  -6.38
+ 2023-01-13 | Clermont             | Leicester Tigers     |   22.2 |   22.4 |  -0.24
+ 2023-01-13 | Scarlets             | Cheetahs             |   35.5 |   20.2 |  15.38
+ 2023-01-13 | Section Paloise      | Dragons              |   27.5 |   20.2 |   7.27
+ 2023-01-14 | Bath                 | RC Toulonnais        |   22.2 |   22.0 |   0.15
+ 2023-01-14 | Benetton             | Aviron Bayonnais     |   30.6 |   18.5 |  12.05
+ 2023-01-14 | Bulls                | Exeter Chiefs        |   28.6 |   20.9 |   7.76
+ 2023-01-14 | Connacht             | CA Brive             |   33.5 |   12.7 |  20.78
+ 2023-01-14 | Gloucester           | Leinster             |   16.7 |   31.2 | -14.52
+ 2023-01-14 | La Rochelle          | Ulster               |   23.0 |   19.7 |   3.37
+ 2023-01-14 | Munster              | Northampton Saints   |   33.3 |   16.2 |  17.08
+ 2023-01-14 | Ospreys              | Montpellier          |   24.5 |   21.0 |   3.48
+ 2023-01-14 | Sale Sharks          | Stade Toulousain     |   21.1 |   19.2 |   1.91
+ 2023-01-14 | Saracens             | Lyon                 |   35.0 |   18.8 |  16.21
+ 2023-01-14 | Sharks               | Bordeaux Begles      |   28.7 |   17.0 |  11.76
+ 2023-01-14 | Stade Francais Paris | Lions                |   24.7 |   20.7 |   3.96
+ 2023-01-14 | USA Perpignan        | Glasgow Warriors     |   17.5 |   24.6 |  -7.08
+ 2023-01-14 | Zebre                | Bristol              |   22.6 |   26.3 |  -3.69
+ 2023-01-15 | Cardiff Rugby        | Newcastle Falcons    |   33.0 |   15.8 |  17.25
+ 2023-01-15 | Castres Olympique    | Edinburgh            |   18.4 |   23.3 |  -4.93
+ 2023-01-15 | London Irish         | Stormers             |   23.6 |   26.5 |  -2.90
+ 2023-01-15 | Racing 92            | Harlequins           |   26.6 |   22.6 |   3.99
+(55 rows)
 
-COPY 16
+COPY 55
 COMMIT
