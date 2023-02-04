@@ -1,28 +1,48 @@
 BEGIN
 SET
-    date    |             event              |     city     | site |    team     |  e_p  |   opponent   |  e_p  |  e_d   
-------------+--------------------------------+--------------+------+-------------+-------+--------------+-------+--------
- 2022-11-26 | Autumn Nations Series 2022     | London       | home | England     | 21.32 | South Africa | 20.38 |   0.94
- 2022-11-26 | Autumn Nations Series 2022     | Cardiff      | home | Wales       | 21.66 | Australia    | 18.88 |   2.78
- 2023-02-04 | 2023 Rugby Europe Championship | Georgia?     | home | Georgia     | 63.95 | Germany      |  6.47 |  57.48
- 2023-02-04 | 2023 Rugby Europe Championship | Portugal?    | home | Portugal    | 48.09 | Belgium      |  8.75 |  39.34
- 2023-02-04 | 2023 Rugby Europe Championship | Romania?     | home | Romania     | 61.42 | Poland       |  8.04 |  53.38
- 2023-02-04 | 2023 Rugby Europe Championship | Spain?       | home | Spain       | 48.20 | Netherlands  |  8.80 |  39.39
- 2023-02-04 | 2023 Six Nations               | London       | home | England     | 23.71 | Scotland     | 15.78 |   7.93
- 2023-02-04 | 2023 Six Nations               | Cardiff      | home | Wales       | 15.76 | Ireland      | 22.10 |  -6.34
- 2023-02-05 | 2023 Six Nations               | Roma         | home | Italy       | 15.27 | France       | 36.21 | -20.94
- 2023-02-11 | 2023 Rugby Europe Championship | Belgium?     | home | Belgium     | 11.49 | Romania      | 34.79 | -23.30
- 2023-02-11 | 2023 Rugby Europe Championship | Germany?     | home | Germany     | 11.50 | Spain        | 44.65 | -33.16
- 2023-02-11 | 2023 Rugby Europe Championship | Netherlands? | home | Netherlands |  7.61 | Georgia      | 44.92 | -37.30
- 2023-02-11 | 2023 Rugby Europe Championship | Poland?      | home | Poland      |  9.41 | Portugal     | 55.25 | -45.84
- 2023-02-11 | 2023 Six Nations               | Dublin       | home | Ireland     | 25.04 | France       | 16.23 |   8.81
- 2023-02-11 | 2023 Six Nations               | Edinburgh    | home | Scotland    | 21.77 | Wales        | 16.03 |   5.75
- 2023-02-12 | 2023 Six Nations               | London       | home | England     | 41.95 | Italy        | 12.11 |  29.84
- 2023-02-18 | 2023 Rugby Europe Championship | Germany?     | home | Germany     | 23.31 | Netherlands  | 20.50 |   2.81
- 2023-02-18 | 2023 Rugby Europe Championship | Poland?      | home | Poland      | 18.63 | Belgium      | 24.66 |  -6.04
- 2023-02-18 | 2023 Rugby Europe Championship | Portugal?    | home | Portugal    | 25.75 | Romania      | 17.58 |   8.17
- 2023-02-18 | 2023 Rugby Europe Championship | Spain?       | home | Spain       | 16.58 | Georgia      | 22.16 |  -5.57
-(20 rows)
+    date    |                  event                  |          city           |  site   |         team         |  e_p  |  opponent   |  e_p  |  e_d   
+------------+-----------------------------------------+-------------------------+---------+----------------------+-------+-------------+-------+--------
+ 2023-02-04 | 2023 Rugby Europe Championship          | Lisbon                  | home    | Portugal             | 51.80 | Belgium     |  8.10 |  43.70
+ 2023-02-04 | 2023 Rugby Europe Championship          | Bucharest               | home    | Romania              | 61.07 | Poland      |  6.98 |  54.09
+ 2023-02-04 | 2023 Six Nations                        | London                  | home    | England              | 22.85 | Scotland    | 16.27 |   6.58
+ 2023-02-04 | 2023 Six Nations                        | Cardiff                 | home    | Wales                | 15.57 | Ireland     | 24.04 |  -8.46
+ 2023-02-05 | 2023 Rugby Europe Championship          | Tbilisi                 | home    | Georgia              | 68.28 | Germany     |  5.92 |  62.36
+ 2023-02-05 | 2023 Rugby Europe Championship          | Madrid                  | home    | Spain                | 48.86 | Netherlands |  8.53 |  40.33
+ 2023-02-05 | 2023 Six Nations                        | Roma                    | home    | Italy                | 15.18 | France      | 36.61 | -21.43
+ 2023-02-11 | 2023 Rugby Europe Championship          | Brussels                | home    | Belgium              | 10.25 | Romania     | 35.38 | -25.13
+ 2023-02-11 | 2023 Rugby Europe Championship          | Amsterdam               | home    | Netherlands          |  7.20 | Georgia     | 45.16 | -37.97
+ 2023-02-11 | 2023 Rugby Europe Championship          | Gdynia                  | home    | Poland               |  8.40 | Portugal    | 58.73 | -50.33
+ 2023-02-11 | 2023 Six Nations                        | Dublin                  | home    | Ireland              | 25.37 | France      | 16.27 |   9.10
+ 2023-02-11 | 2023 Six Nations                        | Edinburgh               | home    | Scotland             | 22.62 | Wales       | 15.95 |   6.68
+ 2023-02-12 | 2023 Rugby Europe Championship          | Heidelberg              | home    | Germany              | 10.68 | Spain       | 48.52 | -37.84
+ 2023-02-12 | 2023 Six Nations                        | London                  | home    | England              | 40.69 | Italy       | 12.76 |  27.93
+ 2023-02-18 | 2023 Rugby Europe Championship          | Neckarsulm              | home    | Germany              | 20.42 | Netherlands | 19.97 |   0.44
+ 2023-02-18 | 2023 Rugby Europe Championship          | Gdynia                  | home    | Poland               | 16.30 | Belgium     | 21.99 |  -5.69
+ 2023-02-18 | 2023 Rugby Europe Championship          | Torrelavega             | home    | Spain                | 17.48 | Georgia     | 23.64 |  -6.16
+ 2023-02-19 | 2023 Rugby Europe Championship          | Gdynia                  | neutral | Portugal             | 23.51 | Romania     | 19.32 |   4.19
+ 2023-02-25 | 2023 Six Nations                        | Roma                    | home    | Italy                | 12.33 | Ireland     | 37.57 | -25.24
+ 2023-02-25 | 2023 Six Nations                        | Cardiff                 | home    | Wales                | 19.89 | England     | 21.10 |  -1.20
+ 2023-02-26 | 2023 Six Nations                        | Saint-Denis             | home    | France               | 25.36 | Scotland    | 15.68 |   9.68
+ 2023-03-11 | 2023 Six Nations                        | London                  | home    | England              | 22.26 | France      | 20.78 |   1.48
+ 2023-03-11 | 2023 Six Nations                        | Roma                    | home    | Italy                | 17.75 | Wales       | 28.40 | -10.65
+ 2023-03-12 | 2022-23 Rugby Europe Trophy             | Switzerland?            | home    | Switzerland          | 44.73 | Ukraine     |  7.35 |  37.38
+ 2023-03-12 | 2023 Six Nations                        | Edinburgh               | home    | Scotland             | 15.72 | Ireland     | 21.10 |  -5.38
+ 2023-03-18 | 2023 Six Nations                        | Saint-Denis             | home    | France               | 28.89 | Wales       | 15.54 |  13.36
+ 2023-03-18 | 2023 Six Nations                        | Dublin                  | home    | Ireland              | 26.32 | England     | 14.66 |  11.66
+ 2023-03-18 | 2023 Six Nations                        | Edinburgh               | home    | Scotland             | 35.36 | Italy       | 12.62 |  22.74
+ 2023-03-25 | 2022-23 Rugby Europe Conference 1 South | Paola                   | home    | Malta                | 19.89 | Cyprus      | 14.24 |   5.65
+ 2023-03-25 | 2022-23 Rugby Europe Trophy             | Lithuania?              | home    | Lithuania            | 37.81 | Croatia     | 11.38 |  26.43
+ 2023-03-25 | 2022-23 Rugby Europe Trophy             | Ukraine?                | home    | Ukraine              | 22.47 | Sweden      | 17.75 |   4.72
+ 2023-04-01 | 2022-23 Rugby Europe Trophy             | Croatia?                | home    | Croatia              |  7.20 | Switzerland | 48.78 | -41.58
+ 2023-04-01 | 2022-23 Rugby Europe Trophy             | Sweden?                 | home    | Sweden               | 22.41 | Lithuania   | 29.63 |  -7.22
+ 2023-04-15 | 2022-23 Rugby Europe Conference 1 North | Luxembourg?             | home    | Luxembourg           | 13.54 | Moldova     | 16.85 |  -3.31
+ 2023-04-22 | 2022-23 Rugby Europe Conference 1 North | Czech Republic?         | home    | Czechia              | 37.81 | Luxembourg  |  8.00 |  29.80
+ 2023-04-29 | 2022-23 Rugby Europe Conference 1 North | Latvia?                 | home    | Latvia               | 18.39 | Czechia     | 34.19 | -15.80
+ 2023-04-29 | 2022-23 Rugby Europe Conference 1 North | Moldova, Republic of?   | home    | Moldova              | 24.59 | Hungary     | 20.19 |   4.41
+ 2023-04-29 | 2022-23 Rugby Europe Conference 1 South | Bulgaria?               | home    | Bulgaria             | 62.76 | Slovenia    |  5.89 |  56.86
+ 2023-04-29 | 2022-23 Rugby Europe Conference 2 North | Andorra?                | home    | Andorra              | 26.33 | Norway      |  3.30 |  23.03
+ 2023-04-29 | 2022-23 Rugby Europe Conference 2 South | Bosnia and Herzegovina? | home    | Bosnia & Herzegovina | 16.34 | Serbia      | 32.51 | -16.17
+(40 rows)
 
-COPY 20
+COPY 40
 COMMIT

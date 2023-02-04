@@ -1,10 +1,29 @@
 BEGIN
 SET
-    date    |           event            |  city   | site |  team   | e_p  |   opponent   | e_p  
-------------+----------------------------+---------+------+---------+------+--------------+------
- 2022-11-26 | Autumn Nations Series 2022 | London  | home | England | 21.3 | South Africa | 20.4
- 2022-11-26 | Autumn Nations Series 2022 | Cardiff | home | Wales   | 21.7 | Australia    | 18.9
-(2 rows)
+    date    |             event              |    city     |  site   |    team     | e_p  |  opponent   | e_p  
+------------+--------------------------------+-------------+---------+-------------+------+-------------+------
+ 2023-02-04 | 2023 Rugby Europe Championship | Lisbon      | home    | Portugal    | 51.8 | Belgium     |  8.1
+ 2023-02-04 | 2023 Rugby Europe Championship | Bucharest   | home    | Romania     | 61.1 | Poland      |  7.0
+ 2023-02-04 | 2023 Six Nations               | London      | home    | England     | 22.8 | Scotland    | 16.3
+ 2023-02-04 | 2023 Six Nations               | Cardiff     | home    | Wales       | 15.6 | Ireland     | 24.0
+ 2023-02-05 | 2023 Rugby Europe Championship | Tbilisi     | home    | Georgia     | 68.3 | Germany     |  5.9
+ 2023-02-05 | 2023 Rugby Europe Championship | Madrid      | home    | Spain       | 48.9 | Netherlands |  8.5
+ 2023-02-05 | 2023 Six Nations               | Roma        | home    | Italy       | 15.2 | France      | 36.6
+ 2023-02-11 | 2023 Rugby Europe Championship | Brussels    | home    | Belgium     | 10.2 | Romania     | 35.4
+ 2023-02-11 | 2023 Rugby Europe Championship | Amsterdam   | home    | Netherlands |  7.2 | Georgia     | 45.2
+ 2023-02-11 | 2023 Rugby Europe Championship | Gdynia      | home    | Poland      |  8.4 | Portugal    | 58.7
+ 2023-02-11 | 2023 Six Nations               | Dublin      | home    | Ireland     | 25.4 | France      | 16.3
+ 2023-02-11 | 2023 Six Nations               | Edinburgh   | home    | Scotland    | 22.6 | Wales       | 15.9
+ 2023-02-12 | 2023 Rugby Europe Championship | Heidelberg  | home    | Germany     | 10.7 | Spain       | 48.5
+ 2023-02-12 | 2023 Six Nations               | London      | home    | England     | 40.7 | Italy       | 12.8
+ 2023-02-18 | 2023 Rugby Europe Championship | Neckarsulm  | home    | Germany     | 20.4 | Netherlands | 20.0
+ 2023-02-18 | 2023 Rugby Europe Championship | Gdynia      | home    | Poland      | 16.3 | Belgium     | 22.0
+ 2023-02-18 | 2023 Rugby Europe Championship | Torrelavega | home    | Spain       | 17.5 | Georgia     | 23.6
+ 2023-02-19 | 2023 Rugby Europe Championship | Gdynia      | neutral | Portugal    | 23.5 | Romania     | 19.3
+ 2023-02-25 | 2023 Six Nations               | Roma        | home    | Italy       | 12.3 | Ireland     | 37.6
+ 2023-02-25 | 2023 Six Nations               | Cardiff     | home    | Wales       | 19.9 | England     | 21.1
+ 2023-02-26 | 2023 Six Nations               | Saint-Denis | home    | France      | 25.4 | Scotland    | 15.7
+(21 rows)
 
-COPY 2
+COPY 21
 COMMIT
