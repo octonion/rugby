@@ -26,7 +26,7 @@ r.team_score::float as gs,
 from major_league.results r
 
 where
-    r.year between 2018 and 2022
+    r.year between 2018 and 2023
 
 ) as r
 
