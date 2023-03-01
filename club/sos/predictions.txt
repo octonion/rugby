@@ -1,17 +1,27 @@
 BEGIN
-    date    |       home       |     away      | e_home | e_away |  e_d   
-------------+------------------+---------------+--------+--------+--------
- 2023-02-26 | Clermont         | RC Toulonnais |   21.8 |   20.6 |   1.29
- 2023-02-26 | Exeter Chiefs    | Sale Sharks   |   26.1 |   19.5 |   6.52
- 2023-03-03 | Glasgow Warriors | Zebre         |   40.7 |   14.5 |  26.19
- 2023-03-03 | Munster          | Scarlets      |   28.1 |   14.3 |  13.84
- 2023-03-04 | Bulls            | Lions         |   34.6 |   21.3 |  13.25
- 2023-03-04 | Cardiff Rugby    | Ulster        |   22.9 |   21.5 |   1.40
- 2023-03-04 | Dragons          | Connacht      |   23.2 |   24.3 |  -1.08
- 2023-03-04 | Edinburgh        | Leinster      |   17.0 |   27.4 | -10.40
- 2023-03-04 | Ospreys          | Benetton      |   26.7 |   22.6 |   4.17
- 2023-03-04 | Stormers         | Sharks        |   30.3 |   19.0 |  11.32
-(10 rows)
+    date    |       home        |         away         | e_home | e_away |  e_d   
+------------+-------------------+----------------------+--------+--------+--------
+ 2023-03-03 | Bristol           | Northampton Saints   |   29.4 |   22.2 |   7.18
+ 2023-03-03 | Glasgow Warriors  | Zebre                |   40.8 |   14.5 |  26.24
+ 2023-03-03 | Munster           | Scarlets             |   28.2 |   14.3 |  13.86
+ 2023-03-04 | Bulls             | Lions                |   34.6 |   21.3 |  13.24
+ 2023-03-04 | CA Brive          | Bordeaux Begles      |   18.3 |   22.3 |  -4.06
+ 2023-03-04 | Cardiff Rugby     | Ulster               |   22.9 |   21.5 |   1.40
+ 2023-03-04 | Castres Olympique | Lyon                 |   23.0 |   24.1 |  -1.15
+ 2023-03-04 | Dragons           | Connacht             |   23.2 |   24.3 |  -1.06
+ 2023-03-04 | Edinburgh         | Leinster             |   17.0 |   27.4 | -10.39
+ 2023-03-04 | Harlequins        | Exeter Chiefs        |   25.5 |   22.7 |   2.81
+ 2023-03-04 | Leicester Tigers  | Bath                 |   29.4 |   17.9 |  11.48
+ 2023-03-04 | Montpellier       | Clermont             |   29.5 |   19.2 |  10.33
+ 2023-03-04 | Ospreys           | Benetton             |   26.8 |   22.6 |   4.20
+ 2023-03-04 | RC Toulonnais     | Stade Francais Paris |   19.4 |   18.6 |   0.86
+ 2023-03-04 | Section Paloise   | La Rochelle          |   19.2 |   22.6 |  -3.40
+ 2023-03-04 | Stormers          | Sharks               |   30.3 |   19.0 |  11.38
+ 2023-03-04 | USA Perpignan     | Aviron Bayonnais     |   21.9 |   22.1 |  -0.20
+ 2023-03-05 | Newcastle Falcons | London Irish         |   24.0 |   24.5 |  -0.44
+ 2023-03-05 | Racing 92         | Stade Toulousain     |   19.9 |   25.7 |  -5.80
+ 2023-03-05 | Sale Sharks       | Saracens             |   27.3 |   21.0 |   6.21
+(20 rows)
 
-COPY 10
+COPY 20
 COMMIT
