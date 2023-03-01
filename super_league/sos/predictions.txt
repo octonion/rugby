@@ -1,9 +1,19 @@
 BEGIN
-    date    |    home    |       away       | e_home | e_away |  e_d  
-------------+------------+------------------+--------+--------+-------
- 2023-02-16 | Warrington | Leeds            |  19.97 |  20.75 | -0.78
- 2023-02-17 | Wakefield  | Catalans Dragons |  18.43 |  18.67 | -0.24
-(2 rows)
+    date    |       home       |       away       | e_home | e_away |  e_d   
+------------+------------------+------------------+--------+--------+--------
+ 2023-03-02 | Warrington       | Salford          |  26.55 |  21.66 |   4.89
+ 2023-03-03 | Castleford       | Wigan            |  18.52 |  28.29 |  -9.77
+ 2023-03-03 | Catalans Dragons | Hull FC          |  24.12 |  15.10 |   9.02
+ 2023-03-03 | Hull KR          | Leigh            |  23.36 |  10.07 |  13.29
+ 2023-03-03 | St Helens        | Leeds            |  25.81 |  11.07 |  14.75
+ 2023-03-03 | Wakefield        | Huddersfield     |  16.87 |  21.74 |  -4.87
+ 2023-03-09 | Wigan            | Catalans Dragons |  29.13 |  14.65 |  14.47
+ 2023-03-10 | Huddersfield     | Castleford       |  24.38 |  16.34 |   8.03
+ 2023-03-10 | Hull KR          | Warrington       |  23.03 |  19.09 |   3.95
+ 2023-03-10 | Leeds            | Wakefield        |  25.58 |  13.82 |  11.76
+ 2023-03-10 | Leigh            | St Helens        |   8.93 |  22.36 | -13.44
+ 2023-03-11 | Hull FC          | Salford          |  21.73 |  23.59 |  -1.86
+(12 rows)
 
-COPY 2
+COPY 12
 COMMIT
