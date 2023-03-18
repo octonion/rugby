@@ -1,24 +1,22 @@
 BEGIN
 SET
-    date    |                  event                  |    city     |  site   |    team     | e_p  |  opponent   | e_p  
-------------+-----------------------------------------+-------------+---------+-------------+------+-------------+------
- 2023-03-11 | 2022-23 Rugby Europe Trophy             | Ukraine?    | home    | Ukraine     |  8.7 | Switzerland | 36.3
- 2023-03-11 | 2023 Six Nations                        | London      | home    | England     | 22.3 | France      | 21.3
- 2023-03-11 | 2023 Six Nations                        | Roma        | home    | Italy       | 19.6 | Wales       | 26.1
- 2023-03-12 | 2023 Six Nations                        | Edinburgh   | home    | Scotland    | 16.5 | Ireland     | 21.0
- 2023-03-18 | 2022-23 Rugby Europe Trophy             | Ukraine?    | home    | Ukraine     | 21.4 | Sweden      | 18.3
- 2023-03-18 | 2023 Six Nations                        | Saint-Denis | home    | France      | 29.7 | Wales       | 15.5
- 2023-03-18 | 2023 Six Nations                        | Dublin      | home    | Ireland     | 26.5 | England     | 14.8
- 2023-03-18 | 2023 Six Nations                        | Edinburgh   | home    | Scotland    | 35.2 | Italy       | 13.2
- 2023-03-19 | 2023 Rugby Europe Championship          | Amsterdam   | neutral | Belgium     | 21.2 | Poland      | 17.8
- 2023-03-19 | 2023 Rugby Europe Championship          | Amsterdam   | home    | Netherlands | 26.1 | Germany     | 19.3
- 2023-03-19 | 2023 Rugby Europe Championship          | Badajoz     | neutral | Portugal    | 15.9 | Georgia     | 24.9
- 2023-03-19 | 2023 Rugby Europe Championship          | Badajoz     | home    | Spain       | 23.2 | Romania     | 21.1
- 2023-03-25 | 2022-23 Rugby Europe Conference 1 South | Paola       | home    | Malta       | 19.6 | Cyprus      | 14.3
- 2023-03-25 | 2022-23 Rugby Europe Trophy             | Siauliai    | home    | Lithuania   | 37.1 | Croatia     | 11.6
- 2023-04-01 | 2022-23 Rugby Europe Trophy             | Makarska    | home    | Croatia     |  7.1 | Switzerland | 49.3
- 2023-04-01 | 2022-23 Rugby Europe Trophy             | Lithuania?  | home    | Lithuania   | 35.3 | Sweden      | 18.8
-(16 rows)
+    date    |                  event                  |    city     |  site   |    team     | e_p  |       opponent       | e_p  
+------------+-----------------------------------------+-------------+---------+-------------+------+----------------------+------
+ 2023-03-18 | 2022-23 Rugby Europe Trophy             | Ukraine?    | home    | Ukraine     | 27.4 | Sweden               | 17.6
+ 2023-03-18 | 2023 Six Nations                        | Saint-Denis | home    | France      | 30.9 | Wales                | 14.8
+ 2023-03-18 | 2023 Six Nations                        | Dublin      | home    | Ireland     | 28.3 | England              | 13.9
+ 2023-03-18 | 2023 Six Nations                        | Edinburgh   | home    | Scotland    | 34.5 | Italy                | 13.3
+ 2023-03-19 | 2023 Rugby Europe Championship          | Amsterdam   | neutral | Belgium     | 21.0 | Poland               | 17.9
+ 2023-03-19 | 2023 Rugby Europe Championship          | Badajoz     | neutral | Georgia     | 25.1 | Portugal             | 16.0
+ 2023-03-19 | 2023 Rugby Europe Championship          | Amsterdam   | home    | Netherlands | 25.9 | Germany              | 19.3
+ 2023-03-19 | 2023 Rugby Europe Championship          | Badajoz     | away    | Romania     | 21.3 | Spain                | 23.1
+ 2023-03-25 | 2022-23 Rugby Europe Conference 1 South | Paola       | home    | Malta       | 19.6 | Cyprus               | 14.4
+ 2023-03-25 | 2022-23 Rugby Europe Trophy             | Siauliai    | home    | Lithuania   | 34.6 | Croatia              | 11.8
+ 2023-04-01 | 2022-23 Rugby Europe Trophy             | Makarska    | home    | Croatia     |  8.8 | Switzerland          | 45.1
+ 2023-04-01 | 2022-23 Rugby Europe Trophy             | Lithuania?  | home    | Lithuania   | 35.3 | Sweden               | 17.8
+ 2023-04-14 | 2022-23 Rugby Europe Conference 1 North | Luxembourg? | home    | Luxembourg  | 12.9 | Moldova, Republic of | 17.2
+ 2023-04-15 | 2022-23 Rugby Europe Conference 1 South | Israel?     | home    | Israel      | 15.8 | Malta                | 12.8
+(14 rows)
 
-COPY 16
+COPY 14
 COMMIT
