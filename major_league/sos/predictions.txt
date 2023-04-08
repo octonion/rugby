@@ -1,12 +1,18 @@
 BEGIN
-    date    |          home          |       away        | e_home | e_away |   e_d   
-------------+------------------------+-------------------+--------+--------+---------
- 2023-03-11 | Chicago Hounds         | Toronto Arrows    |  18.60 |  23.81 |  -5.209
- 2023-03-11 | New England Free Jacks | Old Glory DC      |  40.11 |  19.04 |  21.076
- 2023-03-11 | San Diego Legion       | Dallas Jackals    |  53.21 |  14.45 |  38.760
- 2023-03-11 | Seattle Seawolves      | Houston SaberCats |  27.62 |  19.65 |   7.970
- 2023-03-12 | NOLA Gold              | New York          |  17.78 |  32.43 | -14.657
-(5 rows)
+    date    |          home          |          away          | e_home | e_away |   e_d   
+------------+------------------------+------------------------+--------+--------+---------
+ 2023-04-08 | Houston SaberCats      | Utah Warriors          |  31.64 |  19.92 |  11.717
+ 2023-04-08 | New England Free Jacks | Chicago Hounds         |  35.28 |  12.21 |  23.076
+ 2023-04-08 | Rugby ATL              | Old Glory DC           |  34.87 |  21.95 |  12.913
+ 2023-04-08 | Seattle Seawolves      | San Diego Legion       |  26.64 |  23.16 |   3.483
+ 2023-04-08 | Toronto Arrows         | New York               |  16.94 |  26.41 |  -9.467
+ 2023-04-15 | Houston SaberCats      | Dallas Jackals         |  41.05 |  12.43 |  28.622
+ 2023-04-15 | NOLA Gold              | Rugby ATL              |  24.43 |  25.25 |  -0.824
+ 2023-04-15 | Toronto Arrows         | New England Free Jacks |  15.22 |  27.03 | -11.804
+ 2023-04-15 | Utah Warriors          | Seattle Seawolves      |  20.33 |  28.46 |  -8.129
+ 2023-04-16 | Old Glory DC           | New York               |  25.18 |  29.69 |  -4.501
+ 2023-04-16 | San Diego Legion       | Chicago Hounds         |  44.03 |  12.61 |  31.423
+(11 rows)
 
-COPY 5
+COPY 11
 COMMIT
