@@ -1,8 +1,16 @@
 BEGIN
-    date    |  home   |  away   | e_home | e_away |  e_d  
-------------+---------+---------+--------+--------+-------
- 2023-03-11 | Hull FC | Salford |  20.43 |  25.22 | -4.78
-(1 row)
+    date    |       home       |       away       | e_home | e_away |  e_d  
+------------+------------------+------------------+--------+--------+-------
+ 2023-04-08 | Catalans Dragons | Warrington       |  19.60 |  21.01 | -1.41
+ 2023-04-08 | Leigh            | Salford          |  19.47 |  22.01 | -2.55
+ 2023-04-09 | Leeds            | Huddersfield     |  16.73 |  18.17 | -1.44
+ 2023-04-13 | Salford          | Castleford       |  30.37 |  15.41 | 14.96
+ 2023-04-14 | Huddersfield     | Catalans Dragons |  19.33 |  15.30 |  4.03
+ 2023-04-14 | Hull KR          | St Helens        |  16.08 |  18.43 | -2.34
+ 2023-04-14 | Leeds            | Hull FC          |  28.27 |  13.13 | 15.14
+ 2023-04-14 | Warrington       | Wigan            |  21.43 |  23.35 | -1.91
+ 2023-04-16 | Wakefield        | Leigh            |  13.25 |  20.70 | -7.45
+(9 rows)
 
-COPY 1
+COPY 9
 COMMIT
