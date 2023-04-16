@@ -1,18 +1,15 @@
 BEGIN
 SET
-    date    |                event                |    city    | site |   team   | e_p  | opponent | e_p  
-------------+-------------------------------------+------------+------+----------+------+----------+------
- 2023-04-15 | 2022-23 Rugby Europe Women’s Trophy | Heidelberg | home | Germany  |  1.4 | Portugal | 42.3
- 2023-04-15 | 2023 Women's Six Nations            | Parma      | home | Italy    | 25.9 | Ireland  | 11.8
- 2023-04-15 | 2023 Women's Six Nations            | Cardiff    | home | Wales    |  7.9 | England  | 47.0
- 2023-04-16 | 2023 Women's Six Nations            | Vannes     | home | France   | 49.3 | Scotland |  4.6
- 2023-04-22 | 2023 Women's Six Nations            | Cork       | home | Ireland  |  6.8 | England  | 58.0
- 2023-04-22 | 2023 Women's Six Nations            | Edinburgh  | home | Scotland | 16.5 | Italy    | 20.2
- 2023-04-23 | 2023 Women's Six Nations            | Grenoble   | home | France   | 38.4 | Wales    |  5.1
- 2023-04-29 | 2023 Women's Six Nations            | London     | home | England  | 21.5 | France   | 11.6
- 2023-04-29 | 2023 Women's Six Nations            | Parma      | home | Italy    | 21.0 | Wales    | 13.7
- 2023-04-29 | 2023 Women's Six Nations            | Edinburgh  | home | Scotland | 22.0 | Ireland  | 16.3
-(10 rows)
+    date    |          event           |   city    | site |   team   | e_p  | opponent | e_p  
+------------+--------------------------+-----------+------+----------+------+----------+------
+ 2023-04-16 | 2023 Women's Six Nations | Vannes    | home | France   | 50.6 | Scotland |  4.4
+ 2023-04-22 | 2023 Women's Six Nations | Cork      | home | Ireland  |  6.1 | England  | 59.2
+ 2023-04-22 | 2023 Women's Six Nations | Edinburgh | home | Scotland | 15.8 | Italy    | 20.6
+ 2023-04-23 | 2023 Women's Six Nations | Grenoble  | home | France   | 40.6 | Wales    |  4.8
+ 2023-04-29 | 2023 Women's Six Nations | London    | home | England  | 21.9 | France   | 10.8
+ 2023-04-29 | 2023 Women's Six Nations | Parma     | home | Italy    | 22.3 | Wales    | 12.6
+ 2023-04-29 | 2023 Women's Six Nations | Edinburgh | home | Scotland | 21.9 | Ireland  | 15.6
+(7 rows)
 
-COPY 10
+COPY 7
 COMMIT
