@@ -1,13 +1,11 @@
 BEGIN
-    date    |          home          |       away        | e_home | e_away |   e_d   
-------------+------------------------+-------------------+--------+--------+---------
- 2023-04-22 | Dallas Jackals         | San Diego Legion  |  16.53 |  38.88 | -22.354
- 2023-04-22 | New England Free Jacks | Rugby ATL         |  26.57 |  17.55 |   9.019
- 2023-04-22 | Old Glory DC           | Utah Warriors     |  29.91 |  29.21 |   0.696
- 2023-04-23 | Chicago Hounds         | NOLA Gold         |  21.28 |  26.73 |  -5.454
- 2023-04-23 | New York               | Houston SaberCats |  24.55 |  23.96 |   0.583
- 2023-04-23 | Toronto Arrows         | Seattle Seawolves |  14.91 |  32.68 | -17.765
-(6 rows)
+    date    |          home          |       away        | e_home | e_away |  e_d   
+------------+------------------------+-------------------+--------+--------+--------
+ 2023-04-28 | Seattle Seawolves      | Dallas Jackals    |  39.54 |  13.66 | 25.885
+ 2023-04-30 | New England Free Jacks | New York          |  28.58 |  17.57 | 11.004
+ 2023-04-30 | NOLA Gold              | Toronto Arrows    |  31.12 |  17.87 | 13.252
+ 2023-04-30 | San Diego Legion       | Houston SaberCats |  31.12 |  22.80 |  8.318
+(4 rows)
 
-COPY 6
+COPY 4
 COMMIT
