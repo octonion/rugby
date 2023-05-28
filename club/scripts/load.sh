@@ -15,6 +15,8 @@ mkdir /tmp/data
 cp csv/*.csv /tmp/data
 
 cat /tmp/data/*.csv >> /tmp/games.csv
+rpl "Stade Rochelais" "La Rochelle" /tmp/games.csv
+
 psql rugby -f loaders/load_games.sql
 
 rm /tmp/data/*.csv
