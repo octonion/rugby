@@ -1,22 +1,11 @@
 BEGIN
 SET
-    date    |                  event                  |    city     |  site   |    team     | e_p  |       opponent       | e_p  
-------------+-----------------------------------------+-------------+---------+-------------+------+----------------------+------
- 2023-03-18 | 2022-23 Rugby Europe Trophy             | Ukraine?    | home    | Ukraine     | 27.4 | Sweden               | 17.6
- 2023-03-18 | 2023 Six Nations                        | Saint-Denis | home    | France      | 30.9 | Wales                | 14.8
- 2023-03-18 | 2023 Six Nations                        | Dublin      | home    | Ireland     | 28.3 | England              | 13.9
- 2023-03-18 | 2023 Six Nations                        | Edinburgh   | home    | Scotland    | 34.5 | Italy                | 13.3
- 2023-03-19 | 2023 Rugby Europe Championship          | Amsterdam   | neutral | Belgium     | 21.0 | Poland               | 17.9
- 2023-03-19 | 2023 Rugby Europe Championship          | Badajoz     | neutral | Georgia     | 25.1 | Portugal             | 16.0
- 2023-03-19 | 2023 Rugby Europe Championship          | Amsterdam   | home    | Netherlands | 25.9 | Germany              | 19.3
- 2023-03-19 | 2023 Rugby Europe Championship          | Badajoz     | away    | Romania     | 21.3 | Spain                | 23.1
- 2023-03-25 | 2022-23 Rugby Europe Conference 1 South | Paola       | home    | Malta       | 19.6 | Cyprus               | 14.4
- 2023-03-25 | 2022-23 Rugby Europe Trophy             | Siauliai    | home    | Lithuania   | 34.6 | Croatia              | 11.8
- 2023-04-01 | 2022-23 Rugby Europe Trophy             | Makarska    | home    | Croatia     |  8.8 | Switzerland          | 45.1
- 2023-04-01 | 2022-23 Rugby Europe Trophy             | Lithuania?  | home    | Lithuania   | 35.3 | Sweden               | 17.8
- 2023-04-14 | 2022-23 Rugby Europe Conference 1 North | Luxembourg? | home    | Luxembourg  | 12.9 | Moldova, Republic of | 17.2
- 2023-04-15 | 2022-23 Rugby Europe Conference 1 South | Israel?     | home    | Israel      | 15.8 | Malta                | 12.8
-(14 rows)
+    date    |            event             |     city     | site |   team    | e_p  | opponent | e_p  
+------------+------------------------------+--------------+------+-----------+------+----------+------
+ 2023-06-03 | Asia Rugby Championship 2023 | Kuala Lumpur | home | Malaysia  | 13.0 | Korea    | 44.0
+ 2023-06-10 | Asia Rugby Championship 2023 | Hong Kong    | home | Hong Kong | 54.4 | Malaysia |  7.7
+ 2023-06-17 | Asia Rugby Championship 2023 | Hong Kong    | home | Hong Kong | 35.5 | Korea    | 20.2
+(3 rows)
 
-COPY 14
+COPY 3
 COMMIT
