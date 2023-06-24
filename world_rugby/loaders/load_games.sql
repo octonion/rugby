@@ -3,17 +3,17 @@ begin;
 drop table if exists world_rugby.games;
 
 create table world_rugby.games (
-	match_id	      integer,
+	match_id	      text,
 	description	      text,
-        venue_id	      integer,
+    venue_id	      integer,
 	venue_name	      text,
 	venue_city	      text,
 	venue_country	      text,
-        time_millis	      text,
+    time_millis	      text,
 	time_gmtoffset	      text,
 	time_label	      timestamp,
 	attendance	      integer,
-        team_id		      integer,
+    team_id		      integer,
 	team_name	      text,
 	team_abbr	      text,
 	opponent_id	      integer,
@@ -26,11 +26,11 @@ create table world_rugby.games (
 	events_id	      integer,
 	events_label	      text,
 	events_sport	      text,
-        events_start_millis   text,
+    events_start_millis   text,
 	events_start_label    text,
-        events_end_millis     text,
+    events_end_millis     text,
 	events_end_label      text,
-        match_json	      json,
+    match_json	      json,
 	primary key (match_id)
 );
 

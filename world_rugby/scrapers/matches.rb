@@ -59,9 +59,8 @@ end
   pages = (n.to_f/page_size).ceil
 
   (0..pages-1).each do |page_num|
-
     begin
-      url = "http://cmsapi.pulselive.com/rugby/match.json?startDate=#{year}-01-01&endDate=#{year}-12-31&sort=asc&pageSize=#{page_size}&page=#{page_num}"
+      url = "https://api.wr-rims-prod.pulselive.com/rugby/v3/match?startDate=#{year}-01-01&endDate=#{year}-12-31&sort=asc&pageSize=#{page_size}&page=#{page_num}"
       unparsed_json = agent.get(url).body
       parsed_json = JSON.parse(unparsed_json)
     rescue
@@ -72,7 +71,7 @@ end
   
     parsed_json["content"].each do |match|
 
-      match_id = match["matchId"].to_i rescue nil
+      match_id = match["matchId"] rescue nil
       description = match["description"] rescue nil
     
       venue_id = match["venue"]["id"].to_i rescue nil

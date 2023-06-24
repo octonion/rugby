@@ -7,7 +7,8 @@ agent = Mechanize.new{ |agent| agent.history.max_size=0 }
 agent.user_agent = 'Mozilla/5.0'
 agent.robots = false
 
-url = "http://cmsapi.pulselive.com/rugby/rankings/mru.json"
+#url = "http://cmsapi.pulselive.com/rugby/rankings/mru.json"
+url = "https://api.wr-rims-prod.pulselive.com/rugby/v3/rankings/mru?language=en"
 
 unparsed_json = agent.get(url).body
 

@@ -9,7 +9,7 @@ agent.robots = false
 
 year = ARGV[0]
 
-url = "http://cmsapi.pulselive.com/rugby/match.json?endDate=#{year}-12-31&startDate=#{year}-01-01&sort=desc&page=0&pageSize=1"
+url = "https://api.wr-rims-prod.pulselive.com/rugby/v3/match?endDate=#{year}-12-31&startDate=#{year}-01-01&sort=desc&page=0&pageSize=1"
 
 unparsed_json = agent.get(url).body
 
