@@ -1,9 +1,13 @@
 BEGIN
-    date    |       home       | away  | e_home | e_away | e_d  
-------------+------------------+-------+--------+--------+------
- 2023-06-24 | Catalans Dragons | Leigh |  23.87 |  17.71 | 6.16
- 2023-06-25 | Salford          | Wigan |  21.07 |  18.27 | 2.80
-(2 rows)
+    date    |    home    |       away       | e_home | e_away |  e_d   
+------------+------------+------------------+--------+--------+--------
+ 2023-06-29 | Warrington | Leeds            |  25.32 |  17.42 |   7.90
+ 2023-06-30 | Leigh      | Hull KR          |  21.15 |  17.17 |   3.98
+ 2023-06-30 | St Helens  | Castleford       |  26.76 |   9.07 |  17.69
+ 2023-06-30 | Wakefield  | Salford          |   8.65 |  23.89 | -15.23
+ 2023-06-30 | Wigan      | Huddersfield     |  25.01 |  11.58 |  13.43
+ 2023-07-01 | Hull FC    | Catalans Dragons |  17.03 |  29.10 | -12.06
+(6 rows)
 
-COPY 2
+COPY 6
 COMMIT
