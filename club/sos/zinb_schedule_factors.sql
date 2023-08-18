@@ -55,7 +55,7 @@ r.team_name,
 r.opponent_name,
 r.field
 from club.results r
-where r.year between 2012 and 2023
+where r.year between 2012 and 2024
 );
 
 update r

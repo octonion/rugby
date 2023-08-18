@@ -1,8 +1,13 @@
 BEGIN
-    date    |       home       |    away     | e_home | e_away | e_d  
-------------+------------------+-------------+--------+--------+------
- 2023-06-17 | Stade Toulousain | La Rochelle |   24.2 |   17.3 | 6.93
-(1 row)
+    date    |       home        |         away         | e_home | e_away |  e_d  
+------------+-------------------+----------------------+--------+--------+-------
+ 2023-08-18 | Aviron Bayonnais  | Stade Toulousain     |   18.7 |   26.0 | -7.26
+ 2023-08-19 | Castres Olympique | Section Paloise      |   23.3 |   20.0 |  3.26
+ 2023-08-19 | Lyon              | RC Toulonnais        |   26.6 |   21.3 |  5.28
+ 2023-08-19 | Racing 92         | Bordeaux Begles      |   26.0 |   20.5 |  5.44
+ 2023-08-19 | USA Perpignan     | Stade Francais Paris |   19.3 |   22.5 | -3.15
+ 2023-08-20 | Montpellier       | La Rochelle          |   21.4 |   23.2 | -1.80
+(6 rows)
 
-COPY 1
+COPY 6
 COMMIT
