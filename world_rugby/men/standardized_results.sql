@@ -3,7 +3,7 @@ begin;
 drop table if exists men._results;
 
 create table men._results (
-	game_id		      integer,
+	game_id		      text,
 	year		      integer,
 	game_date	      date,
 	country		      text,
