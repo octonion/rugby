@@ -1,48 +1,47 @@
 BEGIN
 SET
-    date    |        event         |     city      |  site   |     team     |  e_p  |  opponent   |  e_p  |  e_d   
-------------+----------------------+---------------+---------+--------------+-------+-------------+-------+--------
- 2023-09-08 | Rugby World Cup 2023 | Saint-Denis   | home    | France       | 25.31 | New Zealand | 26.16 |  -0.86
- 2023-09-09 | Rugby World Cup 2023 | Saint-Denis   | neutral | Australia    | 27.24 | Georgia     | 13.22 |  14.02
- 2023-09-09 | Rugby World Cup 2023 | Marseille     | neutral | England      | 21.71 | Argentina   | 20.13 |   1.58
- 2023-09-09 | Rugby World Cup 2023 | Bordeaux      | neutral | Ireland      | 63.32 | Romania     |  6.02 |  57.30
- 2023-09-09 | Rugby World Cup 2023 | Saint-Étienne | neutral | Italy        | 45.42 | Namibia     | 12.30 |  33.12
- 2023-09-10 | Rugby World Cup 2023 | Toulouse      | neutral | Japan        | 43.53 | Chile       | 12.79 |  30.74
- 2023-09-10 | Rugby World Cup 2023 | Marseille     | neutral | South Africa | 22.44 | Scotland    | 15.54 |   6.90
- 2023-09-10 | Rugby World Cup 2023 | Bordeaux      | neutral | Wales        | 20.67 | Fiji        | 20.29 |   0.38
- 2023-09-14 | Rugby World Cup 2023 | Lille         | home    | France       | 68.45 | Uruguay     |  7.05 |  61.40
- 2023-09-15 | Rugby World Cup 2023 | Toulouse      | neutral | New Zealand  | 82.46 | Namibia     |  7.31 |  75.15
- 2023-09-16 | Rugby World Cup 2023 | Nantes        | neutral | Ireland      | 48.49 | Tonga       |  8.55 |  39.93
- 2023-09-16 | Rugby World Cup 2023 | Bordeaux      | neutral | Samoa        | 40.13 | Chile       |  9.59 |  30.54
- 2023-09-16 | Rugby World Cup 2023 | Nice          | neutral | Wales        | 39.48 | Portugal    | 11.56 |  27.92
- 2023-09-17 | Rugby World Cup 2023 | Saint-Étienne | neutral | Australia    | 23.36 | Fiji        | 20.94 |   2.42
- 2023-09-17 | Rugby World Cup 2023 | Nice          | neutral | England      | 30.16 | Japan       | 16.19 |  13.97
- 2023-09-17 | Rugby World Cup 2023 | Bordeaux      | neutral | South Africa | 66.62 | Romania     |  6.52 |  60.10
- 2023-09-20 | Rugby World Cup 2023 | Nice          | neutral | Italy        | 39.81 | Uruguay     | 12.11 |  27.70
- 2023-09-21 | Rugby World Cup 2023 | Marseille     | home    | France       | 78.10 | Namibia     |  7.16 |  70.94
- 2023-09-22 | Rugby World Cup 2023 | Saint-Étienne | neutral | Argentina    | 22.31 | Samoa       | 15.88 |   6.42
- 2023-09-23 | Rugby World Cup 2023 | Lille         | neutral | England      | 54.86 | Chile       |  8.65 |  46.21
- 2023-09-23 | Rugby World Cup 2023 | Toulouse      | neutral | Georgia      | 25.81 | Portugal    | 14.22 |  11.58
- 2023-09-23 | Rugby World Cup 2023 | Saint-Denis   | neutral | South Africa | 18.41 | Ireland     | 18.96 |  -0.54
- 2023-09-24 | Rugby World Cup 2023 | Nice          | neutral | Scotland     | 39.75 | Tonga       | 10.42 |  29.32
- 2023-09-24 | Rugby World Cup 2023 | Lyon          | neutral | Wales        | 20.22 | Australia   | 22.14 |  -1.92
- 2023-09-27 | Rugby World Cup 2023 | Lyon          | neutral | Uruguay      | 22.22 | Namibia     | 19.78 |   2.44
- 2023-09-28 | Rugby World Cup 2023 | Toulouse      | neutral | Japan        | 17.95 | Samoa       | 22.06 |  -4.12
- 2023-09-29 | Rugby World Cup 2023 | Lyon          | neutral | New Zealand  | 44.96 | Italy       | 14.72 |  30.24
- 2023-09-30 | Rugby World Cup 2023 | Nantes        | neutral | Argentina    | 54.10 | Chile       |  9.20 |  44.90
- 2023-09-30 | Rugby World Cup 2023 | Bordeaux      | neutral | Fiji         | 24.95 | Georgia     | 13.51 |  11.44
- 2023-09-30 | Rugby World Cup 2023 | Lille         | neutral | Scotland     | 51.90 | Romania     |  7.33 |  44.57
- 2023-10-01 | Rugby World Cup 2023 | Saint-Étienne | neutral | Australia    | 44.62 | Portugal    | 11.93 |  32.69
- 2023-10-01 | Rugby World Cup 2023 | Marseille     | neutral | South Africa | 51.02 | Tonga       |  9.27 |  41.75
- 2023-10-05 | Rugby World Cup 2023 | Lyon          | neutral | New Zealand  | 72.28 | Uruguay     |  7.20 |  65.08
- 2023-10-06 | Rugby World Cup 2023 | Lyon          | home    | France       | 42.58 | Italy       | 14.41 |  28.17
- 2023-10-07 | Rugby World Cup 2023 | Lille         | neutral | England      | 22.62 | Samoa       | 14.93 |   7.69
- 2023-10-07 | Rugby World Cup 2023 | Saint-Denis   | neutral | Ireland      | 21.32 | Scotland    | 14.34 |   6.98
- 2023-10-07 | Rugby World Cup 2023 | Nantes        | neutral | Wales        | 24.10 | Georgia     | 12.81 |  11.29
- 2023-10-08 | Rugby World Cup 2023 | Toulouse      | neutral | Fiji         | 40.88 | Portugal    | 12.20 |  28.68
- 2023-10-08 | Rugby World Cup 2023 | Nantes        | neutral | Japan        | 17.23 | Argentina   | 29.74 | -12.52
- 2023-10-08 | Rugby World Cup 2023 | Lille         | neutral | Tonga        | 30.95 | Romania     | 16.67 |  14.29
-(40 rows)
+    date    |        event         |     city      |  site   |     team     |  e_p  | opponent  |  e_p  |  e_d   
+------------+----------------------+---------------+---------+--------------+-------+-----------+-------+--------
+ 2023-09-09 | Rugby World Cup 2023 | Saint-Denis   | neutral | Australia    | 28.06 | Georgia   | 13.18 |  14.89
+ 2023-09-09 | Rugby World Cup 2023 | Marseille     | neutral | England      | 22.28 | Argentina | 19.30 |   2.97
+ 2023-09-09 | Rugby World Cup 2023 | Bordeaux      | neutral | Ireland      | 65.30 | Romania   |  6.02 |  59.28
+ 2023-09-09 | Rugby World Cup 2023 | Saint-Étienne | neutral | Italy        | 47.95 | Namibia   | 11.60 |  36.35
+ 2023-09-10 | Rugby World Cup 2023 | Toulouse      | neutral | Japan        | 44.55 | Chile     | 12.56 |  32.00
+ 2023-09-10 | Rugby World Cup 2023 | Marseille     | neutral | South Africa | 22.42 | Scotland  | 15.62 |   6.80
+ 2023-09-10 | Rugby World Cup 2023 | Bordeaux      | neutral | Wales        | 20.77 | Fiji      | 20.21 |   0.56
+ 2023-09-14 | Rugby World Cup 2023 | Lille         | home    | France       | 69.37 | Uruguay   |  6.90 |  62.47
+ 2023-09-15 | Rugby World Cup 2023 | Toulouse      | neutral | New Zealand  | 86.01 | Namibia   |  6.95 |  79.07
+ 2023-09-16 | Rugby World Cup 2023 | Nantes        | neutral | Ireland      | 49.37 | Tonga     |  8.51 |  40.86
+ 2023-09-16 | Rugby World Cup 2023 | Bordeaux      | neutral | Samoa        | 40.87 | Chile     |  9.44 |  31.43
+ 2023-09-16 | Rugby World Cup 2023 | Nice          | neutral | Wales        | 40.15 | Portugal  | 11.39 |  28.76
+ 2023-09-17 | Rugby World Cup 2023 | Saint-Étienne | neutral | Australia    | 23.63 | Fiji      | 21.04 |   2.59
+ 2023-09-17 | Rugby World Cup 2023 | Nice          | neutral | England      | 30.57 | Japan     | 15.89 |  14.68
+ 2023-09-17 | Rugby World Cup 2023 | Bordeaux      | neutral | South Africa | 67.90 | Romania   |  6.51 |  61.39
+ 2023-09-20 | Rugby World Cup 2023 | Nice          | neutral | Italy        | 40.74 | Uruguay   | 11.81 |  28.93
+ 2023-09-21 | Rugby World Cup 2023 | Marseille     | home    | France       | 81.64 | Namibia   |  6.77 |  74.87
+ 2023-09-22 | Rugby World Cup 2023 | Saint-Étienne | neutral | Argentina    | 21.85 | Samoa     | 16.00 |   5.85
+ 2023-09-23 | Rugby World Cup 2023 | Lille         | neutral | England      | 56.91 | Chile     |  8.34 |  48.57
+ 2023-09-23 | Rugby World Cup 2023 | Toulouse      | neutral | Georgia      | 25.87 | Portugal  | 14.30 |  11.57
+ 2023-09-23 | Rugby World Cup 2023 | Saint-Denis   | neutral | South Africa | 18.47 | Ireland   | 19.22 |  -0.74
+ 2023-09-24 | Rugby World Cup 2023 | Nice          | neutral | Scotland     | 40.12 | Tonga     | 10.33 |  29.79
+ 2023-09-24 | Rugby World Cup 2023 | Lyon          | neutral | Wales        | 20.45 | Australia | 22.34 |  -1.90
+ 2023-09-27 | Rugby World Cup 2023 | Lyon          | neutral | Uruguay      | 22.83 | Namibia   | 19.04 |   3.79
+ 2023-09-28 | Rugby World Cup 2023 | Toulouse      | neutral | Japan        | 17.99 | Samoa     | 21.95 |  -3.97
+ 2023-09-29 | Rugby World Cup 2023 | Lyon          | neutral | New Zealand  | 44.50 | Italy     | 14.86 |  29.64
+ 2023-09-30 | Rugby World Cup 2023 | Nantes        | neutral | Argentina    | 54.12 | Chile     |  9.15 |  44.97
+ 2023-09-30 | Rugby World Cup 2023 | Bordeaux      | neutral | Fiji         | 25.38 | Georgia   | 13.39 |  12.00
+ 2023-09-30 | Rugby World Cup 2023 | Lille         | neutral | Scotland     | 53.07 | Romania   |  7.30 |  45.77
+ 2023-10-01 | Rugby World Cup 2023 | Saint-Étienne | neutral | Australia    | 45.67 | Portugal  | 11.86 |  33.81
+ 2023-10-01 | Rugby World Cup 2023 | Marseille     | neutral | South Africa | 51.33 | Tonga     |  9.21 |  42.12
+ 2023-10-05 | Rugby World Cup 2023 | Lyon          | neutral | New Zealand  | 73.08 | Uruguay   |  7.08 |  66.00
+ 2023-10-06 | Rugby World Cup 2023 | Lyon          | home    | France       | 42.24 | Italy     | 14.49 |  27.75
+ 2023-10-07 | Rugby World Cup 2023 | Lille         | neutral | England      | 22.97 | Samoa     | 14.58 |   8.40
+ 2023-10-07 | Rugby World Cup 2023 | Saint-Denis   | neutral | Ireland      | 21.56 | Scotland  | 14.44 |   7.12
+ 2023-10-07 | Rugby World Cup 2023 | Nantes        | neutral | Wales        | 24.67 | Georgia   | 12.66 |  12.01
+ 2023-10-08 | Rugby World Cup 2023 | Toulouse      | neutral | Fiji         | 41.31 | Portugal  | 12.04 |  29.27
+ 2023-10-08 | Rugby World Cup 2023 | Nantes        | neutral | Japan        | 17.44 | Argentina | 29.07 | -11.63
+ 2023-10-08 | Rugby World Cup 2023 | Lille         | neutral | Tonga        | 31.28 | Romania   | 16.72 |  14.56
+(39 rows)
 
-COPY 40
+COPY 39
 COMMIT
