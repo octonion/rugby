@@ -1,24 +1,33 @@
 BEGIN
 SET
-    date    |        event         |     city      |  site   |     team     |  e_p  | opponent  |  e_p  |  e_d   
-------------+----------------------+---------------+---------+--------------+-------+-----------+-------+--------
- 2023-09-27 | Rugby World Cup 2023 | Lyon          | neutral | Uruguay      | 25.05 | Namibia   | 17.06 |   7.99
- 2023-09-28 | Rugby World Cup 2023 | Toulouse      | neutral | Japan        | 17.54 | Samoa     | 21.44 |  -3.91
- 2023-09-29 | Rugby World Cup 2023 | Lyon          | neutral | New Zealand  | 44.49 | Italy     | 14.48 |  30.01
- 2023-09-30 | Rugby World Cup 2023 | Nantes        | neutral | Argentina    | 56.52 | Chile     |  8.57 |  47.94
- 2023-09-30 | Rugby World Cup 2023 | Bordeaux      | neutral | Fiji         | 26.17 | Georgia   | 12.93 |  13.24
- 2023-09-30 | Rugby World Cup 2023 | Lille         | neutral | Scotland     | 52.73 | Romania   |  7.15 |  45.59
- 2023-10-01 | Rugby World Cup 2023 | Saint-Étienne | neutral | Australia    | 43.02 | Portugal  | 11.89 |  31.13
- 2023-10-01 | Rugby World Cup 2023 | Marseille     | neutral | South Africa | 50.50 | Tonga     |  9.11 |  41.38
- 2023-10-05 | Rugby World Cup 2023 | Lyon          | neutral | New Zealand  | 69.55 | Uruguay   |  7.16 |  62.39
- 2023-10-06 | Rugby World Cup 2023 | Lyon          | home    | France       | 41.96 | Italy     | 14.29 |  27.67
- 2023-10-07 | Rugby World Cup 2023 | Lille         | neutral | England      | 23.27 | Samoa     | 13.74 |   9.53
- 2023-10-07 | Rugby World Cup 2023 | Saint-Denis   | neutral | Ireland      | 21.50 | Scotland  | 13.98 |   7.52
- 2023-10-07 | Rugby World Cup 2023 | Nantes        | neutral | Wales        | 26.21 | Georgia   | 11.89 |  14.33
- 2023-10-08 | Rugby World Cup 2023 | Toulouse      | neutral | Fiji         | 41.03 | Portugal  | 11.67 |  29.36
- 2023-10-08 | Rugby World Cup 2023 | Nantes        | neutral | Japan        | 17.00 | Argentina | 29.24 | -12.24
- 2023-10-08 | Rugby World Cup 2023 | Lille         | neutral | Tonga        | 33.60 | Romania   | 16.23 |  17.36
-(16 rows)
+    date    |            event             |     city      |  site   |         team         |  e_p  |       opponent       |  e_p  |  e_d   
+------------+------------------------------+---------------+---------+----------------------+-------+----------------------+-------+--------
+ 2023-09-29 | Rugby World Cup 2023         | Lyon          | neutral | New Zealand          | 44.55 | Italy                | 14.50 |  30.05
+ 2023-09-30 | Rugby Europe Conference 2024 | Mattersburg   | home    | Austria              | 19.34 | Hungary              | 43.24 | -23.89
+ 2023-09-30 | Rugby Europe Conference 2024 | Copenhagen    | home    | Denmark              | 24.86 | Andorra              | 15.20 |   9.67
+ 2023-09-30 | Rugby Europe Conference 2024 | Istanbul      | home    | Turkey               |  7.23 | Moldova              | 40.54 | -33.31
+ 2023-09-30 | Rugby World Cup 2023         | Nantes        | neutral | Argentina            | 56.56 | Chile                |  8.57 |  47.99
+ 2023-09-30 | Rugby World Cup 2023         | Bordeaux      | neutral | Fiji                 | 26.11 | Georgia              | 12.94 |  13.17
+ 2023-09-30 | Rugby World Cup 2023         | Lille         | neutral | Scotland             | 52.89 | Romania              |  7.15 |  45.74
+ 2023-10-01 | Rugby World Cup 2023         | Saint-Étienne | neutral | Australia            | 43.07 | Portugal             | 11.89 |  31.19
+ 2023-10-01 | Rugby World Cup 2023         | Marseille     | neutral | South Africa         | 50.62 | Tonga                |  9.06 |  41.56
+ 2023-10-05 | Rugby World Cup 2023         | Lyon          | neutral | New Zealand          | 69.57 | Uruguay              |  7.16 |  62.41
+ 2023-10-06 | Rugby World Cup 2023         | Lyon          | home    | France               | 41.96 | Italy                | 14.28 |  27.69
+ 2023-10-07 | Rugby Europe Conference 2024 | Helsinki      | home    | Finland              | 23.94 | Denmark              | 15.70 |   8.24
+ 2023-10-07 | Rugby World Cup 2023         | Lille         | neutral | England              | 24.19 | Samoa                | 13.61 |  10.59
+ 2023-10-07 | Rugby World Cup 2023         | Saint-Denis   | neutral | Ireland              | 21.51 | Scotland             | 13.99 |   7.51
+ 2023-10-07 | Rugby World Cup 2023         | Nantes        | neutral | Wales                | 26.30 | Georgia              | 11.89 |  14.41
+ 2023-10-08 | Rugby World Cup 2023         | Toulouse      | neutral | Fiji                 | 40.88 | Portugal             | 11.68 |  29.21
+ 2023-10-08 | Rugby World Cup 2023         | Nantes        | neutral | Japan                | 17.45 | Argentina            | 29.12 | -11.67
+ 2023-10-08 | Rugby World Cup 2023         | Lille         | neutral | Tonga                | 33.44 | Romania              | 16.27 |  17.18
+ 2023-10-14 | Rugby Europe Conference 2024 | Zenica        | home    | Bosnia & Herzegovina |  8.62 | Luxembourg           | 33.33 | -24.71
+ 2023-10-14 | Rugby Europe Conference 2024 | Budapest      | home    | Hungary              | 41.95 | Slovenia             |  9.63 |  32.32
+ 2023-10-21 | Rugby Europe Conference 2024 | Helsinki      | home    | Finland              | 18.66 | Latvia               | 24.55 |  -5.89
+ 2023-10-21 | Rugby Europe Conference 2024 | Ljubljana     | home    | Slovenia             | 22.18 | Bosnia & Herzegovina | 17.64 |   4.54
+ 2023-10-28 | Rugby Europe Conference 2024 | Sofia         | home    | Bulgaria             | 54.54 | Turkey               |  9.67 |  44.86
+ 2023-10-28 | Rugby Europe Conference 2024 | Kibutz        | home    | Israel               | 20.17 | Malta                | 11.19 |   8.98
+ 2023-11-04 | Rugby Europe Conference 2024 | Luxembourg?   | home    | Luxembourg           | 41.08 | Austria              | 11.83 |  29.24
+(25 rows)
 
-COPY 16
+COPY 25
 COMMIT
