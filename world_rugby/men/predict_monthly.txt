@@ -1,26 +1,25 @@
 BEGIN
 SET
-    date    |            event             |     city      |  site   |          team          | e_p  |        opponent        | e_p  
-------------+------------------------------+---------------+---------+------------------------+------+------------------------+------
- 2023-10-01 | Rugby World Cup 2023         | Saint-Étienne | neutral | Australia              | 44.5 | Portugal               | 11.6
- 2023-10-01 | Rugby World Cup 2023         | Marseille     | neutral | South Africa           | 51.2 | Tonga                  |  8.9
- 2023-10-05 | Rugby World Cup 2023         | Lyon          | neutral | New Zealand            | 73.4 | Uruguay                |  6.9
- 2023-10-06 | Rugby World Cup 2023         | Lyon          | home    | France                 | 43.2 | Italy                  | 14.0
- 2023-10-07 | Rugby Europe Conference 2024 | Helsinki      | home    | Finland                | 21.7 | Denmark                | 16.4
- 2023-10-07 | Rugby World Cup 2023         | Lille         | neutral | England                | 24.5 | Samoa                  | 13.5
- 2023-10-07 | Rugby World Cup 2023         | Saint-Denis   | neutral | Ireland                | 21.2 | Scotland               | 14.3
- 2023-10-07 | Rugby World Cup 2023         | Nantes        | neutral | Wales                  | 26.4 | Georgia                | 11.6
- 2023-10-08 | Rugby World Cup 2023         | Toulouse      | neutral | Fiji                   | 41.1 | Portugal               | 11.4
- 2023-10-08 | Rugby World Cup 2023         | Nantes        | neutral | Japan                  | 17.0 | Argentina              | 29.7
- 2023-10-08 | Rugby World Cup 2023         | Lille         | neutral | Tonga                  | 34.6 | Romania                | 15.8
- 2023-10-14 | Rugby Europe Conference 2024 | Zenica        | home    | Bosnia and Herzegovina |  9.4 | Luxembourg             | 30.9
- 2023-10-14 | Rugby Europe Conference 2024 | Budapest      | home    | Hungary                | 40.6 | Slovenia               |  9.8
- 2023-10-21 | Rugby Europe Conference 2024 | Helsinki      | home    | Finland                | 18.9 | Latvia                 | 24.1
- 2023-10-21 | Rugby Europe Conference 2024 | Ljubljana     | home    | Slovenia               | 21.5 | Bosnia and Herzegovina | 18.5
- 2023-10-28 | Rugby Europe Conference 2024 | Sofia         | home    | Bulgaria               | 51.9 | Turkey                 | 10.8
- 2023-10-28 | Rugby Europe Conference 2024 | Kibutz        | home    | Israel                 | 20.2 | Malta                  | 11.3
- 2023-10-28 | Rugby Europe Trophy 2024     | Stockholm     | home    | Sweden                 | 21.8 | Czech Republic         | 28.2
-(18 rows)
+    date    |            event             |    city     |  site   |          team          | e_p  |        opponent        | e_p  
+------------+------------------------------+-------------+---------+------------------------+------+------------------------+------
+ 2023-10-05 | Rugby World Cup 2023         | Lyon        | neutral | New Zealand            | 72.4 | Uruguay                |  7.0
+ 2023-10-06 | Rugby World Cup 2023         | Lyon        | home    | France                 | 43.2 | Italy                  | 14.0
+ 2023-10-07 | Rugby Europe Conference 2024 | Helsinki    | home    | Finland                | 21.7 | Denmark                | 16.4
+ 2023-10-07 | Rugby Europe Conference 2024 | Chisinau    | home    | Moldova, Republic of   | 21.5 | Serbia                 | 14.1
+ 2023-10-07 | Rugby World Cup 2023         | Lille       | neutral | England                | 24.2 | Samoa                  | 13.7
+ 2023-10-07 | Rugby World Cup 2023         | Saint-Denis | neutral | Ireland                | 21.2 | Scotland               | 14.3
+ 2023-10-07 | Rugby World Cup 2023         | Nantes      | neutral | Wales                  | 26.1 | Georgia                | 11.8
+ 2023-10-08 | Rugby World Cup 2023         | Toulouse    | neutral | Fiji                   | 40.3 | Portugal               | 11.5
+ 2023-10-08 | Rugby World Cup 2023         | Nantes      | neutral | Japan                  | 17.3 | Argentina              | 29.5
+ 2023-10-08 | Rugby World Cup 2023         | Lille       | neutral | Tonga                  | 36.0 | Romania                | 15.6
+ 2023-10-14 | Rugby Europe Conference 2024 | Zenica      | home    | Bosnia and Herzegovina |  9.4 | Luxembourg             | 30.9
+ 2023-10-14 | Rugby Europe Conference 2024 | Budapest    | home    | Hungary                | 40.6 | Slovenia               |  9.8
+ 2023-10-21 | Rugby Europe Conference 2024 | Helsinki    | home    | Finland                | 18.9 | Latvia                 | 24.1
+ 2023-10-21 | Rugby Europe Conference 2024 | Ljubljana   | home    | Slovenia               | 21.5 | Bosnia and Herzegovina | 18.5
+ 2023-10-28 | Rugby Europe Conference 2024 | Sofia       | home    | Bulgaria               | 51.9 | Turkey                 | 10.8
+ 2023-10-28 | Rugby Europe Conference 2024 | Kibutz      | home    | Israel                 | 20.2 | Malta                  | 11.3
+ 2023-10-28 | Rugby Europe Trophy 2024     | Stockholm   | home    | Sweden                 | 21.8 | Czech Republic         | 28.2
+(17 rows)
 
-COPY 18
+COPY 17
 COMMIT
