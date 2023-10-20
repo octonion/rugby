@@ -1,28 +1,29 @@
 BEGIN
 SET
-    date    |            event             |       city        |  site   |         team         |  e_p  |       opponent       |  e_p  |  e_d   
-------------+------------------------------+-------------------+---------+----------------------+-------+----------------------+-------+--------
- 2023-10-14 | Rugby Europe Conference 2024 | Zenica            | home    | Bosnia & Herzegovina | 10.74 | Luxembourg           | 42.66 | -31.92
- 2023-10-14 | Rugby Europe Conference 2024 | Budapest          | home    | Hungary              | 23.10 | Slovenia             | 13.53 |   9.57
- 2023-10-14 | Rugby World Cup 2023         | Saint-Denis       | neutral | Ireland              | 22.53 | New Zealand          | 22.75 |  -0.22
- 2023-10-14 | Rugby World Cup 2023         | Marseille         | neutral | Wales                | 21.49 | Argentina            | 21.67 |  -0.18
- 2023-10-15 | Rugby World Cup 2023         | Marseille         | neutral | England              | 22.30 | Fiji                 | 18.24 |   4.06
- 2023-10-15 | Rugby World Cup 2023         | Saint-Denis       | home    | France               | 22.00 | South Africa         | 22.28 |  -0.29
- 2023-10-20 | Rugby World Cup 2023         | Saint-Denis       | neutral | Argentina            | 17.44 | New Zealand          | 35.70 | -18.26
- 2023-10-21 | Rugby Europe Conference 2024 | Cyprus?           | home    | Cyprus               | 18.48 | Israel               | 21.50 |  -3.03
- 2023-10-21 | Rugby Europe Conference 2024 | Helsinki          | home    | Finland              | 19.72 | Latvia               | 20.15 |  -0.43
- 2023-10-21 | Rugby Europe Conference 2024 | Ljubljana         | home    | Slovenia             | 29.64 | Bosnia & Herzegovina | 14.75 |  14.89
- 2023-10-28 | Rugby Europe Conference 2024 | Sofia             | home    | Bulgaria             | 48.11 | Turkey               |  8.90 |  39.21
- 2023-10-28 | Rugby Europe Conference 2024 | Kibutz            | home    | Israel               | 19.45 | Malta                | 11.48 |   7.97
- 2023-10-28 | Rugby Europe Trophy 2024     | Stockholm         | home    | Sweden               | 21.63 | Czechia              | 30.19 |  -8.56
- 2023-11-04 | Rugby Europe Conference 2024 | Luxembourg?       | home    | Luxembourg           | 77.11 | Austria              |  6.23 |  70.88
- 2023-11-04 | Rugby Europe Trophy 2024     | Prague            | home    | Czechia              | 23.29 | Croatia              | 16.85 |   6.45
- 2023-11-04 | Rugby Europe Trophy 2024     | Yverdon-les-Bains | home    | Switzerland          | 57.31 | Sweden               | 14.34 |  42.96
- 2023-11-04 | Rugby Europe Trophy 2024     | Makarska          | neutral | Ukraine              | 24.11 | Lithuania            | 21.62 |   2.48
- 2023-11-11 | Rugby Europe Trophy 2024     | Kaunas            | home    | Lithuania            | 17.64 | Switzerland          | 41.36 | -23.72
- 2023-11-18 | Rugby Europe Trophy 2024     | Zagreb            | home    | Croatia              | 28.52 | Sweden               | 18.27 |  10.24
- 2023-11-25 | Rugby Europe Trophy 2024     | Prague            | home    | Czechia              | 29.14 | Lithuania            | 19.89 |   9.24
-(20 rows)
+    date    |                event                 |       city        |  site   |    team     |  e_p  |       opponent       |  e_p  |  e_d   
+------------+--------------------------------------+-------------------+---------+-------------+-------+----------------------+-------+--------
+ 2023-10-20 | Rugby World Cup 2023                 | Saint-Denis       | neutral | Argentina   | 17.45 | New Zealand          | 35.71 | -18.26
+ 2023-10-21 | Rugby Europe Conference 2024         | Cyprus?           | home    | Cyprus      | 18.47 | Israel               | 21.49 |  -3.03
+ 2023-10-21 | Rugby Europe Conference 2024         | Helsinki          | home    | Finland     | 19.71 | Latvia               | 20.14 |  -0.43
+ 2023-10-21 | Rugby Europe Conference 2024         | Ljubljana         | home    | Slovenia    | 29.64 | Bosnia & Herzegovina | 14.76 |  14.88
+ 2023-10-21 | Rugby World Cup 2023                 | Saint-Denis       | neutral | England     | 14.84 | South Africa         | 26.22 | -11.38
+ 2023-10-28 | Rugby Europe Conference 2024         | Sofia             | home    | Bulgaria    | 48.09 | Turkey               |  8.90 |  39.19
+ 2023-10-28 | Rugby Europe Conference 2024         | Kibutz            | home    | Israel      | 19.42 | Malta                | 11.47 |   7.95
+ 2023-10-28 | Rugby Europe Trophy 2024             | Stockholm         | home    | Sweden      | 21.62 | Czechia              | 30.19 |  -8.56
+ 2023-10-28 | Victoria Cup 2023                    | Bweyogerere       | home    | Uganda      | 25.98 | Zambia               |  7.32 |  18.66
+ 2023-11-01 | Victoria Cup 2023                    | Kampala           | neutral | Kenya       | 36.17 | Zambia               |  5.89 |  30.28
+ 2023-11-04 | Rugby Europe Conference 2024         | Luxembourg?       | home    | Luxembourg  | 77.10 | Austria              |  6.23 |  70.87
+ 2023-11-04 | Rugby Europe Trophy 2024             | Prague            | home    | Czechia     | 23.29 | Croatia              | 16.85 |   6.45
+ 2023-11-04 | Rugby Europe Trophy 2024             | Yverdon-les-Bains | home    | Switzerland | 57.26 | Sweden               | 14.34 |  42.93
+ 2023-11-04 | Rugby Europe Trophy 2024             | Makarska          | neutral | Ukraine     | 24.16 | Lithuania            | 21.68 |   2.49
+ 2023-11-05 | Elgon Cup 2023                       | Bweyogerere       | home    | Uganda      | 20.59 | Kenya                | 35.59 | -15.00
+ 2023-11-11 | Elgon Cup 2023                       | Kenya?            | home    | Kenya       | 41.15 | Uganda               | 17.81 |  23.34
+ 2023-11-11 | La Vila International Rugby Cup 2023 | Villajoyosa       | home    | Spain       | 27.98 | Canada               | 20.56 |   7.41
+ 2023-11-11 | La Vila International Rugby Cup 2023 | Villajoyosa       | neutral | USA         | 42.86 | Brazil               | 12.35 |  30.51
+ 2023-11-11 | Rugby Europe Trophy 2024             | Kaunas            | home    | Lithuania   | 17.64 | Switzerland          | 41.37 | -23.73
+ 2023-11-18 | Rugby Europe Trophy 2024             | Zagreb            | home    | Croatia     | 28.51 | Sweden               | 18.27 |  10.24
+ 2023-11-25 | Rugby Europe Trophy 2024             | Prague            | home    | Czechia     | 29.15 | Lithuania            | 19.90 |   9.24
+(21 rows)
 
-COPY 20
+COPY 21
 COMMIT
