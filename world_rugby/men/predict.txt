@@ -1,8 +1,52 @@
 BEGIN
 SET
- date | event | city | site | team | e_p | opponent | e_p | e_d 
-------+-------+------+------+------+-----+----------+-----+-----
-(0 rows)
+    date    |                    event                     |          city           |  site   |         team         |  e_p  |       opponent       |  e_p  |  e_d   
+------------+----------------------------------------------+-------------------------+---------+----------------------+-------+----------------------+-------+--------
+ 2024-02-02 | Six Nations 2024                             | Marseille               | home    | France               | 20.86 | Ireland              | 22.29 |  -1.43
+ 2024-02-03 | Men's Internationals 2024                    | Paris                   | neutral | Algeria              | 30.88 | Senegal              | 13.65 |  17.23
+ 2024-02-03 | Rugby Europe International Championship 2024 | Mons                    | home    | Belgium              |  7.79 | Portugal             | 47.58 | -39.79
+ 2024-02-03 | Rugby Europe International Championship 2024 | Amsterdam               | home    | Netherlands          | 16.52 | Spain                | 35.63 | -19.10
+ 2024-02-03 | Six Nations 2024                             | Roma                    | home    | Italy                | 18.13 | England              | 28.95 | -10.82
+ 2024-02-03 | Six Nations 2024                             | Cardiff                 | home    | Wales                | 18.67 | Scotland             | 21.24 |  -2.57
+ 2024-02-04 | Rugby Europe International Championship 2024 | Dessau                  | home    | Germany              |  6.73 | Georgia              | 61.86 | -55.13
+ 2024-02-04 | Rugby Europe International Championship 2024 | Gdynia                  | home    | Poland               | 11.96 | Romania              | 42.66 | -30.69
+ 2024-02-10 | Rugby Europe International Championship 2024 | Georgia?                | home    | Georgia              | 60.27 | Netherlands          |  6.41 |  53.86
+ 2024-02-10 | Rugby Europe International Championship 2024 | Portugal?               | home    | Portugal             | 66.01 | Poland               |  7.36 |  58.65
+ 2024-02-10 | Rugby Europe International Championship 2024 | Bucharest               | home    | Romania              | 40.71 | Belgium              |  9.56 |  31.15
+ 2024-02-10 | Six Nations 2024                             | London                  | home    | England              | 23.88 | Wales                | 18.42 |   5.46
+ 2024-02-10 | Six Nations 2024                             | Edinburgh               | home    | Scotland             | 20.13 | France               | 22.41 |  -2.29
+ 2024-02-11 | Rugby Europe International Championship 2024 | Spain?                  | home    | Spain                | 48.41 | Germany              | 13.12 |  35.29
+ 2024-02-11 | Six Nations 2024                             | Dublin                  | home    | Ireland              | 43.43 | Italy                | 11.23 |  32.20
+ 2024-02-17 | Rugby Europe International Championship 2024 | Belgium?                | home    | Belgium              | 20.80 | Poland               | 16.31 |   4.50
+ 2024-02-17 | Rugby Europe International Championship 2024 | Georgia?                | home    | Georgia              | 39.11 | Spain                | 10.31 |  28.80
+ 2024-02-17 | Rugby Europe International Championship 2024 | Bucharest               | home    | Romania              | 18.38 | Portugal             | 30.34 | -11.96
+ 2024-02-18 | Rugby Europe International Championship 2024 | Amsterdam               | home    | Netherlands          | 30.07 | Germany              | 20.22 |   9.85
+ 2024-02-24 | Six Nations 2024                             | Dublin                  | home    | Ireland              | 31.14 | Wales                | 13.12 |  18.01
+ 2024-02-24 | Six Nations 2024                             | Edinburgh               | home    | Scotland             | 22.09 | England              | 16.53 |   5.56
+ 2024-02-25 | Six Nations 2024                             | Lille                   | home    | France               | 45.16 | Italy                | 14.35 |  30.81
+ 2024-03-09 | Rugby Europe Trophy 2024                     | Czech Republic?         | home    | Czechia              | 21.59 | Switzerland          | 32.98 | -11.39
+ 2024-03-09 | Six Nations 2024                             | London                  | home    | England              | 15.38 | Ireland              | 24.47 |  -9.08
+ 2024-03-09 | Six Nations 2024                             | Roma                    | home    | Italy                | 15.97 | Scotland             | 29.62 | -13.65
+ 2024-03-10 | Six Nations 2024                             | Cardiff                 | home    | Wales                | 19.31 | France               | 28.14 |  -8.83
+ 2024-03-16 | Rugby Europe Trophy 2024                     | Croatia?                | home    | Croatia              | 24.96 | Lithuania            | 21.27 |   3.69
+ 2024-03-16 | Six Nations 2024                             | Lyon                    | home    | France               | 29.28 | England              | 17.09 |  12.18
+ 2024-03-16 | Six Nations 2024                             | Dublin                  | home    | Ireland              | 24.80 | Scotland             | 13.68 |  11.12
+ 2024-03-16 | Six Nations 2024                             | Cardiff                 | home    | Wales                | 32.69 | Italy                | 17.43 |  15.27
+ 2024-03-23 | Rugby Europe Trophy 2024                     | Switzerland?            | home    | Switzerland          | 34.98 | Croatia              | 13.81 |  21.16
+ 2024-03-23 | Rugby Europe Trophy 2024                     | Havirov                 | away    | Ukraine              | 17.62 | Czechia              | 33.43 | -15.81
+ 2024-04-06 | Rugby Europe Conference 2024                 | Austria?                | home    | Austria              | 49.55 | Bosnia & Herzegovina | 19.08 |  30.47
+ 2024-04-06 | Rugby Europe Conference 2024                 | Hungary?                | home    | Hungary              | 16.39 | Luxembourg           | 18.15 |  -1.76
+ 2024-04-06 | Rugby Europe Trophy 2024                     | Sweden?                 | home    | Sweden               | 28.30 | Ukraine              | 20.15 |   8.15
+ 2024-04-13 | Rugby Europe Conference 2024                 | Andorra?                | home    | Andorra              | 13.56 | Finland              | 21.70 |  -8.14
+ 2024-04-13 | Rugby Europe Conference 2024                 | Denmark?                | home    | Denmark              | 31.06 | Norway               |  5.55 |  25.51
+ 2024-04-13 | Rugby Europe Conference 2024                 | Serbia?                 | home    | Serbia               | 34.47 | Turkey               | 10.31 |  24.16
+ 2024-04-13 | Rugby Europe Conference 2024                 | Slovenia?               | home    | Slovenia             | 21.17 | Austria              | 26.40 |  -5.23
+ 2024-04-13 | Rugby Europe Trophy 2024                     | Zurich                  | home    | Switzerland          | 41.29 | Ukraine              | 12.39 |  28.90
+ 2024-04-20 | Rugby Europe Conference 2024                 | Bosnia and Herzegovina? | home    | Bosnia & Herzegovina | 12.30 | Hungary              | 42.86 | -30.57
+ 2024-04-20 | Rugby Europe Conference 2024                 | Bulgaria?               | home    | Bulgaria             | 24.60 | Serbia               | 18.92 |   5.68
+ 2024-04-20 | Rugby Europe Conference 2024                 | Latvia?                 | home    | Latvia               | 40.64 | Denmark              | 16.44 |  24.19
+ 2024-04-20 | Rugby Europe Conference 2024                 | Luxembourg?             | home    | Luxembourg           | 29.53 | Slovenia             |  7.90 |  21.63
+(44 rows)
 
-COPY 0
+COPY 44
 COMMIT
