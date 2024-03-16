@@ -1,23 +1,26 @@
 BEGIN
 SET
-    date    |                    event                     |     city     |  site   |      team      | e_p  |        opponent        | e_p  
-------------+----------------------------------------------+--------------+---------+----------------+------+------------------------+------
- 2024-03-09 | Rugby Europe Trophy 2024                     | Prague       | home    | Czech Republic | 21.6 | Switzerland            | 33.0
- 2024-03-10 | Six Nations 2024                             | Cardiff      | home    | Wales          | 19.3 | France                 | 28.1
- 2024-03-16 | Rugby Europe Trophy 2024                     | Croatia?     | home    | Croatia        | 25.0 | Lithuania              | 21.3
- 2024-03-16 | Six Nations 2024                             | Lyon         | home    | France         | 29.3 | England                | 17.1
- 2024-03-16 | Six Nations 2024                             | Dublin       | home    | Ireland        | 24.8 | Scotland               | 13.7
- 2024-03-16 | Six Nations 2024                             | Cardiff      | home    | Wales          | 32.7 | Italy                  | 17.4
- 2024-03-17 | Rugby Europe International Championship 2024 | Marseille    | neutral | Georgia        | 23.8 | Portugal               | 14.9
- 2024-03-17 | Rugby Europe International Championship 2024 | Marseille    | neutral | Netherlands    | 27.3 | Germany                | 21.1
- 2024-03-17 | Rugby Europe International Championship 2024 | Marseille    | neutral | Poland         | 17.0 | Belgium                | 18.9
- 2024-03-17 | Rugby Europe International Championship 2024 | Marseille    | neutral | Romania        | 24.9 | Spain                  | 22.9
- 2024-03-23 | Rugby Europe Trophy 2024                     | Switzerland? | home    | Switzerland    | 35.0 | Croatia                | 13.8
- 2024-03-23 | Rugby Europe Trophy 2024                     | Havirov      | away    | Ukraine        | 17.6 | Czech Republic         | 33.4
- 2024-04-06 | Rugby Europe Conference 2024                 | Austria?     | home    | Austria        | 49.5 | Bosnia and Herzegovina | 19.1
- 2024-04-06 | Rugby Europe Conference 2024                 | Hungary?     | home    | Hungary        | 16.4 | Luxembourg             | 18.2
- 2024-04-06 | Rugby Europe Trophy 2024                     | Sweden?      | home    | Sweden         | 28.3 | Ukraine                | 20.1
-(15 rows)
+    date    |                    event                     |     city     |  site   |    team     | e_p  |        opponent        | e_p  
+------------+----------------------------------------------+--------------+---------+-------------+------+------------------------+------
+ 2024-03-16 | Rugby Europe Trophy 2024                     | Zagreb       | home    | Croatia     | 25.0 | Lithuania              | 21.3
+ 2024-03-16 | Six Nations 2024                             | Lyon         | home    | France      | 29.3 | England                | 17.1
+ 2024-03-16 | Six Nations 2024                             | Dublin       | home    | Ireland     | 24.8 | Scotland               | 13.7
+ 2024-03-16 | Six Nations 2024                             | Cardiff      | home    | Wales       | 32.7 | Italy                  | 17.4
+ 2024-03-17 | Rugby Europe International Championship 2024 | Paris        | neutral | Georgia     | 23.8 | Portugal               | 14.9
+ 2024-03-17 | Rugby Europe International Championship 2024 | Paris        | neutral | Netherlands | 27.3 | Germany                | 21.1
+ 2024-03-17 | Rugby Europe International Championship 2024 | Paris        | neutral | Poland      | 17.0 | Belgium                | 18.9
+ 2024-03-17 | Rugby Europe International Championship 2024 | Paris        | neutral | Romania     | 24.9 | Spain                  | 22.9
+ 2024-03-23 | Rugby Europe Trophy 2024                     | Switzerland? | home    | Switzerland | 35.0 | Croatia                | 13.8
+ 2024-03-23 | Rugby Europe Trophy 2024                     | Havirov      | away    | Ukraine     | 17.6 | Czech Republic         | 33.4
+ 2024-04-06 | Rugby Europe Conference 2024                 | Austria?     | home    | Austria     | 49.5 | Bosnia and Herzegovina | 19.1
+ 2024-04-06 | Rugby Europe Conference 2024                 | Hungary?     | home    | Hungary     | 16.4 | Luxembourg             | 18.2
+ 2024-04-06 | Rugby Europe Trophy 2024                     | Sweden?      | home    | Sweden      | 28.3 | Ukraine                | 20.1
+ 2024-04-13 | Rugby Europe Conference 2024                 | Andorra?     | home    | Andorra     | 13.6 | Finland                | 21.7
+ 2024-04-13 | Rugby Europe Conference 2024                 | Copenhagen   | home    | Denmark     | 31.1 | Norway                 |  5.6
+ 2024-04-13 | Rugby Europe Conference 2024                 | Serbia?      | home    | Serbia      | 34.5 | Turkey                 | 10.3
+ 2024-04-13 | Rugby Europe Conference 2024                 | Slovenia?    | home    | Slovenia    | 21.2 | Austria                | 26.4
+ 2024-04-13 | Rugby Europe Trophy 2024                     | Zurich       | home    | Switzerland | 41.3 | Ukraine                | 12.4
+(18 rows)
 
-COPY 15
+COPY 18
 COMMIT
