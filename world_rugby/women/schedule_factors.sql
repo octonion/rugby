@@ -55,7 +55,7 @@ r.team_id,
 r.opponent_id,
 r.field
 from women._results r
-where r.year between 2012 and 2023
+where r.year between 2012 and 2024
 );
 
 update r
