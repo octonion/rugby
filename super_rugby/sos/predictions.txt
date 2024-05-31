@@ -1,19 +1,13 @@
 BEGIN
-    date    |      home       |       away       | e_home | e_away |  e_d   
-------------+-----------------+------------------+--------+--------+--------
- 2024-05-24 | ACT Brumbies    | Melbourne Rebels |  38.71 |  18.54 |  20.17
- 2024-05-24 | Chiefs          | Hurricanes       |  28.02 |  24.87 |   3.15
- 2024-05-25 | Crusaders       | Blues            |  17.36 |  29.60 | -12.23
- 2024-05-25 | Moana Pasifika  | Waratahs         |  25.60 |  25.37 |   0.23
- 2024-05-25 | Queensland Reds | Force            |  33.94 |  17.21 |  16.73
- 2024-05-26 | Highlanders     | Fijian Drua      |  28.14 |  21.27 |   6.87
- 2024-05-31 | Crusaders       | Moana Pasifika   |  35.55 |  16.99 |  18.56
- 2024-05-31 | Waratahs        | Queensland Reds  |  23.59 |  28.54 |  -4.95
- 2024-06-01 | Blues           | Chiefs           |  33.65 |  17.75 |  15.89
- 2024-06-01 | Fijian Drua     | Melbourne Rebels |  32.38 |  24.07 |   8.31
- 2024-06-01 | Force           | ACT Brumbies     |  21.56 |  24.84 |  -3.27
- 2024-06-01 | Hurricanes      | Highlanders      |  40.15 |  14.34 |  25.81
-(12 rows)
+    date    |    home     |       away       | e_home | e_away |  e_d  
+------------+-------------+------------------+--------+--------+-------
+ 2024-05-31 | Crusaders   | Moana Pasifika   |  36.12 |  16.45 | 19.67
+ 2024-05-31 | Waratahs    | Queensland Reds  |  23.00 |  29.09 | -6.09
+ 2024-06-01 | Blues       | Chiefs           |  34.66 |  18.24 | 16.43
+ 2024-06-01 | Fijian Drua | Melbourne Rebels |  30.94 |  23.93 |  7.01
+ 2024-06-01 | Force       | ACT Brumbies     |  21.60 |  25.42 | -3.82
+ 2024-06-01 | Hurricanes  | Highlanders      |  38.94 |  14.56 | 24.38
+(6 rows)
 
-COPY 12
+COPY 6
 COMMIT
