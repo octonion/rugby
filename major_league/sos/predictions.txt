@@ -1,10 +1,12 @@
 BEGIN
-    date    |      home      |          away          | e_home | e_away |  e_d   
-------------+----------------+------------------------+--------+--------+--------
- 2024-05-25 | Miami Sharks   | New England Free Jacks |  18.44 |  25.79 | -7.347
- 2024-05-26 | Chicago Hounds | NOLA Gold              |  24.87 |  24.36 |  0.515
- 2024-05-26 | Los Angeles    | San Diego Legion       |  20.80 |  29.81 | -9.011
-(3 rows)
+    date    |          home          |       away        | e_home | e_away |  e_d   
+------------+------------------------+-------------------+--------+--------+--------
+ 2024-06-01 | NOLA Gold              | Houston SaberCats |  20.36 |  26.22 | -5.862
+ 2024-06-01 | Old Glory DC           | Anthem RC         |  36.92 |  22.59 | 14.331
+ 2024-06-01 | Utah Warriors          | San Diego Legion  |  21.97 |  24.05 | -2.077
+ 2024-06-02 | Los Angeles            | Miami Sharks      |  21.29 |  27.38 | -6.087
+ 2024-06-02 | New England Free Jacks | Dallas Jackals    |  26.39 |  22.55 |  3.842
+(5 rows)
 
-COPY 3
+COPY 5
 COMMIT
