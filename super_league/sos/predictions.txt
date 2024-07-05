@@ -1,10 +1,13 @@
 BEGIN
-    date    |       home       |     away     | e_home | e_away |  e_d   
-------------+------------------+--------------+--------+--------+--------
- 2024-06-22 | Catalans Dragons | Huddersfield |  21.90 |  13.38 |   8.52
- 2024-06-22 | Hull FC          | Warrington   |  10.52 |  33.27 | -22.75
- 2024-06-23 | Salford          | St Helens    |  11.54 |  21.79 | -10.24
-(3 rows)
+    date    |    home    |       away       | e_home | e_away |  e_d  
+------------+------------+------------------+--------+--------+-------
+ 2024-07-05 | St Helens  | Castleford       |  36.25 |   8.90 | 27.36
+ 2024-07-05 | Warrington | Huddersfield     |  24.26 |  14.16 | 10.10
+ 2024-07-05 | Wigan      | Leigh            |  21.52 |  10.41 | 11.11
+ 2024-07-06 | Hull KR    | Catalans Dragons |  17.12 |  12.99 |  4.13
+ 2024-07-06 | Leeds      | London Broncos   |  36.20 |   9.18 | 27.02
+ 2024-07-07 | Salford    | Hull FC          |  35.00 |  11.00 | 24.00
+(6 rows)
 
-COPY 3
+COPY 6
 COMMIT
