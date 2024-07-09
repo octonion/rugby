@@ -1,18 +1,13 @@
 BEGIN
 SET
-    date    |               event               |     city     |  site   |       team       |  e_p  |    opponent     |  e_p  |  e_d   
-------------+-----------------------------------+--------------+---------+------------------+-------+-----------------+-------+--------
- 2024-07-04 | World Rugby U20 Championship 2024 | Cape Town    | neutral | Australia U20    | 36.84 | Italy U20       | 14.56 |  22.28
- 2024-07-04 | World Rugby U20 Championship 2024 | Cape Town    | neutral | England U20      | 37.80 | Fiji U20        |  7.86 |  29.94
- 2024-07-04 | World Rugby U20 Championship 2024 | Stellenbosch | neutral | France U20       | 16.34 | New Zealand U20 | 40.63 | -24.28
- 2024-07-04 | World Rugby U20 Championship 2024 | Stellenbosch | neutral | Ireland U20      | 48.31 | Georgia U20     | 20.74 |  27.57
- 2024-07-04 | World Rugby U20 Championship 2024 | Stellenbosch | home    | South Africa U20 | 24.73 | Argentina U20   | 24.38 |   0.36
- 2024-07-09 | World Rugby U20 Championship 2024 | Stellenbosch | neutral | Argentina U20    | 54.16 | Fiji U20        |  5.53 |  48.63
- 2024-07-09 | World Rugby U20 Championship 2024 | Cape Town    | neutral | France U20       | 38.81 | Wales U20       | 15.34 |  23.47
- 2024-07-09 | World Rugby U20 Championship 2024 | Stellenbosch | neutral | Georgia U20      | 20.42 | Italy U20       | 27.60 |  -7.18
- 2024-07-09 | World Rugby U20 Championship 2024 | Cape Town    | neutral | Ireland U20      | 25.48 | Australia U20   | 37.42 | -11.94
- 2024-07-09 | World Rugby U20 Championship 2024 | Cape Town    | home    | South Africa U20 | 35.17 | England U20     | 17.02 |  18.16
-(10 rows)
+    date    |               event               |     city     |  site   |       team       |  e_p  |   opponent    |  e_p  |  e_d   
+------------+-----------------------------------+--------------+---------+------------------+-------+---------------+-------+--------
+ 2024-07-09 | World Rugby U20 Championship 2024 | Stellenbosch | neutral | Argentina U20    | 54.16 | Fiji U20      |  5.53 |  48.63
+ 2024-07-09 | World Rugby U20 Championship 2024 | Cape Town    | neutral | France U20       | 38.81 | Wales U20     | 15.34 |  23.47
+ 2024-07-09 | World Rugby U20 Championship 2024 | Stellenbosch | neutral | Georgia U20      | 20.42 | Italy U20     | 27.60 |  -7.18
+ 2024-07-09 | World Rugby U20 Championship 2024 | Cape Town    | neutral | Ireland U20      | 25.48 | Australia U20 | 37.42 | -11.94
+ 2024-07-09 | World Rugby U20 Championship 2024 | Cape Town    | home    | South Africa U20 | 35.17 | England U20   | 17.02 |  18.16
+(5 rows)
 
-COPY 10
+COPY 5
 COMMIT
