@@ -1,20 +1,14 @@
 BEGIN
 SET
-    date    |              event              |    city     |  site   |     team      |  e_p  |   opponent    |  e_p  |  e_d  
-------------+---------------------------------+-------------+---------+---------------+-------+---------------+-------+-------
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | away    | Argentina     | 19.70 | France        | 16.72 |  2.98
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Argentina     | 16.48 | Australia     | 16.43 |  0.05
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Australia     | 25.31 | United States | 12.72 | 12.59
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | away    | Fiji          | 22.45 | France        | 16.82 |  5.63
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Fiji          | 21.01 | Ireland       | 12.37 |  8.64
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | New Zealand   | 19.95 | Ireland       | 11.43 |  8.52
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | New Zealand   | 16.20 | South Africa  | 14.59 |  1.61
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Samoa         | 38.68 | Japan         |  9.43 | 29.26
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Samoa         | 25.24 | Kenya         | 10.68 | 14.56
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | South Africa  | 39.48 | Japan         |  7.11 | 32.37
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | United States | 24.29 | Uruguay       | 11.47 | 12.82
- 2024-07-25 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Uruguay       | 12.22 | Kenya         | 16.95 | -4.73
-(12 rows)
+    date    |              event              |    city     |  site   |     team     |  e_p  |   opponent    |  e_p  |  e_d  
+------------+---------------------------------+-------------+---------+--------------+-------+---------------+-------+-------
+ 2024-07-27 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Fiji         | 18.78 | Australia     | 16.53 |  2.25
+ 2024-07-27 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Ireland      | 18.94 | United States | 14.23 |  4.72
+ 2024-07-27 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Japan        | 14.96 | Uruguay       | 18.73 | -3.77
+ 2024-07-27 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | New Zealand  | 17.83 | Argentina     | 15.32 |  2.52
+ 2024-07-27 | Olympic Games Men's Sevens 2024 | Saint-Denis | neutral | Samoa        | 25.24 | Kenya         | 10.68 | 14.56
+ 2024-07-27 | Olympic Games Men's Sevens 2024 | Saint-Denis | away    | South Africa | 18.76 | France        | 15.19 |  3.58
+(6 rows)
 
-COPY 12
+COPY 6
 COMMIT
