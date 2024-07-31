@@ -1,26 +1,18 @@
 BEGIN
 SET
-    date    |               event               |    city     |  site   |            team            |  e_p  |          opponent          |  e_p  |  e_d   
-------------+-----------------------------------+-------------+---------+----------------------------+-------+----------------------------+-------+--------
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Australia                  | 26.12 | Ireland                    |  8.36 |  17.76
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Australia                  | 26.12 | Ireland                    |  8.36 |  17.76
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Canada                     | 19.92 | People's Republic of China | 12.24 |   7.69
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Fiji                       | 33.94 | Brazil                     |  8.92 |  25.02
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | home    | France                     | 25.44 | Canada                     |  7.73 |  17.71
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | home    | France                     | 19.16 | United States              |  9.48 |   9.68
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Great Britain              | 17.98 | United States              | 11.36 |   6.62
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Great Britain              | 48.12 | South Africa               |  3.76 |  44.36
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Japan                      | 22.84 | South Africa               |  8.12 |  14.73
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Japan                      | 13.48 | Brazil                     | 17.88 |  -4.40
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | New Zealand                | 21.94 | Fiji                       |  9.85 |  12.09
- 2024-07-29 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | New Zealand                | 43.80 | People's Republic of China |  4.23 |  39.57
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Canada                     |  6.33 | Australia                  | 30.78 | -24.45
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | home    | France                     | 21.60 | Ireland                    | 10.21 |  11.38
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Japan                      | 13.48 | Brazil                     | 17.88 |  -4.40
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | New Zealand                | 24.73 | United States              |  6.32 |  18.41
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | People's Republic of China |  7.59 | Great Britain              | 31.84 | -24.25
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | South Africa               |  4.05 | Fiji                       | 57.51 | -53.46
-(18 rows)
+    date    |               event               |    city     |  site   |            team            |  e_p  |   opponent    |  e_p  |  e_d   
+------------+-----------------------------------+-------------+---------+----------------------------+-------+---------------+-------+--------
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Canada                     |  6.33 | Australia     | 30.78 | -24.45
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | home    | France                     | 21.60 | Ireland       | 10.21 |  11.38
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Great Britain              | 20.26 | Ireland       | 12.24 |   8.02
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Japan                      | 13.48 | Brazil        | 17.88 |  -4.40
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | New Zealand                | 32.83 | Canada        |  5.16 |  27.67
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | New Zealand                | 24.73 | United States |  6.32 |  18.41
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | People's Republic of China |  7.59 | Great Britain | 31.84 | -24.25
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | away    | People's Republic of China |  6.34 | France        | 33.94 | -27.60
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | South Africa               |  4.05 | Fiji          | 57.51 | -53.46
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | United States              |  7.76 | Australia     | 23.18 | -15.42
+(10 rows)
 
-COPY 18
+COPY 10
 COMMIT

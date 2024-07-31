@@ -1,14 +1,13 @@
 BEGIN
 SET
-    date    |               event               |    city     |  site   |            team            | e_p  |   opponent    | e_p  
-------------+-----------------------------------+-------------+---------+----------------------------+------+---------------+------
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Canada                     |  6.3 | Australia     | 30.8
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | home    | France                     | 21.6 | Ireland       | 10.2
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Japan                      | 13.5 | Brazil        | 17.9
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | New Zealand                | 24.7 | United States |  6.3
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | People's Republic of China |  7.6 | Great Britain | 31.8
- 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | South Africa               |  4.0 | Fiji          | 57.5
-(6 rows)
+    date    |               event               |    city     |  site   |            team            | e_p  | opponent  | e_p  
+------------+-----------------------------------+-------------+---------+----------------------------+------+-----------+------
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Great Britain              | 20.3 | Ireland   | 12.2
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | Japan                      | 13.5 | Brazil    | 17.9
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | New Zealand                | 32.8 | Canada    |  5.2
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | away    | People's Republic of China |  6.3 | France    | 33.9
+ 2024-07-30 | Olympic Games Women's Sevens 2024 | Saint-Denis | neutral | United States              |  7.8 | Australia | 23.2
+(5 rows)
 
-COPY 6
+COPY 5
 COMMIT
