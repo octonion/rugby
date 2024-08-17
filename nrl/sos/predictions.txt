@@ -1,47 +1,38 @@
 BEGIN
-    date    |     home     |     away     | e_home | e_away |   e_d   
-------------+--------------+--------------+--------+--------+---------
- 2024-08-08 | Rabbitohs    | Storm        |  18.93 |  26.46 |  -7.528
- 2024-08-09 | Eels         | Panthers     |  15.56 |  26.74 | -11.182
- 2024-08-09 | Titans       | Sharks       |  19.21 |  24.40 |  -5.188
- 2024-08-10 | Cowboys      | Broncos      |  26.63 |  21.47 |   5.169
- 2024-08-10 | Dragons      | Bulldogs     |  17.69 |  21.37 |  -3.682
- 2024-08-10 | Raiders      | Sea Eagles   |  19.31 |  24.26 |  -4.954
- 2024-08-11 | Dolphins     | Warriors     |  25.50 |  19.82 |   5.687
- 2024-08-11 | Knights      | Wests Tigers |  26.92 |  17.90 |   9.017
- 2024-08-15 | Panthers     | Storm        |  20.94 |  15.69 |   5.248
- 2024-08-16 | Roosters     | Eels         |  37.45 |  15.85 |  21.603
- 2024-08-16 | Sea Eagles   | Warriors     |  26.12 |  17.29 |   8.833
- 2024-08-17 | Bulldogs     | Dolphins     |  23.66 |  16.96 |   6.703
- 2024-08-17 | Cowboys      | Raiders      |  28.09 |  19.72 |   8.369
- 2024-08-17 | Wests Tigers | Rabbitohs    |  23.62 |  25.60 |  -1.981
- 2024-08-18 | Dragons      | Titans       |  25.18 |  21.11 |   4.070
- 2024-08-18 | Sharks       | Knights      |  26.32 |  14.87 |  11.446
- 2024-08-22 | Wests Tigers | Sea Eagles   |  17.91 |  29.29 | -11.377
- 2024-08-23 | Broncos      | Eels         |  29.24 |  19.88 |   9.361
- 2024-08-23 | Warriors     | Bulldogs     |  17.49 |  20.21 |  -2.721
- 2024-08-24 | Rabbitohs    | Knights      |  23.31 |  20.81 |   2.497
- 2024-08-24 | Raiders      | Panthers     |  15.10 |  23.46 |  -8.357
- 2024-08-24 | Storm        | Dolphins     |  26.64 |  18.26 |   8.382
- 2024-08-25 | Dragons      | Sharks       |  19.09 |  23.54 |  -4.452
- 2024-08-25 | Titans       | Roosters     |  18.81 |  28.90 | -10.089
- 2024-08-29 | Cowboys      | Storm        |  21.65 |  23.74 |  -2.087
- 2024-08-30 | Bulldogs     | Sea Eagles   |  20.64 |  17.37 |   3.273
- 2024-08-30 | Panthers     | Rabbitohs    |  29.37 |  13.59 |  15.771
- 2024-08-31 | Dolphins     | Broncos      |  26.02 |  20.80 |   5.217
- 2024-08-31 | Eels         | Dragons      |  23.87 |  24.33 |  -0.461
- 2024-08-31 | Sharks       | Warriors     |  25.78 |  16.29 |   9.490
- 2024-09-01 | Knights      | Titans       |  22.72 |  20.38 |   2.345
- 2024-09-01 | Roosters     | Raiders      |  32.85 |  15.38 |  17.470
- 2024-09-05 | Broncos      | Storm        |  19.77 |  23.21 |  -3.449
- 2024-09-06 | Rabbitohs    | Roosters     |  18.57 |  30.65 | -12.080
- 2024-09-06 | Wests Tigers | Eels         |  24.92 |  25.30 |  -0.388
- 2024-09-07 | Bulldogs     | Cowboys      |  24.42 |  17.36 |   7.058
- 2024-09-07 | Dragons      | Raiders      |  24.71 |  19.99 |   4.721
- 2024-09-07 | Panthers     | Titans       |  27.68 |  13.77 |  13.917
- 2024-09-08 | Knights      | Dolphins     |  20.95 |  22.47 |  -1.525
- 2024-09-08 | Sea Eagles   | Sharks       |  21.71 |  19.63 |   2.078
-(40 rows)
+    date    |     home     |    away    | e_home | e_away |   e_d   
+------------+--------------+------------+--------+--------+---------
+ 2024-08-16 | Roosters     | Eels       |  37.17 |  16.49 |  20.685
+ 2024-08-16 | Sea Eagles   | Warriors   |  26.63 |  17.82 |   8.809
+ 2024-08-17 | Bulldogs     | Dolphins   |  24.14 |  16.81 |   7.337
+ 2024-08-17 | Cowboys      | Raiders    |  28.07 |  20.85 |   7.216
+ 2024-08-17 | Wests Tigers | Rabbitohs  |  23.25 |  26.13 |  -2.882
+ 2024-08-18 | Dragons      | Titans     |  25.32 |  20.98 |   4.346
+ 2024-08-18 | Sharks       | Knights    |  26.61 |  14.41 |  12.199
+ 2024-08-22 | Wests Tigers | Sea Eagles |  17.72 |  30.66 | -12.937
+ 2024-08-23 | Broncos      | Eels       |  29.77 |  20.40 |   9.371
+ 2024-08-23 | Warriors     | Bulldogs   |  17.09 |  20.85 |  -3.759
+ 2024-08-24 | Rabbitohs    | Knights    |  22.89 |  21.18 |   1.709
+ 2024-08-24 | Raiders      | Panthers   |  15.62 |  24.49 |  -8.872
+ 2024-08-24 | Storm        | Dolphins   |  27.01 |  18.30 |   8.706
+ 2024-08-25 | Dragons      | Sharks     |  17.67 |  24.74 |  -7.064
+ 2024-08-25 | Titans       | Roosters   |  17.93 |  30.24 | -12.304
+ 2024-08-29 | Cowboys      | Storm      |  20.74 |  25.00 |  -4.261
+ 2024-08-30 | Bulldogs     | Sea Eagles |  20.72 |  17.48 |   3.243
+ 2024-08-30 | Panthers     | Rabbitohs  |  29.15 |  14.21 |  14.938
+ 2024-08-31 | Dolphins     | Broncos    |  25.39 |  22.06 |   3.326
+ 2024-08-31 | Eels         | Dragons    |  24.74 |  24.28 |   0.458
+ 2024-08-31 | Sharks       | Warriors   |  26.38 |  15.90 |  10.479
+ 2024-09-01 | Knights      | Titans     |  23.38 |  19.93 |   3.454
+ 2024-09-01 | Roosters     | Raiders    |  33.42 |  15.59 |  17.831
+ 2024-09-05 | Broncos      | Storm      |  19.77 |  23.12 |  -3.350
+ 2024-09-06 | Rabbitohs    | Roosters   |  18.19 |  31.02 | -12.828
+ 2024-09-06 | Wests Tigers | Eels       |  24.60 |  26.82 |  -2.219
+ 2024-09-07 | Bulldogs     | Cowboys    |  25.30 |  16.81 |   8.490
+ 2024-09-07 | Dragons      | Raiders    |  24.72 |  20.66 |   4.064
+ 2024-09-07 | Panthers     | Titans     |  28.41 |  14.01 |  14.404
+ 2024-09-08 | Knights      | Dolphins   |  21.30 |  22.80 |  -1.501
+ 2024-09-08 | Sea Eagles   | Sharks     |  20.86 |  20.45 |   0.409
+(31 rows)
 
-COPY 40
+COPY 31
 COMMIT
