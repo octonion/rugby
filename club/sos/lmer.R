@@ -20,7 +20,7 @@ r.team_score::float as gs,
 from club.results r
 
 where
-    r.year between 2024 and 2024
+    r.year between 2024 and 2025
 ;")
 
 sg <- fetch(query,n=-1)
