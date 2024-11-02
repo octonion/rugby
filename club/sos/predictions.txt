@@ -1,24 +1,27 @@
 BEGIN
-    date    |         home         |       away        | e_home | e_away |  e_d  
-------------+----------------------+-------------------+--------+--------+-------
- 2024-10-26 | Bath                 | Sale Sharks       |   32.9 |   15.8 | 17.10
- 2024-10-26 | Bordeaux Begles      | Section Paloise   |   34.6 |   16.7 | 17.90
- 2024-10-26 | Cardiff Rugby        | Ulster            |   23.6 |   23.3 |  0.25
- 2024-10-26 | Connacht             | Dragons           |   35.8 |   14.5 | 21.30
- 2024-10-26 | Gloucester           | Newcastle Falcons |   37.9 |   13.1 | 24.83
- 2024-10-26 | Leinster             | Lions             |   33.1 |   14.7 | 18.45
- 2024-10-26 | Lyon                 | Aviron Bayonnais  |   29.8 |   23.9 |  5.90
- 2024-10-26 | Montpellier          | La Rochelle       |   20.8 |   18.7 |  2.14
- 2024-10-26 | Ospreys              | Edinburgh         |   22.0 |   21.5 |  0.52
- 2024-10-26 | Racing 92            | USA Perpignan     |   30.1 |   16.3 | 13.85
- 2024-10-26 | Saracens             | Leicester Tigers  |   27.9 |   19.8 |  8.13
- 2024-10-26 | Sharks               | Munster           |   24.3 |   18.9 |  5.42
- 2024-10-26 | Stade Francais Paris | Clermont          |   24.1 |   18.3 |  5.80
- 2024-10-26 | Stormers             | Glasgow Warriors  |   21.0 |   22.0 | -0.97
- 2024-10-26 | Vannes               | Castres Olympique |   28.7 |   28.0 |  0.69
- 2024-10-27 | Exeter Chiefs        | Harlequins        |   29.0 |   23.4 |  5.58
- 2024-10-27 | Stade Toulousain     | RC Toulonnais     |   31.7 |   17.3 | 14.35
-(17 rows)
+    date    |        home        |         away         | e_home | e_away |  e_d   
+------------+--------------------+----------------------+--------+--------+--------
+ 2024-11-02 | Castres Olympique  | Montpellier          |   28.4 |   17.7 |  10.70
+ 2024-11-02 | Clermont           | Bordeaux Begles      |   24.4 |   25.7 |  -1.35
+ 2024-11-02 | La Rochelle        | Stade Francais Paris |   25.9 |   13.7 |  12.12
+ 2024-11-02 | RC Toulonnais      | Lyon                 |   32.2 |   19.8 |  12.38
+ 2024-11-02 | Section Paloise    | Racing 92            |   23.9 |   20.7 |   3.21
+ 2024-11-02 | USA Perpignan      | Vannes               |   31.2 |   22.3 |   8.88
+ 2024-11-03 | Aviron Bayonnais   | Stade Toulousain     |   22.9 |   27.0 |  -4.04
+ 2024-11-29 | Glasgow Warriors   | Scarlets             |   38.1 |   11.5 |  26.63
+ 2024-11-29 | Harlequins         | Bristol              |   33.0 |   24.0 |   9.01
+ 2024-11-29 | Newcastle Falcons  | Saracens             |   15.0 |   30.3 | -15.29
+ 2024-11-29 | Ulster             | Leinster             |   19.2 |   27.1 |  -7.88
+ 2024-11-30 | Bath               | Exeter Chiefs        |   36.2 |   16.8 |  19.36
+ 2024-11-30 | Cardiff Rugby      | Dragons              |   29.1 |   16.1 |  13.06
+ 2024-11-30 | Connacht           | Bulls                |   27.6 |   27.1 |   0.52
+ 2024-11-30 | Edinburgh          | Benetton             |   27.7 |   17.6 |  10.09
+ 2024-11-30 | Munster            | Lions                |   24.0 |   19.1 |   4.87
+ 2024-11-30 | Northampton Saints | Gloucester           |   36.7 |   20.0 |  16.65
+ 2024-11-30 | Sharks             | Stormers             |   25.3 |   20.1 |   5.23
+ 2024-11-30 | Zebre              | Ospreys              |   20.5 |   22.5 |  -2.00
+ 2024-12-01 | Sale Sharks        | Leicester Tigers     |   22.5 |   20.6 |   1.88
+(20 rows)
 
-COPY 17
+COPY 20
 COMMIT
