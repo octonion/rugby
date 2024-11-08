@@ -1,59 +1,55 @@
 BEGIN
 SET
-    date    |            event             |       city       |  site   |         team         |  e_p  |   opponent    | e_p  
-------------+------------------------------+------------------+---------+----------------------+-------+---------------+------
- 2024-11-02 | Autumn Nations Series 2024   | London           | home    | England              |  18.5 | New Zealand   | 30.4
- 2024-11-02 | Autumn Nations Series 2024   | Edinburgh        | home    | Scotland             |  25.8 | Fiji          | 15.6
- 2024-11-02 | Men's Internationals 2024    | Mons             | home    | Belgium              |  23.8 | Switzerland   | 16.8
- 2024-11-02 | Rugby Europe Conference 2025 | Latvia?          | home    | Latvia               | 206.4 | Estonia       |  0.1
- 2024-11-02 | Rugby Europe Trophy 2025     | Siauliai         | home    | Lithuania            |  30.4 | Sweden        | 24.9
- 2024-11-05 | Men's Internationals 2024    | Dubai            | home    | United Arab Emirates |  46.0 | Zimbabwe      |  6.6
- 2024-11-08 | Autumn Nations Series 2024   | Dublin           | home    | Ireland              |  24.1 | New Zealand   | 21.7
- 2024-11-09 | Autumn Nations Series 2024   | London           | home    | England              |  25.1 | Australia     | 18.4
- 2024-11-09 | Autumn Nations Series 2024   | Saint-Denis      | home    | France               |  48.1 | Japan         | 14.4
- 2024-11-09 | Autumn Nations Series 2024   | Udine            | home    | Italy                |  20.8 | Argentina     | 28.6
- 2024-11-09 | Elgon Cup 2024               | Kenya?           | home    | Kenya                |  30.7 | Uganda        | 18.1
- 2024-11-09 | Men's Internationals 2024    | Bucharest        | neutral | Canada               |  21.5 | Chile         | 25.1
- 2024-11-09 | Men's Internationals 2024    | Hong Kong        | home    | Hong Kong            |  34.9 | Brazil        | 13.4
- 2024-11-09 | Men's Internationals 2024    | Coimbra          | home    | Portugal             |  28.6 | United States | 20.7
- 2024-11-09 | Men's Internationals 2024    | Bucharest        | home    | Romania              |  18.1 | Tonga         | 36.8
- 2024-11-09 | Men's Internationals 2024    | Madrid           | home    | Spain                |  19.5 | Uruguay       | 21.3
- 2024-11-09 | Rugby Europe Conference 2025 | Piestany         | away    | Ukraine              |   1.4 | Slovakia      | 17.1
- 2024-11-09 | Rugby Europe Trophy 2025     | Prague           | home    | Czech Republic       |  28.3 | Croatia       | 19.7
- 2024-11-10 | Autumn Nations Series 2024   | Edinburgh        | home    | Scotland             |  16.5 | South Africa  | 21.2
- 2024-11-10 | Autumn Nations Series 2024   | Cardiff          | home    | Wales                |  24.8 | Fiji          | 19.5
- 2024-11-15 | Autumn Nations Series 2024   | Dublin           | home    | Ireland              |  32.3 | Argentina     | 13.2
- 2024-11-16 | Autumn Nations Series 2024   | London           | home    | England              |  16.1 | South Africa  | 24.1
- 2024-11-16 | Autumn Nations Series 2024   | Saint-Denis      | home    | France               |  25.1 | New Zealand   | 27.7
- 2024-11-16 | Autumn Nations Series 2024   | Edinburgh        | home    | Scotland             |  45.5 | Portugal      |  9.2
- 2024-11-16 | Elgon Cup 2024               | Bweyogerere      | home    | Uganda               |  20.8 | Kenya         | 26.7
- 2024-11-16 | Men's Internationals 2024    | Hong Kong        | home    | Hong Kong            |  34.9 | Brazil        | 13.4
- 2024-11-16 | Men's Internationals 2024    | Chambery         | neutral | Japan                |  37.2 | Uruguay       | 11.9
- 2024-11-16 | Men's Internationals 2024    | Incheon          | home    | Korea                |  16.6 | Zimbabwe      | 21.9
- 2024-11-16 | Men's Internationals 2024    | Amsterdam        | home    | Netherlands          |  16.5 | Chile         | 33.8
- 2024-11-16 | Men's Internationals 2024    | Bucharest        | home    | Romania              |  30.0 | Canada        | 19.5
- 2024-11-16 | Men's Internationals 2024    | Valladolid       | home    | Spain                |  10.1 | Fiji          | 54.3
- 2024-11-16 | Men's Internationals 2024    | Dubai            | home    | United Arab Emirates |  62.8 | Germany       |  4.9
- 2024-11-16 | Men's Internationals 2024    | Chambery         | neutral | United States        |  21.2 | Tonga         | 31.5
- 2024-11-16 | Rugby Europe Trophy 2025     | Croatia?         | home    | Croatia              |  25.9 | Sweden        | 20.8
- 2024-11-16 | Rugby Europe Trophy 2025     | Gdynia           | home    | Poland               |  40.6 | Lithuania     | 14.2
- 2024-11-17 | Autumn Nations Series 2024   | Genova           | home    | Italy                |  24.8 | Georgia       | 17.1
- 2024-11-17 | Autumn Nations Series 2024   | Cardiff          | home    | Wales                |  24.6 | Australia     | 20.4
- 2024-11-22 | Autumn Nations Series 2024   | Saint-Denis      | home    | France               |  33.6 | Argentina     | 16.9
- 2024-11-23 | Autumn Nations Series 2024   | Dublin           | home    | Ireland              |  32.9 | Fiji          | 12.6
- 2024-11-23 | Autumn Nations Series 2024   | Turin            | home    | Italy                |  15.5 | New Zealand   | 46.9
- 2024-11-23 | Autumn Nations Series 2024   | Cardiff          | home    | Wales                |  15.8 | South Africa  | 26.6
- 2024-11-23 | Men's Internationals 2024    | Bucharest        | home    | Romania              |  20.1 | Uruguay       | 20.1
- 2024-11-23 | Men's Internationals 2024    | Madrid           | home    | Spain                |  20.6 | United States | 30.8
- 2024-11-23 | Rugby Europe Trophy 2025     | Croatia?         | home    | Croatia              |  25.0 | Lithuania     | 21.3
- 2024-11-23 | Rugby Europe Trophy 2025     | Prague           | home    | Czech Republic       |  18.9 | Poland        | 32.0
- 2024-11-24 | Autumn Nations Series 2024   | London           | home    | England              |  35.5 | Japan         | 15.8
- 2024-11-24 | Autumn Nations Series 2024   | Edinburgh        | home    | Scotland             |  25.7 | Australia     | 16.2
- 2024-11-24 | Men's Internationals 2024    | Tbilisi          | home    | Georgia              |  25.8 | Tonga         | 17.4
- 2024-11-30 | Autumn Nations Series 2024   | Dublin           | home    | Ireland              |  32.7 | Australia     | 13.1
- 2024-11-30 | Rugby Europe Conference 2025 | Andorra La Vella | home    | Andorra              |   9.1 | Malta         | 25.0
- 2024-11-30 | Rugby Europe Trophy 2025     | Luxembourg       | home    | Luxembourg           |  10.9 | Croatia       | 26.6
-(51 rows)
+    date    |                  event                  |       city       |  site   |         team         | e_p  |    opponent    | e_p  
+------------+-----------------------------------------+------------------+---------+----------------------+------+----------------+------
+ 2024-11-08 | Autumn Nations Series 2024              | Dublin           | home    | Ireland              | 24.1 | New Zealand    | 21.7
+ 2024-11-09 | Autumn Nations Series 2024              | London           | home    | England              | 25.1 | Australia      | 18.4
+ 2024-11-09 | Autumn Nations Series 2024              | Saint-Denis      | home    | France               | 48.1 | Japan          | 14.4
+ 2024-11-09 | Autumn Nations Series 2024              | Udine            | home    | Italy                | 20.8 | Argentina      | 28.6
+ 2024-11-09 | Elgon Cup 2024                          | Nairobi          | home    | Kenya                | 30.7 | Uganda         | 18.1
+ 2024-11-09 | Men's Internationals 2024               | Bucharest        | neutral | Canada               | 21.5 | Chile          | 25.1
+ 2024-11-09 | Men's Internationals 2024               | Hong Kong        | home    | Hong Kong            | 34.9 | Brazil         | 13.4
+ 2024-11-09 | Men's Internationals 2024               | Coimbra          | home    | Portugal             | 28.6 | United States  | 20.7
+ 2024-11-09 | Men's Internationals 2024               | Bucharest        | home    | Romania              | 18.1 | Tonga          | 36.8
+ 2024-11-09 | Men's Internationals 2024               | Madrid           | home    | Spain                | 19.5 | Uruguay        | 21.3
+ 2024-11-09 | Rugby Europe Conference 2025            | Piestany         | away    | Ukraine              |  1.4 | Slovakia       | 17.1
+ 2024-11-09 | Rugby Europe Trophy 2025                | Prague           | home    | Czech Republic       | 28.3 | Croatia        | 19.7
+ 2024-11-10 | Autumn Nations Series 2024              | Edinburgh        | home    | Scotland             | 16.5 | South Africa   | 21.2
+ 2024-11-10 | Autumn Nations Series 2024              | Cardiff          | home    | Wales                | 24.8 | Fiji           | 19.5
+ 2024-11-15 | Autumn Nations Series 2024              | Dublin           | home    | Ireland              | 32.3 | Argentina      | 13.2
+ 2024-11-16 | Autumn Nations Series 2024              | London           | home    | England              | 16.1 | South Africa   | 24.1
+ 2024-11-16 | Autumn Nations Series 2024              | Saint-Denis      | home    | France               | 25.1 | New Zealand    | 27.7
+ 2024-11-16 | Autumn Nations Series 2024              | Edinburgh        | home    | Scotland             | 45.5 | Portugal       |  9.2
+ 2024-11-16 | Elgon Cup 2024                          | Bweyogerere      | home    | Uganda               | 20.8 | Kenya          | 26.7
+ 2024-11-16 | Men's Internationals 2024               | Hong Kong        | home    | Hong Kong            | 34.9 | Brazil         | 13.4
+ 2024-11-16 | Men's Internationals 2024               | Chambery         | neutral | Japan                | 37.2 | Uruguay        | 11.9
+ 2024-11-16 | Men's Internationals 2024               | Incheon          | home    | Korea                | 16.6 | Zimbabwe       | 21.9
+ 2024-11-16 | Men's Internationals 2024               | Amsterdam        | home    | Netherlands          | 16.5 | Chile          | 33.8
+ 2024-11-16 | Men's Internationals 2024               | Bucharest        | home    | Romania              | 30.0 | Canada         | 19.5
+ 2024-11-16 | Men's Internationals 2024               | Valladolid       | home    | Spain                | 10.1 | Fiji           | 54.3
+ 2024-11-16 | Men's Internationals 2024               | Dubai            | home    | United Arab Emirates | 62.8 | Germany        |  4.9
+ 2024-11-16 | Men's Internationals 2024               | Chambery         | neutral | United States        | 21.2 | Tonga          | 31.5
+ 2024-11-16 | Rugby Europe Trophy 2025                | Croatia?         | home    | Croatia              | 25.9 | Sweden         | 20.8
+ 2024-11-16 | Rugby Europe Trophy 2025                | Gdynia           | home    | Poland               | 40.6 | Lithuania      | 14.2
+ 2024-11-17 | Autumn Nations Series 2024              | Genova           | home    | Italy                | 24.8 | Georgia        | 17.1
+ 2024-11-17 | Autumn Nations Series 2024              | Cardiff          | home    | Wales                | 24.6 | Australia      | 20.4
+ 2024-11-20 | Africa Cup 2024                         | Madagascar?      | home    | Madagascar           | 38.8 | Cameroon       | 12.0
+ 2024-11-22 | Autumn Nations Series 2024              | Saint-Denis      | home    | France               | 33.6 | Argentina      | 16.9
+ 2024-11-23 | Autumn Nations Series 2024              | Dublin           | home    | Ireland              | 32.9 | Fiji           | 12.6
+ 2024-11-23 | Autumn Nations Series 2024              | Turin            | home    | Italy                | 15.5 | New Zealand    | 46.9
+ 2024-11-23 | Autumn Nations Series 2024              | Cardiff          | home    | Wales                | 15.8 | South Africa   | 26.6
+ 2024-11-23 | Men's Internationals 2024               | Bucharest        | home    | Romania              | 20.1 | Uruguay        | 20.1
+ 2024-11-23 | Men's Internationals 2024               | Madrid           | home    | Spain                | 20.6 | United States  | 30.8
+ 2024-11-23 | Rugby Europe Trophy 2025                | Croatia?         | home    | Croatia              | 25.0 | Lithuania      | 21.3
+ 2024-11-23 | Rugby Europe Trophy 2025                | Prague           | home    | Czech Republic       | 18.9 | Poland         | 32.0
+ 2024-11-24 | Autumn Nations Series 2024              | London           | home    | England              | 35.5 | Japan          | 15.8
+ 2024-11-24 | Autumn Nations Series 2024              | Edinburgh        | home    | Scotland             | 25.7 | Australia      | 16.2
+ 2024-11-24 | Men's Internationals 2024               | Tbilisi          | home    | Georgia              | 25.8 | Tonga          | 17.4
+ 2024-11-30 | Autumn Nations Series 2024              | Dublin           | home    | Ireland              | 32.7 | Australia      | 13.1
+ 2024-11-30 | Rugby Europe Conference 2025            | Andorra La Vella | home    | Andorra              |  9.1 | Malta          | 25.0
+ 2024-11-30 | Rugby Europe Trophy 2025                | Luxembourg       | home    | Luxembourg           | 10.9 | Croatia        | 26.6
+ 2024-12-07 | Rugby Americas North Championship  2024 | Mexico?          | home    | Mexico               | 16.0 | Cayman Islands | 30.1
+(47 rows)
 
-COPY 51
+COPY 47
 COMMIT
