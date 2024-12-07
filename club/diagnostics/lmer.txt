@@ -1,23 +1,20 @@
-[1] 1422    7
-[1] 1752    7
+[1] 1428    7
+[1] 1764    7
 [1] TRUE
-[1] 1752    5
-start par. =  1 1 1 fn =  20073.45 
+[1] 1764    5
+start par. =  1 1 1 fn =  20224.87 
 At return
-eval: 203 fn:      18900.632 par: 0.280294 0.148660 0.188192
-(NM) 20: f = 18900.6 at 0.280294  0.14866 0.188192  2.97411 0.324572
-(NM) 40: f = 18900.6 at 0.279935 0.149314 0.187932  2.96575  0.32514
-(NM) 60: f = 18900.6 at 0.280259 0.149107 0.187612  2.96506 0.324656
-(NM) 80: f = 18900.6 at 0.280442 0.148747 0.188095  2.96629 0.324646
-(NM) 100: f = 18900.6 at 0.280367 0.148496 0.188092  2.96657 0.324752
-(NM) 120: f = 18900.6 at 0.280327   0.1486 0.188013  2.96669 0.324758
-(NM) 140: f = 18900.6 at 0.280322 0.148609 0.188114  2.96663 0.324758
-(NM) 160: f = 18900.6 at 0.280303 0.148613 0.188151  2.96664 0.324752
-(NM) 180: f = 18900.6 at 0.280294 0.148602 0.188158  2.96664  0.32476
-(NM) 200: f = 18900.6 at 0.280297 0.148615 0.188151   2.9666 0.324761
-(NM) 220: f = 18900.6 at 0.280297 0.148623 0.188155  2.96662 0.324765
-(NM) 240: f = 18900.6 at 0.280297 0.148639 0.188144  2.96664 0.324767
-(NM) 260: f = 18900.6 at 0.280296 0.148638 0.188141  2.96663 0.324766
+eval: 164 fn:      19048.587 par: 0.281091 0.147886 0.186472
+(NM) 20: f = 19048.6 at 0.281091 0.147886 0.186472  2.97398 0.322775
+(NM) 40: f = 19048.5 at 0.280732  0.14854 0.186212  2.96567 0.323341
+(NM) 60: f = 19048.5 at 0.281056 0.148333 0.185891  2.96499 0.322858
+(NM) 80: f = 19048.5 at 0.281235 0.147917 0.185783  2.96719 0.322806
+(NM) 100: f = 19048.5 at 0.281249  0.14804 0.186254  2.96655 0.323017
+(NM) 120: f = 19048.5 at 0.281053 0.147868 0.186418  2.96674  0.32297
+(NM) 140: f = 19048.5 at 0.281081 0.147846 0.186452   2.9665 0.322988
+(NM) 160: f = 19048.5 at 0.281099 0.147863 0.186433  2.96651 0.322969
+(NM) 180: f = 19048.5 at 0.281092 0.147857 0.186421  2.96651  0.32297
+(NM) 200: f = 19048.5 at 0.281091 0.147862 0.186419  2.96652 0.322966
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -25,16 +22,16 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
       AIC       BIC    logLik  deviance  df.resid 
-18910.589 18937.932 -9450.295 18900.589      1747 
+19058.544 19085.921 -9524.272 19048.544      1759 
 Random effects:
  Groups  Name        Std.Dev.
- game_id (Intercept) 0.2803  
- defense (Intercept) 0.1486  
- offense (Intercept) 0.1881  
-Number of obs: 1752, groups:  game_id, 711; defense, 44; offense, 44
+ game_id (Intercept) 0.2811  
+ defense (Intercept) 0.1479  
+ offense (Intercept) 0.1864  
+Number of obs: 1764, groups:  game_id, 714; defense, 44; offense, 44
 Fixed Effects:
       (Intercept)  fieldoffense_home  
-           2.9666             0.3248  
+            2.967              0.323  
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -43,23 +40,23 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
 Weights: w
 
      AIC      BIC   logLik deviance df.resid 
- 18910.6  18937.9  -9450.3  18900.6     1747 
+ 19058.5  19085.9  -9524.3  19048.5     1759 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--5.6619 -1.0253 -0.0195  0.9259  5.1868 
+-5.6663 -1.0156 -0.0135  0.9100  5.2286 
 
 Random effects:
  Groups  Name        Variance Std.Dev.
- game_id (Intercept) 0.07857  0.2803  
- defense (Intercept) 0.02209  0.1486  
- offense (Intercept) 0.03540  0.1881  
-Number of obs: 1752, groups:  game_id, 711; defense, 44; offense, 44
+ game_id (Intercept) 0.07901  0.2811  
+ defense (Intercept) 0.02186  0.1479  
+ offense (Intercept) 0.03475  0.1864  
+Number of obs: 1764, groups:  game_id, 714; defense, 44; offense, 44
 
 Fixed effects:
                   Estimate Std. Error z value Pr(>|z|)    
-(Intercept)       2.966633   0.039211   75.66   <2e-16 ***
-fieldoffense_home 0.324768   0.008495   38.23   <2e-16 ***
+(Intercept)       2.966515   0.038948   76.17   <2e-16 ***
+fieldoffense_home 0.322967   0.008469   38.14   <2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
