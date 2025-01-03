@@ -1,9 +1,12 @@
 BEGIN
-    date    |     home      |  away   | e_home | e_away |  e_d  
-------------+---------------+---------+--------+--------+-------
- 2025-01-01 | Cardiff Rugby | Ospreys |   26.2 |   19.2 |  6.98
- 2025-01-01 | Scarlets      | Dragons |   28.9 |   15.7 | 13.20
-(2 rows)
+    date    |        home        |     away      | e_home | e_away |  e_d   
+------------+--------------------+---------------+--------+--------+--------
+ 2025-01-03 | Newcastle Falcons  | Harlequins    |   16.1 |   29.3 | -13.20
+ 2025-01-04 | Gloucester         | Sale Sharks   |   24.0 |   21.2 |   2.74
+ 2025-01-04 | Leicester Tigers   | Exeter Chiefs |   33.6 |   17.8 |  15.78
+ 2025-01-04 | Saracens           | Bristol       |   32.1 |   22.8 |   9.28
+ 2025-01-05 | Northampton Saints | Bath          |   28.1 |   23.2 |   4.98
+(5 rows)
 
-COPY 2
+COPY 5
 COMMIT
