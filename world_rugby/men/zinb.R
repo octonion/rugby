@@ -1,6 +1,7 @@
 sink("diagnostics/zinb.txt")
 
-library(glmmADMB)
+#library(glmmADMB)
+library(glmmTMB)
 library(RPostgreSQL)
 
 drv <- dbDriver("PostgreSQL")
@@ -22,17 +23,17 @@ r.team_id as team,
 r.opponent_id as opponent,
 --r.game_length as game_length,
 team_score::float as gs,
-(year-2015) as w
-from men.men_results r
+(year-2020) as w
+from men._results r
 
 where
-    r.year between 2016 and 2021
+    r.year between 2021 and 2025
 
 --and r.team_id in
 --(
 --select
 --team_id
---from men.men_results
+--from men._results
 --where year between 2013 and 2021
 --group by team_id
 --having count(*)>=6
@@ -42,7 +43,7 @@ where
 --(
 --select
 --team_id
---from men.men_results
+--from men._results
 --where year between 2013 and 2021
 --group by team_id
 --having count(*)>=6
@@ -127,7 +128,7 @@ model <- gs ~ field + (1|offense) + (1|defense) + (1|game_id)
 #fit0
 #summary(fit0)
 
-fit <- glmmadmb(model, data=g, zeroInflation=TRUE, family="nbinom", verbose=TRUE)
+fit <- glmmTMB(model, data=g, ziformula=~1, family=nbinom1, verbose=TRUE)
 
 fit
 summary(fit)
@@ -142,17 +143,19 @@ summary(fit)
 f <- fixef(fit)
 fn <- names(f)
 
+print(fn)
+
 # Random factors
 
 r <- ranef(fit)
-rn <- names(r) 
+rn <- names(r)
 
 results <- list()
 
 for (n in fn) {
 
   df <- f[[n]]
-
+  
   factor <- n
   level <- n
   type <- "fixed"
@@ -161,6 +164,8 @@ for (n in fn) {
   results <- c(results,list(data.frame(factor,type,level,estimate)))
 
  }
+
+print(results)
 
 for (n in rn) {
 

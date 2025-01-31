@@ -4,7 +4,7 @@ psql rugby -c "drop table if exists men.results;"
 
 psql rugby -f men/standardized_results.sql
 
-psql rugby -c "vacuum full verbose analyze men.results;"
+psql rugby -c "vacuum full verbose analyze men._results;"
 
 psql rugby -c "drop table if exists men._basic_factors;"
 psql rugby -c "drop table if exists men._parameter_levels;"

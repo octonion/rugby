@@ -1,25 +1,30 @@
 BEGIN
 SET
-    date    |                  event                  |       city       |  site   |      team      | e_p  |    opponent    | e_p  
-------------+-----------------------------------------+------------------+---------+----------------+------+----------------+------
- 2024-11-22 | Autumn Nations Series 2024              | Saint-Denis      | home    | France         | 34.5 | Argentina      | 17.1
- 2024-11-23 | Autumn Nations Series 2024              | Dublin           | home    | Ireland        | 33.7 | Fiji           | 13.2
- 2024-11-23 | Autumn Nations Series 2024              | Turin            | home    | Italy          | 16.9 | New Zealand    | 49.9
- 2024-11-23 | Autumn Nations Series 2024              | Cardiff          | home    | Wales          | 15.3 | South Africa   | 26.9
- 2024-11-23 | Men's Internationals 2024               | Bucharest        | home    | Romania        | 19.9 | Uruguay        | 21.0
- 2024-11-23 | Men's Internationals 2024               | Madrid           | home    | Spain          | 19.5 | United States  | 32.1
- 2024-11-23 | Rugby Europe Trophy 2025                | Zagreb           | home    | Croatia        | 25.8 | Lithuania      | 21.8
- 2024-11-23 | Rugby Europe Trophy 2025                | Prague           | home    | Czech Republic | 21.1 | Poland         | 34.2
- 2024-11-24 | Africa Cup 2024                         | Botswana?        | home    | Botswana       | 73.7 | Cameroon       |  5.3
- 2024-11-24 | Autumn Nations Series 2024              | London           | home    | England        | 35.7 | Japan          | 15.9
- 2024-11-24 | Autumn Nations Series 2024              | Edinburgh        | home    | Scotland       | 28.5 | Australia      | 17.1
- 2024-11-24 | Men's Internationals 2024               | Tbilisi          | home    | Georgia        | 24.6 | Tonga          | 17.1
- 2024-11-30 | Autumn Nations Series 2024              | Dublin           | home    | Ireland        | 34.6 | Australia      | 13.2
- 2024-11-30 | Rugby Europe Conference 2025            | Andorra La Vella | home    | Andorra        |  9.2 | Malta          | 26.1
- 2024-11-30 | Rugby Europe Trophy 2025                | Luxembourg       | home    | Luxembourg     | 11.3 | Croatia        | 26.6
- 2024-12-07 | Rugby Americas North Championship  2024 | Mexico?          | home    | Mexico         | 15.8 | Cayman Islands | 30.6
- 2024-12-18 | Africa Cup 2024                         | Jemmal           | neutral | Ghana          | 25.3 | Zambia         | 13.7
-(17 rows)
+    date    |                    event                     |       city        | site |    team     | e_p  |  opponent   | e_p  
+------------+----------------------------------------------+-------------------+------+-------------+------+-------------+------
+ 2025-02-01 | Rugby Europe Conference 2025                 | Andorra La Vella  | away | Israel      | 25.2 | Andorra     |  7.1
+ 2025-02-01 | Rugby Europe International Championship 2025 | Tbilisi           | home | Georgia     | 88.2 | Switzerland |  4.5
+ 2025-02-01 | Rugby Europe International Championship 2025 | Lisbon            | home | Portugal    | 48.3 | Belgium     |  8.5
+ 2025-02-01 | Six Nations 2025                             | Dublin            | home | Ireland     | 27.8 | England     | 13.9
+ 2025-02-01 | Six Nations 2025                             | Edinburgh         | home | Scotland    | 34.5 | Italy       | 16.1
+ 2025-02-02 | Rugby Europe International Championship 2025 | Madrid            | home | Spain       | 37.7 | Netherlands | 19.4
+ 2025-02-08 | Rugby Europe International Championship 2025 | Mons              | home | Belgium     | 13.6 | Romania     | 28.8
+ 2025-02-08 | Rugby Europe International Championship 2025 | Tbilisi           | home | Georgia     | 46.6 | Netherlands |  9.4
+ 2025-02-08 | Six Nations 2025                             | London            | home | England     | 21.7 | France      | 24.0
+ 2025-02-08 | Six Nations 2025                             | Roma              | home | Italy       | 24.9 | Wales       | 23.1
+ 2025-02-09 | Africa Cup 2024                              | Casablanca        | home | Morocco     | 58.9 | Tunisia     | 12.2
+ 2025-02-09 | Rugby Europe International Championship 2025 | Lisbon            | home | Portugal    | 56.3 | Germany     |  9.2
+ 2025-02-09 | Rugby Europe International Championship 2025 | Yverdon-les-Bains | home | Switzerland | 11.0 | Spain       | 60.0
+ 2025-02-09 | Six Nations 2025                             | Edinburgh         | home | Scotland    | 16.8 | Ireland     | 22.9
+ 2025-02-15 | Rugby Europe International Championship 2025 | Amsterdam         | home | Netherlands | 57.2 | Switzerland | 12.1
+ 2025-02-15 | Rugby Europe International Championship 2025 | Botosani          | home | Romania     | 20.3 | Portugal    | 32.6
+ 2025-02-16 | Rugby Europe International Championship 2025 | Kassel            | home | Germany     | 18.4 | Belgium     | 16.7
+ 2025-02-16 | Rugby Europe International Championship 2025 | Madrid            | home | Spain       | 13.9 | Georgia     | 29.9
+ 2025-02-22 | Rugby Europe Trophy 2025                     | Gdynia            | home | Poland      | 39.8 | Croatia     | 11.6
+ 2025-02-22 | Six Nations 2025                             | London            | home | England     | 22.6 | Scotland    | 19.7
+ 2025-02-22 | Six Nations 2025                             | Cardiff           | home | Wales       | 13.4 | Ireland     | 29.7
+ 2025-02-23 | Six Nations 2025                             | Roma              | home | Italy       | 18.4 | France      | 35.4
+(22 rows)
 
-COPY 17
+COPY 22
 COMMIT
