@@ -20,7 +20,7 @@ year-2023 as w
 from sl.results r
 
 where
-    r.year between 2024 and 2024
+    r.year between 2024 and 2025
 
 ;")
 

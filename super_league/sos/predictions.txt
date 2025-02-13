@@ -1,8 +1,12 @@
 BEGIN
-    date    | home  |  away   | e_home | e_away | e_d  
-------------+-------+---------+--------+--------+------
- 2024-10-12 | Wigan | Hull KR |  17.23 |  14.14 | 3.10
-(1 row)
+    date    |       home       |    away    | e_home | e_away |  e_d   
+------------+------------------+------------+--------+--------+--------
+ 2025-02-13 | Wigan            | Leigh      |  21.01 |  10.66 |  10.35
+ 2025-02-14 | Catalans Dragons | Hull FC    |  31.17 |   9.08 |  22.08
+ 2025-02-14 | Hull KR          | Castleford |  34.93 |   8.84 |  26.08
+ 2025-02-15 | St Helens        | Salford    |  22.76 |  13.17 |   9.60
+ 2025-02-16 | Huddersfield     | Warrington |  11.93 |  28.19 | -16.26
+(5 rows)
 
-COPY 1
+COPY 5
 COMMIT
