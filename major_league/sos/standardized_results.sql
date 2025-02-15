@@ -37,7 +37,7 @@ away_score
 from major_league.games
 
 where
-    extract(year from date) between 2003 and 2024
+    extract(year from date) between 2003 and 2025
 
 and home_score is not null
 and away_score is not null
@@ -68,7 +68,7 @@ home_score
 from major_league.games
 
 where
-    extract(year from date) between 2003 and 2024
+    extract(year from date) between 2003 and 2025
 
 and home_score is not null
 and away_score is not null
