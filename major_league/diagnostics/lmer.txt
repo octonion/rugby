@@ -1,18 +1,20 @@
-[1] 206   7
-[1] 206   7
+[1] 214   7
+[1] 222   7
 [1] TRUE
-[1] 206   5
-start par. =  1 1 1 fn =  1786.202 
+[1] 222   5
+start par. =  1 1 1 fn =  1974.333 
 At return
-eval:  89 fn:      1584.0314 par: 0.252823 0.183013 0.116668
-(NM) 20: f = 1584.03 at   0.252823   0.183013   0.116668    3.22679 0.00341594
-(NM) 40: f = 1584.02 at   0.252633   0.184273   0.117089    3.21901 0.00202229
-(NM) 60: f = 1584.02 at   0.252554   0.183148   0.116518    3.21746 0.00325801
-(NM) 80: f = 1584.01 at   0.252693   0.183009   0.116567    3.21797 0.00339806
-(NM) 100: f = 1584.01 at   0.252806    0.18299    0.11664      3.218 0.00344086
-(NM) 120: f = 1584.01 at   0.252824   0.182923   0.116643    3.21816 0.00343592
-(NM) 140: f = 1584.01 at   0.252822   0.182933   0.116647    3.21813 0.00342425
-(NM) 160: f = 1584.01 at   0.252829    0.18293   0.116639    3.21813 0.00342858
+eval: 116 fn:      1762.7753 par: 0.248884 0.182352 0.114418
+(NM) 20: f = 1762.77 at   0.248884   0.182352   0.114418    3.22533 0.00367157
+(NM) 40: f = 1762.76 at   0.248869   0.180289   0.113947    3.21791 0.00338146
+(NM) 60: f = 1762.76 at   0.248447   0.182039   0.114156    3.21705 0.00389787
+(NM) 80: f = 1762.76 at   0.248775   0.182059   0.114774    3.21727 0.00363487
+(NM) 100: f = 1762.76 at   0.248869   0.182246   0.114445    3.21688 0.00368699
+(NM) 120: f = 1762.76 at   0.248878   0.182186   0.114449    3.21705 0.00367826
+(NM) 140: f = 1762.76 at   0.248901   0.182277     0.1144    3.21703 0.00368309
+(NM) 160: f = 1762.76 at   0.248893   0.182276   0.114406    3.21706 0.00368048
+(NM) 180: f = 1762.76 at   0.248885   0.182266   0.114404    3.21709 0.00368416
+(NM) 200: f = 1762.76 at   0.248887   0.182266   0.114399    3.21709 0.00368644
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -20,16 +22,16 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
       AIC       BIC    logLik  deviance  df.resid 
-1594.0147 1610.6541 -792.0074 1584.0147       201 
+1772.7596 1789.7730 -881.3798 1762.7596       217 
 Random effects:
  Groups  Name        Std.Dev.
- game_id (Intercept) 0.2528  
- defense (Intercept) 0.1829  
- offense (Intercept) 0.1166  
-Number of obs: 206, groups:  game_id, 103; defense, 12; offense, 12
+ game_id (Intercept) 0.2489  
+ defense (Intercept) 0.1823  
+ offense (Intercept) 0.1144  
+Number of obs: 222, groups:  game_id, 107; defense, 12; offense, 12
 Fixed Effects:
       (Intercept)  fieldoffense_home  
-          3.21814            0.00343  
+         3.217088           0.003684  
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -38,27 +40,27 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
 Weights: w
 
      AIC      BIC   logLik deviance df.resid 
-  1594.0   1610.7   -792.0   1584.0      201 
+  1772.8   1789.8   -881.4   1762.8      217 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--4.1407 -0.6157 -0.0416  0.5806  3.2579 
+-4.1879 -0.6755 -0.0214  0.5702  3.2254 
 
 Random effects:
  Groups  Name        Variance Std.Dev.
- game_id (Intercept) 0.06392  0.2528  
- defense (Intercept) 0.03346  0.1829  
- offense (Intercept) 0.01361  0.1166  
-Number of obs: 206, groups:  game_id, 103; defense, 12; offense, 12
+ game_id (Intercept) 0.06195  0.2489  
+ defense (Intercept) 0.03322  0.1823  
+ offense (Intercept) 0.01309  0.1144  
+Number of obs: 222, groups:  game_id, 107; defense, 12; offense, 12
 
 Fixed effects:
                   Estimate Std. Error z value Pr(>|z|)    
-(Intercept)        3.21814    0.07031  45.770   <2e-16 ***
-fieldoffense_home  0.00343    0.02763   0.124    0.901    
+(Intercept)       3.217088   0.069316   46.41   <2e-16 ***
+fieldoffense_home 0.003684   0.026393    0.14    0.889    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr)
-fildffns_hm -0.196
+fildffns_hm -0.190
 [1] TRUE
