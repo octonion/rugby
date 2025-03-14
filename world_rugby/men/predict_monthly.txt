@@ -1,19 +1,24 @@
 BEGIN
 SET
-    date    |            event             |    city     | site |          team          | e_p  |    opponent    | e_p  
-------------+------------------------------+-------------+------+------------------------+------+----------------+------
- 2025-03-08 | Rugby Europe Trophy 2025     | Prague      | home | Czech Republic         | 37.5 | Luxembourg     | 14.1
- 2025-03-09 | Six Nations 2025             | London      | home | England                | 34.2 | Italy          | 16.3
- 2025-03-15 | Six Nations 2025             | Saint-Denis | home | France                 | 30.2 | Scotland       | 17.8
- 2025-03-15 | Six Nations 2025             | Roma        | home | Italy                  | 15.0 | Ireland        | 34.6
- 2025-03-15 | Six Nations 2025             | Cardiff     | home | Wales                  | 18.4 | England        | 24.9
- 2025-03-29 | Rugby Europe Trophy 2025     | Lithuania?  | home | Lithuania              | 23.0 | Czech Republic | 33.1
- 2025-03-29 | Rugby Europe Trophy 2025     | Luxembourg  | home | Luxembourg             | 16.0 | Sweden         | 30.0
- 2025-04-05 | Rugby Europe Conference 2025 | Zenica      | home | Bosnia and Herzegovina | 46.8 | Kosovo         |  9.7
- 2025-04-05 | Rugby Europe Conference 2025 | Cyprus?     | home | Cyprus                 | 22.8 | Andorra        | 17.6
- 2025-04-05 | Rugby Europe Conference 2025 | Paola       | home | Malta                  | 14.8 | Israel         | 13.2
- 2025-04-05 | Rugby Europe Trophy 2025     | Luxembourg  | home | Luxembourg             |  9.6 | Poland         | 37.0
-(11 rows)
+    date    |                    event                     |    city     | site |          team          | e_p  |    opponent    | e_p  
+------------+----------------------------------------------+-------------+------+------------------------+------+----------------+------
+ 2025-03-15 | Rugby Europe International Championship 2025 | Heidelberg  | home | Germany                | 35.1 | Switzerland    | 12.8
+ 2025-03-15 | Rugby Europe International Championship 2025 | Amsterdam   | home | Netherlands            | 31.2 | Belgium        | 14.3
+ 2025-03-15 | Six Nations 2025                             | Saint-Denis | home | France                 | 31.2 | Scotland       | 17.6
+ 2025-03-15 | Six Nations 2025                             | Roma        | home | Italy                  | 15.5 | Ireland        | 34.0
+ 2025-03-15 | Six Nations 2025                             | Cardiff     | home | Wales                  | 17.4 | England        | 25.1
+ 2025-03-16 | Rugby Europe International Championship 2025 | Tbilisi     | home | Georgia                | 37.2 | Spain          | 12.8
+ 2025-03-16 | Rugby Europe International Championship 2025 | Lisbon      | home | Portugal               | 37.0 | Romania        | 18.5
+ 2025-03-29 | Rugby Europe Trophy 2025                     | Lithuania?  | home | Lithuania              | 22.9 | Czech Republic | 33.7
+ 2025-03-29 | Rugby Europe Trophy 2025                     | Luxembourg  | home | Luxembourg             | 14.8 | Sweden         | 28.3
+ 2025-04-05 | Rugby Europe Conference 2025                 | Zenica      | home | Bosnia and Herzegovina | 43.2 | Kosovo         |  9.6
+ 2025-04-05 | Rugby Europe Conference 2025                 | Limassol    | home | Cyprus                 | 22.5 | Andorra        | 21.4
+ 2025-04-05 | Rugby Europe Conference 2025                 | Paola       | home | Malta                  | 14.2 | Israel         | 12.9
+ 2025-04-05 | Rugby Europe Trophy 2025                     | Luxembourg  | home | Luxembourg             |  9.1 | Poland         | 33.3
+ 2025-04-12 | Rugby Europe Conference 2025                 | Budapest    | home | Hungary                | 12.7 | Ukraine        | 32.0
+ 2025-04-12 | Rugby Europe Conference 2025                 | Turkey?     | home | Turkey                 | 30.7 | Serbia         | 17.0
+ 2025-04-12 | Rugby Europe Trophy 2025                     | Sweden?     | home | Sweden                 | 16.1 | Poland         | 26.8
+(16 rows)
 
-COPY 11
+COPY 16
 COMMIT
