@@ -20,7 +20,7 @@ Generalized linear mixed model fit by maximum likelihood (Laplace
 Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
-      AIC       BIC    logLik  deviance  df.resid 
+      AIC       BIC    logLik -2*log(L)  df.resid 
  2904.875  2922.830 -1447.437  2894.875       263 
 Random effects:
  Groups  Name        Std.Dev.
@@ -38,8 +38,8 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
 
-     AIC      BIC   logLik deviance df.resid 
-  2904.9   2922.8  -1447.4   2894.9      263 
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   2904.9    2922.8   -1447.4    2894.9       263 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
