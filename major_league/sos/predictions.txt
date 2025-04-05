@@ -1,12 +1,16 @@
 BEGIN
-    date    |       home        |          away          | e_home | e_away |  e_d   
-------------+-------------------+------------------------+--------+--------+--------
- 2025-03-29 | Houston SaberCats | San Diego Legion       |  22.41 |  25.84 | -3.435
- 2025-03-29 | Los Angeles       | Old Glory DC           |  26.04 |  24.90 |  1.137
- 2025-03-29 | NOLA Gold         | Chicago Hounds         |  21.89 |  29.04 | -7.150
- 2025-03-29 | Seattle Seawolves | Anthem RC              |  42.41 |  20.63 | 21.772
- 2025-03-29 | Utah Warriors     | New England Free Jacks |  28.91 |  23.47 |  5.442
-(5 rows)
+    date    |          home          |       away        | e_home | e_away |   e_d   
+------------+------------------------+-------------------+--------+--------+---------
+ 2025-04-05 | Anthem RC              | NOLA Gold         |  23.29 |  33.26 |  -9.975
+ 2025-04-05 | Houston SaberCats      | Los Angeles       |  32.63 |  22.08 |  10.547
+ 2025-04-05 | Old Glory DC           | Seattle Seawolves |  23.28 |  27.65 |  -4.373
+ 2025-04-05 | San Diego Legion       | Chicago Hounds    |  26.53 |  21.96 |   4.571
+ 2025-04-06 | New England Free Jacks | Miami Sharks      |  26.93 |  19.00 |   7.931
+ 2025-04-12 | Los Angeles            | Utah Warriors     |  27.14 |  31.23 |  -4.092
+ 2025-04-12 | Miami Sharks           | Houston SaberCats |  18.18 |  30.38 | -12.197
+ 2025-04-12 | New England Free Jacks | San Diego Legion  |  20.69 |  26.10 |  -5.404
+ 2025-04-12 | NOLA Gold              | Old Glory DC      |  25.04 |  24.38 |   0.659
+(9 rows)
 
-COPY 5
+COPY 9
 COMMIT
