@@ -1,10 +1,13 @@
 BEGIN
-    date    |       home       |   away    | e_home | e_away |  e_d   
-------------+------------------+-----------+--------+--------+--------
- 2025-03-29 | Catalans Dragons | St Helens |   8.25 |  21.19 | -12.94
- 2025-03-30 | Huddersfield     | Hull KR   |   6.14 |  33.20 | -27.07
- 2025-03-30 | Wigan Warriors   | Salford   |  21.30 |  11.67 |   9.63
-(3 rows)
+    date    |     home     |       away       | e_home | e_away |  e_d   
+------------+--------------+------------------+--------+--------+--------
+ 2025-04-10 | Salford      | Leeds            |   7.73 |  28.50 | -20.77
+ 2025-04-11 | Hull KR      | Wigan Warriors   |  13.20 |  11.75 |   1.45
+ 2025-04-11 | St Helens    | Wakefield        |  16.58 |  14.54 |   2.03
+ 2025-04-12 | Castleford   | Leigh            |  12.96 |  24.61 | -11.65
+ 2025-04-12 | Warrington   | Hull FC          |  18.09 |  17.76 |   0.33
+ 2025-04-13 | Huddersfield | Catalans Dragons |  10.69 |  19.55 |  -8.85
+(6 rows)
 
-COPY 3
+COPY 6
 COMMIT
