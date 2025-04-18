@@ -1,37 +1,35 @@
 BEGIN
 CREATE TABLE
-INSERT 0 12
+INSERT 0 11
  rk |          team          |  str  |  ofs  |  dfs  | sos  
 ----+------------------------+-------+-------+-------+------
-  1 | San Diego Legion       |  0.25 |  0.08 | -0.17 | 0.05
-  2 | Houston SaberCats      |  0.24 |  0.11 | -0.13 | 0.06
-  3 | Chicago Hounds         |  0.20 |  0.09 | -0.11 | 0.02
-  4 | New England Free Jacks |  0.13 |  0.02 | -0.11 | 0.01
-  5 | Utah Warriors          |  0.12 |  0.14 |  0.01 | 0.09
-  6 | Dallas Jackals         |  0.11 |  0.11 |  0.01 | 0.09
-  7 | Seattle Seawolves      |  0.05 |  0.01 | -0.03 | 0.11
-  8 | Los Angeles            | -0.03 |  0.03 |  0.07 | 0.07
-  9 | Old Glory DC           | -0.04 | -0.04 |  0.00 | 0.04
- 10 | NOLA Gold              | -0.11 | -0.09 |  0.02 | 0.03
- 11 | Miami Sharks           | -0.36 | -0.26 |  0.10 | 0.00
- 12 | Anthem RC              | -0.56 | -0.17 |  0.39 | 0.01
-(12 rows)
+  1 | Utah Warriors          |  0.23 |  0.21 | -0.03 | 0.04
+  2 | Chicago Hounds         |  0.20 |  0.04 | -0.16 | 0.01
+  3 | New England Free Jacks |  0.17 |  0.03 | -0.14 | 0.01
+  4 | San Diego Legion       |  0.15 |  0.04 | -0.11 | 0.03
+  5 | Houston SaberCats      |  0.14 |  0.07 | -0.06 | 0.04
+  6 | NOLA Gold              | -0.03 |  0.02 |  0.04 | 0.03
+  7 | Los Angeles            | -0.05 |  0.06 |  0.11 | 0.05
+  8 | Old Glory DC           | -0.07 | -0.01 |  0.06 | 0.04
+  9 | Seattle Seawolves      | -0.09 | -0.08 |  0.01 | 0.10
+ 10 | Miami Sharks           | -0.27 | -0.15 |  0.12 | 0.02
+ 11 | Anthem RC              | -0.38 | -0.18 |  0.20 | 0.02
+(11 rows)
 
  rk |          team          |  str  |  ofs  |  dfs  | sos  
 ----+------------------------+-------+-------+-------+------
-  1 | San Diego Legion       |  0.25 |  0.08 | -0.17 | 0.05
-  2 | Houston SaberCats      |  0.24 |  0.11 | -0.13 | 0.06
-  3 | Chicago Hounds         |  0.20 |  0.09 | -0.11 | 0.02
-  4 | New England Free Jacks |  0.13 |  0.02 | -0.11 | 0.01
-  5 | Utah Warriors          |  0.12 |  0.14 |  0.01 | 0.09
-  6 | Dallas Jackals         |  0.11 |  0.11 |  0.01 | 0.09
-  7 | Seattle Seawolves      |  0.05 |  0.01 | -0.03 | 0.11
-  8 | Los Angeles            | -0.03 |  0.03 |  0.07 | 0.07
-  9 | Old Glory DC           | -0.04 | -0.04 |  0.00 | 0.04
- 10 | NOLA Gold              | -0.11 | -0.09 |  0.02 | 0.03
- 11 | Miami Sharks           | -0.36 | -0.26 |  0.10 | 0.00
- 12 | Anthem RC              | -0.56 | -0.17 |  0.39 | 0.01
-(12 rows)
+  1 | Utah Warriors          |  0.23 |  0.21 | -0.03 | 0.04
+  2 | Chicago Hounds         |  0.20 |  0.04 | -0.16 | 0.01
+  3 | New England Free Jacks |  0.17 |  0.03 | -0.14 | 0.01
+  4 | San Diego Legion       |  0.15 |  0.04 | -0.11 | 0.03
+  5 | Houston SaberCats      |  0.14 |  0.07 | -0.06 | 0.04
+  6 | NOLA Gold              | -0.03 |  0.02 |  0.04 | 0.03
+  7 | Los Angeles            | -0.05 |  0.06 |  0.11 | 0.05
+  8 | Old Glory DC           | -0.07 | -0.01 |  0.06 | 0.04
+  9 | Seattle Seawolves      | -0.09 | -0.08 |  0.01 | 0.10
+ 10 | Miami Sharks           | -0.27 | -0.15 |  0.12 | 0.02
+ 11 | Anthem RC              | -0.38 | -0.18 |  0.20 | 0.02
+(11 rows)
 
-COPY 12
+COPY 11
 COMMIT
