@@ -61,9 +61,9 @@ DB_SCHEMA = "nrl"
 DIAGNOSTICS_DIR = "diagnostics"
 # Log file name reflects the package used
 OUTPUT_LOG_FILE = os.path.join(DIAGNOSTICS_DIR, "glmer_pymer4_final.log")
-MIN_YEAR = 2024
+MIN_YEAR = 2025
 MAX_YEAR = 2025
-REFERENCE_YEAR = 2023 # Used for calculating 'w'
+REFERENCE_YEAR = 2024 # Used for calculating 'w'
 
 # --- Setup Logging ---
 os.makedirs(DIAGNOSTICS_DIR, exist_ok=True)
