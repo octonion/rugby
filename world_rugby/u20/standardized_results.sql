@@ -3,7 +3,7 @@ begin;
 drop table if exists u20._results;
 
 create table u20._results (
-	game_id		      integer,
+	game_id		      text,
 	year		      integer,
 	game_date	      date,
 	country		      text,
@@ -66,7 +66,7 @@ join world_rugby.teams t1
 join world_rugby.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2003 and 2023
+    extract(year from g.time_label) between 2003 and 2025
 
 and (t1.sport_id,t1.type_id)=(5,13)
 and (t2.sport_id,t2.type_id)=(5,13)
@@ -132,7 +132,7 @@ join world_rugby.teams t1
 join world_rugby.teams t2
   on t2.team_id = g.opponent_id
 where
-    extract(year from g.time_label) between 2003 and 2023
+    extract(year from g.time_label) between 2003 and 2025
     
 and (t1.sport_id,t1.type_id)=(5,13)
 and (t2.sport_id,t2.type_id)=(5,13)
