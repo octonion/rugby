@@ -1,29 +1,49 @@
 BEGIN
 SET
-    date    |            event             |    city     | site |         team         |  e_p  |       opponent       |  e_p  |  e_d   
-------------+------------------------------+-------------+------+----------------------+-------+----------------------+-------+--------
- 2025-03-29 | Rugby Europe Trophy 2025     | Siauliai    | home | Lithuania            | 22.33 | Czechia              | 34.27 | -11.94
- 2025-03-29 | Rugby Europe Trophy 2025     | Luxembourg  | home | Luxembourg           | 14.62 | Sweden               | 28.73 | -14.12
- 2025-04-05 | Rugby Europe Conference 2025 | Zenica      | home | Bosnia & Herzegovina | 42.84 | Kosovo               |  9.61 |  33.23
- 2025-04-05 | Rugby Europe Conference 2025 | Limassol    | home | Cyprus               | 22.02 | Andorra              | 21.95 |   0.07
- 2025-04-05 | Rugby Europe Conference 2025 | Paola       | home | Malta                | 14.06 | Israel               | 13.01 |   1.05
- 2025-04-05 | Rugby Europe Trophy 2025     | Luxembourg  | home | Luxembourg           |  9.31 | Poland               | 33.66 | -24.35
- 2025-04-12 | Rugby Europe Conference 2025 | Budapest    | home | Hungary              | 12.59 | Ukraine              | 32.42 | -19.83
- 2025-04-12 | Rugby Europe Conference 2025 | Istanbul    | home | Turkey               | 30.10 | Serbia               | 17.31 |  12.79
- 2025-04-12 | Rugby Europe Trophy 2025     | Trelleborg  | home | Sweden               | 16.53 | Poland               | 27.01 | -10.48
- 2025-04-19 | Rugby Europe Conference 2025 | Bulgaria?   | home | Bulgaria             | 10.61 | Moldova              | 33.45 | -22.84
- 2025-04-19 | Rugby Europe Conference 2025 | Denmark?    | home | Denmark              | 27.67 | Latvia               | 15.90 |  11.76
- 2025-04-19 | Rugby Europe Conference 2025 | Montenegro? | home | Montenegro           | 17.11 | Slovenia             | 28.59 | -11.48
- 2025-04-26 | Rugby Europe Conference 2025 | Tallinn     | home | Estonia              |  0.31 | Norway               | 24.70 | -24.39
- 2025-04-26 | Rugby Europe Conference 2025 | Israel?     | home | Israel               | 30.39 | Cyprus               | 16.84 |  13.55
- 2025-04-26 | Rugby Europe Conference 2025 | Latvia?     | home | Latvia               | 27.52 | Finland              | 21.98 |   5.54
- 2025-04-26 | Rugby Europe Conference 2025 | Ljubljana   | home | Slovenia             | 28.20 | Bosnia & Herzegovina | 18.25 |   9.95
- 2025-04-26 | Rugby Europe Conference 2025 | Ukraine?    | home | Ukraine              | 39.59 | Austria              | 13.21 |  26.38
- 2025-05-03 | Rugby Europe Conference 2025 | Austria?    | home | Austria              | 76.12 | Slovakia             | 18.22 |  57.90
- 2025-05-10 | Rugby Europe Conference 2025 | Estonia?    | home | Estonia              |  0.18 | Finland              | 72.89 | -72.71
- 2025-05-10 | Rugby Europe Conference 2025 | Oslo        | home | Norway               |  5.23 | Denmark              | 40.66 | -35.43
- 2025-05-10 | Rugby Europe Conference 2025 | Serbia?     | home | Serbia               | 22.05 | Bulgaria             | 25.24 |  -3.18
-(21 rows)
+    date    |                      event                       |          city          |  site   |     team     |  e_p  |         opponent          |  e_p  |  e_d   
+------------+--------------------------------------------------+------------------------+---------+--------------+-------+---------------------------+-------+--------
+ 2025-07-04 | Rugby World Cup Qualifying 2025                  | Sri Lanka?             | home    | Sri Lanka    | 29.43 | United Arab Emirates      | 37.30 |  -7.87
+ 2025-07-05 | Men's Internationals 2025                        | Buenos Aires           | home    | Argentina    | 26.31 | England                   | 23.38 |   2.93
+ 2025-07-05 | Men's Internationals 2025                        | Santiago               | home    | Chile        | 29.29 | Romania                   | 19.92 |   9.38
+ 2025-07-05 | Men's Internationals 2025                        | Tbilisi                | home    | Georgia      | 12.13 | Ireland                   | 28.38 | -16.25
+ 2025-07-05 | Men's Internationals 2025                        | Kitakyushu             | home    | Japan        | 22.11 | Wales                     | 28.69 |  -6.59
+ 2025-07-05 | Men's Internationals 2025                        | Dunedin                | home    | New Zealand  | 28.36 | France                    | 21.46 |   6.90
+ 2025-07-05 | Men's Internationals 2025                        | Pretoria               | home    | South Africa | 41.72 | Italy                     | 12.44 |  29.28
+ 2025-07-05 | Men's Internationals 2025                        | North Carolina         | home    | USA          | 32.12 | Belgium                   | 11.02 |  21.10
+ 2025-07-06 | Men's Internationals 2025                        | Newcastle              | home    | Australia    | 29.86 | Fiji                      | 21.02 |   8.84
+ 2025-07-08 | Confederation of African Rugby Championship 2025 | Namboole               | neutral | Algeria      | 25.22 | Cote D'Ivoire             |  9.92 |  15.30
+ 2025-07-08 | Confederation of African Rugby Championship 2025 | Namboole               | away    | Kenya        | 23.85 | Uganda                    | 18.80 |   5.05
+ 2025-07-08 | Confederation of African Rugby Championship 2025 | Namboole               | neutral | Namibia      | 43.86 | Senegal                   | 16.43 |  27.43
+ 2025-07-08 | Confederation of African Rugby Championship 2025 | Namboole               | neutral | Zimbabwe     | 29.40 | Morocco                   | 13.46 |  15.94
+ 2025-07-12 | Men's Internationals 2025                        | San Juan               | home    | Argentina    | 26.31 | England                   | 23.38 |   2.93
+ 2025-07-12 | Men's Internationals 2025                        | Kobe                   | home    | Japan        | 22.11 | Wales                     | 28.69 |  -6.59
+ 2025-07-12 | Men's Internationals 2025                        | Wellington             | home    | New Zealand  | 28.36 | France                    | 21.46 |   6.90
+ 2025-07-12 | Men's Internationals 2025                        | Lisbon                 | home    | Portugal     |  9.68 | Ireland                   | 52.06 | -42.38
+ 2025-07-12 | Men's Internationals 2025                        | Port Elizabeth         | home    | South Africa | 41.72 | Italy                     | 12.44 |  29.28
+ 2025-07-12 | Men's Internationals 2025                        | Montevideo             | home    | Uruguay      | 30.33 | Romania                   | 18.78 |  11.56
+ 2025-07-12 | Men's Internationals 2025                        | North Carolina         | home    | USA          | 27.28 | Spain                     | 21.47 |   5.81
+ 2025-07-19 | Men's Internationals 2025                        | Salta                  | home    | Argentina    | 60.51 | Uruguay                   | 10.74 |  49.77
+ 2025-07-19 | Men's Internationals 2025                        | Hamilton               | home    | New Zealand  | 28.36 | France                    | 21.46 |   6.90
+ 2025-07-19 | Men's Internationals 2025                        | Mbombela               | home    | South Africa | 35.89 | Georgia                   |  9.51 |  26.38
+ 2025-07-19 | Men's Internationals 2025                        | Washington D.C.        | home    | USA          | 10.65 | England                   | 40.46 | -29.81
+ 2025-08-08 | Men's Internationals 2025                        | Saint Lucia?           | home    | St Lucia     | 20.65 | St Vincent and Grenadines |  0.91 |  19.74
+ 2025-08-16 | The Rugby Championship 2025                      | Cordoba                | home    | Argentina    | 22.62 | New Zealand               | 30.81 |  -8.18
+ 2025-08-16 | The Rugby Championship 2025                      | Johannesburg           | home    | South Africa | 35.93 | Australia                 | 14.30 |  21.64
+ 2025-08-22 | Pacific Nations Cup 2025                         | Calgary                | home    | Canada       | 19.50 | USA                       | 33.07 | -13.57
+ 2025-08-23 | Pacific Nations Cup 2025                         | Nuku'alofa             | home    | Tonga        | 17.14 | Samoa                     | 27.50 | -10.36
+ 2025-08-23 | The Rugby Championship 2025                      | Buenos Aires           | home    | Argentina    | 22.62 | New Zealand               | 30.81 |  -8.18
+ 2025-08-23 | The Rugby Championship 2025                      | Cape Town              | home    | South Africa | 35.93 | Australia                 | 14.30 |  21.64
+ 2025-08-30 | Pacific Nations Cup 2025                         | Suva                   | home    | Fiji         | 41.96 | Tonga                     | 12.96 |  29.00
+ 2025-08-30 | Pacific Nations Cup 2025                         | Sendai                 | home    | Japan        | 55.05 | Canada                    | 17.68 |  37.37
+ 2025-09-06 | Pacific Nations Cup 2025                         | Rotorua                | neutral | Samoa        | 16.56 | Fiji                      | 26.40 |  -9.83
+ 2025-09-06 | Pacific Nations Cup 2025                         | Sacramento, California | home    | USA          | 21.67 | Japan                     | 27.93 |  -6.26
+ 2025-09-06 | The Rugby Championship 2025                      | Townsville             | home    | Australia    | 24.85 | Argentina                 | 30.65 |  -5.79
+ 2025-09-06 | The Rugby Championship 2025                      | Auckland               | home    | New Zealand  | 22.44 | South Africa              | 20.96 |   1.48
+ 2025-09-13 | The Rugby Championship 2025                      | Sydney                 | home    | Australia    | 24.85 | Argentina                 | 30.65 |  -5.79
+ 2025-09-13 | The Rugby Championship 2025                      | Wellington             | home    | New Zealand  | 22.44 | South Africa              | 20.96 |   1.48
+ 2025-09-27 | The Rugby Championship 2025                      | Auckland               | home    | New Zealand  | 39.41 | Australia                 | 16.48 |  22.93
+ 2025-09-27 | The Rugby Championship 2025                      | Durban                 | home    | South Africa | 31.61 | Argentina                 | 17.45 |  14.16
+(41 rows)
 
-COPY 21
+COPY 41
 COMMIT
