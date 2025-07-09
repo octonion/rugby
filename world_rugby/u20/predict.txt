@@ -1,20 +1,14 @@
 BEGIN
 SET
-    date    |               event               |   city    |  site   |       team       |  e_p  |     opponent     |  e_p  |  e_d  
-------------+-----------------------------------+-----------+---------+------------------+-------+------------------+-------+-------
- 2025-07-04 | World Rugby U20 Championship 2025 | Rovigo    | neutral | Argentina U20    | 32.15 | Spain            | 10.25 | 21.90
- 2025-07-04 | World Rugby U20 Championship 2025 | Viadana   | neutral | Australia U20    | 33.94 | Scotland U20     | 23.74 | 10.20
- 2025-07-04 | World Rugby U20 Championship 2025 | Rovigo    | neutral | England U20      | 29.02 | South Africa U20 | 25.29 |  3.74
- 2025-07-04 | World Rugby U20 Championship 2025 | Rovigo    | neutral | France U20       | 43.58 | Wales U20        | 20.28 | 23.30
- 2025-07-04 | World Rugby U20 Championship 2025 | Viadana   | away    | Ireland U20      | 28.47 | Italy U20        | 16.59 | 11.88
- 2025-07-04 | World Rugby U20 Championship 2025 | Viadana   | neutral | New Zealand U20  | 33.17 | Georgia U20      | 24.10 |  9.07
- 2025-07-09 | World Rugby U20 Championship 2025 | Verona    | neutral | England U20      | 33.83 | Australia U20    | 19.65 | 14.18
- 2025-07-09 | World Rugby U20 Championship 2025 | Verona    | neutral | France U20       | 28.57 | Argentina U20    | 20.76 |  7.81
- 2025-07-09 | World Rugby U20 Championship 2025 | Calvisano | away    | Georgia U20      | 24.69 | Italy U20        | 19.63 |  5.05
- 2025-07-09 | World Rugby U20 Championship 2025 | Calvisano | neutral | New Zealand U20  | 28.03 | Ireland U20      | 27.79 |  0.24
- 2025-07-09 | World Rugby U20 Championship 2025 | Calvisano | neutral | South Africa U20 | 43.67 | Scotland U20     | 20.37 | 23.30
- 2025-07-09 | World Rugby U20 Championship 2025 | Verona    | neutral | Wales U20        | 31.42 | Spain            | 15.63 | 15.78
-(12 rows)
+    date    |               event               |   city    |  site   |       team       |  e_p  |   opponent    |  e_p  |  e_d  
+------------+-----------------------------------+-----------+---------+------------------+-------+---------------+-------+-------
+ 2025-07-09 | World Rugby U20 Championship 2025 | Verona    | neutral | England U20      | 33.19 | Australia U20 | 20.25 | 12.94
+ 2025-07-09 | World Rugby U20 Championship 2025 | Verona    | neutral | France U20       | 31.00 | Argentina U20 | 20.21 | 10.79
+ 2025-07-09 | World Rugby U20 Championship 2025 | Calvisano | away    | Georgia U20      | 23.59 | Italy U20     | 20.31 |  3.28
+ 2025-07-09 | World Rugby U20 Championship 2025 | Calvisano | neutral | New Zealand U20  | 28.85 | Ireland U20   | 26.36 |  2.49
+ 2025-07-09 | World Rugby U20 Championship 2025 | Calvisano | neutral | South Africa U20 | 44.30 | Scotland U20  | 19.86 | 24.44
+ 2025-07-09 | World Rugby U20 Championship 2025 | Verona    | neutral | Wales U20        | 30.63 | Spain         | 19.70 | 10.92
+(6 rows)
 
-COPY 12
+COPY 6
 COMMIT
