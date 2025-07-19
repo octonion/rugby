@@ -1,22 +1,27 @@
-[1] 1446    8
-[1] 3388    8
+[1] 1448    8
+[1] 3396    8
 [1] TRUE
-[1] 3388    5
-start par. =  1 1 1 fn =  71113.33 
+[1] 3396    5
+start par. =  1 1 1 fn =  71302.83 
 At return
-eval: 195 fn:      70136.404 par: 0.284705  1.20744  1.35423
-(NM) 20: f = 70136.4 at   0.284705    1.20744    1.35423    2.96837 -0.0088259   0.107046
-(NM) 40: f = 70136.4 at   0.284705    1.20744    1.35423    2.96837 -0.0088259   0.107046
-(NM) 60: f = 70136.4 at    0.284728     1.20741      1.3567     2.96295 -0.00831438    0.107593
-(NM) 80: f = 70136.4 at    0.284733     1.20714      1.3537     2.96278 -0.00837002    0.107532
-(NM) 100: f = 70136.4 at     0.28471      1.2074     1.35421     2.96169 -0.00835492    0.107537
-(NM) 120: f = 70136.4 at    0.284668     1.20735     1.35426     2.96141 -0.00848768    0.107433
-(NM) 140: f = 70136.4 at    0.284688     1.20747     1.35439      2.9613 -0.00850646    0.107403
-(NM) 160: f = 70136.4 at    0.284683     1.20743     1.35445     2.96149 -0.00857902    0.107325
-(NM) 180: f = 70136.4 at      0.2847     1.20752     1.35421     2.96129 -0.00867837    0.107236
-(NM) 200: f = 70136.4 at   0.284706    1.20743    1.35423    2.96132 -0.0086837   0.107225
-(NM) 220: f = 70136.4 at    0.284704     1.20744     1.35423     2.96131 -0.00867601    0.107233
-(NM) 240: f = 70136.4 at    0.284703     1.20743     1.35423     2.96129 -0.00867127    0.107239
+eval: 262 fn:      70323.793 par: 0.284545  1.20758  1.35446
+(NM) 20: f = 70323.8 at   0.284545    1.20758    1.35446    2.96956 -0.0104963   0.105613
+(NM) 40: f = 70323.8 at   0.284545    1.20758    1.35446    2.96956 -0.0104963   0.105613
+(NM) 60: f = 70323.8 at    0.284567     1.20755     1.35693     2.96413 -0.00998697    0.106159
+(NM) 80: f = 70323.8 at   0.284573    1.20728    1.35393    2.96396 -0.0100424   0.106098
+(NM) 100: f = 70323.8 at  0.284509   1.20749   1.35449   2.96214 -0.010017  0.106134
+(NM) 120: f = 70323.8 at   0.284515    1.20746    1.35437    2.96335 -0.0102701   0.105888
+(NM) 140: f = 70323.8 at   0.284538    1.20755    1.35467    2.96352 -0.0103218   0.105828
+(NM) 160: f = 70323.8 at   0.284539    1.20771    1.35457    2.96294 -0.0102717   0.105884
+(NM) 180: f = 70323.8 at   0.284542    1.20768    1.35453    2.96285 -0.0102644   0.105888
+(NM) 200: f = 70323.8 at   0.284548    1.20771    1.35457    2.96254 -0.0103795   0.105773
+(NM) 220: f = 70323.8 at   0.284547    1.20764    1.35457    2.96244 -0.0103627   0.105785
+(NM) 240: f = 70323.8 at   0.284543    1.20763    1.35449    2.96242 -0.0103476   0.105801
+(NM) 260: f = 70323.8 at   0.284541    1.20766    1.35448    2.96249 -0.0103778    0.10577
+(NM) 280: f = 70323.8 at    0.28454    1.20761    1.35447    2.96253 -0.0103695   0.105781
+(NM) 300: f = 70323.8 at   0.284541    1.20758     1.3545     2.9625 -0.0103807   0.105767
+(NM) 320: f = 70323.8 at   0.284543    1.20757    1.35449    2.96248 -0.0103848   0.105764
+(NM) 340: f = 70323.8 at   0.284542    1.20758    1.35449    2.96251 -0.0103822   0.105766
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -24,16 +29,17 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 Weights: w
       AIC       BIC    logLik -2*log(L)  df.resid 
- 70148.40  70185.17 -35068.20  70136.40      3382 
+ 70335.79  70372.57 -35161.89  70323.79      3390 
 Random effects:
  Groups  Name        Std.Dev.
- game_id (Intercept) 0.2847  
- defense (Intercept) 1.2074  
- offense (Intercept) 1.3542  
-Number of obs: 3388, groups:  game_id, 723; defense, 112; offense, 112
+ game_id (Intercept) 0.2845  
+ defense (Intercept) 1.2076  
+ offense (Intercept) 1.3545  
+Number of obs: 3396, groups:  game_id, 724; defense, 112; offense, 112
 Fixed Effects:
       (Intercept)  fielddefense_home  fieldoffense_home  
-         2.961287          -0.008669           0.107241  
+          2.96250           -0.01038            0.10577  
+optimizer (Nelder_Mead) convergence code: 0 (OK) ; 0 optimizer warnings; 1 lme4 warnings 
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -42,29 +48,32 @@ Formula: gs ~ field + (1 | offense) + (1 | defense) + (1 | game_id)
 Weights: w
 
       AIC       BIC    logLik -2*log(L)  df.resid 
-  70148.4   70185.2  -35068.2   70136.4      3382 
+  70335.8   70372.6  -35161.9   70323.8      3390 
 
 Scaled residuals: 
-    Min      1Q  Median      3Q     Max 
--6.8878 -1.4220 -0.0286  1.3301 10.1967 
+   Min     1Q Median     3Q    Max 
+-6.888 -1.423 -0.025  1.324 10.197 
 
 Random effects:
  Groups  Name        Variance Std.Dev.
- game_id (Intercept) 0.08106  0.2847  
- defense (Intercept) 1.45791  1.2074  
- offense (Intercept) 1.83396  1.3542  
-Number of obs: 3388, groups:  game_id, 723; defense, 112; offense, 112
+ game_id (Intercept) 0.08096  0.2845  
+ defense (Intercept) 1.45825  1.2076  
+ offense (Intercept) 1.83463  1.3545  
+Number of obs: 3396, groups:  game_id, 724; defense, 112; offense, 112
 
 Fixed effects:
-                   Estimate Std. Error z value Pr(>|z|)    
-(Intercept)        2.961287   0.175011  16.921  < 2e-16 ***
-fielddefense_home -0.008669   0.036081  -0.240  0.81013    
-fieldoffense_home  0.107241   0.036062   2.974  0.00294 ** 
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        2.96250    0.17500  16.929  < 2e-16 ***
+fielddefense_home -0.01038    0.03593  -0.289  0.77256    
+fieldoffense_home  0.10577    0.03591   2.946  0.00322 ** 
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr) flddf_
-filddfns_hm -0.150       
-fildffns_hm -0.150  0.989
+filddfns_hm -0.149       
+fildffns_hm -0.149  0.989
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00215388 (tol = 0.002, component 1)
+
 [1] TRUE
