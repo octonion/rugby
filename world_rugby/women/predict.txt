@@ -1,32 +1,24 @@
 BEGIN
 SET
-    date    |            event             |       city        |  site   |     team      |  e_p  |   opponent    | e_p  | e_d  
-------------+------------------------------+-------------------+---------+---------------+-------+---------------+------+------
- 2025-08-22 | Women's Rugby World Cup 2025 | Sunderland        | home    | England       |  73.2 | United States |  7.8 | 65.4
- 2025-08-23 | Women's Rugby World Cup 2025 | Manchester        | neutral | Australia     |  31.1 | Samoa         |  9.8 | 21.3
- 2025-08-23 | Women's Rugby World Cup 2025 | York              | neutral | Canada        |  56.3 | Fiji          |  6.5 | 49.7
- 2025-08-23 | Women's Rugby World Cup 2025 | Exeter            | neutral | France        |  28.0 | Italy         | 10.0 | 18.0
- 2025-08-23 | Women's Rugby World Cup 2025 | Manchester        | neutral | Scotland      |  21.2 | Wales         | 14.6 |  6.6
- 2025-08-24 | Women's Rugby World Cup 2025 | Northampton       | neutral | Ireland       |  30.6 | Japan         | 12.9 | 17.7
- 2025-08-24 | Women's Rugby World Cup 2025 | York              | neutral | New Zealand   |  61.9 | Spain         |  6.7 | 55.2
- 2025-08-24 | Women's Rugby World Cup 2025 | Northampton       | neutral | South Africa  |  36.4 | Brazil        |  8.7 | 27.7
- 2025-08-30 | Women's Rugby World Cup 2025 | Manchester        | neutral | Canada        |  37.2 | Wales         |  8.9 | 28.3
- 2025-08-30 | Women's Rugby World Cup 2025 | Northampton       | home    | England       | 100.2 | Samoa         |  4.7 | 95.5
- 2025-08-30 | Women's Rugby World Cup 2025 | Manchester        | neutral | Scotland      |  32.0 | Fiji          | 10.6 | 21.3
- 2025-08-30 | Women's Rugby World Cup 2025 | York              | neutral | United States |  16.3 | Australia     | 22.7 | -6.5
- 2025-08-31 | Women's Rugby World Cup 2025 | Exeter            | neutral | France        |  75.3 | Brazil        |  3.7 | 71.6
- 2025-08-31 | Women's Rugby World Cup 2025 | Northampton       | neutral | Ireland       |  35.2 | Spain         | 10.4 | 24.8
- 2025-08-31 | Women's Rugby World Cup 2025 | York              | neutral | Italy         |  23.4 | South Africa  | 13.5 |  9.8
- 2025-08-31 | Women's Rugby World Cup 2025 | Exeter            | neutral | New Zealand   |  53.7 | Japan         |  8.2 | 45.5
- 2025-09-06 | Women's Rugby World Cup 2025 | Exeter            | neutral | Canada        |  30.6 | Scotland      | 10.7 | 19.9
- 2025-09-06 | Women's Rugby World Cup 2025 | Brighton and Hove | home    | England       |  57.2 | Australia     |  8.5 | 48.7
- 2025-09-06 | Women's Rugby World Cup 2025 | York              | neutral | United States |  28.5 | Samoa         | 12.6 | 15.9
- 2025-09-06 | Women's Rugby World Cup 2025 | Exeter            | neutral | Wales         |  26.8 | Fiji          | 12.9 | 13.8
- 2025-09-07 | Women's Rugby World Cup 2025 | Northampton       | neutral | France        |  43.5 | South Africa  |  9.0 | 34.5
- 2025-09-07 | Women's Rugby World Cup 2025 | Northampton       | neutral | Italy         |  40.4 | Brazil        |  5.6 | 34.8
- 2025-09-07 | Women's Rugby World Cup 2025 | York              | neutral | Japan         |  21.6 | Spain         | 15.2 |  6.4
- 2025-09-07 | Women's Rugby World Cup 2025 | Brighton and Hove | neutral | New Zealand   |  36.8 | Ireland       | 13.4 | 23.4
-(24 rows)
+    date    |            event             |       city        |  site   |     team      |  e_p  |   opponent   | e_p  |  e_d  
+------------+------------------------------+-------------------+---------+---------------+-------+--------------+------+-------
+ 2025-08-30 | Women's Rugby World Cup 2025 | Manchester        | neutral | Canada        |  38.3 | Wales        |  8.7 |  29.6
+ 2025-08-30 | Women's Rugby World Cup 2025 | Northampton       | home    | England       | 125.1 | Samoa        |  4.1 | 121.1
+ 2025-08-30 | Women's Rugby World Cup 2025 | Manchester        | neutral | Scotland      |  34.3 | Fiji         |  9.6 |  24.8
+ 2025-08-30 | Women's Rugby World Cup 2025 | York              | neutral | United States |  15.7 | Australia    | 23.9 |  -8.1
+ 2025-08-31 | Women's Rugby World Cup 2025 | Exeter            | neutral | France        |  90.1 | Brazil       |  3.3 |  86.8
+ 2025-08-31 | Women's Rugby World Cup 2025 | Northampton       | neutral | Ireland       |  36.2 | Spain        | 10.0 |  26.3
+ 2025-08-31 | Women's Rugby World Cup 2025 | York              | neutral | Italy         |  22.7 | South Africa | 13.6 |   9.1
+ 2025-08-31 | Women's Rugby World Cup 2025 | Exeter            | neutral | New Zealand   |  56.2 | Japan        |  8.0 |  48.3
+ 2025-09-06 | Women's Rugby World Cup 2025 | Exeter            | neutral | Canada        |  30.4 | Scotland     | 11.1 |  19.4
+ 2025-09-06 | Women's Rugby World Cup 2025 | Brighton and Hove | home    | England       |  56.4 | Australia    |  8.9 |  47.5
+ 2025-09-06 | Women's Rugby World Cup 2025 | York              | neutral | United States |  34.9 | Samoa        | 10.9 |  24.0
+ 2025-09-06 | Women's Rugby World Cup 2025 | Exeter            | neutral | Wales         |  27.1 | Fiji         | 12.1 |  15.0
+ 2025-09-07 | Women's Rugby World Cup 2025 | Northampton       | neutral | France        |  43.8 | South Africa |  8.7 |  35.2
+ 2025-09-07 | Women's Rugby World Cup 2025 | Northampton       | neutral | Italy         |  46.6 | Brazil       |  5.2 |  41.5
+ 2025-09-07 | Women's Rugby World Cup 2025 | York              | neutral | Japan         |  21.4 | Spain        | 15.2 |   6.2
+ 2025-09-07 | Women's Rugby World Cup 2025 | Brighton and Hove | neutral | New Zealand   |  36.9 | Ireland      | 13.5 |  23.4
+(16 rows)
 
-COPY 24
+COPY 16
 COMMIT
