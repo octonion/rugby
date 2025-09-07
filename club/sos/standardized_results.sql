@@ -37,7 +37,7 @@ away_score
 from club.games
 
 where
-    season between 2003 and 2025
+    season between 2003 and 2026
 
 and home_score is not null
 and away_score is not null
@@ -68,7 +68,7 @@ home_score
 from club.games
 
 where
-    season between 2003 and 2025
+    season between 2003 and 2026
 
 and home_score is not null
 and away_score is not null
