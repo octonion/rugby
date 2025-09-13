@@ -1,18 +1,12 @@
 BEGIN
 SET
-    date    |            event             |       city        |  site   |     team      | e_p  |   opponent   | e_p  | e_d  
-------------+------------------------------+-------------------+---------+---------------+------+--------------+------+------
- 2025-09-06 | Women's Rugby World Cup 2025 | Exeter            | neutral | Canada        | 32.7 | Scotland     | 11.0 | 21.8
- 2025-09-06 | Women's Rugby World Cup 2025 | Brighton and Hove | home    | England       | 55.4 | Australia    |  8.7 | 46.8
- 2025-09-06 | Women's Rugby World Cup 2025 | York              | neutral | United States | 40.2 | Samoa        | 10.0 | 30.2
- 2025-09-06 | Women's Rugby World Cup 2025 | Exeter            | neutral | Wales         | 24.2 | Fiji         | 13.9 | 10.2
- 2025-09-07 | Women's Rugby World Cup 2025 | Northampton       | neutral | France        | 41.2 | South Africa |  9.8 | 31.4
- 2025-09-07 | Women's Rugby World Cup 2025 | Northampton       | neutral | Italy         | 42.9 | Brazil       |  6.0 | 36.9
- 2025-09-07 | Women's Rugby World Cup 2025 | York              | neutral | Japan         | 22.0 | Spain        | 16.3 |  5.7
- 2025-09-07 | Women's Rugby World Cup 2025 | Brighton and Hove | neutral | New Zealand   | 39.8 | Ireland      | 14.2 | 25.6
- 2025-09-13 | Women's Rugby World Cup 2025 | Bristol           | neutral | Canada        | 32.9 | Australia    | 11.2 | 21.7
- 2025-09-14 | Women's Rugby World Cup 2025 | Bristol           | home    | England       | 55.2 | Scotland     |  8.6 | 46.6
-(10 rows)
+    date    |            event             |  city   |  site   |    team     | e_p  |   opponent   | e_p  | e_d  
+------------+------------------------------+---------+---------+-------------+------+--------------+------+------
+ 2025-09-13 | Women's Rugby World Cup 2025 | Bristol | neutral | Canada      | 32.9 | Australia    | 11.3 | 21.6
+ 2025-09-13 | Women's Rugby World Cup 2025 | Exeter  | neutral | New Zealand | 57.5 | South Africa |  9.2 | 48.3
+ 2025-09-14 | Women's Rugby World Cup 2025 | Bristol | home    | England     | 55.3 | Scotland     |  8.5 | 46.8
+ 2025-09-14 | Women's Rugby World Cup 2025 | Exeter  | neutral | France      | 30.3 | Ireland      | 13.4 | 16.9
+(4 rows)
 
-COPY 10
+COPY 4
 COMMIT
