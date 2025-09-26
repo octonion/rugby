@@ -16,6 +16,7 @@ cp csv/*.csv /tmp/data
 
 cat /tmp/data/*.csv >> /tmp/games.csv
 rpl "Stade Rochelais" "La Rochelle" /tmp/games.csv
+rpl "Newcastle Falcons" "Newcastle Red Bulls" /tmp/games.csv
 
 psql rugby -f loaders/load_games.sql
 
