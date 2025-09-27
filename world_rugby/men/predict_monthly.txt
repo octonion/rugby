@@ -1,19 +1,28 @@
 BEGIN
 SET
-    date    |              event              |       city       |  site   |     team     | e_p  |   opponent    | e_p  
-------------+---------------------------------+------------------+---------+--------------+------+---------------+------
- 2025-09-13 | The Rugby Championship 2025     | Sydney           | home    | Australia    | 27.4 | Argentina     | 27.6
- 2025-09-13 | The Rugby Championship 2025     | Wellington       | home    | New Zealand  | 24.9 | South Africa  | 20.2
- 2025-09-14 | Pacific Nations Cup 2025        | Denver, Colorado | neutral | Fiji         | 56.3 | Canada        | 10.9
- 2025-09-14 | Pacific Nations Cup 2025        | Denver, Colorado | away    | Samoa        | 26.2 | United States | 16.2
- 2025-09-14 | Pacific Nations Cup 2025        | Denver, Colorado | neutral | Tonga        | 19.5 | Japan         | 33.4
- 2025-09-27 | Rugby Europe Conference 2026    | Turkey?          | home    | Turkey       |  9.0 | Ukraine       | 62.8
- 2025-09-27 | The Rugby Championship 2025     | Auckland         | home    | New Zealand  | 37.6 | Australia     | 17.6
- 2025-09-27 | The Rugby Championship 2025     | Durban           | home    | South Africa | 31.5 | Argentina     | 18.4
- 2025-10-04 | The Rugby Championship 2025     | London           | neutral | Argentina    | 18.6 | South Africa  | 28.5
- 2025-10-04 | The Rugby Championship 2025     | Perth            | home    | Australia    | 19.7 | New Zealand   | 33.5
- 2025-10-11 | Rugby World Cup Qualifying 2025 | Asuncion         | home    | Paraguay     | 14.6 | Brazil        | 51.2
-(11 rows)
+    date    |              event              |        city        |  site   |          team          |  e_p  |   opponent   | e_p  
+------------+---------------------------------+--------------------+---------+------------------------+-------+--------------+------
+ 2025-09-27 | Rugby Europe Conference 2026    | Istanbul           | home    | Turkey                 |   8.9 | Ukraine      | 62.7
+ 2025-09-27 | Rugby World Cup Qualifying 2025 | Viña Del Mar       | home    | Chile                  |  20.6 | Samoa        | 24.0
+ 2025-09-27 | The Rugby Championship 2025     | Auckland           | home    | New Zealand            |  36.5 | Australia    | 18.6
+ 2025-09-27 | The Rugby Championship 2025     | Durban             | home    | South Africa           |  32.3 | Argentina    | 17.4
+ 2025-10-04 | Rugby Europe Conference 2026    | Krems an der Donau | home    | Austria                |  43.9 | Slovenia     | 11.7
+ 2025-10-04 | Rugby Europe Conference 2026    | Zenica             | home    | Bosnia and Herzegovina |  31.6 | Montenegro   | 17.9
+ 2025-10-04 | Rugby Europe Conference 2026    | Sofia              | home    | Bulgaria               |  28.8 | Turkey       | 24.5
+ 2025-10-04 | Rugby Europe Conference 2026    | Esztergom          | home    | Hungary                |  26.3 | Serbia       | 17.3
+ 2025-10-04 | The Rugby Championship 2025     | London             | neutral | Argentina              |  17.8 | South Africa | 29.6
+ 2025-10-04 | The Rugby Championship 2025     | Perth              | home    | Australia              |  20.6 | New Zealand  | 32.8
+ 2025-10-11 | Rugby Europe Conference 2026    | Ljubljana          | home    | Slovenia               |  16.4 | Hungary      | 28.8
+ 2025-10-11 | Rugby World Cup Qualifying 2025 | Asuncion           | home    | Paraguay               |  14.4 | Brazil       | 51.2
+ 2025-10-18 | Rugby Europe Conference 2026    | Vantaa             | home    | Finland                | 109.1 | Estonia      |  2.7
+ 2025-10-18 | Rugby Europe Conference 2026    | Stavanger          | home    | Norway                 |   7.6 | Luxembourg   | 36.9
+ 2025-10-18 | Rugby World Cup Qualifying 2025 | Sao Paulo          | home    | Brazil                 |  57.0 | Paraguay     | 13.0
+ 2025-10-24 | Rugby Europe Conference 2026    | Finland?           | home    | Finland                |  23.1 | Latvia       | 21.8
+ 2025-10-25 | Men's Internationals 2025       | Tokyo              | home    | Japan                  |  20.7 | Australia    | 41.5
+ 2025-10-25 | Rugby Europe Conference 2026    | Serbia?            | home    | Serbia                 |  61.7 | Slovakia     | 15.0
+ 2025-10-25 | Rugby Europe Trophy 2026        | Lithuania?         | home    | Lithuania              |  11.7 | Poland       | 36.1
+ 2025-10-25 | Rugby Europe Trophy 2026        | Sweden?            | home    | Sweden                 |  37.7 | Croatia      | 21.7
+(20 rows)
 
-COPY 11
+COPY 20
 COMMIT
