@@ -1,21 +1,56 @@
 BEGIN
 SET
-    date    |            event             |    city     | site |    team    |  e_p   |   opponent   |  e_p  |  e_d   
-------------+------------------------------+-------------+------+------------+--------+--------------+-------+--------
- 2025-11-22 | Autumn Nations Series 2025   | Saint-Denis | home | France     |  34.37 | Australia    | 19.81 |  14.56
- 2025-11-22 | Autumn Nations Series 2025   | Dublin      | home | Ireland    |  18.99 | South Africa | 20.63 |  -1.64
- 2025-11-22 | Autumn Nations Series 2025   | Genova      | home | Italy      |  41.99 | Chile        | 14.35 |  27.64
- 2025-11-22 | Autumn Nations Series 2025   | Cardiff     | home | Wales      |  14.72 | New Zealand  | 37.03 | -22.31
- 2025-11-22 | Men's Internationals 2025    | Tbilisi     | home | Georgia    |  25.66 | Japan        | 22.44 |   3.22
- 2025-11-22 | Men's Internationals 2025    | Coimbra     | home | Portugal   |  36.98 | Canada       | 21.59 |  15.39
- 2025-11-22 | Men's Internationals 2025    | Bucharest   | home | Romania    |  15.85 | Uruguay      | 33.97 | -18.12
- 2025-11-22 | Men's Internationals 2025    | Malaga      | home | Spain      |  14.83 | Fiji         | 42.84 | -28.01
- 2025-11-22 | Rugby Europe Trophy 2026     | Gdynia      | home | Poland     |  28.99 | Czechia      | 17.78 |  11.20
- 2025-11-23 | Autumn Nations Series 2025   | London      | home | England    |  28.81 | Argentina    | 21.28 |   7.53
- 2025-11-23 | Autumn Nations Series 2025   | Edinburgh   | home | Scotland   |  51.28 | Tonga        | 10.15 |  41.13
- 2025-11-29 | Autumn Nations Series 2025   | Cardiff     | home | Wales      |  12.25 | South Africa | 35.22 | -22.97
- 2025-12-06 | Rugby Europe Conference 2026 | Luxembourg  | home | Luxembourg | 107.03 | Estonia      |  1.56 | 105.46
-(13 rows)
+    date    |                    event                     |         city          | site |    team     |  e_p  |       opponent       |  e_p  |  e_d   
+------------+----------------------------------------------+-----------------------+------+-------------+-------+----------------------+-------+--------
+ 2026-02-07 | Rugby Europe International Championship 2026 | Mons                  | home | Belgium     | 16.31 | Portugal             | 27.84 | -11.52
+ 2026-02-07 | Rugby Europe International Championship 2026 | Amsterdam             | home | Netherlands | 22.18 | Spain                | 33.20 | -11.02
+ 2026-02-07 | Six Nations 2026                             | London                | home | England     | 34.59 | Wales                | 12.44 |  22.15
+ 2026-02-07 | Six Nations 2026                             | Roma                  | home | Italy       | 20.02 | Scotland             | 27.94 |  -7.92
+ 2026-02-08 | Rugby Europe International Championship 2026 | Heidelberg            | home | Germany     | 13.86 | Romania              | 34.68 | -20.82
+ 2026-02-08 | Rugby Europe International Championship 2026 | Yverdon-les-Bains     | home | Switzerland |  5.70 | Georgia              | 75.58 | -69.88
+ 2026-02-14 | Rugby Europe International Championship 2026 | Dessau                | home | Germany     | 11.61 | Portugal             | 43.37 | -31.76
+ 2026-02-14 | Rugby Europe International Championship 2026 | Palencia              | home | Spain       | 75.97 | Switzerland          |  8.75 |  67.22
+ 2026-02-14 | Six Nations 2026                             | Dublin                | home | Ireland     | 36.52 | Italy                | 13.94 |  22.59
+ 2026-02-14 | Six Nations 2026                             | Edinburgh             | home | Scotland    | 19.27 | England              | 22.71 |  -3.44
+ 2026-02-15 | Rugby Europe International Championship 2026 | Amsterdam             | home | Netherlands | 12.74 | Georgia              | 37.46 | -24.72
+ 2026-02-15 | Rugby Europe International Championship 2026 | Iasi                  | home | Romania     | 25.25 | Belgium              | 17.18 |   8.07
+ 2026-02-15 | Six Nations 2026                             | Cardiff               | home | Wales       | 15.38 | France               | 36.98 | -21.60
+ 2026-02-21 | Rugby Europe International Championship 2026 | Mons                  | home | Belgium     | 28.75 | Germany              | 11.58 |  17.17
+ 2026-02-21 | Rugby Europe International Championship 2026 | Tbilisi               | home | Georgia     | 34.99 | Spain                | 15.71 |  19.29
+ 2026-02-21 | Six Nations 2026                             | London                | home | England     | 20.33 | Ireland              | 19.58 |   0.75
+ 2026-02-21 | Six Nations 2026                             | Cardiff               | home | Wales       | 16.91 | Scotland             | 27.34 | -10.43
+ 2026-02-22 | Rugby Europe International Championship 2026 | Lisbon                | home | Portugal    | 33.33 | Romania              | 19.68 |  13.65
+ 2026-02-22 | Rugby Europe International Championship 2026 | Yverdon-les-Bains     | home | Switzerland | 12.05 | Netherlands          | 47.91 | -35.87
+ 2026-02-22 | Six Nations 2026                             | Villeneuve-d'Ascq     | home | France      | 42.87 | Italy                | 16.06 |  26.81
+ 2026-02-28 | Rugby Europe Trophy 2026                     | Croatia?              | home | Croatia     | 16.52 | Poland               | 38.78 | -22.25
+ 2026-02-28 | Rugby Europe Trophy 2026                     | Prague                | home | Czechia     | 46.99 | Lithuania            | 13.31 |  33.68
+ 2026-03-06 | Six Nations 2026                             | Dublin                | home | Ireland     | 35.73 | Wales                | 11.77 |  23.96
+ 2026-03-07 | Rugby Europe Trophy 2026                     | Siauliai              | home | Lithuania   | 23.88 | Croatia              | 30.99 |  -7.11
+ 2026-03-07 | Six Nations 2026                             | Roma                  | home | Italy       | 16.71 | England              | 31.17 | -14.46
+ 2026-03-07 | Six Nations 2026                             | Edinburgh             | home | Scotland    | 21.00 | France               | 27.53 |  -6.54
+ 2026-03-14 | Rugby Europe Conference 2026                 | Limassol              | home | Cyprus      | 17.74 | Andorra              | 25.85 |  -8.11
+ 2026-03-14 | Six Nations 2026                             | Saint-Denis           | home | France      | 26.06 | England              | 20.65 |   5.41
+ 2026-03-14 | Six Nations 2026                             | Dublin                | home | Ireland     | 26.61 | Scotland             | 16.07 |  10.53
+ 2026-03-14 | Six Nations 2026                             | Cardiff               | home | Wales       | 23.21 | Italy                | 23.71 |  -0.50
+ 2026-04-04 | Rugby Europe Conference 2026                 | Andorra?              | home | Andorra     | 12.98 | Malta                | 13.07 |  -0.09
+ 2026-04-04 | Rugby Europe Conference 2026                 | Budapest              | home | Hungary     | 13.14 | Austria              | 33.08 | -19.94
+ 2026-04-04 | Rugby Europe Conference 2026                 | Moldova, Republic of? | home | Moldova     | 27.54 | Turkey               | 10.37 |  17.17
+ 2026-04-04 | Rugby Europe Trophy 2026                     | Trelleborg            | home | Sweden      | 37.08 | Denmark              | 12.16 |  24.91
+ 2026-04-11 | Rugby Europe Conference 2026                 | Latvia?               | home | Latvia      | 98.41 | Estonia              |  1.68 |  96.73
+ 2026-04-11 | Rugby Europe Conference 2026                 | Malta?                | home | Malta       | 14.07 | Israel               | 12.52 |   1.54
+ 2026-04-11 | Rugby Europe Conference 2026                 | Ukraine?              | home | Ukraine     | 30.40 | Moldova              |  9.52 |  20.89
+ 2026-04-11 | Rugby Europe Trophy 2026                     | Denmark?              | home | Denmark     | 13.64 | Czechia              | 36.32 | -22.69
+ 2026-04-11 | Rugby Europe Trophy 2026                     | Poland?               | home | Poland      | 28.12 | Sweden               | 17.53 |  10.59
+ 2026-04-18 | Rugby Europe Conference 2026                 | Kosovo?               | home | Kosovo      |  9.23 | Bosnia & Herzegovina | 49.49 | -40.26
+ 2026-04-18 | Rugby Europe Conference 2026                 | Luxembourg            | home | Luxembourg  | 22.78 | Latvia               | 15.03 |   7.76
+ 2026-04-18 | Rugby Europe Conference 2026                 | Norway?               | home | Norway      |  7.82 | Finland              | 39.15 | -31.33
+ 2026-04-18 | Rugby Europe Conference 2026                 | Serbia?               | home | Serbia      | 37.64 | Slovenia             | 16.72 |  20.93
+ 2026-04-18 | Rugby Europe Conference 2026                 | Slovakia?             | home | Slovakia    | 14.85 | Hungary              | 49.98 | -35.14
+ 2026-04-18 | Rugby Europe Conference 2026                 | Ukraine?              | home | Ukraine     | 64.22 | Bulgaria             |  9.09 |  55.13
+ 2026-04-25 | Rugby Europe Conference 2026                 | Sofia                 | home | Bulgaria    | 13.90 | Moldova              | 27.11 | -13.21
+ 2026-05-02 | Rugby Europe Conference 2026                 | Estonia?              | home | Estonia     |  4.24 | Norway               | 31.39 | -27.15
+ 2026-05-02 | Rugby Europe Conference 2026                 | Montenegro?           | home | Montenegro  | 34.23 | Kosovo               | 11.48 |  22.75
+(48 rows)
 
-COPY 13
+COPY 48
 COMMIT

@@ -55,7 +55,7 @@ r.team_id,
 r.opponent_id,
 r.field
 from men._results r
-where r.year between 2012 and 2025
+where r.year between 2012 and 2026
 );
 
 update r
