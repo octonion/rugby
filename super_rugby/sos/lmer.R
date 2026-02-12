@@ -20,7 +20,7 @@ team_score::float as gs,
 from sr.results r
 
 where
-    r.year between 2025 and 2025
+    r.year between 2025 and 2026
 
 ;")
 
