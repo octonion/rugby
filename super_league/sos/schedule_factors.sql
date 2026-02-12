@@ -55,7 +55,7 @@ r.team_name,
 r.opponent_name,
 r.field
 from sl.results r
-where r.year between 2012 and 2025
+where r.year between 2012 and 2026
 );
 
 update r
