@@ -54,15 +54,15 @@ except Exception as e:
 # --- Configuration ---
 DB_NAME = "rugby"
 DB_USER = "clong"  # *** REPLACE with your database username ***
-DB_PASSWORD = "psqlnik"  # *** REPLACE with your database password ***
-DB_HOST = "localhost"  # Replace with your database host if not local
+DB_PASSWORD = ""  # *** REPLACE with your database password ***
+DB_HOST = ""  # Replace with your database host if not local
 DB_PORT = "5432"  # Replace with your database port if not default
 DB_SCHEMA = "nrl"
 DIAGNOSTICS_DIR = "diagnostics"
 # Log file name reflects the package used
 OUTPUT_LOG_FILE = os.path.join(DIAGNOSTICS_DIR, "glmer_pymer4_final.log")
 MIN_YEAR = 2025
-MAX_YEAR = 2025
+MAX_YEAR = 2026
 REFERENCE_YEAR = 2024 # Used for calculating 'w'
 
 # --- Setup Logging ---
