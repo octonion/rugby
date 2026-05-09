@@ -1,21 +1,27 @@
 BEGIN
 SET
-    date    |            event            |       city       |  site   |     team      | e_p  |   opponent    | e_p  |  e_d  
-------------+-----------------------------+------------------+---------+---------------+------+---------------+------+-------
- 2026-04-24 | Pacific Four Series 2026    | Chicago          | home    | United States | 11.9 | Canada        | 46.4 | -34.5
- 2026-04-25 | O'Reilly Cup 2026           | Kawana Waters    | home    | Australia     | 14.1 | New Zealand   | 46.4 | -32.3
- 2026-04-25 | Women's Six Nations 2026    | Bristol          | home    | England       | 72.2 | Wales         |  6.3 |  65.9
- 2026-04-25 | Women's Six Nations 2026    | Clermont Ferrand | home    | France        | 32.7 | Ireland       | 15.3 |  17.4
- 2026-04-25 | Women's Six Nations 2026    | Parma            | home    | Italy         | 18.3 | Scotland      | 19.3 |  -1.1
- 2026-05-09 | Women's Six Nations 2026    | Belfast          | neutral | Ireland       | 30.1 | Wales         | 12.6 |  17.6
- 2026-05-09 | Women's Six Nations 2026    | Parma            | home    | Italy         |  8.2 | England       | 49.4 | -41.2
- 2026-05-09 | Women's Six Nations 2026    | Edinburgh        | home    | Scotland      | 14.0 | France        | 33.2 | -19.2
- 2026-05-17 | Women's Six Nations 2026    | Bordeaux         | home    | France        | 15.9 | England       | 33.5 | -17.6
- 2026-05-17 | Women's Six Nations 2026    | Dublin           | home    | Ireland       | 24.5 | Scotland      | 18.2 |   6.3
- 2026-05-17 | Women's Six Nations 2026    | Cardiff          | home    | Wales         | 14.6 | Italy         | 23.1 |  -8.5
- 2026-07-04 | Women's Internationals 2026 | Johannesburg     | home    | South Africa  | 24.4 | United States | 26.1 |  -1.7
- 2026-07-11 | Women's Internationals 2026 | Pretoria         | home    | South Africa  | 24.4 | United States | 26.1 |  -1.7
-(13 rows)
+    date    |                     event                      |        city        |  site   |       team        | e_p  |     opponent      | e_p  |  e_d  
+------------+------------------------------------------------+--------------------+---------+-------------------+------+-------------------+------+-------
+ 2026-05-08 | Women's Africa Cup 2026                        | Tunis              | home    | Tunisia           | 25.8 | Cote D'Ivoire     | 15.7 |  10.1
+ 2026-05-09 | Women's Six Nations 2026                       | Belfast            | neutral | Ireland           | 30.6 | Wales             | 13.2 |  17.4
+ 2026-05-09 | Women's Six Nations 2026                       | Parma              | home    | Italy             |  9.5 | England           | 48.7 | -39.2
+ 2026-05-09 | Women's Six Nations 2026                       | Edinburgh          | home    | Scotland          | 12.4 | France            | 35.7 | -23.2
+ 2026-05-10 | Asia Rugby Women’s Championship 2026           | Almaty             | home    | Kazakhstan        | 16.2 | Hong Kong         | 20.0 |  -3.9
+ 2026-05-16 | Rugby Americas North Women's Championship 2026 | Trinidad & Tobago? | home    | Trinidad & Tobago | 15.0 | Jamaica           | 44.3 | -29.4
+ 2026-05-17 | Women's Six Nations 2026                       | Bordeaux           | home    | France            | 18.0 | England           | 29.6 | -11.5
+ 2026-05-17 | Women's Six Nations 2026                       | Dublin             | home    | Ireland           | 29.1 | Scotland          | 15.8 |  13.3
+ 2026-05-17 | Women's Six Nations 2026                       | Cardiff            | home    | Wales             | 17.1 | Italy             | 22.2 |  -5.1
+ 2026-05-23 | Rugby Americas North Women's Championship 2026 | Mexico?            | home    | Mexico            | 40.4 | Jamaica           | 25.3 |  15.1
+ 2026-05-23 | Women's Africa Cup 2026                        | Nairobi            | home    | Kenya             | 46.9 | Uganda            |  9.4 |  37.5
+ 2026-05-23 | Women's Africa Cup 2026                        | Nairobi            | neutral | South Africa      | 77.5 | Madagascar        |  7.1 |  70.4
+ 2026-05-27 | Women's Africa Cup 2026                        | Nairobi            | home    | Kenya             | 41.2 | Madagascar        | 11.9 |  29.4
+ 2026-05-27 | Women's Africa Cup 2026                        | Nairobi            | neutral | South Africa      | 88.1 | Uganda            |  5.7 |  82.5
+ 2026-05-31 | Women's Africa Cup 2026                        | Nairobi            | away    | South Africa      | 41.3 | Kenya             | 13.2 |  28.1
+ 2026-05-31 | Women's Africa Cup 2026                        | Nairobi            | neutral | Uganda            | 17.7 | Madagascar        | 25.4 |  -7.6
+ 2026-06-06 | Rugby Americas North Women's Championship 2026 | Mexico?            | home    | Mexico            | 24.9 | Trinidad & Tobago |  4.7 |  20.2
+ 2026-07-04 | Women's Internationals 2026                    | Johannesburg       | home    | South Africa      | 24.7 | United States     | 26.5 |  -1.8
+ 2026-07-11 | Women's Internationals 2026                    | Pretoria           | home    | South Africa      | 24.7 | United States     | 26.5 |  -1.8
+(19 rows)
 
-COPY 13
+COPY 19
 COMMIT
