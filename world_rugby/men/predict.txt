@@ -1,35 +1,54 @@
 BEGIN
 SET
-    date    |            event             |         city          | site |    team    |  e_p  |       opponent       |  e_p  |  e_d   
-------------+------------------------------+-----------------------+------+------------+-------+----------------------+-------+--------
- 2026-03-14 | Rugby Europe Conference 2026 | Limassol              | home | Cyprus     | 17.84 | Andorra              | 25.62 |  -7.78
- 2026-03-14 | Six Nations 2026             | Saint-Denis           | home | France     | 28.00 | England              | 19.74 |   8.26
- 2026-03-14 | Six Nations 2026             | Dublin                | home | Ireland    | 27.01 | Scotland             | 15.75 |  11.26
- 2026-03-14 | Six Nations 2026             | Cardiff               | home | Wales      | 22.30 | Italy                | 23.65 |  -1.35
- 2026-04-03 | Men's Internationals 2026    | Prague                | home | Czechia    | 38.94 | Mexico               | 15.17 |  23.77
- 2026-04-04 | Rugby Europe Conference 2026 | Andorra?              | home | Andorra    | 13.12 | Malta                | 13.02 |   0.10
- 2026-04-04 | Rugby Europe Conference 2026 | Budapest              | home | Hungary    | 13.32 | Austria              | 32.80 | -19.48
- 2026-04-04 | Rugby Europe Conference 2026 | Moldova, Republic of? | home | Moldova    | 27.50 | Turkey               | 10.34 |  17.15
- 2026-04-04 | Rugby Europe Trophy 2026     | Trelleborg            | home | Sweden     | 38.54 | Denmark              | 11.66 |  26.88
- 2026-04-11 | Rugby Europe Conference 2026 | Latvia?               | home | Latvia     | 98.64 | Estonia              |  1.64 |  97.00
- 2026-04-11 | Rugby Europe Conference 2026 | Malta?                | home | Malta      | 14.05 | Israel               | 12.55 |   1.50
- 2026-04-11 | Rugby Europe Conference 2026 | Ukraine?              | home | Ukraine    | 31.53 | Moldova              |  9.11 |  22.42
- 2026-04-11 | Rugby Europe Trophy 2026     | Poland?               | home | Poland     | 31.25 | Sweden               | 16.45 |  14.79
- 2026-04-18 | Rugby Europe Conference 2026 | Istog                 | home | Kosovo     |  9.35 | Bosnia & Herzegovina | 48.90 | -39.55
- 2026-04-18 | Rugby Europe Conference 2026 | Luxembourg            | home | Luxembourg | 22.97 | Latvia               | 14.56 |   8.41
- 2026-04-18 | Rugby Europe Conference 2026 | Norway?               | home | Norway     |  7.91 | Finland              | 38.93 | -31.03
- 2026-04-18 | Rugby Europe Conference 2026 | Serbia?               | home | Serbia     | 38.05 | Slovenia             | 16.54 |  21.52
- 2026-04-18 | Rugby Europe Conference 2026 | Slovakia?             | home | Slovakia   | 14.97 | Hungary              | 49.54 | -34.57
- 2026-04-18 | Rugby Europe Conference 2026 | Ukraine?              | home | Ukraine    | 66.40 | Bulgaria             |  8.76 |  57.64
- 2026-04-18 | Rugby Europe Trophy 2026     | Siauliai              | home | Lithuania  | 22.83 | Croatia              | 30.23 |  -7.39
- 2026-04-25 | Rugby Europe Conference 2026 | Sofia                 | home | Bulgaria   | 14.07 | Moldova              | 26.75 | -12.68
- 2026-04-25 | Rugby Europe Conference 2026 | Slovenia?             | home | Slovenia   | 50.67 | Slovakia             | 16.56 |  34.11
- 2026-05-02 | Rugby Europe Conference 2026 | Tallinn               | home | Estonia    |  4.25 | Norway               | 31.22 | -26.96
- 2026-05-02 | Rugby Europe Conference 2026 | Montenegro?           | home | Montenegro | 34.44 | Kosovo               | 11.40 |  23.05
- 2026-05-09 | Rugby Europe Conference 2026 | Vienna                | home | Austria    | 33.10 | Serbia               | 14.09 |  19.01
- 2026-05-09 | Rugby Europe Conference 2026 | Helsinki              | home | Finland    | 15.85 | Luxembourg           | 20.49 |  -4.63
- 2026-05-09 | Rugby Europe Conference 2026 | Israel?               | home | Israel     | 32.54 | Cyprus               | 14.50 |  18.04
-(27 rows)
+    date    |             event             |                city                 |  site   |     team     |  e_p  |    opponent     |  e_p  |  e_d   
+------------+-------------------------------+-------------------------------------+---------+--------------+-------+-----------------+-------+--------
+ 2026-07-04 | Nations Championship 2026     | Cordoba                             | home    | Argentina    | 29.63 | Scotland        | 22.68 |   6.95
+ 2026-07-04 | Nations Championship 2026     | Sydney | Gadigal                    | home    | Australia    | 18.99 | Ireland         | 26.01 |  -7.02
+ 2026-07-04 | Nations Championship 2026     | Cardiff                             | away    | Fiji         | 22.35 | Wales           | 21.72 |   0.63
+ 2026-07-04 | Nations Championship 2026     | Tokyo                               | home    | Japan        | 23.68 | Italy           | 30.87 |  -7.18
+ 2026-07-04 | Nations Championship 2026     | Christchurch                        | home    | New Zealand  | 30.88 | France          | 23.02 |   7.86
+ 2026-07-04 | Nations Championship 2026     | Johannesburg                        | home    | South Africa | 28.49 | England         | 15.15 |  13.33
+ 2026-07-04 | World Rugby Nations Cup 2026  | Edmonton                            | home    | Canada       | 26.53 | Spain           | 33.29 |  -6.76
+ 2026-07-04 | World Rugby Nations Cup 2026  | Santiago                            | home    | Chile        | 34.12 | Romania         | 17.14 |  16.98
+ 2026-07-04 | World Rugby Nations Cup 2026  | Santiago                            | neutral | Samoa        | 29.57 | Hong Kong China | 13.35 |  16.22
+ 2026-07-04 | World Rugby Nations Cup 2026  | Denver, Colorado                    | neutral | Tonga        | 30.88 | Zimbabwe        | 15.69 |  15.19
+ 2026-07-04 | World Rugby Nations Cup 2026  | Montevideo                          | home    | Uruguay      | 20.58 | Georgia         | 21.05 |  -0.47
+ 2026-07-04 | World Rugby Nations Cup 2026  | Denver, Colorado                    | home    | USA          | 22.92 | Portugal        | 24.96 |  -2.04
+ 2026-07-11 | Nations Championship 2026     | San Juan                            | home    | Argentina    | 39.89 | Wales           | 16.25 |  23.65
+ 2026-07-11 | Nations Championship 2026     | Brisbane | Meeanjin                 | home    | Australia    | 22.80 | France          | 30.60 |  -7.80
+ 2026-07-11 | Nations Championship 2026     | Liverpool                           | away    | Fiji         | 14.68 | England         | 32.90 | -18.22
+ 2026-07-11 | Nations Championship 2026     | Newcastle | Awabakal-Worimi         | neutral | Japan        | 12.50 | Ireland         | 43.57 | -31.08
+ 2026-07-11 | Nations Championship 2026     | Wellington                          | home    | New Zealand  | 42.98 | Italy           | 14.28 |  28.70
+ 2026-07-11 | Nations Championship 2026     | Pretoria                            | home    | South Africa | 32.21 | Scotland        | 13.97 |  18.24
+ 2026-07-11 | World Rugby Nations Cup 2026  | Edmonton                            | home    | Canada       | 22.95 | Portugal        | 34.95 | -12.01
+ 2026-07-11 | World Rugby Nations Cup 2026  | Viña Del Mar                        | home    | Chile        | 34.91 | Hong Kong China | 15.09 |  19.82
+ 2026-07-11 | World Rugby Nations Cup 2026  | Viña Del Mar                        | neutral | Samoa        | 15.33 | Georgia         | 22.63 |  -7.31
+ 2026-07-11 | World Rugby Nations Cup 2026  | Edmonton                            | neutral | Tonga        | 23.89 | Spain           | 25.43 |  -1.54
+ 2026-07-11 | World Rugby Nations Cup 2026  | Montevideo                          | home    | Uruguay      | 38.80 | Romania         | 14.11 |  24.70
+ 2026-07-11 | World Rugby Nations Cup 2026  | North Carolina                      | home    | USA          | 34.25 | Zimbabwe        | 14.67 |  19.58
+ 2026-07-18 | Nations Championship 2026     | Santiago del Estero                 | home    | Argentina    | 26.20 | England         | 24.61 |   1.59
+ 2026-07-18 | Nations Championship 2026     | Perth | Boorloo                     | home    | Australia    | 31.73 | Italy           | 18.98 |  12.75
+ 2026-07-18 | Nations Championship 2026     | Edinburgh                           | away    | Fiji         | 16.60 | Scotland        | 30.32 | -13.72
+ 2026-07-18 | Nations Championship 2026     | Tokyo                               | home    | Japan        | 17.02 | France          | 49.75 | -32.73
+ 2026-07-18 | Nations Championship 2026     | Auckland                            | home    | New Zealand  | 25.73 | Ireland         | 19.57 |   6.16
+ 2026-07-18 | Nations Championship 2026     | Durban                              | home    | South Africa | 43.37 | Wales           | 10.00 |  33.37
+ 2026-07-18 | World Rugby Nations Cup 2026  | Winnipeg                            | home    | Canada       | 34.29 | Zimbabwe        | 20.54 |  13.75
+ 2026-07-18 | World Rugby Nations Cup 2026  | Santiago                            | home    | Chile        | 18.09 | Georgia         | 25.57 |  -7.48
+ 2026-07-18 | World Rugby Nations Cup 2026  | Montevideo                          | neutral | Samoa        | 28.90 | Romania         | 15.17 |  13.74
+ 2026-07-18 | World Rugby Nations Cup 2026  | Winnipeg                            | neutral | Tonga        | 20.66 | Portugal        | 26.70 |  -6.04
+ 2026-07-18 | World Rugby Nations Cup 2026  | Montevideo                          | home    | Uruguay      | 39.70 | Hong Kong China | 12.42 |  27.28
+ 2026-07-18 | World Rugby Nations Cup 2026  | Raleigh                             | home    | USA          | 26.50 | Spain           | 23.77 |   2.73
+ 2026-08-08 | Men's Internationals 2026     | Osaka Prefecture, Higashiosaka City | home    | Japan        | 20.11 | Australia       | 37.49 | -17.38
+ 2026-08-15 | Men's Internationals 2026     | Townsville | Gurambilbarra          | home    | Australia    | 43.81 | Japan           | 17.21 |  26.61
+ 2026-08-22 | Rugby’s Greatest Rivalry 2026 | Johannesburg                        | home    | South Africa | 26.88 | New Zealand     | 19.01 |   7.87
+ 2026-08-29 | Men's Internationals 2026     | Jujuy                               | home    | Argentina    | 32.85 | Australia       | 22.79 |  10.06
+ 2026-08-29 | Rugby’s Greatest Rivalry 2026 | Cape Town                           | home    | South Africa | 26.88 | New Zealand     | 19.01 |   7.87
+ 2026-09-05 | Men's Internationals 2026     | Mendoza                             | home    | Argentina    | 32.85 | Australia       | 22.79 |  10.06
+ 2026-09-05 | Men's Internationals 2026     | Nigata                              | home    | Japan        | 56.17 | Canada          | 16.62 |  39.55
+ 2026-09-05 | Rugby’s Greatest Rivalry 2026 | Soweto                              | home    | South Africa | 26.88 | New Zealand     | 19.01 |   7.87
+ 2026-09-12 | Rugby’s Greatest Rivalry 2026 | Baltimore, Maryland                 | neutral | South Africa | 23.70 | New Zealand     | 19.59 |   4.11
+ 2026-09-27 | Men's Internationals 2026     | Perth | Boorloo                     | home    | Australia    | 16.40 | South Africa    | 30.57 | -14.16
+(46 rows)
 
-COPY 27
+COPY 46
 COMMIT
