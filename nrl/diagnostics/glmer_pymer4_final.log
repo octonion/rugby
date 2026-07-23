@@ -1,120 +1,120 @@
-2026-07-16 22:49:46,503 - INFO - --- Starting Python Script using Pymer4 (2026-07-16 22:49:46.503615) ---
-2026-07-16 22:49:46,503 - INFO - R console output will be redirected to this log.
-2026-07-16 22:49:46,531 - INFO - Successfully connected to database 'rugby' on :5432
-2026-07-16 22:49:46,531 - INFO - Fetching data from database...
-2026-07-16 22:49:46,535 - INFO - Fetched data shape: (708, 7)
-2026-07-16 22:49:46,535 - INFO - Preprocessing data...
-2026-07-16 22:49:46,535 - INFO - Converting column 'game_id' to string type before category conversion for R compatibility.
-2026-07-16 22:49:46,536 - INFO - Converted column 'field' to category.
-2026-07-16 22:49:46,536 - INFO - Converted column 'team' to category.
-2026-07-16 22:49:46,537 - INFO - Converted column 'opponent' to category.
-2026-07-16 22:49:46,537 - INFO - Converted column 'game_id' to category.
-2026-07-16 22:49:46,538 - INFO - Checked 'gs' and 'w' columns: all values are finite.
-2026-07-16 22:49:46,538 - INFO - Using 708 rows for model fitting after weight filtering.
-2026-07-16 22:49:46,538 - INFO - Using factor name map for parameter levels: {'game_id': 'game_id', 'opponent': 'defense', 'team': 'offense', 'field': 'field'}
-2026-07-16 22:49:46,538 - INFO - Extracting parameter levels...
-2026-07-16 22:49:46,538 - INFO - Mapping internal column 'team' to parameter 'offense' for levels table.
-2026-07-16 22:49:46,538 - INFO - Mapping internal column 'opponent' to parameter 'defense' for levels table.
-2026-07-16 22:49:46,540 - INFO - Parameter levels DataFrame shape: (390, 3)
-2026-07-16 22:49:46,541 - INFO - Parameter levels head:
+2026-07-22 23:39:36,965 - INFO - --- Starting Python Script using Pymer4 (2026-07-22 23:39:36.965777) ---
+2026-07-22 23:39:36,965 - INFO - R console output will be redirected to this log.
+2026-07-22 23:39:36,994 - INFO - Successfully connected to database 'rugby' on :5432
+2026-07-22 23:39:36,994 - INFO - Fetching data from database...
+2026-07-22 23:39:36,997 - INFO - Fetched data shape: (722, 7)
+2026-07-22 23:39:36,997 - INFO - Preprocessing data...
+2026-07-22 23:39:36,997 - INFO - Converting column 'game_id' to string type before category conversion for R compatibility.
+2026-07-22 23:39:36,998 - INFO - Converted column 'field' to category.
+2026-07-22 23:39:36,999 - INFO - Converted column 'team' to category.
+2026-07-22 23:39:36,999 - INFO - Converted column 'opponent' to category.
+2026-07-22 23:39:36,999 - INFO - Converted column 'game_id' to category.
+2026-07-22 23:39:37,000 - INFO - Checked 'gs' and 'w' columns: all values are finite.
+2026-07-22 23:39:37,001 - INFO - Using 722 rows for model fitting after weight filtering.
+2026-07-22 23:39:37,001 - INFO - Using factor name map for parameter levels: {'game_id': 'game_id', 'opponent': 'defense', 'team': 'offense', 'field': 'field'}
+2026-07-22 23:39:37,001 - INFO - Extracting parameter levels...
+2026-07-22 23:39:37,002 - INFO - Mapping internal column 'team' to parameter 'offense' for levels table.
+2026-07-22 23:39:37,002 - INFO - Mapping internal column 'opponent' to parameter 'defense' for levels table.
+2026-07-22 23:39:37,003 - INFO - Parameter levels DataFrame shape: (397, 3)
+2026-07-22 23:39:37,004 - INFO - Parameter levels head:
    parameter    type     level
 19   defense  random   Broncos
 20   defense  random  Bulldogs
 21   defense  random   Cowboys
 22   defense  random  Dolphins
 23   defense  random   Dragons
-2026-07-16 22:49:46,541 - INFO - Writing parameter levels to database table nrl._parameter_levels...
-2026-07-16 22:49:46,559 - INFO - Successfully wrote parameter levels.
-2026-07-16 22:49:46,559 - INFO - Defining and fitting the GLMM using Pymer4...
-2026-07-16 22:49:46,559 - INFO - Model formula: gs ~ field + (1|team) + (1|opponent) + (1|game_id)
-2026-07-16 22:49:46,559 - INFO - Starting model fit (this may take time)...
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: In addition: 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: Warning messages:
+2026-07-22 23:39:37,004 - INFO - Writing parameter levels to database table nrl._parameter_levels...
+2026-07-22 23:39:37,038 - INFO - Successfully wrote parameter levels.
+2026-07-22 23:39:37,038 - INFO - Defining and fitting the GLMM using Pymer4...
+2026-07-22 23:39:37,038 - INFO - Model formula: gs ~ field + (1|team) + (1|opponent) + (1|game_id)
+2026-07-22 23:39:37,038 - INFO - Starting model fit (this may take time)...
+2026-07-22 23:39:38,100 - WARNING - R[write to console]: In addition: 
+2026-07-22 23:39:38,100 - WARNING - R[write to console]: Warning messages:
 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 1: 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 
+2026-07-22 23:39:38,100 - WARNING - R[write to console]: 1: 
+2026-07-22 23:39:38,100 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
+2026-07-22 23:39:38,100 - WARNING - R[write to console]: 
  
-2026-07-16 22:49:47,595 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
+2026-07-22 23:39:38,101 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 2: 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: 2: 
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: 
  
-2026-07-16 22:49:47,595 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
+2026-07-22 23:39:38,101 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 3: 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: 3: 
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: 
  
-2026-07-16 22:49:47,595 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
+2026-07-22 23:39:38,101 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 4: 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: 4: 
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: 
  
-2026-07-16 22:49:47,595 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
+2026-07-22 23:39:38,101 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 5: 
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
-2026-07-16 22:49:47,595 - WARNING - R[write to console]: 
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: 5: 
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
+2026-07-22 23:39:38,101 - WARNING - R[write to console]: 
  
-2026-07-16 22:49:47,595 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
+2026-07-22 23:39:38,101 - WARNING - R[write to console]:  library ‘/usr/lib/R/site-library’ contains no packages
 
-2026-07-16 22:49:47,855 - WARNING - R[write to console]: In addition: 
-2026-07-16 22:49:47,855 - WARNING - R[write to console]: Warning message:
+2026-07-22 23:39:38,395 - WARNING - R[write to console]: In addition: 
+2026-07-22 23:39:38,395 - WARNING - R[write to console]: Warning message:
 
-2026-07-16 22:49:47,855 - WARNING - R[write to console]: In Matrix.DeprecatedCoerce(cd1, cd2) :
-2026-07-16 22:49:47,855 - WARNING - R[write to console]: 
+2026-07-22 23:39:38,395 - WARNING - R[write to console]: In Matrix.DeprecatedCoerce(cd1, cd2) :
+2026-07-22 23:39:38,395 - WARNING - R[write to console]: 
  
-2026-07-16 22:49:47,855 - WARNING - R[write to console]:  'as(<dsyMatrix>, "dpoMatrix")' is deprecated.
+2026-07-22 23:39:38,395 - WARNING - R[write to console]:  'as(<dsyMatrix>, "dpoMatrix")' is deprecated.
 Use 'as(., "posdefMatrix")' instead.
 See help("Deprecated") and help("Matrix-deprecated").
 
-2026-07-16 22:49:47,883 - INFO - Model fitting complete.
-2026-07-16 22:49:47,883 - INFO - --- Model Fit Summary (from Pymer4) ---
-2026-07-16 22:49:47,886 - INFO -                    Estimate  2.5_ci  97.5_ci     SE  Z-stat  P-val  Sig
-2026-07-16 22:49:47,886 - INFO - (Intercept)           3.048   2.953    3.142  0.048  63.164    0.0  ***
-2026-07-16 22:49:47,886 - INFO - fieldoffense_home     0.111   0.080    0.142  0.016   7.075    0.0  ***
-2026-07-16 22:49:47,887 - INFO - --- End Model Fit Summary ---
-2026-07-16 22:49:47,887 - INFO - Extracting model results (Fixed and Random Effects)...
-2026-07-16 22:49:47,887 - INFO - Using factor name map for random effects: {'game_id': 'game_id', 'opponent': 'defense', 'team': 'offense'}
-2026-07-16 22:49:47,887 - INFO - Attempting to process model.coefs. Type: <class 'pandas.core.frame.DataFrame'>
-2026-07-16 22:49:47,887 - INFO - model.coefs is a DataFrame. Extracting estimates.
-2026-07-16 22:49:47,887 - INFO - Extracted 2 fixed effect(s) from model.coefs.
-2026-07-16 22:49:47,887 - INFO - Attempting to process model.ranef. Type: <class 'list'>
-2026-07-16 22:49:47,887 - INFO - model.ranef is a list with expected length 3. Processing elements.
-2026-07-16 22:49:47,887 - INFO - Processing ranef element 0 for internal factor 'game_id'. Type: <class 'pandas.core.frame.DataFrame'>
-2026-07-16 22:49:47,892 - INFO - Extracted 354 levels for random effect corresponding to 'game_id'.
-2026-07-16 22:49:47,893 - INFO - Processing ranef element 1 for internal factor 'opponent'. Type: <class 'pandas.core.frame.DataFrame'>
-2026-07-16 22:49:47,893 - INFO - Mapped internal factor 'opponent' to output factor 'defense'.
-2026-07-16 22:49:47,893 - INFO - Extracted 17 levels for random effect corresponding to 'opponent'.
-2026-07-16 22:49:47,893 - INFO - Processing ranef element 2 for internal factor 'team'. Type: <class 'pandas.core.frame.DataFrame'>
-2026-07-16 22:49:47,893 - INFO - Mapped internal factor 'team' to output factor 'offense'.
-2026-07-16 22:49:47,893 - INFO - Extracted 17 levels for random effect corresponding to 'team'.
-2026-07-16 22:49:47,893 - INFO - Finished processing ranef list. Total random effect levels extracted: 388
-2026-07-16 22:49:47,893 - INFO - Successfully extracted 390 total factor level estimates into results_list.
-2026-07-16 22:49:47,893 - INFO - Preparing combined DataFrame for database export...
-2026-07-16 22:49:47,894 - INFO - Combined results DataFrame shape: (390, 4)
-2026-07-16 22:49:47,895 - INFO - Combined results head:
+2026-07-22 23:39:38,425 - INFO - Model fitting complete.
+2026-07-22 23:39:38,425 - INFO - --- Model Fit Summary (from Pymer4) ---
+2026-07-22 23:39:38,429 - INFO -                    Estimate  2.5_ci  97.5_ci     SE  Z-stat  P-val  Sig
+2026-07-22 23:39:38,429 - INFO - (Intercept)           3.042   2.947    3.137  0.048  63.019    0.0  ***
+2026-07-22 23:39:38,429 - INFO - fieldoffense_home     0.118   0.087    0.148  0.016   7.540    0.0  ***
+2026-07-22 23:39:38,429 - INFO - --- End Model Fit Summary ---
+2026-07-22 23:39:38,429 - INFO - Extracting model results (Fixed and Random Effects)...
+2026-07-22 23:39:38,429 - INFO - Using factor name map for random effects: {'game_id': 'game_id', 'opponent': 'defense', 'team': 'offense'}
+2026-07-22 23:39:38,429 - INFO - Attempting to process model.coefs. Type: <class 'pandas.core.frame.DataFrame'>
+2026-07-22 23:39:38,429 - INFO - model.coefs is a DataFrame. Extracting estimates.
+2026-07-22 23:39:38,429 - INFO - Extracted 2 fixed effect(s) from model.coefs.
+2026-07-22 23:39:38,429 - INFO - Attempting to process model.ranef. Type: <class 'list'>
+2026-07-22 23:39:38,429 - INFO - model.ranef is a list with expected length 3. Processing elements.
+2026-07-22 23:39:38,430 - INFO - Processing ranef element 0 for internal factor 'game_id'. Type: <class 'pandas.core.frame.DataFrame'>
+2026-07-22 23:39:38,436 - INFO - Extracted 361 levels for random effect corresponding to 'game_id'.
+2026-07-22 23:39:38,436 - INFO - Processing ranef element 1 for internal factor 'opponent'. Type: <class 'pandas.core.frame.DataFrame'>
+2026-07-22 23:39:38,436 - INFO - Mapped internal factor 'opponent' to output factor 'defense'.
+2026-07-22 23:39:38,436 - INFO - Extracted 17 levels for random effect corresponding to 'opponent'.
+2026-07-22 23:39:38,436 - INFO - Processing ranef element 2 for internal factor 'team'. Type: <class 'pandas.core.frame.DataFrame'>
+2026-07-22 23:39:38,436 - INFO - Mapped internal factor 'team' to output factor 'offense'.
+2026-07-22 23:39:38,437 - INFO - Extracted 17 levels for random effect corresponding to 'team'.
+2026-07-22 23:39:38,437 - INFO - Finished processing ranef list. Total random effect levels extracted: 395
+2026-07-22 23:39:38,437 - INFO - Successfully extracted 397 total factor level estimates into results_list.
+2026-07-22 23:39:38,437 - INFO - Preparing combined DataFrame for database export...
+2026-07-22 23:39:38,437 - INFO - Combined results DataFrame shape: (397, 4)
+2026-07-22 23:39:38,438 - INFO - Combined results head:
               factor    type              level  estimate
-0        (Intercept)   fixed        (Intercept)  3.047534
-1  fieldoffense_home   fixed  fieldoffense_home  0.111269
-2            game_id  random               1592 -0.094008
-3            game_id  random               1593  0.122952
-4            game_id  random               1594  0.247833
-2026-07-16 22:49:47,895 - INFO - Combined results tail:
+0        (Intercept)   fixed        (Intercept)  3.042107
+1  fieldoffense_home   fixed  fieldoffense_home  0.117510
+2            game_id  random               1592 -0.093412
+3            game_id  random               1593  0.124196
+4            game_id  random               1594  0.258456
+2026-07-22 23:39:38,439 - INFO - Combined results tail:
       factor    type         level  estimate
-385  offense  random        Sharks  0.126718
-386  offense  random         Storm  0.116361
-387  offense  random        Titans -0.100242
-388  offense  random      Warriors  0.043620
-389  offense  random  Wests Tigers -0.121348
-2026-07-16 22:49:47,895 - INFO - Writing combined results to database table nrl._basic_factors...
-2026-07-16 22:49:48,213 - INFO - Successfully wrote combined results.
-2026-07-16 22:49:48,213 - INFO - Results extraction and writing complete.
-2026-07-16 22:49:48,213 - INFO - Closing database connection if open.
-2026-07-16 22:49:48,214 - INFO - Database connection closed.
-2026-07-16 22:49:48,214 - INFO - --- Python Script Finished (2026-07-16 22:49:48.214125) ---
-2026-07-16 22:49:48,403 - INFO - Embedded R ended.
-2026-07-16 22:49:48,403 - INFO - Embedded R already ended.
+392  offense  random        Sharks  0.121318
+393  offense  random         Storm  0.101953
+394  offense  random        Titans -0.080257
+395  offense  random      Warriors  0.036733
+396  offense  random  Wests Tigers -0.138091
+2026-07-22 23:39:38,439 - INFO - Writing combined results to database table nrl._basic_factors...
+2026-07-22 23:39:38,463 - INFO - Successfully wrote combined results.
+2026-07-22 23:39:38,463 - INFO - Results extraction and writing complete.
+2026-07-22 23:39:38,463 - INFO - Closing database connection if open.
+2026-07-22 23:39:38,463 - INFO - Database connection closed.
+2026-07-22 23:39:38,463 - INFO - --- Python Script Finished (2026-07-22 23:39:38.463610) ---
+2026-07-22 23:39:38,666 - INFO - Embedded R ended.
+2026-07-22 23:39:38,666 - INFO - Embedded R already ended.
