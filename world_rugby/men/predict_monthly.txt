@@ -1,22 +1,33 @@
 BEGIN
 SET
-    date    |            event             |                city                 |  site   |     team      | e_p  | opponent  | e_p  
-------------+------------------------------+-------------------------------------+---------+---------------+------+-----------+------
- 2026-07-18 | Nations Championship 2026    | Santiago del Estero                 | home    | Argentina     | 26.2 | England   | 24.6
- 2026-07-18 | Nations Championship 2026    | Perth | Boorloo                     | home    | Australia     | 31.7 | Italy     | 19.0
- 2026-07-18 | Nations Championship 2026    | Edinburgh                           | away    | Fiji          | 16.6 | Scotland  | 30.3
- 2026-07-18 | Nations Championship 2026    | Tokyo                               | home    | Japan         | 17.0 | France    | 49.7
- 2026-07-18 | Nations Championship 2026    | Auckland                            | home    | New Zealand   | 25.7 | Ireland   | 19.6
- 2026-07-18 | Nations Championship 2026    | Durban                              | home    | South Africa  | 43.4 | Wales     | 10.0
- 2026-07-18 | World Rugby Nations Cup 2026 | Winnipeg                            | home    | Canada        | 34.3 | Zimbabwe  | 20.5
- 2026-07-18 | World Rugby Nations Cup 2026 | Santiago                            | home    | Chile         | 18.1 | Georgia   | 25.6
- 2026-07-18 | World Rugby Nations Cup 2026 | Montevideo                          | neutral | Samoa         | 28.9 | Romania   | 15.2
- 2026-07-18 | World Rugby Nations Cup 2026 | Winnipeg                            | neutral | Tonga         | 20.7 | Portugal  | 26.7
- 2026-07-18 | World Rugby Nations Cup 2026 | Raleigh                             | home    | United States | 26.5 | Spain     | 23.8
- 2026-07-18 | World Rugby Nations Cup 2026 | Montevideo                          | home    | Uruguay       | 39.7 | Hong Kong | 12.4
- 2026-08-08 | Men's Internationals 2026    | Osaka Prefecture, Higashiosaka City | home    | Japan         | 20.1 | Australia | 37.5
- 2026-08-15 | Men's Internationals 2026    | Townsville | Gurambilbarra          | home    | Australia     | 43.8 | Japan     | 17.2
-(14 rows)
+    date    |                event                |       city       |  site   |    team    | e_p  |    opponent    | e_p  
+------------+-------------------------------------+------------------+---------+------------+------+----------------+------
+ 2026-10-17 | Bledisloe Cup 2026                  | Sydney | Wangal  | home    | Australia  | 22.1 | New Zealand    | 31.8
+ 2026-10-17 | Rugby Europe Conference Men's  2027 | Split            | home    | Croatia    | 80.1 | Slovenia       |  7.8
+ 2026-10-17 | Rugby Europe Conference Men's  2027 | Tallinn          | home    | Estonia    |  3.3 | Luxembourg     | 72.9
+ 2026-10-17 | Rugby Europe Conference Men's  2027 | Andorra La Vella | away    | Israel     | 17.7 | Andorra        | 16.9
+ 2026-10-24 | Men's Internationals 2026           | Tokyo            | home    | Japan      | 27.0 | Fiji           | 24.9
+ 2026-10-24 | Rugby Europe Conference Men's  2027 | Luxembourg       | home    | Luxembourg | 52.6 | Norway         |  6.7
+ 2026-10-31 | Rugby Europe Trophy Men's 2027      | Fredericia       | home    | Denmark    | 20.9 | Malta          | 14.4
+ 2026-10-31 | Rugby Europe Trophy Men's 2027      | Siauliai         | home    | Lithuania  |  9.4 | Germany        | 46.3
+ 2026-10-31 | Rugby Europe Trophy Men's 2027      | Trelleborg       | home    | Sweden     | 22.6 | Czech Republic | 35.3
+ 2026-11-06 | Nations Championship 2026           | Dublin           | home    | Ireland    | 30.6 | Argentina      | 18.8
+ 2026-11-06 | World Rugby Nations Cup 2026        | Bucharest        | home    | Romania    | 24.8 | Tonga          | 25.6
+ 2026-11-07 | Nations Championship 2026           | Lyon             | home    | France     | 45.5 | Fiji           | 13.9
+ 2026-11-07 | Nations Championship 2026           | Turin            | home    | Italy      | 13.6 | South Africa   | 36.8
+ 2026-11-07 | Nations Championship 2026           | Edinburgh        | home    | Scotland   | 20.7 | New Zealand    | 28.9
+ 2026-11-07 | Nations Championship 2026           | Cardiff          | home    | Wales      | 28.6 | Japan          | 22.0
+ 2026-11-07 | Rugby Europe Trophy Men's 2027      | Fredericia       | home    | Denmark    | 13.5 | Czech Republic | 41.2
+ 2026-11-07 | Rugby Europe Trophy Men's 2027      | Siauliai         | home    | Lithuania  | 19.7 | Sweden         | 32.9
+ 2026-11-07 | Rugby Europe Trophy Men's 2027      | Paola            | home    | Malta      |  7.0 | Germany        | 42.0
+ 2026-11-07 | World Rugby Nations Cup 2026        | Tbilisi          | home    | Georgia    | 44.3 | Canada         | 13.9
+ 2026-11-07 | World Rugby Nations Cup 2026        | Lisbon           | home    | Portugal   | 30.5 | Chile          | 21.1
+ 2026-11-07 | World Rugby Nations Cup 2026        | Madrid           | home    | Spain      | 26.4 | Uruguay        | 26.2
+ 2026-11-07 | World Rugby Nations Cup 2026        | Wakefield        | neutral | Zimbabwe   | 14.5 | Samoa          | 29.9
+ 2026-11-08 | Nations Championship 2026           | London           | home    | England    | 29.7 | Australia      | 19.7
+ 2026-11-08 | World Rugby Nations Cup 2026        | Bourg-en-Bresse  | neutral | Hong Kong  | 18.4 | United States  | 27.6
+ 2026-11-13 | Nations Championship 2026           | Saint-Denis      | home    | France     | 23.4 | South Africa   | 25.2
+(25 rows)
 
-COPY 14
+COPY 25
 COMMIT
